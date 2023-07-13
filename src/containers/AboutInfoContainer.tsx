@@ -46,7 +46,7 @@ export const AboutInfoContainer = () => {
 					position="relative"
 					zIndex="1"
 					color="rgba(255, 255, 255, 0.8)"
-					font-size="16px"
+					fontSize="16px"
 					lineHeight="24px"
 				>
 					<Text>
