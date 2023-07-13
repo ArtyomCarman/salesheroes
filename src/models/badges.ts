@@ -1,3 +1,5 @@
+import {Badge} from "../interfaces";
+
 export const badges = {
     badgesUserHas: 12,
     badgesInTotal: 30,
@@ -6,7 +8,7 @@ export const badges = {
             badgeTypeName: "Индивидуальные бейджи",
             badges: [
                 {
-                    imageId: "BRAVEMANGOOSE",
+                    imageId: Badge.BraveMangoose,
                     imageIsActive: true,
                     badgeId: "00010",
                     badgeName: "10 годовых депозитов",
@@ -22,7 +24,7 @@ export const badges = {
             badgeTypeName: "Бейджи за победы в турнирах",
             badges: [
                 {
-                    imageId: "BRAVEMANGOOSE",
+                    imageId: Badge.BengalTiger,
                     imageIsActive: true,
                     badgeId: "00010",
                     badgeName: "10 годовых депозитов",
@@ -38,7 +40,7 @@ export const badges = {
 }
 
 export const badgeId = {
-    imageId: "BRAVEMANGOOSE",
+    imageId: Badge.BraveMangoose,
     badgeId: "00010",
     imageIsActive: true,
     badgeName: "Махараджа",
@@ -97,6 +99,8 @@ export const badgeIdProfiles = {
                 lastName: "Герасимчук",
                 photoData: "URL_in_Base64",
                 terDivisionName: "ЦБ",
+                indicatorValue: '12',
+                placeInRating: 3,
                 colorCode: {
                     primary: "blue-60",
                     secondary: "blue-30"
@@ -109,6 +113,8 @@ export const badgeIdProfiles = {
                 lastName: "Герасимчук",
                 photoData: "URL_in_Base64",
                 terDivisionName: "ЦБ",
+                indicatorValue: '12',
+                placeInRating: 3,
                 colorCode: {
                     primary: "blue-60",
                     secondary: "blue-30"
@@ -123,30 +129,102 @@ export const badgeAllProfiles = [
         divisionLevelName: "Страна",
         contestants: "1250 участников",
         leaders: [
-        {
-            employeeNumber: "010122",
-            isMarked: true,
-            firstName: "Илья",
-            lastName: "Герасимчук",
-            photoData: "URL_in_Base64",
-            terDivisionName: "ЦБ",
-            colorCode: {
-                primary: "blue-60",
-                secondary: "blue-30"
-            }
-        },
-        {
-            employeeNumber: "010122",
-            isMarked: true,
-            firstName: "Илья",
-            lastName: "Герасимчук",
-            photoData: "URL_in_Base64",
-            terDivisionName: "ЦБ",
-            colorCode: {
-                primary: "blue-60",
-                secondary: "blue-30"
-            }
-        },
+            {
+                employeeNumber: "010122",
+                isMarked: true,
+                firstName: "Илья",
+                lastName: "Герасимчук",
+                photoData: "URL_in_Base64",
+                terDivisionName: "ЦБ",
+                indicatorValue: '12',
+                placeInRating: 3,
+                colorCode: {
+                    primary: "blue-60",
+                    secondary: "blue-30"
+                }
+            },
+            {
+                employeeNumber: "010122",
+                isMarked: true,
+                firstName: "Илья",
+                lastName: "Герасимчук",
+                photoData: "URL_in_Base64",
+                terDivisionName: "ЦБ",
+                indicatorValue: '12',
+                placeInRating: 3,
+                colorCode: {
+                    primary: "blue-60",
+                    secondary: "blue-30"
+                }
+            },
+        ]
+    },
+    {
+        divisionLevelName: "Тербанк",
+        contestants: "1250 участников",
+        leaders: [
+            {
+                employeeNumber: "010122",
+                isMarked: true,
+                firstName: "Илья",
+                lastName: "Герасимчук",
+                photoData: "URL_in_Base64",
+                terDivisionName: "ЦБ",
+                indicatorValue: '12',
+                placeInRating: 3,
+                colorCode: {
+                    primary: "blue-60",
+                    secondary: "blue-30"
+                }
+            },
+            {
+                employeeNumber: "010122",
+                isMarked: true,
+                firstName: "Илья",
+                lastName: "Герасимчук",
+                photoData: "URL_in_Base64",
+                terDivisionName: "ЦБ",
+                indicatorValue: '12',
+                placeInRating: 3,
+                colorCode: {
+                    primary: "blue-60",
+                    secondary: "blue-30"
+                }
+            },
+        ]
+    },
+    {
+        divisionLevelName: "Подразделение",
+        contestants: "1250 участников",
+        leaders: [
+            {
+                employeeNumber: "010122",
+                isMarked: true,
+                firstName: "Илья",
+                lastName: "Герасимчук",
+                photoData: "URL_in_Base64",
+                terDivisionName: "ЦБ",
+                indicatorValue: '12',
+                placeInRating: 3,
+                colorCode: {
+                    primary: "blue-60",
+                    secondary: "blue-30"
+                }
+            },
+            {
+                employeeNumber: "010122",
+                isMarked: true,
+                firstName: "Илья",
+                lastName: "Герасимчук",
+                photoData: "URL_in_Base64",
+                terDivisionName: "ЦБ",
+                indicatorValue: '12',
+                placeInRating: 3,
+                colorCode: {
+                    primary: "blue-60",
+                    secondary: "blue-30"
+                }
+            },
         ]
     },
 ]

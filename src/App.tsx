@@ -1,7 +1,8 @@
 import {CacheProvider} from "@emotion/react";
-import {theme, ChakraProvider} from "@chakra-ui/react";
+import { ChakraProvider } from "@chakra-ui/react";
 import {AppRoutes} from "./AppRoutes";
 import createCache from '@emotion/cache';
+import { theme } from './utils'
 
 const emotionCache = createCache({
   key: 'emotion-css-cache',

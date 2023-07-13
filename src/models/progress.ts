@@ -16,6 +16,7 @@ export const progress = {
     levelsDirectory: [
         {
             name: "Специалист",
+            code: '1',
             lowBound: 0,
             achievementConditions: "0-50",
             colorCode: {
@@ -25,6 +26,7 @@ export const progress = {
         },
         {
             name: "Эксперт",
+            code: '2',
             lowBound: 50,
             achievementConditions: "50-100",
             colorCode: {
@@ -34,6 +36,7 @@ export const progress = {
         },
         {
             name: "Мастер",
+            code: '3',
             lowBound: 100,
             achievementConditions: "100+",
             colorCode: {

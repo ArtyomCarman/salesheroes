@@ -1,17 +1,19 @@
+import {EmployeeStatus} from "../interfaces";
+
 export const profileContestant = {
     employeeNumber: "00001",
     lastName: "Изотов",
     firstName: "Ильшат",
     tbShortName: "ЦЧБ",
-    gosbName: null,
-    funcDivisionName: null,
+    gosbName: undefined,
+    funcDivisionName: undefined,
     positionName: 'КМ',
     photoData: "Base64 ... ",
     colorCode: {
         primary: "blue-60",
         secondary: "blue-30"
     },
-    employeeStatus: "CONTESTANT"
+    employeeStatus: EmployeeStatus.Contestant
 }
 
 export const profileObserver = {
@@ -27,7 +29,7 @@ export const profileObserver = {
         primary: "gray-60",
         secondary: "gray-30"
     },
-    employeeStatus: "NON_CONTESTANT"
+    employeeStatus: EmployeeStatus.Non_Contestant
 }
 
 export const profileTopManager = {
@@ -35,13 +37,13 @@ export const profileTopManager = {
     lastName: "Меламед",
     firstName: "Сергей",
     tbShortName: "ЦЧБ",
-    gosbName: null,
-    funcDivisionName: null,
+    gosbName: undefined,
+    funcDivisionName: undefined,
     positionName: 'Руководитель',
     photoData: "Base64 ... ",
     colorCode: {
         primary: "gradient",
         secondary: "gradient"
     },
-    employeeStatus: "TOP_MANAGER"
+    employeeStatus: EmployeeStatus.Top_Manager
 }

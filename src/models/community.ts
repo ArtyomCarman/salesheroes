@@ -44,3 +44,42 @@ export const news = {
         },
     ],
 }
+
+export const newsId = {
+    newsId: "f21cede7-bbd6-4942-b56d-4c46eaba024b",
+    date: "19 декабря 2022",
+    tournamentId: "CONTEST_3",
+    newsText: "*Вероника Трошина* и еще 3 участника стали победитилями турнира. Они предложили клиенту минимальную ставку по депозиту среди  1 290 менеджеров",
+    leaders: [
+        {
+            employeeNumber: "01924077",
+            photoData: "URL_in_Base64",
+            firstName: "Вероника",
+            lastName: "Трошина",
+            terDivisionName: 'asd',
+            colorCode: {
+                primary: "blue-60",
+                secondary: "blue-30"
+            }
+        }
+    ]
+}
+
+export const newsRating = {
+    heading: "Анна Петровская из СБ на 1 месте!",
+    usersPosition: "Вы на 12 из 1240 месте",
+    leaders: [
+        {
+            employeeNumber: "010122",
+            firstName: "Илья",
+            lastName: "Герасимчук",
+            photoData: "URL_in_Base64",
+            terDivisionName: "ЦБ",
+            placeInRating: 1,
+            colorCode: {
+                primary: "blue-60",
+                secondary: "blue-30"
+            }
+        },
+    ]
+}
