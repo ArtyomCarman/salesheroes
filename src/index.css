@@ -1,13 +1,52 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --primary-40: hsla(40, 100%, 62%, 1);
+  --primary-30: hsla(43, 90%, 60%, 1);
+  --orange-60: hsla(17, 77%, 51%, 1);
+  --orange-30: hsla(27, 86%, 60%, 1);
+  --light-blue-60: hsla(207, 59%, 54%, 1);
+  --light-blue-50: hsla(205, 91%, 64%, 1);
+  --light-blue-30: hsla(191, 57%, 62%, 1);
+  --blue-60: hsla(224, 51%, 44%, 1);
+  --blue-30: hsla(227, 55%, 60%, 1);
+  --light-green-60: hsla(78, 76%, 35%, 1);
+  --light-green-30: hsla(76, 48%, 57%, 1);
+  --light-green-20: hsla(58, 82%, 48%, 1);
+  --green-60: hsla(163, 62%, 36%, 1);
+  --green-30: hsla(151, 42%, 52%, 1);
+  --red-60: hsla(355, 65%, 51%, 1);
+  --red-30: hsla(358, 80%, 64%, 1);
+  --grey-50: hsla(228, 13%, 39%, 1);
+  --grey-50-50: hsla(228, 13%, 39%, 0.5);
+  --grey-50-30: hsla(228, 13%, 39%, 0.3);
+  --gray-60: hsla(228, 13%, 39%, 0.3);
+  --gray-40: hsla(226, 13%, 61%, 1);
+  --gray-30: hsla(227, 18%, 75%, 1);
+  --grey-40: hsla(226, 13%, 61%, 1);
+  --grey-30: hsla(227, 18%, 75%, 1);
+  --grey-20: hsla(227, 18%, 75%, 1);
+  --purple-70: hsla(266, 36%, 39%, 1);
+  --purple-40: hsla(266, 45%, 55%, 1);
+  --gradient: linear-gradient(
+          135deg,
+          rgb(255, 191, 62) 0%,
+          rgb(255, 115, 23) 50.87%,
+          rgb(248, 59, 74) 58.16%,
+          rgb(135, 90, 192) 100%
+  );
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html,
+body,
+#root {
+  min-height: 100%;
+}
+body {
+  color: white;
+  background-color: black;
+  overflow: unset;
+}
+/* FIX FOR TV */
+div[class^='_root'] {
+  height: initial;
+  width: initial;
 }
