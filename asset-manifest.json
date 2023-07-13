@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/salesheroes/static/css/main.073c9b0a.css",
+    "main.js": "/salesheroes/static/js/main.51f97fd1.js",
+    "static/js/787.35c0ec71.chunk.js": "/salesheroes/static/js/787.35c0ec71.chunk.js",
+    "service-worker.js": "/salesheroes/service-worker.js",
+    "static/media/logo.svg": "/salesheroes/static/media/logo.103b5fa18196d5665a7e12318285c916.svg",
+    "index.html": "/salesheroes/index.html",
+    "main.073c9b0a.css.map": "/salesheroes/static/css/main.073c9b0a.css.map",
+    "main.51f97fd1.js.map": "/salesheroes/static/js/main.51f97fd1.js.map",
+    "787.35c0ec71.chunk.js.map": "/salesheroes/static/js/787.35c0ec71.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.51f97fd1.js"
+  ]
+}
