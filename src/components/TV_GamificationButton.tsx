@@ -37,7 +37,7 @@ const GamificationButton = () => (
 	<Link to="/salesheroes" target="_blank" css={styles.link}>
 		Герои продаж
 		<ArrowThickRight width="16px" height="16px" />
-		<ShineIcon width="32px" height="32px" css={styles.shine} />
+		{/*<ShineIcon width="32px" height="32px" css={styles.shine} />*/}
 	</Link>
 );
 
