@@ -14,8 +14,7 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx",
-    "types": ["@emotion/core"],
+    "jsx": "react-jsx"
   },
   "include": ["src", "src/custom.d.ts"]
 }

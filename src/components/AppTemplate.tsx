@@ -2,6 +2,7 @@ import { useRef, useMemo, useLayoutEffect } from "react";
 import { Outlet, useLocation, useNavigationType } from "react-router-dom";
 import { Grid, Flex, Box, useBreakpointValue, css } from "@chakra-ui/react";
 import { AppSidebar } from "./AppSidebar";
+import { AppHeader } from "./AppHeader";
 
 export const scrollbarCSS = css({
   scrollbarGutter: "stable",
@@ -66,7 +67,7 @@ export const AppTemplate = () => {
 
   return (
     <Flex height="100dvh" flexDirection="column" sx={sx}>
-      {/* <Header /> */}
+      <AppHeader />
       <Grid
         ref={mainRef}
         as="main"

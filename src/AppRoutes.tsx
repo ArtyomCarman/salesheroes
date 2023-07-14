@@ -23,6 +23,7 @@ export const AppRoutes = () => {
   return (
     <Routes>
       <Route path="/" element={<AppTemplate />}>
+        <Route index element={<Navigate replace to="about" />} />
         <Route path="profile/:employeeNumber">
           <Route index element={<ProfilePage />} />
           <Route path="awards" element={<ProfileAllAwardsPage />} />
@@ -51,7 +52,6 @@ export const AppRoutes = () => {
           <Route path=":badgeId/list" element={<AwardsListPage />} />
         </Route>
         <Route path="about" element={<AboutPage />} />
-        <Route path="*" element={<Navigate replace to="about" />} />
       </Route>
     </Routes>
   );
