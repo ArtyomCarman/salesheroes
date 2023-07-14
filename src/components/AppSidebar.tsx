@@ -3,8 +3,8 @@ import { NavLink } from "react-router-dom";
 import { Flex, Link, Text, FlexProps } from "@chakra-ui/react";
 import { ReactComponent as AboutUsIcon } from "../assets/icons/about-us.svg";
 import { ReactComponent as AwardsIcon } from "../assets/icons/awards.svg";
-// import { CommunityIcon } from "../assets/icons/";
-// import { TournamentsIcon } from "../assets/icons/";
+import { ReactComponent as CommunityIcon } from "../assets/icons/community.svg";
+import { ReactComponent as TournamentsIcon } from "../assets/icons/tournaments-24.svg";
 
 export const AppSidebar: FC<Props> = ({ ...otherProps }) => (
   <Flex
@@ -62,7 +62,7 @@ export const AppSidebar: FC<Props> = ({ ...otherProps }) => (
         to={to}
         transition="all 0.2s"
       >
-        <Icon />
+        <Icon width="24px" />
         <Text fontSize={{ base: "10px", lg: "16px" }}>{text}</Text>
       </Link>
     ))}
@@ -71,26 +71,25 @@ export const AppSidebar: FC<Props> = ({ ...otherProps }) => (
 
 const sidebarModules = [
   {
-    to: "/about",
-    icon: AboutUsIcon,
-    text: "О проекте",
+    to: "/community",
+    icon: CommunityIcon,
+    text: "Сообщество",
   },
-
+  {
+    to: "/tournaments",
+    icon: TournamentsIcon,
+    text: "Турниры",
+  },
   {
     to: "/awards",
     icon: AwardsIcon,
     text: "Награды",
   },
-  //   {
-  //     to: "/tournaments",
-  //     icon: TournamentsIcon,
-  //     text: "Турниры",
-  //   },
-  //   {
-  //     to: "/community",
-  //     icon: CommunityIcon,
-  //     text: "Сообщество",
-  //   },
+  {
+    to: "/about",
+    icon: AboutUsIcon,
+    text: "О проекте",
+  },
 ];
 
 interface Props extends FlexProps {}

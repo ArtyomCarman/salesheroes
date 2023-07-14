@@ -63,7 +63,7 @@ export const AppTemplate = () => {
       );
       scrollContainer.current.scrollTo(0, 0);
     }
-  }, [pathname]);
+  }, [pathname, navigationType, scrollContainer]);
 
   return (
     <Flex height="100dvh" flexDirection="column" sx={sx}>
