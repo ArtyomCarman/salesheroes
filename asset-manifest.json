@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/salesheroes/static/css/main.705fd5b0.css",
-    "main.js": "/salesheroes/static/js/main.70c6d4c6.js",
+    "main.js": "/salesheroes/static/js/main.2bcb8efb.js",
     "static/js/787.35c0ec71.chunk.js": "/salesheroes/static/js/787.35c0ec71.chunk.js",
     "static/media/fake-avatars.svg": "/salesheroes/static/media/fake-avatars.35f89ae572727a59c4be0489afedf9ef.svg",
     "static/media/newsEmptyRating.png": "/salesheroes/static/media/newsEmptyRating.acad06254ada1045c3e2.png",
@@ -28,6 +28,7 @@
     "static/media/awards.svg": "/salesheroes/static/media/awards.c7e09e632a3bfab788fcdbb6ba48bce8.svg",
     "static/media/no-awards.svg": "/salesheroes/static/media/no-awards.c0235db4ff2c1d98f7fc2a66da7c3161.svg",
     "static/media/logo.svg": "/salesheroes/static/media/logo.532cfe440c7f90507ef3657ad4308c34.svg",
+    "static/media/sales-heros-logo.svg": "/salesheroes/static/media/sales-heros-logo.1d0b9bdb2b0afab3d338715085a1bf79.svg",
     "static/media/check-16.svg": "/salesheroes/static/media/check-16.03ed62d734742d7211837fa3d954abe1.svg",
     "static/media/community.svg": "/salesheroes/static/media/community.05cc991e65b26b1b5317efa206eacc75.svg",
     "static/media/about-us.svg": "/salesheroes/static/media/about-us.1778d376e08976e27e0a9285388eb07d.svg",
@@ -41,17 +42,18 @@
     "static/media/avatar.svg": "/salesheroes/static/media/avatar.ea2d7100f40328ab816332a66a92ba86.svg",
     "static/media/community-lightning.svg": "/salesheroes/static/media/community-lightning.898e0096ff3bf112816ed8a54749b891.svg",
     "static/media/info.svg": "/salesheroes/static/media/info.a9f029afb12c42784992de68a8402b15.svg",
+    "static/media/arrow-thick-left.svg": "/salesheroes/static/media/arrow-thick-left.1b1d212c6bac49dccdefdd95faf11cd2.svg",
     "static/media/thirdPlaceShield.svg": "/salesheroes/static/media/thirdPlaceShield.b1ea5a85d8c547b6fc7e4d8a86ebfebb.svg",
     "static/media/chevron-right.svg": "/salesheroes/static/media/chevron-right.f460e073cd0410caf61a2b4341362bf5.svg",
     "static/media/arrow-right.svg": "/salesheroes/static/media/arrow-right.537f7367f0da7ebf1b5e740d9c9a7f4b.svg",
     "static/media/lightning.svg": "/salesheroes/static/media/lightning.112b47d324cc6202e46730689d8c7976.svg",
     "index.html": "/salesheroes/index.html",
     "main.705fd5b0.css.map": "/salesheroes/static/css/main.705fd5b0.css.map",
-    "main.70c6d4c6.js.map": "/salesheroes/static/js/main.70c6d4c6.js.map",
+    "main.2bcb8efb.js.map": "/salesheroes/static/js/main.2bcb8efb.js.map",
     "787.35c0ec71.chunk.js.map": "/salesheroes/static/js/787.35c0ec71.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.705fd5b0.css",
-    "static/js/main.70c6d4c6.js"
+    "static/js/main.2bcb8efb.js"
   ]
 }
