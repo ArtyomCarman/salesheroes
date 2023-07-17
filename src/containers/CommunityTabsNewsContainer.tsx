@@ -18,8 +18,9 @@ export const CommunityTabsNewsContainer: FC<Props> = ({ news }) => {
 	const MAX_LEADERS = 5;
 	const showMoreLeaders = useMemo(() => news.leaders.length > MAX_LEADERS, [news]);
 
+
 	const leadersList = useMemo(() => {
-		if (showMoreLeaders) return news.leaders.slice(0, 6);
+		if (showMoreLeaders) return news.leaders.slice(0, 5);
 
 		return news.leaders;
 	}, [news, showMoreLeaders]);
