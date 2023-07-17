@@ -1,12 +1,14 @@
 import { Fade, Flex, Grid, Icon as ChakraIcon, Text } from '@chakra-ui/react';
 
 import { Empty } from '../components';
-import { Reward, Status } from '../interfaces';
+import {IProfileTournamentsIdBody, Reward, Status} from '../interfaces';
 import { ReactComponent as LightningIcon} from '../assets/icons/lightning.svg';
-import {archiveTournamentId} from "../models";
+import { tournamentID} from "../models";
+import {useParams} from "react-router-dom";
 
 export const TournamentResultContainer = () => {
-
+	const { tournamentId } = useParams();
+	const tournament = tournamentID.find((item) => item.tournamentId === tournamentId) as IProfileTournamentsIdBody
 	return (
 		<Fade in>
 			<Flex
@@ -22,7 +24,7 @@ export const TournamentResultContainer = () => {
 				<Text color="white" size="h24/32" variant="semibold">
 					Ваш результат
 				</Text>
-				{archiveTournamentId.rating.length !== 0 ? (
+				{tournament.rating.length !== 0 ? (
 					<Grid
 						gridTemplateColumns={{
 							base: '1fr',
@@ -30,7 +32,7 @@ export const TournamentResultContainer = () => {
 						}}
 						gap="16px"
 					>
-						{archiveTournamentId.rating?.map((item) => (
+						{tournament.rating?.map((item) => (
 							<Flex
 								key={item.divisionLevelName}
 								p="16px"
@@ -74,7 +76,7 @@ export const TournamentResultContainer = () => {
 							</Flex>
 						))}
 					</Grid>
-				) : archiveTournamentId.status === Status.end || archiveTournamentId.status === Status.summarizing ? (
+				) : tournament.status === Status.end || tournament.status === Status.summarizing ? (
 					<Empty>
 						<Text size="sub18/24" color="rgba(255, 255, 255, 0.6)" textAlign="center">
 							Вы не участвовали в турнире

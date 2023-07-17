@@ -11,6 +11,7 @@ const styles = {
 		color: 'rgba(255, 255, 255, 0.8)',
 		fontSize: '14px',
 		fontWeight: '500',
+		borderRadius: '0',
 		'&:first-child': {
 			borderTopLeftRadius: '8px',
 			borderBottomLeftRadius: '8px',

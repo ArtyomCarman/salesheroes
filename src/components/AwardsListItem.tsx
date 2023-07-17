@@ -117,14 +117,7 @@ export const AwardsListItem: FC<Props> = ({ badge, status }) => {
 								variant="medium"
 								title={badge.badgeName}
 								textAlign="center"
-								lineHeight={{
-									base: '24px',
-									lg: '28px',
-								}}
-								fontSize={{
-									base: '18px',
-									lg: '20px',
-								}}
+								size='body16/24'
 								display="-webkit-box"
 								sx={{
 									'-webkit-box-orient': 'vertical',
@@ -135,7 +128,7 @@ export const AwardsListItem: FC<Props> = ({ badge, status }) => {
 									<Text
 										display="inline-block"
 										marginRight="4px"
-										size="sub20/28"
+										size="body16/24"
 										variant="semibold"
 										bgClip="text"
 										color="transparent"

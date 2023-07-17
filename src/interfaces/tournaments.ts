@@ -14,7 +14,7 @@ export interface IGetProfileTournaments {
 }
 
 interface IRating {
-	divisionLevelResult: string;
+	divisionLevelResult?: string;
 	placeInRating?: number;
 	reward?: IReward;
 }
@@ -48,7 +48,7 @@ export interface Tournament {
 	tournamentDurationName?: string;
 	progressBarValue?: number;
 	updateTooltip?: string;
-	reward: Reward;
+	reward?: Reward;
 	rating: IRating[];
 }
 

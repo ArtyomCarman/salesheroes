@@ -1,11 +1,11 @@
 import { FC, useMemo } from 'react';
-import { useNavigate } from 'react-router-dom';
+import {useNavigate, useParams} from 'react-router-dom';
 import { Fade, Flex, Text } from '@chakra-ui/react';
 
 import { BadgeIcon, Tabs } from '../components';
-import { ProfileTournamentsReward } from '../interfaces';
+import {IProfileTournamentsIdBody, ProfileTournamentsReward} from '../interfaces';
 import { ReactComponent as DiamondIcon} from '../assets/icons/diamond.svg';
-import {archiveTournamentId} from "../models";
+import {archiveTournamentId, tournamentID} from "../models";
 
 const TournamentAwardBadge: FC<Props> = ({ item }) => {
 	const navigate = useNavigate();
@@ -79,14 +79,15 @@ const TournamentAwardBadge: FC<Props> = ({ item }) => {
 };
 
 export const TournamentAwardContainer = () => {
-
+	const { tournamentId } = useParams();
+	const tournament = tournamentID.find((item) => item.tournamentId === tournamentId) as IProfileTournamentsIdBody
 	const tabs = useMemo(
 		() =>
-			archiveTournamentId?.rewards?.map((item) => ({
+			tournament?.rewards?.map((item) => ({
 				label: item.divisionLevelName,
 				component: <TournamentAwardBadge item={item} />,
 			})) || [],
-		[archiveTournamentId],
+		[tournament],
 	);
 	return (
 		<Fade in>

@@ -18,7 +18,7 @@ export const TournamentArchiveDescriptionContainer = () => {
 				<Text size="h24/32" variant="semibold">
 					Описание турнира
 				</Text>
-				<Text color="rgba(255, 255, 255, 0.8)">{archiveTournamentId.specification.description}</Text>
+				<Text color="rgba(255, 255, 255, 0.8)" whiteSpace='break-spaces'>{archiveTournamentId.specification.description}</Text>
 
 				{archiveTournamentId.specification.features ? (
 					<Flex gap="8px" direction="column">

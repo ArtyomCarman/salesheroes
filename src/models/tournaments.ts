@@ -1,4 +1,5 @@
 import {Badge, Reward} from "../interfaces";
+import КузьменкоИгорь from '../assets/images/Кузьменко Игорь Владимирович1.jpeg'
 
 export const tournaments = {
     isArchiveButtonNeeds: true,
@@ -8,47 +9,72 @@ export const tournaments = {
             tournaments: [
                 {
                     employee: {
-                        employeeNumber: "01924077",
-                        photoData: "URL_in_Base64",
-                        firstName: "Вероника",
-                        lastName: "Трошина",
+                        employeeNumber: "22",
+                        photoData: КузьменкоИгорь,
+                        firstName: "Игорь",
+                        lastName: "Кузьменко",
                         colorCode: {
                             primary: "blue-60",
                             secondary: "blue-30"
                         }
                     },
-                    tournamentId: "5708a086-f0ba-47f4-92ec-afc49ab1aa62",
-                    tournamentName: "Минимальная ставка по депозиту",
+                    tournamentId: "T1",
+                    tournamentName: "Марафон по условным сделкам",
                     tournamentInfo: "Осталось 2 дня",
                     tournamentDurationName: "ТУРНИР НЕДЕЛИ",
                     progressBarValue: 70,
                     updateTooltip: "Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — 12 марта",
-                    reward: Reward.silver,
+                    reward: Reward.gold,
                     rating: [
                         {
-                            divisionLevelResult: "из 1250 в стране",
+                            divisionLevelResult: "из 33 в стране",
                             placeInRating: 12,
+                        },
+                        {
+                            divisionLevelResult: "из 3 в тербанке",
+                            placeInRating: 2,
                             reward: {
-                                icon: Reward.gold,
+                                icon: Reward.silver,
                                 tooltip: "Претендент на победу"
                             }
                         },
                         {
-                            divisionLevelResult: "из 128 в кластере",
-                            placeInRating: 7,
+                            divisionLevelResult: "из 1 в подразделении",
+                            placeInRating: 1,
                             reward: {
-                                icon: Reward.silver,
-                                tooltip: "Победитель турнира"
+                                icon: Reward.gold,
+                                tooltip: "Претендент на победу"
                             }
-                        },
-                        {
-                            divisionLevelResult: "из 15 в подразделении",
-                            placeInRating: 5
                         }
                     ]
                 }
             ]
-        }
+        },
+        {
+            ratingCategoryName: "Успейте поучаствовать",
+            tournaments: [
+                {
+                    tournamentId: "T2",
+                    tournamentName: "Марафон по условным сделкам",
+                    tournamentInfo: "Осталось 4 дня",
+                    tournamentDurationName: "ТУРНИР НЕДЕЛИ",
+                    progressBarValue: 50,
+                    updateTooltip: "Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — 12 марта",
+                    reward: Reward.silver,
+                    rating: [
+                        {
+                            divisionLevelResult: "33 в стране",
+                        },
+                        {
+                            divisionLevelResult: "3 в тербанке",
+                        },
+                        {
+                            divisionLevelResult: "0 в подразделении",
+                        }
+                    ]
+                }
+            ]
+        },
     ]
 }
 
@@ -58,48 +84,236 @@ export const cluster = {
     divisions: ['123', '123'],
 }
 
+export const tournamentID = [
+    {
+        tournamentId: "T1",
+        hasNftMark: true,
+        tournamentName: "Марафон по условным сделкам",
+        status: "ACTIVE",
+        ratingCategoryName: "Вы в лидерах",
+        tournamentInfo: "Осталось 5 дней",
+        tournamentDurationName: "турнир недели",
+        lasting: '24 июля 2023 - 30 июля 2023',
+        percentageIndicator: 70,
+        updateTooltip: "Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — 12 марта",
+        rating: [
+            {
+                divisionLevelName: "Страна",
+                contestants: 33,
+                placeInRating: 5,
+            },
+            {
+                divisionLevelName: "Тербанк",
+                contestants: 3,
+                placeInRating: 2,
+                reward: {
+                    icon: "SILVER_LIGHTNING",
+                    tooltip: "Претендент на победу"
+                }
+            },
+            {
+                divisionLevelName: "Подразделение",
+                contestants: 1,
+                placeInRating: 1,
+                reward: {
+                    icon: "GOLD_LIGHTNING",
+                    tooltip: "Претендент на победу"
+                }
+            },
+        ],
+        totalParticipants: "33 участников",
+        specification: {
+            description: "Майкл Фелпс по праву считается величайшим спортсменом, показывающим стабильно высокие результаты!\n" +
+                "\n" +
+                "Том Лонгбоут по праву считается величайшим марафонцем всех времен!\n" +
+                "Бери пример с лучших - закрывай каждую полную неделю турнира минимум 2 условные сделки. Если в какую-либо неделю условие не выполняется - участник выбывает из гонки.\n" +
+                "\n" +
+                "Покажешь результат по сумме УС лучше всех - станешь победителем турнира. Удачи!",
+            features: [
+                {
+                    number: 1,
+                    feature: "В турнире разыгрывается три комплекта наград"
+                },
+            ]
+        },
+        rewards: [
+            {
+                divisionLevelName: "Страна",
+                rewardRule: "Бейдж получит 1% от числа участников турнира по всей стране",
+                badgeId: "00024",
+                badgeName: "Чемпион страны по условным сделкам",
+                imageId: Badge.ConditionalsChampionFirst,
+                badgeIcon: Badge.ConditionalsChampionFirst,
+                rewardCrystalCount: 30,
+                hasNftMark: true
+            },
+            {
+                divisionLevelName: "Кластер",
+                rewardRule: "Бейдж получат 7% от числа участников турнира в вашем ТБ",
+                badgeId: "00025",
+                badgeName: "Чемпион ТБ по условным сделкам",
+                imageId: Badge.ConditionalsChampionSecond,
+                badgeIcon: Badge.ConditionalsChampionSecond,
+                rewardCrystalCount: 15,
+                hasNftMark: false
+            },
+            {
+                divisionLevelName: "Подразделение",
+                rewardRule: "Бейдж получат 10% от числа участников турнира в вашем подразделении",
+                badgeId: "00026",
+                badgeName: "Чемпион подразделения по условным сделкам",
+                imageId: Badge.ConditionalsChampionThird,
+                badgeIcon: Badge.ConditionalsChampionThird,
+                rewardCrystalCount: 5,
+                hasNftMark: false
+            },
+        ]
+    },
+    {
+        tournamentId: "T2",
+        hasNftMark: true,
+        tournamentName: "Марафон по условным сделкам",
+        status: "ACTIVE",
+        ratingCategoryName: "Вы в лидерах",
+        tournamentInfo: "Осталось 4 дней",
+        tournamentDurationName: "турнир недели",
+        lasting: '17 июля 2023 - 23 июля 2023',
+        percentageIndicator: 70,
+        updateTooltip: "Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — 12 марта",
+        rating: [],
+        totalParticipants: "33 участников",
+        specification: {
+            description: "Майкл Фелпс по праву считается величайшим спортсменом, показывающим стабильно высокие результаты!\n" +
+                "\n" +
+                "Том Лонгбоут по праву считается величайшим марафонцем всех времен!\n" +
+                "Бери пример с лучших - закрывай каждую полную неделю турнира минимум 2 условные сделки. Если в какую-либо неделю условие не выполняется - участник выбывает из гонки.\n" +
+                "\n" +
+                "Покажешь результат по сумме УС лучше всех - станешь победителем турнира. Удачи!",
+            features: [
+                {
+                    number: 1,
+                    feature: "В турнире разыгрывается три комплекта наград"
+                },
+            ]
+        },
+        rewards: [
+            {
+                divisionLevelName: "Страна",
+                rewardRule: "Бейдж получит 1% от числа участников турнира по всей стране",
+                badgeId: "00024",
+                badgeName: "Чемпион страны по условным сделкам",
+                imageId: Badge.ConditionalsChampionFirst,
+                badgeIcon: Badge.ConditionalsChampionFirst,
+                rewardCrystalCount: 30,
+                hasNftMark: true
+            },
+            {
+                divisionLevelName: "Кластер",
+                rewardRule: "Бейдж получат 7% от числа участников турнира в вашем ТБ",
+                badgeId: "00025",
+                badgeName: "Чемпион ТБ по условным сделкам",
+                imageId: Badge.ConditionalsChampionSecond,
+                badgeIcon: Badge.ConditionalsChampionSecond,
+                rewardCrystalCount: 15,
+                hasNftMark: false
+            },
+            {
+                divisionLevelName: "Подразделение",
+                rewardRule: "Бейдж получат 10% от числа участников турнира в вашем подразделении",
+                badgeId: "00026",
+                badgeName: "Чемпион подразделения по условным сделкам",
+                imageId: Badge.ConditionalsChampionThird,
+                badgeIcon: Badge.ConditionalsChampionThird,
+                rewardCrystalCount: 5,
+                hasNftMark: false
+            },
+        ]
+    }
+]
+
 export const archiveTournamentId = {
-    tournamentId: "5708a086-f0ba-47f4-92ec-afc49ab1aa62",
+    tournamentId: "T3",
     hasNftMark: true,
-    tournamentName: "Минимальная ставка по депозиту",
+    tournamentName: "Марафон по условным сделкам",
     status: "ACTIVE",
     ratingCategoryName: "Вы в лидерах",
-    tournamentInfo: "Осталось 5 дней",
-    tournamentDurationName: "квартальный турнир",
-    lasting: "16 января — 20 января 2023",
-    percentageIndicator: 70,
+    tournamentDurationName: "Турнир недели",
+    lasting: "03 июля — 09 июля 2023",
     updateTooltip: "Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — 12 марта",
     rating: [
         {
             divisionLevelName: "Страна",
-            contestants: 5000,
-            placeInRating: 134,
+            contestants: 33,
+            placeInRating: 5,
             reward: {
-                icon: "⁣SILVER_LIGHTNING",
+                icon: "GOLD_LIGHTNING",
+                tooltip: "Претендент на победу"
+            }
+        },
+        {
+            divisionLevelName: "Тербанк",
+            contestants: 3,
+            placeInRating: 2,
+            reward: {
+                icon: "SILVER_LIGHTNING",
+                tooltip: "Претендент на победу"
+            }
+        },
+        {
+            divisionLevelName: "Подразделение",
+            contestants: 1,
+            placeInRating: 1,
+            reward: {
+                icon: "GOLD_LIGHTNING",
                 tooltip: "Претендент на победу"
             }
         },
     ],
-    totalParticipants: "1250 участников",
+    totalParticipants: "33 участников",
     specification: {
-        description: "some usefull info",
+        description: "Майкл Фелпс по праву считается величайшим спортсменом, показывающим стабильно высокие результаты!\n" +
+            "\n" +
+            "Том Лонгбоут по праву считается величайшим марафонцем всех времен!\n" +
+            "Бери пример с лучших - закрывай каждую полную неделю турнира минимум 2 условные сделки. Если в какую-либо неделю условие не выполняется - участник выбывает из гонки.\n" +
+            "\n" +
+            "Покажешь результат по сумме УС лучше всех - станешь победителем турнира. Удачи!",
         features: [
             {
                 number: 1,
-                feature: "a usefull piece of text"
+                feature: "В турнире разыгрывается три комплекта наград"
             },
         ]
     },
     rewards: [
         {
+            divisionLevelName: "Страна",
+            rewardRule: "Бейдж получит 1% от числа участников турнира по всей стране",
+            badgeId: "00024",
+            badgeName: "Чемпион страны по условным сделкам",
+            imageId: Badge.ConditionalsChampionFirst,
+            badgeIcon: Badge.ConditionalsChampionFirst,
+            rewardCrystalCount: 30,
+            hasNftMark: true
+        },
+        {
             divisionLevelName: "Кластер",
-            rewardRule: "Получают 3% участников",
-            badgeId: "255485d6-daab-41b0-866e-aa958875ebf7",
-            badgeName: "Депозитный гений ГОСБ",
+            rewardRule: "Бейдж получат 7% от числа участников турнира в вашем ТБ",
+            badgeId: "00025",
+            badgeName: "Чемпион ТБ по условным сделкам",
             imageId: Badge.ConditionalsChampionSecond,
             badgeIcon: Badge.ConditionalsChampionSecond,
-            rewardCrystalCount: 60,
-            hasNftMark: true
+            rewardCrystalCount: 15,
+            hasNftMark: false
+        },
+        {
+            divisionLevelName: "Подразделение",
+            rewardRule: "Бейдж получат 10% от числа участников турнира в вашем подразделении",
+            badgeId: "00026",
+            badgeName: "Чемпион подразделения по условным сделкам",
+            imageId: Badge.ConditionalsChampionThird,
+            badgeIcon: Badge.ConditionalsChampionThird,
+            rewardCrystalCount: 5,
+            hasNftMark: false
         },
     ]
 }
@@ -211,26 +425,38 @@ export const archiveTournaments =  {
     tournaments: [
         {
             employee: {
-                employeeNumber: "01924077",
-                photoData: "URL_in_Base64",
-                firstName: "Вероника",
-                lastName: "Трошина",
+                employeeNumber: "22",
+                photoData: КузьменкоИгорь,
+                firstName: "Игорь",
+                lastName: "Кузьменко",
                 colorCode: {
                     primary: "blue-60",
                     secondary: "blue-30"
                 }
             },
-            tournamentId: "5708a086-f0ba-47f4-92ec-afc49ab1aa62",
-            tournamentName: "Минимальная ставка по депозиту",
-            tournamentInfo: "Турнир недели завершён • 17.02–23.02.23",
-            tournamentDurationName: '123',
+            tournamentId: "T3",
+            tournamentName: "Марафон по условным сделкам",
+            tournamentInfo: "Турнир недели завершён • 07.03–07.09.23",
+            tournamentDurationName: '',
             reward: Reward.gold,
             rating: [
                 {
-                    divisionLevelResult: "из 1250 в стране",
-                    placeInRating: 12,
+                    divisionLevelResult: "из 33 в стране",
+                    placeInRating: 5,
+                },
+                {
+                    divisionLevelResult: "из 3 в стране",
+                    placeInRating: 2,
                     reward: {
                         icon: Reward.silver,
+                        tooltip: "Победитель турнира"
+                    }
+                },
+                {
+                    divisionLevelResult: "из 1 в стране",
+                    placeInRating: 1,
+                    reward: {
+                        icon: Reward.gold,
                         tooltip: "Победитель турнира"
                     }
                 }

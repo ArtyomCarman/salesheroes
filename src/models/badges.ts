@@ -39,13 +39,13 @@ export const badges = {
                 },
                 {
                     imageId: Badge.Commission3M,
-                    imageIsActive: false,
+                    imageIsActive: true,
                     badgeId: "00013",
                     badgeName: "3 млн комиссии по сделкам с Индией",
                     badgeAmount: 1,
                     updateTooltip: "Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — 12 марта",
-                    progressBarValue: 70,
-                    hasNftMark: true
+                    hasNftMark: true,
+                    receivingDate: '17.07.23'
                 },
                 {
                     imageId: Badge.CommissionX2,
@@ -69,11 +69,11 @@ export const badges = {
                 },
                 {
                     imageId: Badge.CommissionX4,
-                    imageIsActive: true,
+                    imageIsActive: false,
                     badgeId: "00016",
                     badgeAmount: 1,
+                    progressBarValue: 60,
                     badgeName: "х4 комиссии по сделкам с Индией",
-                    receivingDate: "03.04.22",
                     updateTooltip: "Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — 12 марта",
                     hasNftMark: false
                 },
@@ -303,7 +303,7 @@ export const badgeID = [{
         },
         {
             imageId: Badge.Commission3M,
-            imageIsActive: false,
+            imageIsActive: true,
             badgeId: "00013",
             badgeName: "3 млн комиссии по сделкам с Индией",
             badgeAmount: 1,
@@ -311,11 +311,7 @@ export const badgeID = [{
             updateTooltip: "Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — 12 марта",
             hasNftMark: true,
             rewardCrystalCount: 50,
-            progressBarValue: 70,
-            progress: {
-                current: '104 из 3000 тыс. руб.',
-                condition: 'Осталось 2896 тыс.'
-            },
+            receivingDate: '17.07.23',
             specification: {
                 description: "Эта награда для лучших из лучших!\n" +
                     "Собери для банка 3 млн.руб. комиссии от импортных сделок своих клиентов с индийскими контрагентами, номинированных в рублях и долгожданная награда станет твоей!",
@@ -374,15 +370,19 @@ export const badgeID = [{
     },
     {
         imageId: Badge.CommissionX4,
-        imageIsActive: true,
+        imageIsActive: false,
         badgeId: "00016",
         badgeAmount: 1,
         badgeName: "х4 комиссии по сделкам с Индией",
-        receivingDate: "03.04.22",
         badgeType: "individual",
         updateTooltip: "Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — 12 марта",
         hasNftMark: false,
         rewardCrystalCount: 15,
+        progressBarValue: 60,
+        progress: {
+            current: '104 из 1000 тыс. руб.',
+            condition: 'Осталось 896 тыс.',
+        },
         specification: {
             description: "Докажи, что настоящий асс!\n" +
                 "Собери для банка комиссии в текущем месяце в 4 раза больше, чем в предыдущем от сделок своих клиентов с индийскими контрагентами, номинированных в рублях и получи свою награду!",
@@ -590,7 +590,7 @@ export const badgeID = [{
                     color: 'red-30',
                 },
                 ratingStatusName: 'Вы на 5 месте',
-                periodName: '07.03.23 - 07.09.23',
+                periodName: '03.07.23 - 09.07.23',
             }
         ],
         specification: {
@@ -753,7 +753,7 @@ export const badgeIdProfiles = {
 export const badgeAllProfiles = [
     {
         divisionLevelName: "Страна",
-        contestants: "1250 участников",
+        contestants: "33 участника",
         leaders: [
             {
                 employeeNumber: "010122",
@@ -787,7 +787,7 @@ export const badgeAllProfiles = [
     },
     {
         divisionLevelName: "Тербанк",
-        contestants: "1250 участников",
+        contestants: "3 участника",
         leaders: [
             {
                 employeeNumber: "010122",
@@ -821,7 +821,7 @@ export const badgeAllProfiles = [
     },
     {
         divisionLevelName: "Подразделение",
-        contestants: "1250 участников",
+        contestants: "1 участник",
         leaders: [
             {
                 employeeNumber: "010122",

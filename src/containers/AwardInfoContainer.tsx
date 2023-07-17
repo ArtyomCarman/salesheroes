@@ -121,7 +121,7 @@ export const AwardInfoContainer = () => {
 										<Text
 											variant="semibold"
 											bgClip="text"
-											size="h24/32"
+											size="body16/24"
 											color="transparent"
 											bgImage="linear-gradient(103.74deg, #875AC0 0.85%, #B675AF 47.94%, #875AC0 94.39%), linear-gradient(49.6deg, #875AC0 26.29%, #B675AF 50.86%, #875AC0 74.59%)"
 										>
@@ -130,7 +130,7 @@ export const AwardInfoContainer = () => {
 									)}
 									<Text
 										variant="semibold"
-										size="h24/32"
+										size="body16/24"
 										textAlign={{ base: 'center', lg: 'initial' }}
 									>
 										{badge.badgeName}

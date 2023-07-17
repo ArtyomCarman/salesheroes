@@ -4,17 +4,20 @@ import { InfoBlock, ProgressBar } from '../components';
 import { gradient } from '../utils';
 import { ReactComponent as CalendarIcon } from '../assets/icons/calendar.svg';
 import { ReactComponent as CommunityIcon } from '../assets/icons/community.svg';
-import {archiveTournamentId} from "../models";
+import {tournamentID} from "../models";
+import {useParams} from "react-router-dom";
+import {IProfileTournamentsIdBody} from "../interfaces";
 
 export const TournamentProgressContainer = () => {
-
+	const { tournamentId } = useParams();
+	const tournament = tournamentID.find((item) => item.tournamentId === tournamentId) as IProfileTournamentsIdBody
 	const prefersReducedMotion = usePrefersReducedMotion();
 	const animation = prefersReducedMotion ? undefined : `${gradient} 8s ease infinite`;
 
 	return (
 		<Fade in>
 			<SimpleGrid gap="16px">
-				{archiveTournamentId.updateTooltip && <InfoBlock text={archiveTournamentId.updateTooltip} />}
+				{tournament.updateTooltip && <InfoBlock text={tournament.updateTooltip} />}
 				<Flex
 					direction="column"
 					gap="16px"
@@ -54,21 +57,21 @@ export const TournamentProgressContainer = () => {
 						animationDelay: '3s',
 					}}
 				>
-					{(archiveTournamentId.percentageIndicator || archiveTournamentId.tournamentInfo) && (
+					{(tournament.percentageIndicator || tournament.tournamentInfo) && (
 						<SimpleGrid gridTemplateColumns="156px auto" gap="8px" zIndex="1">
 							<ProgressBar
-								value={archiveTournamentId.percentageIndicator}
+								value={tournament.percentageIndicator}
 								color="light-blue-50"
-								text={archiveTournamentId.tournamentDurationName}
+								text={tournament.tournamentDurationName}
 								height="16px"
 							/>
 							<Text color="rgba(255, 255, 255, 0.8)" size="caption10/16">
-								{archiveTournamentId.tournamentInfo}
+								{tournament.tournamentInfo}
 							</Text>
 						</SimpleGrid>
 					)}
 					<Text color="white" variant="semibold" size="h24/32" zIndex="1">
-						{archiveTournamentId.tournamentName}
+						{tournament.tournamentName}
 					</Text>
 					<Flex
 						direction={{
@@ -83,11 +86,11 @@ export const TournamentProgressContainer = () => {
 					>
 						<Flex color="rgba(255, 255, 255, 0.8)" gap="8px">
 							<CalendarIcon width="24px" height="24px" />
-							<Text>{archiveTournamentId.lasting}</Text>
+							<Text>{tournament.lasting}</Text>
 						</Flex>
 						<Flex color="rgba(255, 255, 255, 0.8)" gap="8px">
 							<CommunityIcon width="24px" height="24px" />
-							<Text>{archiveTournamentId.totalParticipants}</Text>
+							<Text>{tournament.totalParticipants}</Text>
 						</Flex>
 					</Flex>
 				</Flex>
