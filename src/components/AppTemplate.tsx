@@ -1,72 +1,65 @@
-import { useRef, useMemo, useLayoutEffect } from "react";
+import { useRef, useMemo, useEffect } from "react";
 import { Outlet, useLocation, useNavigationType } from "react-router-dom";
-import { Grid, Flex, Box, useBreakpointValue, css } from "@chakra-ui/react";
+import { Grid, Flex, Box, useBreakpointValue } from "@chakra-ui/react";
 import { AppSidebar } from "./AppSidebar";
 import { AppHeader } from "./AppHeader";
-
-export const scrollbarCSS = css({
-  scrollbarGutter: "stable",
-
-  "&::-webkit-scrollbar": {
-    width: "12px",
-  },
-
-  "&::-webkit-scrollbar-track": {
-    background: "rgba(255, 255, 255, 0.01)",
-  },
-
-  "&::-webkit-scrollbar-thumb": {
-    background: "hsla(227, 18%, 75%, 0.7)",
-    backgroundClip: "content-box",
-
-    borderRadius: "8px",
-    borderLeft: "4px solid transparent",
-    borderRight: "2px solid transparent",
-  },
-});
+import { scrollbarCSS, throttle } from "../utils";
+import { useIsFirstRender } from "../hooks";
 
 export const AppTemplate = () => {
-  const commonPadding = {
-    base: "0px",
-    lg: "16px",
-  };
-
-  const sx = {
-    "@supports not (height: 100dvh)": {
-      height: "100vh",
-    },
-  };
-
-  const { pathname } = useLocation();
+  const location = useLocation();
   const navigationType = useNavigationType();
+  const isFirst = useIsFirstRender();
 
   const mainRef = useRef<HTMLDivElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
-
   const isMobile = useBreakpointValue({ base: true, lg: false });
-  const scrollContainer = useMemo(() => {
-    return isMobile ? contentRef : mainRef;
-  }, [isMobile]);
 
-  useLayoutEffect(() => {
+  const scrollContainer = useMemo(
+    () => (isMobile ? contentRef : mainRef),
+    [isMobile]
+  );
+
+  const scrollTop = useRef(0);
+  const prevScrollTop = useRef(0);
+
+  useEffect(() => {
     if (scrollContainer.current) {
-      if (navigationType === "POP") {
-        const scrollTop = Number(sessionStorage.getItem("scrollToTop")) || 0;
-        scrollContainer.current.scrollTo(0, scrollTop);
-
+      if (navigationType === "POP" && !isFirst) {
+        scrollContainer.current.scrollTo(0, prevScrollTop.current);
         return;
       }
 
-      sessionStorage.setItem(
-        "scrollToTop",
-        JSON.stringify(scrollContainer.current?.scrollTop)
-      );
-      scrollContainer.current.scrollTo(0, 0);
+      prevScrollTop.current = scrollTop.current;
+
+      scrollContainer.current.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: navigationType === "PUSH" ? "auto" : "smooth",
+      });
     }
-  }, [pathname, navigationType, scrollContainer]);
+  }, [location, navigationType]);
+
+  useEffect(() => {
+    if (scrollContainer.current) {
+      const handleScroll = throttle(() => {
+        scrollTop.current = scrollContainer.current?.scrollTop || 0;
+      }, 1000);
+
+      scrollContainer.current.addEventListener("scroll", handleScroll);
+
+      return () =>
+        scrollContainer.current?.removeEventListener("scroll", handleScroll);
+    }
+  }, [scrollContainer]);
 
   return (
-    <Flex height="100dvh" flexDirection="column" sx={sx}>
+    <Flex
+      height="100dvh"
+      flexDirection="column"
+      sx={sx}
+      // onClick={() => console.log(scrollContainer.current?.scrollTop)}
+    >
       <AppHeader />
       <Grid
         ref={mainRef}
@@ -119,10 +112,23 @@ export const AppTemplate = () => {
           }}
           height="100%"
           css={scrollbarCSS}
+          pt="16px"
+          pb={{ base: "56px", lg: "64px" }}
         >
           <Outlet />
         </Box>
       </Grid>
     </Flex>
   );
+};
+
+const commonPadding = {
+  base: "0px",
+  lg: "16px",
+};
+
+const sx = {
+  "@supports not (height: 100dvh)": {
+    height: "100vh",
+  },
 };

@@ -1,22 +1,31 @@
-import { FC } from 'react';
-import { useNavigate } from 'react-router-dom';
-import { Box, Flex, keyframes, Text, Tooltip, usePrefersReducedMotion } from '@chakra-ui/react';
+import { FC } from "react";
+import { useNavigate } from "react-router-dom";
+import {
+  Box,
+  Flex,
+  keyframes,
+  Text,
+  Tooltip,
+  usePrefersReducedMotion,
+} from "@chakra-ui/react";
 
-import { IBagdes } from '../interfaces';
-import { ReactComponent as InfoIcon } from '../assets/icons/info.svg';
-import { AppTooltip } from './AppTooltip';
-import { BadgeIcon } from './BadgeIcon';
-import { ProgressBar } from './ProgressBar';
+import { IBagdes } from "../interfaces";
+import { ReactComponent as InfoIcon } from "../assets/icons/info.svg";
+import { AppTooltip } from "./AppTooltip";
+import { BadgeIcon } from "./BadgeIcon";
+import { ProgressBar } from "./ProgressBar";
 
 export const AwardsListItem: FC<Props> = ({ badge, status }) => {
-	const navigate = useNavigate();
-	const prefersReducedMotion = usePrefersReducedMotion();
-	const gradient = keyframes`
+  const navigate = useNavigate();
+  const prefersReducedMotion = usePrefersReducedMotion();
+  const gradient = keyframes`
 		to {
 			background-position: 200% center;
 		}
 	`;
-	const animation = prefersReducedMotion ? undefined : `${gradient} 3s ease infinite`;
+  const animation = prefersReducedMotion
+    ? undefined
+    : `${gradient} 3s ease infinite`;
 
 	const goToBadge = () => {
 		navigate(`/awards/${badge.badgeId}`);
@@ -162,6 +171,6 @@ export const AwardsListItem: FC<Props> = ({ badge, status }) => {
 };
 
 interface Props {
-	badge: IBagdes;
-	status: 'ALL' | 'EARNED';
+  badge: IBagdes;
+  status: "ALL" | "EARNED";
 }

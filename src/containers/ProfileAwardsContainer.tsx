@@ -1,6 +1,6 @@
-import { FC, Fragment, useMemo } from 'react';
-import { useNavigate } from 'react-router-dom';
-import { Fade, Flex, SimpleGrid, Text, Tooltip } from '@chakra-ui/react';
+import { FC, Fragment, useMemo } from "react";
+import { useNavigate } from "react-router-dom";
+import { Fade, Flex, SimpleGrid, Text, Tooltip } from "@chakra-ui/react";
 
 import { BadgeIcon, ButtonComponent, Empty } from '../components';
 import { badges } from '../models'
@@ -17,11 +17,11 @@ export const ProfileAwardsContainer: FC = () => {
 		navigate('/awards');
 	};
 
-	const maxNumberOfBadges = useMemo(() => {
-		if (!badges) return 0;
+  const maxNumberOfBadges = useMemo(() => {
+    if (!badges) return 0;
 
-		return badges.badgesType.flatMap((badgesType) => badgesType.badges).length;
-	}, [badges]);
+    return badges.badgesType.flatMap((badgesType) => badgesType.badges).length;
+  }, [badges]);
 
 	return (
 		<Fade in>

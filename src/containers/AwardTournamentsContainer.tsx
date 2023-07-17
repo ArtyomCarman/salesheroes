@@ -2,8 +2,8 @@ import {useNavigate, useParams} from 'react-router-dom';
 import { Box, Fade, Flex, Text } from '@chakra-ui/react';
 
 import { ButtonComponent } from '../components';
-import {badgeID, badgeId} from "../models";
-import {IBagdes, IProfileBadgesIdBody} from "../interfaces";
+import {badgeID} from "../models";
+import { IProfileBadgesIdBody} from "../interfaces";
 
 export const AwardTournamentsContainer = () => {
 	const { badgeId } = useParams()

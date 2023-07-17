@@ -18,6 +18,7 @@ export const AppSidebar: FC<Props> = ({ ...otherProps }) => (
   >
     {sidebarModules.map(({ to, text, icon: Icon }) => (
       <Link
+        key={to}
         as={NavLink}
         alignItems="center"
         display="flex"

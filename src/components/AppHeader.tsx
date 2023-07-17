@@ -15,9 +15,8 @@ export const AppHeader: FC = () => {
 
   const showBackButton = useMemo(
     () =>
-      !/\/gamification(|\/(awards|community|tournaments|about))$/gi.test(
-        pathname
-      ) && !state?.hideBackButton,
+      !/\/(awards|community|tournaments|about)$/gi.test(pathname) &&
+      !state?.hideBackButton,
     [pathname, state]
   );
 
