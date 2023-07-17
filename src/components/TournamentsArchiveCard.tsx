@@ -9,7 +9,7 @@ import { ProfileAvatar } from './ProfileAvatar';
 export const TournamentArchiveCard: FC<Props> = ({ category }) => {
 	const navigate = useNavigate();
 	const goToTournamentCardId = (id: string) => () =>
-		navigate(`/gamification/tournaments/archive/${id}`);
+		navigate(`/tournaments/archive/${id}`);
 
 	return (
 		<Flex direction="column" gap="16px">

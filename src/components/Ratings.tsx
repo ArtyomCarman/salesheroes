@@ -10,12 +10,12 @@ export const Ratings: FC<Props> = ({ divisions, timePeriod, profileId }) => {
 	const goToRating = (divisionLevel: keyof typeof DivisionLevel) => () => {
 		if (timePeriod === 'Текущий квартал') {
 			navigate(
-				`/gamification/rating?divisionLevel=${DivisionLevel[divisionLevel]}&timePeriod=${TimePeriod['Текущий квартал']}`,
+				`/rating?divisionLevel=${DivisionLevel[divisionLevel]}&timePeriod=${TimePeriod['Текущий квартал']}`,
 			);
 		}
 		if (timePeriod === 'За всё время') {
 			navigate(
-				`/gamification/rating?divisionLevel=${DivisionLevel[divisionLevel]}&timePeriod=${TimePeriod['За всё время']}`,
+				`/rating?divisionLevel=${DivisionLevel[divisionLevel]}&timePeriod=${TimePeriod['За всё время']}`,
 			);
 		}
 	};
@@ -53,7 +53,7 @@ export const Ratings: FC<Props> = ({ divisions, timePeriod, profileId }) => {
 								borderRadius: '4px',
 							}}
 						>
-							<Link to="/gamification/awards">награды</Link>
+							<Link to="/awards">награды</Link>
 						</Box>
 						!
 					</Text>
@@ -98,7 +98,7 @@ export const Ratings: FC<Props> = ({ divisions, timePeriod, profileId }) => {
 							}}
 							borderBottom="1px dashed rgba(255, 255, 255, 0.8)"
 						>
-							<Link to="/gamification/awards">награды</Link>
+							<Link to="/awards">награды</Link>
 						</Box>{' '}
 					</Text>
 				)}

@@ -55,7 +55,7 @@ export const EmptyRatingBlock = () => {
 								}}
 								borderBottom="1px dashed rgba(255, 255, 255, 0.8)"
 							>
-								<Link to="/gamification/awards">награды</Link>
+								<Link to="/awards">награды</Link>
 							</Box>{' '}
 							и станьте первым!
 						</Text>

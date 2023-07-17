@@ -14,11 +14,11 @@ export const TournamentShortListProfilesContainer: FC<Props> = ({ divisionLevel 
 
 	const goToFullList = () =>
 		navigate(
-			`/gamification/tournaments/${tournamentId}/leaders?divisionLevel=123`,
+			`/tournaments/${tournamentId}/leaders?divisionLevel=123`,
 		);
 
 	const goToProfileId = (id: string) => () => {
-		navigate(`/gamification/profile/${id}`);
+		navigate(`/profile/${id}`);
 	};
 
 	if (divisionLevel.leaders.length === 0) {

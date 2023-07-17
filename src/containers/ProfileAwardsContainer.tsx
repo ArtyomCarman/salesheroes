@@ -3,19 +3,18 @@ import { useNavigate } from 'react-router-dom';
 import { Fade, Flex, SimpleGrid, Text, Tooltip } from '@chakra-ui/react';
 
 import { BadgeIcon, ButtonComponent, Empty } from '../components';
-import { EmployeeStatus } from '../interfaces';
-import { badges, profileContestant } from '../models'
+import { badges } from '../models'
 
 export const ProfileAwardsContainer: FC = () => {
 	const navigate = useNavigate();
 	const goToBadge = (id: string) => () => {
-		navigate(`/gamification/awards/${id}`);
+		navigate(`/awards/${id}`);
 	};
 	const goToAllBadges = () => {
-		navigate(`/gamification/profile/awards`);
+		navigate(`/profile/awards`);
 	};
 	const goToBadges = () => {
-		navigate('/gamification/awards');
+		navigate('/awards');
 	};
 
 	const maxNumberOfBadges = useMemo(() => {
@@ -24,12 +23,8 @@ export const ProfileAwardsContainer: FC = () => {
 		return badges.badgesType.flatMap((badgesType) => badgesType.badges).length;
 	}, [badges]);
 
-	const showAwardsBlock =
-		badges.badgesType.length !== 0 && profileContestant.employeeStatus !== EmployeeStatus.Contestant;
-
 	return (
 		<Fade in>
-			{showAwardsBlock ? (
 				<Flex
 					borderRadius="16px"
 					bgColor="rgba(87, 92, 112, 0.3)"
@@ -174,7 +169,6 @@ export const ProfileAwardsContainer: FC = () => {
 						</Empty>
 					)}
 				</Flex>
-			) : null}
 		</Fade>
 	);
 };

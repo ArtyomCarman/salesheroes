@@ -1,7 +1,12 @@
 import { Box, Fade, Flex, ListItem, Text, UnorderedList } from '@chakra-ui/react';
-import { badgeId } from "../models";
+import { badgeID } from "../models";
+import { useParams } from "react-router-dom";
+import {IProfileBadgesIdBody} from "../interfaces";
 
 export const AwardHowToContainer = () => {
+	const { badgeId } = useParams()
+	const badge = badgeID.find((item) => item.badgeId === badgeId) as IProfileBadgesIdBody
+
 	return (
 		<Fade in>
 			<Flex
@@ -18,12 +23,12 @@ export const AwardHowToContainer = () => {
 				<Text size="h24/32" variant="semibold" color="#fff">
 					Как получить бейдж
 				</Text>
-				<Text whiteSpace="pre-wrap">{badgeId.specification.description}</Text>
-				{badgeId.specification.features && (
+				<Text whiteSpace="pre-wrap">{badge.specification.description}</Text>
+				{badge.specification.features && (
 					<Box>
 						<Text variant="semibold">Особенности</Text>
 						<UnorderedList>
-							{badgeId.specification.features.map((item) => (
+							{badge.specification.features.map((item) => (
 								<ListItem key={item.feature}>{item.feature}</ListItem>
 							))}
 						</UnorderedList>

@@ -10,7 +10,7 @@ import {archiveTournamentId} from "../models";
 const TournamentAwardBadge: FC<Props> = ({ item }) => {
 	const navigate = useNavigate();
 	const goToBadge = (id: string) => () => {
-		navigate(`/gamification/awards/${id}`);
+		navigate(`/awards/${id}`);
 	};
 
 	return (

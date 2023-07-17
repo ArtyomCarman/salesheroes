@@ -12,7 +12,7 @@ export const CommunityNewsRatingProfile: FC<Props> = ({ leader, total }) => {
 
 	const handleProfile = (event: MouseEvent<HTMLDivElement>) => {
 		event.stopPropagation();
-		navigate(`/gamification/profile/${leader.employeeNumber}`);
+		navigate(`/profile/${leader.employeeNumber}`);
 	};
 
 	const order = useMemo(() => {

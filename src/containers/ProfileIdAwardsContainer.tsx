@@ -9,13 +9,13 @@ import { badges, profileContestant } from '../models';
 export const ProfileIdAwardsContainer: FC = () => {
 	const navigate = useNavigate();
 	const goToBadge = (id: string) => () => {
-		navigate(`/gamification/awards/${id}`);
+		navigate(`/awards/${id}`);
 	};
 	const goToAllBadges = () => {
-		navigate(`/gamification/profile/awards`);
+		navigate(`/profile/awards`);
 	};
 	const goToBadges = () => {
-		navigate('/gamification/awards');
+		navigate('/awards');
 	};
 
 	const maxNumberOfBadges = useMemo(() => {

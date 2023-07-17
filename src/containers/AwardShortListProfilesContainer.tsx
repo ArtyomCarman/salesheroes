@@ -1,23 +1,22 @@
 import { FC, useMemo } from 'react';
-import { useNavigate } from 'react-router-dom';
+import {useNavigate, useParams} from 'react-router-dom';
 import { Box, Flex, Show, Text } from '@chakra-ui/react';
 
 import { ButtonComponent, Empty, ProfileAvatar } from '../components';
-import { DivisionLevel, DivisionLevelName, ILeader } from '../interfaces';
+import { ILeader } from '../interfaces';
 import { ReactComponent as ArrowRightIcon } from '../assets/icons/arrow-right.svg';
 
 export const AwardShortListProfilesContainer: FC<Props> = ({ divisionLevel }) => {
 	const navigate = useNavigate();
+	const { badgeId } = useParams();
 
 	const goToProfileId = (id: string) => () => {
-		navigate(`/gamification/profile/${id}`);
+		navigate(`/profile/${id}`);
 	};
-	// const goToFullList = () =>
-	// 	navigate(
-	// 		`/gamification/awards/${badgeId}/list?divisionLevel=${
-	// 			DivisionLevel[divisionLevel.divisionLevelName]
-	// 		}`,
-	// 	);
+	const goToFullList = () =>
+		navigate(
+			`/awards/${badgeId}/list`,
+		);
 
 	const numberOfContestants = Number(divisionLevel.contestants.replace(/[^0-9]/g, ''));
 
@@ -123,9 +122,9 @@ export const AwardShortListProfilesContainer: FC<Props> = ({ divisionLevel }) =>
 					</Flex>
 				))}
 			</Box>
-			{/*{numberOfContestants > divisionLevel.leaders.length ? (*/}
-			{/*	<ButtonComponent text="Показать всех" onClick={goToFullList} />*/}
-			{/*) : null}*/}
+			{numberOfContestants > divisionLevel.leaders.length ? (
+				<ButtonComponent text="Показать всех" onClick={goToFullList} />
+			) : null}
 		</Flex>
 	);
 };

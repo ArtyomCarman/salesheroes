@@ -10,7 +10,7 @@ export const CommunityTabsNewsContainer: FC<Props> = ({ news }) => {
 	const navigate = useNavigate();
 	const goToProfile = (id: string) => (event: MouseEvent<HTMLDivElement>) => {
 		event.stopPropagation();
-		navigate(`/gamification/profile/${id}`);
+		navigate(`/profile/${id}`);
 	};
 
 	const handleCommunityId = () => navigate(news.newsId);

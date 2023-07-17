@@ -1,17 +1,22 @@
-import { useNavigate } from 'react-router-dom';
+import {useNavigate, useParams} from 'react-router-dom';
 import { Box, Fade, Flex, Text } from '@chakra-ui/react';
 
 import { ButtonComponent } from '../components';
-import {badgeId} from "../models";
+import {badgeID, badgeId} from "../models";
+import {IBagdes, IProfileBadgesIdBody} from "../interfaces";
 
 export const AwardTournamentsContainer = () => {
+	const { badgeId } = useParams()
+	const badge = badgeID.find((item) => item.badgeId === badgeId) as IProfileBadgesIdBody
 	const navigate = useNavigate();
 	const navigateToTournament = (id: string) => () => {
-		navigate(`/gamification/tournaments/${id}`);
+		navigate(`/tournaments/${id}`);
 	};
 	const navigateToAllTournaments = () => {
-		navigate(`/gamification/tournaments/awards/${badgeId.badgeId}`);
+		navigate(`/tournaments/awards/${badge.badgeId}`);
 	};
+
+	if (!badge.tournaments) return null
 
 	return (
 		<Fade in>
@@ -37,10 +42,10 @@ export const AwardTournamentsContainer = () => {
 						'-webkit-line-clamp': '2',
 					}}
 				>
-					{badgeId.tournamentName}
+					{badge.tournamentName}
 				</Text>
 				<Flex flexDirection="column" gap="16px">
-					{badgeId.tournaments.map((item) => (
+					{badge.tournaments.map((item) => (
 						<Flex
 							key={item.tournamentId}
 							gap="8px"

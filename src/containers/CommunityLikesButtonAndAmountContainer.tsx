@@ -14,7 +14,7 @@ export const CommunityLikesButtonAndAmountContainer: FC<Props> = ({ result, news
 	const navigate = useNavigate();
 	const goToProfile = (id: string) => (event: MouseEvent<HTMLDivElement>) => {
 		event.stopPropagation();
-		navigate(`/gamification/profile/${id}`);
+		navigate(`/profile/${id}`);
 	};
 
 	const likeText = useMemo(() => {

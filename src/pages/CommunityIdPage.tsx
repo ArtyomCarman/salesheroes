@@ -14,10 +14,10 @@ import { newsId } from '../models'
 export const CommunityIdPage = () => {
 	const navigate = useNavigate();
 	const goToProfileId = (employeeNumber: string) => () => {
-		navigate(`/gamification/profile/${employeeNumber}`);
+		navigate(`/profile/${employeeNumber}`);
 	};
 
-	const handleTournamentId = () => navigate(`/gamification/tournaments/${newsId.tournamentId}`);
+	const handleTournamentId = () => navigate(`/tournaments/${newsId.tournamentId}`);
 
 
 	return (

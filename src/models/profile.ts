@@ -2,9 +2,9 @@ import {EmployeeStatus} from "../interfaces";
 
 export const profileContestant = {
     employeeNumber: "00001",
-    lastName: "Изотов",
-    firstName: "Ильшат",
-    tbShortName: "ЦЧБ",
+    lastName: "Кузьменко",
+    firstName: "Игорь",
+    tbShortName: "СРБ",
     gosbName: undefined,
     funcDivisionName: undefined,
     positionName: 'КМ',

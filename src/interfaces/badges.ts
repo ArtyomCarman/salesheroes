@@ -1,16 +1,23 @@
 import { DivisionLevel, DivisionLevelName, ILeader, IPage } from './common';
 
 export enum Badge {
-	'Guru' = 'GURU',
-	'BraveMangoose' = 'BRAVEMANGOOSE',
-	'IndianElephant' = 'INDIANELEPHANT',
-	'LotusFlower' = 'LOTUSFLOWER',
-	'SacredSitar' = 'SACREDSITAR',
-	'VascoDaGama' = 'VASCODAGAMA',
-	'BengalTiger' = 'BENGAL_TIGER',
 	'ConditionalsChampionFirst' = 'CONDITIONALS_CHAMPION_FIRST',
 	'ConditionalsChampionSecond' = 'CONDITIONALS_CHAMPION_SECOND',
 	'ConditionalsChampionThird' = 'CONDITIONALS_CHAMPION_THIRD',
+	'ChampionLeague1' = 'CHAMPION_LEAGUE1',
+	'ChampionLeague2' = 'CHAMPION_LEAGUE2',
+	'Commission1M' = 'COMMISSION1M',
+	'Commission3M' = 'COMMISSION3M',
+	'Commission50k' = 'COMMISSION50K',
+	'Commission200k' = 'COMMISSION200K',
+	'CommissionX2' = 'COMMISSIONX2',
+	'CommissionX3' = 'COMMISSIONX3',
+	'CommissionX4' = 'COMMISSIONX4',
+	'SuperCup2023' = 'SUPERCUP2023',
+	'SuperBonus1' = 'SUPER_BONUS_FIRST',
+	'SuperBonusTop10' = 'SUPER_BONUS_TOP10',
+	'SuperBonusTop20' = 'SUPER_BONUS_TOP20',
+	'SuperBonusNFT' = 'SUPER_BONUS_NFT'
 }
 
 export interface IBagdes {
@@ -66,12 +73,11 @@ export interface IProfileBadgesIdBody {
 	updateTooltip?: string;
 	progressBarValue: number;
 	hasNftMark: boolean;
-	badgesOrderPriority: number;
 	rewardCrystalCount: number;
 	specification: IBadgeSpecification;
-	progress: IBadgeProgress;
-	tournamentName: string;
-	tournaments: IBadgeTournament[];
+	progress?: IBadgeProgress;
+	tournamentName?: string;
+	tournaments?: IBadgeTournament[];
 }
 
 type FilterType = 'TOP' | 'ALL' | 'EARNED';

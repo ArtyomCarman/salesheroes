@@ -23,7 +23,7 @@ export const AppRoutes = () => {
   return (
     <Routes>
       <Route path="/" element={<AppTemplate />}>
-        <Route index element={<Navigate replace to="about" />} />
+        <Route index element={<Navigate replace to="awards" />} />
         <Route path="profile/:employeeNumber">
           <Route index element={<ProfilePage />} />
           <Route path="awards" element={<ProfileAllAwardsPage />} />

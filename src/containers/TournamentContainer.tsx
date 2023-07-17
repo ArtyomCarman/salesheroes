@@ -12,7 +12,7 @@ import {tournaments} from "../models";
 
 export const TournamentContainer = () => {
 	const navigate = useNavigate();
-	const goToArchive = () => navigate('/gamification/tournaments/archive');
+	const goToArchive = () => navigate('/tournaments/archive');
 
 	if (tournaments.ratingCategories.length === 0) {
 		return (

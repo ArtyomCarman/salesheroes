@@ -44,7 +44,7 @@ export const ProfileUserProgress: FC<Props> = ({ progress }) => {
 							<Text size="h24/32" variant="semibold">
 								{crystals.crystalsEarned}
 							</Text>
-							{/*<DiamondIcon width="24px" height="24px" />*/}
+							<DiamondIcon width="24px" height="24px" />
 						</Flex>
 					</Flex>
 					<Flex

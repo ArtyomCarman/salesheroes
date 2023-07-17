@@ -19,7 +19,7 @@ export const AwardsListItem: FC<Props> = ({ badge, status }) => {
 	const animation = prefersReducedMotion ? undefined : `${gradient} 3s ease infinite`;
 
 	const goToBadge = () => {
-		navigate(`/gamification/awards/${badge.badgeId}`);
+		navigate(`/awards/${badge.badgeId}`);
 	};
 
 	return (

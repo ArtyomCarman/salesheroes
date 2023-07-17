@@ -16,7 +16,7 @@ export const Leaders: FC<Props> = ({ leader }) => {
 	const navigate = useNavigate();
 
 	const goToProfileId = (id: string) => () => {
-		navigate(`/gamification/profile/${id}`);
+		navigate(`/profile/${id}`);
 	};
 
 	const top = useMemo(() => {

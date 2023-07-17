@@ -3,9 +3,15 @@ import { Box, Fade, Flex, SimpleGrid, Text, usePrefersReducedMotion } from '@cha
 import { BadgeIcon, InfoBlock, ProgressBar } from '../components';
 import { gradient } from '../utils';
 import { ReactComponent as DiamondIcon } from '../assets/icons/diamond.svg';
-import { badgeId } from "../models";
+import {badgeID} from "../models";
+import {useParams} from "react-router-dom";
+import {IProfileBadgesIdBody} from "../interfaces";
 
 export const AwardInfoContainer = () => {
+	const { badgeId } = useParams()
+	const badge = badgeID.find((item) => item.badgeId === badgeId) as IProfileBadgesIdBody
+
+
 	const prefersReducedMotion = usePrefersReducedMotion();
 
 	const animation = (delay = 0) =>
@@ -14,7 +20,7 @@ export const AwardInfoContainer = () => {
 	return (
 			<Fade in>
 				<SimpleGrid gap="24px">
-					{badgeId.updateTooltip && <InfoBlock text={badgeId.updateTooltip} />}
+					{badge.updateTooltip && <InfoBlock text={badge.updateTooltip} />}
 					<Box
 						position="relative"
 						p={{
@@ -32,7 +38,7 @@ export const AwardInfoContainer = () => {
 							top: '32px',
 							left: '-194px',
 							background: `${
-								badgeId.hasNftMark
+								badge.hasNftMark
 									? 'radial-gradient(66.32% 66.32% at 50% 50%, rgba(67, 103, 206, 0.9) 0%, rgba(0, 0, 0, 0) 100%)'
 									: 'radial-gradient(66.32% 66.32% at 50% 50%, rgba(80, 177, 247, 0.9) 0%, rgba(52, 98, 136, 0) 100%)'
 							}`,
@@ -46,7 +52,7 @@ export const AwardInfoContainer = () => {
 							width: '512px',
 							height: '512px',
 							background: `${
-								badgeId.hasNftMark
+								badge.hasNftMark
 									? 'radial-gradient(66.32% 66.32% at 50% 50%, rgba(135, 90, 192, 0.7) 0%, rgba(0, 0, 0, 0) 100%)'
 									: 'radial-gradient(66.32% 66.32% at 50% 50%, rgba(62, 96, 191, 0.7) 0%, rgba(42, 66, 134, 0) 100%)'
 							}`,
@@ -80,9 +86,9 @@ export const AwardInfoContainer = () => {
 								alignSelf="center"
 								padding="12px"
 								_before={
-									badgeId.badgeAmount > 1
+									badge.badgeAmount > 1
 										? {
-												content: `'${badgeId.badgeAmount}'`,
+												content: `'${badge.badgeAmount}'`,
 												position: 'absolute',
 												bottom: '16px',
 												left: '24px',
@@ -103,15 +109,15 @@ export const AwardInfoContainer = () => {
 								}
 							>
 								<BadgeIcon
-									imageId={badgeId.imageId}
-									isActive={!!badgeId.receivingDate}
+									imageId={badge.imageId}
+									isActive={!!badge.receivingDate}
 									width="152px"
 									height="152px"
 								/>
 							</Flex>
 							<Box>
 								<Flex gap="4px" mb="16px" justifyContent={{ base: 'center', lg: 'flex-start' }}>
-									{badgeId.hasNftMark && (
+									{badge.hasNftMark && (
 										<Text
 											variant="semibold"
 											bgClip="text"
@@ -127,19 +133,19 @@ export const AwardInfoContainer = () => {
 										size="h24/32"
 										textAlign={{ base: 'center', lg: 'initial' }}
 									>
-										{badgeId.badgeName}
+										{badge.badgeName}
 									</Text>
 								</Flex>
 
 								<Flex gap="8px" mb="24px" justifyContent={{ base: 'center', lg: 'flex-start' }}>
-									<Text size="sub18/24">{badgeId.rewardCrystalCount}</Text>
+									<Text size="sub18/24">{badge.rewardCrystalCount}</Text>
 									<DiamondIcon width="24px" height="24px" />
 								</Flex>
-								{badgeId.progressBarValue && (
+								{badge.progressBarValue && (
 									<>
 										<Flex justifyContent="space-between" mb="8px" gap="24px">
 											<Text size="body14/24" color="rgba(255, 255, 255, 0.8)" whiteSpace="nowrap">
-												{badgeId.progress.current}
+												{badge?.progress?.current}
 											</Text>
 											<Text
 												size="body14/24"
@@ -148,13 +154,13 @@ export const AwardInfoContainer = () => {
 												overflow="hidden"
 												textOverflow="ellipsis"
 											>
-												{badgeId.progress.condition}
+												{badge?.progress?.condition}
 											</Text>
 										</Flex>
-										<ProgressBar value={badgeId.progressBarValue} color="light-blue-50" />
+										<ProgressBar value={badge.progressBarValue} color="light-blue-50" />
 									</>
 								)}
-								{badgeId.receivingDate && (
+								{badge.receivingDate && (
 									<Text
 										size="body14/24"
 										color="rgba(255, 255, 255, 0.6)"
@@ -163,7 +169,7 @@ export const AwardInfoContainer = () => {
 											lg: 'left',
 										}}
 									>
-										Последний раз получен {badgeId.receivingDate}
+										Последний раз получен {badge.receivingDate}
 									</Text>
 								)}
 							</Box>

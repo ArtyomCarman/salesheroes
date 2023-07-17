@@ -19,7 +19,7 @@ export const CommunityRatingContainer: FC<Props> = ({ divisionLevel }) => {
 	const goToLeadersList = () => {
 		if (newsRating.leaders.length !== 0) {
 			navigate(
-				`/gamification/rating?divisionLevel=${divisionLevel}
+				`/rating?divisionLevel=${divisionLevel}
 			`,
 			);
 		}
@@ -111,7 +111,7 @@ export const CommunityRatingContainer: FC<Props> = ({ divisionLevel }) => {
 									}}
 									borderBottom="1px dashed rgba(255, 255, 255, 0.8)"
 								>
-									<Link to="/gamification/awards">награды</Link>
+									<Link to="/awards">награды</Link>
 								</Box>{' '}
 								и станьте первым!
 							</Text>

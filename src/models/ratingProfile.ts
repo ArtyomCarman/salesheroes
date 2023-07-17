@@ -5,17 +5,17 @@ export const ratingProfile = {
             divisions: [
                 {
                     divisionName: "Страна",
-                    contestants: 'из 1250',
-                    placeInRating: 500
+                    contestants: '398',
+                    placeInRating: 29
                 },
                 {
                     divisionName: "Тербанк",
-                    contestants: 'из 128',
+                    contestants: '128',
                     placeInRating: 7
                 },
                 {
                     divisionName: "Подразделение",
-                    contestants: 'из 15',
+                    contestants: '3',
                     placeInRating: 1
                 }
             ]
@@ -25,17 +25,17 @@ export const ratingProfile = {
             divisions: [
                 {
                     divisionName: "Страна",
-                    contestants: 'из 1250',
+                    contestants: '1250',
                     placeInRating: 500
                 },
                 {
                     divisionName: "Тербанк",
-                    contestants: 'из 128',
+                    contestants: '128',
                     placeInRating: 7
                 },
                 {
                     divisionName: "Подразделение",
-                    contestants: 'из 15',
+                    contestants: '15',
                     placeInRating: 1
                 }
             ]

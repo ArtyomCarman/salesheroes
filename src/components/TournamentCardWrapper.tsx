@@ -6,7 +6,7 @@ import { Box } from '@chakra-ui/react';
 export const TournamentCardWrapper: FC<Props> = ({ children, navigateTo }) => {
 	const navigate = useNavigate();
 	const goToTournamentId = useCallback(() => {
-		navigate(`/gamification/tournaments/${navigateTo}`);
+		navigate(`/tournaments/${navigateTo}`);
 	}, [navigateTo, navigate]);
 
 	return (

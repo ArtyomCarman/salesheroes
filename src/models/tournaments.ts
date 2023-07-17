@@ -96,8 +96,8 @@ export const archiveTournamentId = {
             rewardRule: "Получают 3% участников",
             badgeId: "255485d6-daab-41b0-866e-aa958875ebf7",
             badgeName: "Депозитный гений ГОСБ",
-            imageId: Badge.BraveMangoose,
-            badgeIcon: Badge.BraveMangoose,
+            imageId: Badge.ConditionalsChampionSecond,
+            badgeIcon: Badge.ConditionalsChampionSecond,
             rewardCrystalCount: 60,
             hasNftMark: true
         },
