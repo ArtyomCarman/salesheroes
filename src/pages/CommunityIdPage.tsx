@@ -23,9 +23,7 @@ export const CommunityIdPage = () => {
 	return (
 		<CommunityNewsCard isTournamentNews={!!newsId.tournamentId}>
 			<Flex flexDirection="column" gap="16px">
-				<Text size="h24/32" variant="semibold">
-					{newsId.newsText}
-				</Text>
+				<Text size="h24/32" variant="semibold" dangerouslySetInnerHTML={{__html: newsId.newsText}} />
 				<Flex color="rgba(255, 255, 255, 0.8)" gap="24px">
 					<Flex gap="8px">
 						<CalendarIcon width="24px" height="24px" />

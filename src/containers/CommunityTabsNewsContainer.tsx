@@ -131,9 +131,7 @@ export const CommunityTabsNewsContainer: FC<Props> = ({ news }) => {
 					{news.date}
 				</Text>
 			</Flex>
-			<Text size="sub20/28" variant="medium">
-				{news.newsText}
-			</Text>
+			<Text size="sub20/28" variant="medium" dangerouslySetInnerHTML={{ __html: news.newsText }} />
 			<Divider borderColor="rgba(255, 255, 255, 0.2)" />
 			<CommunityLikesContainer newsId={news.newsId} />
 		</CommunityNewsCard>

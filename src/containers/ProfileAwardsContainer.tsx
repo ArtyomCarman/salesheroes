@@ -1,5 +1,5 @@
 import { FC, Fragment, useMemo } from "react";
-import { useNavigate } from "react-router-dom";
+import {useNavigate, useParams} from "react-router-dom";
 import { Fade, Flex, SimpleGrid, Text, Tooltip } from "@chakra-ui/react";
 
 import { BadgeIcon, ButtonComponent, Empty } from '../components';
@@ -7,11 +7,12 @@ import { badges } from '../models'
 
 export const ProfileAwardsContainer: FC = () => {
 	const navigate = useNavigate();
+	const { employeeNumber } = useParams()
 	const goToBadge = (id: string) => () => {
 		navigate(`/awards/${id}`);
 	};
 	const goToAllBadges = () => {
-		navigate(`/profile/awards`);
+		navigate(`/profile/${employeeNumber}/awards`);
 	};
 	const goToBadges = () => {
 		navigate('/awards');
@@ -53,7 +54,7 @@ export const ProfileAwardsContainer: FC = () => {
 							>
 								{badges.badgesType.map((badgeType) => (
 									<Fragment key={badgeType.badgeTypeName}>
-										{badgeType.badges.map((badge) => (
+										{badgeType.badges.slice(0,3).map((badge) => (
 											<Flex
 												direction="column"
 												justifyContent="space-between"
@@ -148,9 +149,7 @@ export const ProfileAwardsContainer: FC = () => {
 									</Fragment>
 								))}
 							</SimpleGrid>
-							{badges.badgesUserHas > maxNumberOfBadges && (
 								<ButtonComponent onClick={goToAllBadges} text="Посмотреть все" />
-							)}
 						</>
 					) : (
 						<Empty buttonText="Перейти к списку всех наград" onClick={goToBadges}>

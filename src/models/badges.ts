@@ -106,7 +106,7 @@ export const badges = {
                     badgeName: "1 место Сверхбонуса 1ПГ 2023",
                     updateTooltip: "Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — 12 марта",
                     badgeAmount: 1,
-                    hasNftMark: false
+                    hasNftMark: true
                 },
                 {
                     imageId: Badge.SuperBonusTop10,
@@ -444,7 +444,7 @@ export const badgeID = [{
         updateTooltip: "Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — 12 марта",
         badgeAmount: 1,
         badgeType: "individual",
-        hasNftMark: false,
+        hasNftMark: true,
         rewardCrystalCount: 50,
         specification: {
             description: "Возьми \"Сверхбонус\" вместе со своей командой в 1ПГ 2023!\n" +
