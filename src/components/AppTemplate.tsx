@@ -58,7 +58,6 @@ export const AppTemplate = () => {
       height="100dvh"
       flexDirection="column"
       sx={sx}
-      // onClick={() => console.log(scrollContainer.current?.scrollTop)}
     >
       <AppHeader />
       <Grid
