@@ -149,16 +149,6 @@ export const ProfileIdAwardsContainer: FC = () => {
                               {badge.badgeName}
                             </Text>
                           </Tooltip>
-                          {badge.receivingDate && (
-                            <Text
-                              fontSize="12px"
-                              fontWeight="400"
-                              textAlign="center"
-                              color="rgba(255, 255, 255, 0.8)"
-                            >
-                              {badge.receivingDate}
-                            </Text>
-                          )}
                         </Flex>
                       </Flex>
                     ))}

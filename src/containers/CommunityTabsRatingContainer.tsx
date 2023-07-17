@@ -7,13 +7,23 @@ import {
 } from '../components';
 import { DivisionLevel } from '../interfaces';
 import { CommunityRatingContainer } from './CommunityRatingContainer';
-import {newsRating} from "../models";
+import { newsRatingCountry, newsRatingGOSB, newsRatingTERB } from "../models";
+import {useMemo} from "react";
 
 export const CommunityTabsRatingContainer = () => {
 	const [searchParams] = useSearchParams();
 	const searchParamsValue = searchParams.get('divisionLevel') as DivisionLevel;
 	const isSearchParamValid = Object.values(DivisionLevel).includes(searchParamsValue);
 	const divisionLevel = isSearchParamValid ? searchParamsValue : DivisionLevel['Страна'];
+	const rating = useMemo(() => {
+		if (divisionLevel === DivisionLevel.Тербанк) {
+			return newsRatingTERB
+		}
+		if (divisionLevel === DivisionLevel.Подразделение) {
+			return newsRatingGOSB
+		}
+		return newsRatingCountry
+	}, [divisionLevel])
 
 
 	const filters = [
@@ -31,7 +41,7 @@ export const CommunityTabsRatingContainer = () => {
 		},
 	];
 
-	if (newsRating.leaders.length === 0 && divisionLevel === DivisionLevel.Страна)
+	if (rating.leaders.length === 0 && divisionLevel === DivisionLevel.Страна)
 		return <EmptyRatingBlock />;
 
 	return (

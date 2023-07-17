@@ -13,7 +13,6 @@ export const badges = {
                     badgeId: "00010",
                     badgeName: "50 тыс. комиссии по сделкам с Индией",
                     badgeAmount: 2,
-                    receivingDate: "17.11.22",
                     updateTooltip: "Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — 12 марта",
                     hasNftMark: false
                 },
@@ -23,7 +22,6 @@ export const badges = {
                     badgeId: "00011",
                     badgeName: "200 тыс. комиссии по сделкам с Индией",
                     badgeAmount: 1,
-                    receivingDate: "05.02.22",
                     updateTooltip: "Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — 12 марта",
                     hasNftMark: false
                 },
@@ -33,7 +31,6 @@ export const badges = {
                     badgeId: "00012",
                     badgeName: "1 млн комиссии по сделкам с Индией",
                     badgeAmount: 1,
-                    receivingDate: "20.10.22",
                     updateTooltip: "Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — 12 марта",
                     hasNftMark: false
                 },
@@ -45,7 +42,6 @@ export const badges = {
                     badgeAmount: 1,
                     updateTooltip: "Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — 12 марта",
                     hasNftMark: true,
-                    receivingDate: '17.07.23'
                 },
                 {
                     imageId: Badge.CommissionX2,
@@ -53,7 +49,6 @@ export const badges = {
                     badgeId: "00014",
                     badgeName: "х2 комиссии по сделкам с Индией",
                     badgeAmount: 2,
-                    receivingDate: "25.01.22",
                     updateTooltip: "Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — 12 марта",
                     hasNftMark: false
                 },
@@ -63,7 +58,6 @@ export const badges = {
                     badgeId: "00015",
                     badgeName: "х3 комиссии по сделкам с Индией",
                     badgeAmount: 1,
-                    receivingDate: "19.08.22",
                     updateTooltip: "Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — 12 марта",
                     hasNftMark: false
                 },
@@ -83,7 +77,6 @@ export const badges = {
                     badgeId: "00017",
                     badgeName: "Победитель Лиги Чемпионов 1ПГ 2023",
                     badgeAmount: 1,
-                    receivingDate: "11.01.22",
                     updateTooltip: "Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — 12 марта",
                     hasNftMark: false
                 },
@@ -93,7 +86,6 @@ export const badges = {
                     badgeId: "00018",
                     badgeName: "Победитель Лиги Чемпионов 2ПГ 2023",
                     badgeAmount: 1,
-                    receivingDate: "01.12.22",
                     hasNftMark: false,
                     updateTooltip: "Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — 12 марта",
                 },
@@ -114,7 +106,6 @@ export const badges = {
                     badgeName: "1 место Сверхбонуса 1ПГ 2023",
                     updateTooltip: "Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — 12 марта",
                     badgeAmount: 1,
-                    receivingDate: "01.12.22",
                     hasNftMark: false
                 },
                 {
@@ -124,7 +115,6 @@ export const badges = {
                     badgeName: "ТОП-10% Сверхбонуса 1ПГ 2023",
                     updateTooltip: "Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — 12 марта",
                     badgeAmount: 1,
-                    receivingDate: "30.03.22",
                     hasNftMark: false
                 },
                 {
@@ -134,7 +124,6 @@ export const badges = {
                     badgeName: "ТОП-20% Сверхбонуса 1ПГ 2023",
                     updateTooltip: "Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — 12 марта",
                     badgeAmount: 1,
-                    receivingDate: "19.04.22",
                     hasNftMark: false
                 },
                 {
@@ -144,8 +133,7 @@ export const badges = {
                     badgeName: "ТОП-20+% Сверхбонуса 1ПГ 2023",
                     updateTooltip: "Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — 12 марта",
                     badgeAmount: 1,
-                    receivingDate: "01.12.22",
-                    hasNftMark: true
+                    hasNftMark: false
                 },
             ]
         },
@@ -159,7 +147,6 @@ export const badges = {
                     badgeName: "Чемпион страны по условным сделкам",
                     badgeAmount: 1,
                     updateTooltip: "Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — 12 марта",
-                    progressBarValue: 90,
                     hasNftMark: true
                 },
                 {
@@ -168,7 +155,6 @@ export const badges = {
                     badgeId: "00025",
                     badgeName: "Чемпион ТБ по условным сделкам",
                     badgeAmount: 2,
-                    receivingDate: "18.08.22",
                     updateTooltip: "Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — 12 марта",
                     hasNftMark: false
                 },
@@ -178,7 +164,6 @@ export const badges = {
                     badgeId: "00026",
                     badgeName: "Чемпион подразделения по условным сделкам",
                     badgeAmount: 1,
-                    receivingDate: "31.01.22",
                     updateTooltip: "Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — 12 марта",
                     hasNftMark: false
                 },
@@ -194,7 +179,6 @@ export const badgeId =
         imageIsActive: true,
         badgeName: "Махараджа",
         badgeAmount: 1,
-        receivingDate: "22.12.22",
         badgeType: "individual",
         updateTooltip: "Информация об участниках и достижениях обновляется ежедневно. Последнее обновление информации - 12 ноября",
         progressBarValue: 70,
@@ -243,7 +227,6 @@ export const badgeID = [{
         badgeName: "50 тыс. комиссии по сделкам с Индией",
         badgeAmount: 2,
         badgeType: "individual",
-        receivingDate: "17.11.22",
         updateTooltip: "Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — 12 марта",
         hasNftMark: false,
         rewardCrystalCount: 5,
@@ -263,7 +246,6 @@ export const badgeID = [{
             badgeId: "00011",
             badgeName: "200 тыс. комиссии по сделкам с Индией",
             badgeAmount: 1,
-            receivingDate: "05.02.22",
             badgeType: "individual",
             updateTooltip: "Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — 12 марта",
             hasNftMark: false,
@@ -285,7 +267,6 @@ export const badgeID = [{
             badgeId: "00012",
             badgeName: "1 млн комиссии по сделкам с Индией",
             badgeAmount: 1,
-            receivingDate: "20.10.22",
             badgeType: "individual",
             updateTooltip: "Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — 12 марта",
             hasNftMark: false,
@@ -311,7 +292,6 @@ export const badgeID = [{
             updateTooltip: "Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — 12 марта",
             hasNftMark: true,
             rewardCrystalCount: 50,
-            receivingDate: '17.07.23',
             specification: {
                 description: "Эта награда для лучших из лучших!\n" +
                     "Собери для банка 3 млн.руб. комиссии от импортных сделок своих клиентов с индийскими контрагентами, номинированных в рублях и долгожданная награда станет твоей!",
@@ -330,7 +310,6 @@ export const badgeID = [{
         badgeId: "00014",
         badgeName: "х2 комиссии по сделкам с Индией",
         badgeAmount: 2,
-        receivingDate: "25.01.22",
         badgeType: "individual",
         updateTooltip: "Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — 12 марта",
         hasNftMark: false,
@@ -352,7 +331,6 @@ export const badgeID = [{
         badgeId: "00015",
         badgeName: "х3 комиссии по сделкам с Индией",
         badgeAmount: 1,
-        receivingDate: "19.08.22",
         badgeType: "individual",
         updateTooltip: "Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — 12 марта",
         hasNftMark: false,
@@ -401,7 +379,6 @@ export const badgeID = [{
         badgeId: "00017",
         badgeName: "Победитель Лиги Чемпионов 1ПГ 2023",
         badgeAmount: 1,
-        receivingDate: "11.01.22",
         badgeType: "individual",
         updateTooltip: "Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — 12 марта",
         hasNftMark: false,
@@ -423,7 +400,6 @@ export const badgeID = [{
         badgeId: "00018",
         badgeName: "Победитель Лиги Чемпионов 2ПГ 2023",
         badgeAmount: 1,
-        receivingDate: "01.12.22",
         badgeType: "individual",
         updateTooltip: "Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — 12 марта",
         hasNftMark: false,
@@ -446,7 +422,6 @@ export const badgeID = [{
         badgeName: "Победитель Суперкубка 2023",
         badgeAmount: 1,
         updateTooltip: "Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — 12 марта",
-        progressBarValue: 50,
         badgeType: "individual",
         hasNftMark: false,
         rewardCrystalCount: 40,
@@ -468,7 +443,6 @@ export const badgeID = [{
         badgeName: "1 место Сверхбонуса 1ПГ 2023",
         updateTooltip: "Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — 12 марта",
         badgeAmount: 1,
-        receivingDate: "01.12.22",
         badgeType: "individual",
         hasNftMark: false,
         rewardCrystalCount: 50,
@@ -490,7 +464,6 @@ export const badgeID = [{
         badgeName: "ТОП-10% Сверхбонуса 1ПГ 2023",
         updateTooltip: "Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — 12 марта",
         badgeAmount: 1,
-        receivingDate: "30.03.22",
         badgeType: "individual",
         hasNftMark: false,
         rewardCrystalCount: 30,
@@ -512,7 +485,6 @@ export const badgeID = [{
         badgeName: "ТОП-20% Сверхбонуса 1ПГ 2023",
         updateTooltip: "Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — 12 марта",
         badgeAmount: 1,
-        receivingDate: "19.04.22",
         badgeType: "individual",
         hasNftMark: false,
         rewardCrystalCount: 20,
@@ -534,7 +506,6 @@ export const badgeID = [{
         badgeName: "ТОП-20+% Сверхбонуса 1ПГ 2023",
         updateTooltip: "Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — 12 марта",
         badgeAmount: 1,
-        receivingDate: "01.12.22",
         badgeType: "individual",
         hasNftMark: false,
         rewardCrystalCount: 15,
@@ -551,12 +522,11 @@ export const badgeID = [{
     },
     {
         imageId: Badge.ConditionalsChampionFirst,
-        imageIsActive: false,
+        imageIsActive: true,
         badgeId: "00024",
         badgeName: "Чемпион страны по условным сделкам",
         badgeAmount: 1,
         updateTooltip: "Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — 12 марта",
-        progressBarValue: 90,
         hasNftMark: true,
         badgeType: "forTheTournament",
         rewardCrystalCount: 30,
@@ -609,7 +579,6 @@ export const badgeID = [{
         badgeId: "00025",
         badgeName: "Чемпион ТБ по условным сделкам",
         badgeAmount: 2,
-        receivingDate: "18.08.22",
         updateTooltip: "Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — 12 марта",
         hasNftMark: false,
         badgeType: "forTheTournament",
@@ -663,7 +632,6 @@ export const badgeID = [{
         badgeId: "00026",
         badgeName: "Чемпион подразделения по условным сделкам",
         badgeAmount: 1,
-        receivingDate: "31.01.22",
         updateTooltip: "Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — 12 марта",
         hasNftMark: false,
         badgeType: "forTheTournament",

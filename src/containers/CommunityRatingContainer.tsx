@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import {FC, useMemo} from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { Box, Fade, Flex, Text } from '@chakra-ui/react';
 
@@ -7,7 +7,7 @@ import { DivisionLevel } from '../interfaces';
 import { ReactComponent as ChevronRight } from '../assets/icons/chevron-right.svg';
 import newsLeadersBg from '../assets/images/news-leaders.png';
 import newsEmptyRating from '../assets/images/newsEmptyRating.png';
-import {newsRating} from "../models";
+import { newsRatingCountry, newsRatingGOSB, newsRatingTERB } from "../models";
 
 interface Props {
 	divisionLevel: DivisionLevel;
@@ -16,8 +16,18 @@ interface Props {
 export const CommunityRatingContainer: FC<Props> = ({ divisionLevel }) => {
 	const navigate = useNavigate();
 
+	const rating = useMemo(() => {
+		if (divisionLevel === DivisionLevel.Тербанк) {
+			return newsRatingTERB
+		}
+		if (divisionLevel === DivisionLevel.Подразделение) {
+			return newsRatingGOSB
+		}
+		return newsRatingCountry
+	}, [divisionLevel])
+
 	const goToLeadersList = () => {
-		if (newsRating.leaders.length !== 0) {
+		if (rating.leaders.length !== 0) {
 			navigate(
 				`/rating?divisionLevel=${divisionLevel}
 			`,
@@ -28,7 +38,7 @@ export const CommunityRatingContainer: FC<Props> = ({ divisionLevel }) => {
 	return (
 		<Fade in>
 			<Flex
-				bgImage={newsRating.leaders.length !== 0 ? newsLeadersBg : newsEmptyRating}
+				bgImage={rating.leaders.length !== 0 ? newsLeadersBg : newsEmptyRating}
 				bgRepeat="no-repeat"
 				bgPosition="center"
 				bgSize="cover"
@@ -38,7 +48,7 @@ export const CommunityRatingContainer: FC<Props> = ({ divisionLevel }) => {
 				justifyContent="center"
 				onClick={goToLeadersList}
 				_hover={{
-					cursor: newsRating.leaders.length !== 0 ? 'pointer' : 'auto',
+					cursor: rating.leaders.length !== 0 ? 'pointer' : 'auto',
 					backgroundColor: 'rgba(87, 92, 112, 0.5)',
 				}}
 				_active={{
@@ -46,20 +56,20 @@ export const CommunityRatingContainer: FC<Props> = ({ divisionLevel }) => {
 				}}
 				position="relative"
 			>
-				{newsRating.leaders.length !== 0 ? (
+				{rating.leaders.length !== 0 ? (
 					<Flex flexDirection="column" gap="16px">
 						<Flex justifyContent="center" gap="8px" alignItems="flex-end">
-							{newsRating.leaders.map((leader) => (
+							{rating.leaders.map((leader) => (
 								<CommunityNewsRatingProfile
 									key={leader.employeeNumber}
 									leader={leader}
-									total={newsRating.leaders.length}
+									total={rating.leaders.length}
 								/>
 							))}
 						</Flex>
 						<Flex flexDirection="column" gap="8px" alignItems="center">
 							<Text size="sub20/28" variant="medium" textAlign="center">
-								{newsRating.heading}
+								{rating.heading}
 							</Text>
 							<Flex
 								flexDirection="row"
@@ -77,7 +87,7 @@ export const CommunityRatingContainer: FC<Props> = ({ divisionLevel }) => {
 								}}
 							>
 								<Text color="rgba(255, 255, 255, 0.8)" size="body14/24" textAlign="center">
-									{newsRating.usersPosition}
+									{rating.usersPosition}
 								</Text>
 								<ChevronRight width="16px" height="16px" />
 							</Flex>

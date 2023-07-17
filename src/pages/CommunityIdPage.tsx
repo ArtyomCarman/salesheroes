@@ -17,7 +17,7 @@ export const CommunityIdPage = () => {
 		navigate(`/profile/${employeeNumber}`);
 	};
 
-	const handleTournamentId = () => navigate(`/tournaments/${newsId.tournamentId}`);
+	const handleTournamentId = () => navigate(`/awards/00013`);
 
 
 	return (

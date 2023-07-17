@@ -27,7 +27,7 @@ export const CommunityTabsNewsContainer: FC<Props> = ({ news }) => {
 
 	return (
 		<CommunityNewsCard
-			isTournamentNews={!!news.tournamentId}
+			isTournamentNews={!news.tournamentId}
 			cursor="pointer"
 			onClick={handleCommunityId}
 		>
