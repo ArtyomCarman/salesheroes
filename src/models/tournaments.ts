@@ -79,9 +79,9 @@ export const tournaments = {
 }
 
 export const cluster = {
-    text: 'text',
-    amount: 'amount',
-    divisions: ['123', '123'],
+    text: 'В вашем тербанке',
+    amount: '11 подразделений',
+    divisions: ['ББ', 'ВВБ','ДВБ', 'МБ','ПБ', 'СЗБ','СИБ', 'СРБ','УБ', 'ЦЧБ', 'ЮЗБ'],
 }
 
 export const tournamentID = [
