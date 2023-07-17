@@ -4,7 +4,6 @@ import { Box, Flex, Show, SimpleGrid, Text } from '@chakra-ui/react';
 
 import { ButtonComponent, Empty, PlaceInRating, ProfileAvatar } from '../components';
 import { ReactComponent as ArrowRightIcon } from '../assets/icons/arrow-right.svg';
-import { ClusterInfoContainer } from './ClusterInfoContainer';
 import {archiveTournamentId} from "../models";
 import {ITournamentIdProfilesShortListBody, Status} from "../interfaces";
 
@@ -30,7 +29,6 @@ export const TournamentShortListProfilesContainer: FC<Props> = ({ divisionLevel 
 			return (
 				<Flex direction="column" gap="12px">
 					<Box>
-						{divisionLevel.divisionLevelName === 'Кластер' ? <ClusterInfoContainer /> : null}
 						<Empty>
 							<Text
 								size="sub18/24"
@@ -49,7 +47,6 @@ export const TournamentShortListProfilesContainer: FC<Props> = ({ divisionLevel 
 		return (
 			<Flex direction="column" gap="12px">
 				<Box>
-					{divisionLevel.divisionLevelName === 'Кластер' ? <ClusterInfoContainer /> : null}
 					<Empty>
 						<Text
 							size="sub18/24"
@@ -70,7 +67,6 @@ export const TournamentShortListProfilesContainer: FC<Props> = ({ divisionLevel 
 	return (
 		<Flex direction="column" gap="12px">
 			<Box>
-				{divisionLevel.divisionLevelName === 'Кластер' ? <ClusterInfoContainer /> : null}
 				<SimpleGrid
 					gridTemplateColumns="auto auto"
 					justifyContent="space-between"

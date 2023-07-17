@@ -1,17 +1,13 @@
 export const progress = {
     crystals: {
-        crystalsEarned: 1956
+        crystalsEarned: 120
     },
     userLevel: {
-        currentLevelName: "Специалист",
+        currentLevelName: "Мастер",
         colorCode: {
-            primary: "orange-60",
-            secondary: "orange-30"
+            primary: "blue-60",
+            secondary: "blue-30"
         },
-        progressBar: {
-            value: 70,
-            info: "До следущего уровня 50 кристаллов"
-        }
     },
     levelsDirectory: [
         {

@@ -42,7 +42,7 @@ export interface ILevelsDirectory {
 interface IUserLevel {
 	currentLevelName: string;
 	colorCode: IColorCode;
-	progressBar: {
+	progressBar?: {
 		value: number;
 		info: string;
 	};

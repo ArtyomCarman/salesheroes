@@ -1,20 +1,12 @@
-import { useSearchParams } from 'react-router-dom';
-import { Box, Fade, Flex, SimpleGrid, Text } from '@chakra-ui/react';
+import { Box, Fade, SimpleGrid, Text } from '@chakra-ui/react';
 
 import { Leaders } from '../components';
-import { DivisionLevel, ILeader } from '../interfaces';
-import { ClusterInfoContainer } from './ClusterInfoContainer';
 import {tournamentFullList} from "../models";
 
 export const TournamentFullListProfilesContainer = () => {
-	const [searchParams] = useSearchParams();
-
 	return (
 		<Fade in>
 			<Box>
-				{searchParams.get('divisionLevel') === DivisionLevel.Кластер ? (
-					<ClusterInfoContainer />
-				) : null}
 				<SimpleGrid
 					padding="16px 16px 0"
 					margin="0 -16px"

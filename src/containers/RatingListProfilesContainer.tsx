@@ -4,7 +4,7 @@ import { Box, Fade, SimpleGrid, Text } from '@chakra-ui/react';
 
 import { Empty, Leaders } from '../components';
 import { DivisionLevel, TimePeriod } from '../interfaces';
-import {ratingList, ratingListTB, ratingListGOSB} from "../models";
+import {ratingList, ratingListTB, ratingListGOSB, ratingListQuarter, ratingListTBQuarter, ratingListGOSBQuarter} from "../models";
 
 interface Props {
 	divisionLevel: DivisionLevel;
@@ -13,11 +13,20 @@ interface Props {
 
 export const RatingListProfilesContainer: FC<Props> = ({ divisionLevel, timePeriod }) => {
 	const rating = useMemo(() => {
-		if (divisionLevel === DivisionLevel.Тербанк) {
+		if (divisionLevel === DivisionLevel.Тербанк && timePeriod === TimePeriod['За всё время']) {
 			return ratingListTB
 		}
-		if (divisionLevel === DivisionLevel.Подразделение) {
+		if (divisionLevel === DivisionLevel.Подразделение && timePeriod === TimePeriod['За всё время']) {
 			return ratingListGOSB
+		}
+		if (divisionLevel === DivisionLevel.Страна && timePeriod === TimePeriod['Текущий квартал']) {
+			return ratingListQuarter
+		}
+		if (divisionLevel === DivisionLevel.Тербанк && timePeriod === TimePeriod['Текущий квартал']) {
+			return ratingListTBQuarter
+		}
+		if (divisionLevel === DivisionLevel.Подразделение && timePeriod === TimePeriod['Текущий квартал']) {
+			return ratingListGOSBQuarter
 		}
 
 		return ratingList
@@ -88,7 +97,7 @@ export const RatingListProfilesContainer: FC<Props> = ({ divisionLevel, timePeri
 						Кристаллы
 					</Text>
 				</SimpleGrid>
-				{rating.leaders.map((item) => <Leaders key={item.employeeNumber} leader={item} />)}
+				{rating.leaders.sort((profile1, profile2) => profile1.placeInRating > profile2.placeInRating ? 1 : -1).map((item) => <Leaders key={item.employeeNumber} leader={item} />)}
 			</Box>
 		</Fade>
 	);

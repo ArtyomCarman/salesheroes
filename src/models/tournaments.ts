@@ -39,7 +39,7 @@ export const tournaments = {
                             }
                         },
                         {
-                            divisionLevelResult: "из 1 в подразделении",
+                            divisionLevelResult: "из 1 в ГОСБ",
                             placeInRating: 1,
                             reward: {
                                 icon: Reward.gold,
@@ -60,7 +60,7 @@ export const tournaments = {
                     tournamentDurationName: "ТУРНИР НЕДЕЛИ",
                     progressBarValue: 50,
                     updateTooltip: "Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — 12 марта",
-                    reward: Reward.silver,
+                    reward: undefined,
                     rating: [
                         {
                             divisionLevelResult: "33 в стране",
@@ -68,9 +68,6 @@ export const tournaments = {
                         {
                             divisionLevelResult: "3 в тербанке",
                         },
-                        {
-                            divisionLevelResult: "0 в подразделении",
-                        }
                     ]
                 }
             ]
@@ -80,7 +77,7 @@ export const tournaments = {
 
 export const cluster = {
     text: 'В вашем тербанке',
-    amount: '11 подразделений',
+    amount: '11 ГОСБ',
     divisions: ['ББ', 'ВВБ','ДВБ', 'МБ','ПБ', 'СЗБ','СИБ', 'СРБ','УБ', 'ЦЧБ', 'ЮЗБ'],
 }
 
@@ -112,7 +109,7 @@ export const tournamentID = [
                 }
             },
             {
-                divisionLevelName: "Подразделение",
+                divisionLevelName: "ГОСБ",
                 contestants: 1,
                 placeInRating: 1,
                 reward: {
@@ -148,7 +145,7 @@ export const tournamentID = [
                 hasNftMark: true
             },
             {
-                divisionLevelName: "Кластер",
+                divisionLevelName: "Тербанк",
                 rewardRule: "Бейдж получат 7% от числа участников турнира в вашем ТБ",
                 badgeId: "00025",
                 badgeName: "Чемпион ТБ по условным сделкам",
@@ -158,7 +155,7 @@ export const tournamentID = [
                 hasNftMark: false
             },
             {
-                divisionLevelName: "Подразделение",
+                divisionLevelName: "ГОСБ",
                 rewardRule: "Бейдж получат 10% от числа участников турнира в вашем подразделении",
                 badgeId: "00026",
                 badgeName: "Чемпион подразделения по условным сделкам",
@@ -208,7 +205,7 @@ export const tournamentID = [
                 hasNftMark: true
             },
             {
-                divisionLevelName: "Кластер",
+                divisionLevelName: "Тербанк",
                 rewardRule: "Бейдж получат 7% от числа участников турнира в вашем ТБ",
                 badgeId: "00025",
                 badgeName: "Чемпион ТБ по условным сделкам",
@@ -218,7 +215,7 @@ export const tournamentID = [
                 hasNftMark: false
             },
             {
-                divisionLevelName: "Подразделение",
+                divisionLevelName: "ГОСБ",
                 rewardRule: "Бейдж получат 10% от числа участников турнира в вашем подразделении",
                 badgeId: "00026",
                 badgeName: "Чемпион подразделения по условным сделкам",
@@ -260,7 +257,7 @@ export const archiveTournamentId = {
             }
         },
         {
-            divisionLevelName: "Подразделение",
+            divisionLevelName: "ГОСБ",
             contestants: 1,
             placeInRating: 1,
             reward: {
@@ -296,7 +293,7 @@ export const archiveTournamentId = {
             hasNftMark: true
         },
         {
-            divisionLevelName: "Кластер",
+            divisionLevelName: "Тербанк",
             rewardRule: "Бейдж получат 7% от числа участников турнира в вашем ТБ",
             badgeId: "00025",
             badgeName: "Чемпион ТБ по условным сделкам",
@@ -306,7 +303,7 @@ export const archiveTournamentId = {
             hasNftMark: false
         },
         {
-            divisionLevelName: "Подразделение",
+            divisionLevelName: "ГОСБ",
             rewardRule: "Бейдж получат 10% от числа участников турнира в вашем подразделении",
             badgeId: "00026",
             badgeName: "Чемпион подразделения по условным сделкам",
@@ -345,7 +342,7 @@ export const tournamentShortList = [
         ]
     },
     {
-        divisionLevelName: "Кластер",
+        divisionLevelName: "Тербанк",
         tournamentIndicator: "Ставка",
         contestants: "1 250 участников",
         leaders: [
@@ -369,7 +366,7 @@ export const tournamentShortList = [
             },
         ]
     }, {
-        divisionLevelName: "Подразделение",
+        divisionLevelName: "ГОСБ",
         tournamentIndicator: "Ставка",
         contestants: "1 250 участников",
         leaders: [
