@@ -1,10 +1,10 @@
-import { FC } from 'react';
+import {FC, useMemo} from 'react';
 import { Link } from 'react-router-dom';
 import { Box, Fade, SimpleGrid, Text } from '@chakra-ui/react';
 
 import { Empty, Leaders } from '../components';
 import { DivisionLevel, TimePeriod } from '../interfaces';
-import {ratingList} from "../models";
+import {ratingList, ratingListTB, ratingListGOSB} from "../models";
 
 interface Props {
 	divisionLevel: DivisionLevel;
@@ -12,7 +12,18 @@ interface Props {
 }
 
 export const RatingListProfilesContainer: FC<Props> = ({ divisionLevel, timePeriod }) => {
-	if (ratingList.leaders.length === 0) {
+	const rating = useMemo(() => {
+		if (divisionLevel === DivisionLevel.Тербанк) {
+			return ratingListTB
+		}
+		if (divisionLevel === DivisionLevel.Подразделение) {
+			return ratingListGOSB
+		}
+
+		return ratingList
+	}, [divisionLevel])
+
+	if (rating.leaders.length === 0) {
 		return (
 			<Empty>
 				<Text
@@ -59,12 +70,12 @@ export const RatingListProfilesContainer: FC<Props> = ({ divisionLevel, timePeri
 					justifyContent="space-between"
 					boxShadow="0px 1px 0px rgba(255, 255, 255, 0.2)"
 					position="sticky"
-					top="106px"
+					top="112px"
 					bgColor="black"
 					zIndex="2"
 				>
 					<Text size="body14/24" color="rgba(255, 255, 255, 0.8)">
-						{ratingList.contestants}
+						{rating.contestants}
 					</Text>
 					<Text
 						size="body14/24"
@@ -77,7 +88,7 @@ export const RatingListProfilesContainer: FC<Props> = ({ divisionLevel, timePeri
 						Кристаллы
 					</Text>
 				</SimpleGrid>
-				{ratingList.leaders.map((item) => <Leaders key={item.employeeNumber} leader={item} />)}
+				{rating.leaders.map((item) => <Leaders key={item.employeeNumber} leader={item} />)}
 			</Box>
 		</Fade>
 	);
