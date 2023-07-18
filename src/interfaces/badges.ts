@@ -78,6 +78,7 @@ export interface IProfileBadgesIdBody {
 	progress?: IBadgeProgress;
 	tournamentName?: string;
 	tournaments?: IBadgeTournament[];
+	imageIsActive: boolean;
 }
 
 type FilterType = 'TOP' | 'ALL' | 'EARNED';
