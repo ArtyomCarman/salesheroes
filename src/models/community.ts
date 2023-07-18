@@ -424,8 +424,8 @@ export const news = {
               crystalsEarned: 48,
               indicatorValue: "",
               colorCode: {
-                primary: "green-60",
-                secondary: "green-30",
+                primary: "light-green-30",
+                secondary: "light-green-20",
               },
             },
             {
@@ -439,8 +439,8 @@ export const news = {
               crystalsEarned: 48,
               indicatorValue: "",
               colorCode: {
-                primary: "green-60",
-                secondary: "green-30",
+                primary: "light-green-30",
+                secondary: "light-green-20",
               },
             },
             {
@@ -454,8 +454,8 @@ export const news = {
               crystalsEarned: 43,
               indicatorValue: "",
               colorCode: {
-                primary: "green-60",
-                secondary: "green-30",
+                primary: "light-green-30",
+                secondary: "light-green-20",
               },
             },
             {
@@ -469,8 +469,8 @@ export const news = {
               crystalsEarned: 42,
               indicatorValue: "",
               colorCode: {
-                primary: "green-60",
-                secondary: "green-30",
+                primary: "light-green-30",
+                secondary: "light-green-20",
               },
             },
             {
@@ -484,8 +484,8 @@ export const news = {
               crystalsEarned: 42,
               indicatorValue: "",
               colorCode: {
-                primary: "green-60",
-                secondary: "green-30",
+                primary: "light-green-30",
+                secondary: "light-green-20",
               },
             },
             {
@@ -499,8 +499,8 @@ export const news = {
               crystalsEarned: 40,
               indicatorValue: "",
               colorCode: {
-                primary: "green-60",
-                secondary: "green-30",
+                primary: "light-green-30",
+                secondary: "light-green-20",
               },
             },
             {
@@ -514,8 +514,8 @@ export const news = {
               crystalsEarned: 25,
               indicatorValue: "",
               colorCode: {
-                primary: "green-60",
-                secondary: "green-30",
+                primary: "light-green-30",
+                secondary: "light-green-20",
               },
             },
             {
@@ -529,8 +529,8 @@ export const news = {
               crystalsEarned: 11,
               indicatorValue: "",
               colorCode: {
-                primary: "green-60",
-                secondary: "green-30",
+                primary: "light-green-30",
+                secondary: "light-green-20",
               },
             },
           ],
@@ -933,8 +933,8 @@ export const newsId = {
       crystalsEarned: 48,
       indicatorValue: "",
       colorCode: {
-        primary: "green-60",
-        secondary: "green-30",
+        primary: "light-green-30",
+        secondary: "light-green-20",
       },
     },
     {
@@ -948,8 +948,8 @@ export const newsId = {
       crystalsEarned: 48,
       indicatorValue: "",
       colorCode: {
-        primary: "green-60",
-        secondary: "green-30",
+        primary: "light-green-30",
+        secondary: "light-green-20",
       },
     },
     {
@@ -963,8 +963,8 @@ export const newsId = {
       crystalsEarned: 43,
       indicatorValue: "",
       colorCode: {
-        primary: "green-60",
-        secondary: "green-30",
+        primary: "light-green-30",
+        secondary: "light-green-20",
       },
     },
     {
@@ -978,8 +978,8 @@ export const newsId = {
       crystalsEarned: 42,
       indicatorValue: "",
       colorCode: {
-        primary: "green-60",
-        secondary: "green-30",
+        primary: "light-green-30",
+        secondary: "light-green-20",
       },
     },
     {
@@ -993,8 +993,8 @@ export const newsId = {
       crystalsEarned: 42,
       indicatorValue: "",
       colorCode: {
-        primary: "green-60",
-        secondary: "green-30",
+        primary: "light-green-30",
+        secondary: "light-green-20",
       },
     },
     {
@@ -1008,8 +1008,8 @@ export const newsId = {
       crystalsEarned: 40,
       indicatorValue: "",
       colorCode: {
-        primary: "green-60",
-        secondary: "green-30",
+        primary: "light-green-30",
+        secondary: "light-green-20",
       },
     },
     {
@@ -1023,8 +1023,8 @@ export const newsId = {
       crystalsEarned: 25,
       indicatorValue: "",
       colorCode: {
-        primary: "green-60",
-        secondary: "green-30",
+        primary: "light-green-30",
+        secondary: "light-green-20",
       },
     },
     {
@@ -1038,8 +1038,8 @@ export const newsId = {
       crystalsEarned: 11,
       indicatorValue: "",
       colorCode: {
-        primary: "green-60",
-        secondary: "green-30",
+        primary: "light-green-30",
+        secondary: "light-green-20",
       },
     },
   ],
@@ -1159,8 +1159,8 @@ export const newsRatingTERB = {
       terDivisionName: "СРБ",
       placeInRating: 3,
       colorCode: {
-        primary: "green-60",
-        secondary: "green-30",
+        primary: "light-green-30",
+        secondary: "light-green-20",
       },
     },
   ],
