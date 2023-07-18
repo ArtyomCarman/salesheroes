@@ -8,10 +8,10 @@ import { ReactComponent as DiamondIcon } from "../assets/icons/diamond.svg";
 import { archiveTournamentId } from "../models";
 
 const TournamentAwardBadge: FC<Props> = ({ item }) => {
-	const navigate = useNavigate();
-	const goToBadge = (id: string) => () => {
-		navigate(`/awards/${id}`);
-	};
+  const navigate = useNavigate();
+  const goToBadge = (id: string) => () => {
+    navigate(`/awards/${id}`);
+  };
 
   return (
     <Flex direction="column" gap="24px">
@@ -55,7 +55,7 @@ const TournamentAwardBadge: FC<Props> = ({ item }) => {
               sx={{
                 WebkitBoxOrient: "vertical",
                 WebkitLineClamp: "1",
-                wordBreak: "break-all",
+                wordBreak: "break-word",
               }}
             >
               {item.badgeName}
