@@ -54,11 +54,7 @@ export const AppTemplate = () => {
   }, [scrollContainer]);
 
   return (
-    <Flex
-      height="100dvh"
-      flexDirection="column"
-      sx={sx}
-    >
+    <Flex height="100dvh" flexDirection="column" sx={sx}>
       <AppHeader />
       <Grid
         ref={mainRef}
@@ -111,10 +107,10 @@ export const AppTemplate = () => {
           }}
           height="100%"
           css={scrollbarCSS}
-          pt="16px"
-          pb={{ base: "56px", lg: "64px" }}
         >
-          <Outlet />
+          <Box pt="16px" pb={{ base: "56px", lg: "64px" }}>
+            <Outlet />
+          </Box>
         </Box>
       </Grid>
     </Flex>
