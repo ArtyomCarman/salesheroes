@@ -36,7 +36,10 @@ export const AwardsListItem: FC<Props> = ({ badge, status }) => {
       key={badge.badgeId}
       bgColor="rgba(87, 92, 112, 0.3)"
       borderRadius="16px"
-      p="16px 24px 24px"
+      p={{
+        base: "24px 16px",
+        lg: "16px 24px 24px",
+      }}
       minW="0"
       onClick={goToBadge}
       cursor="pointer"
