@@ -1,4 +1,5 @@
 import {EmployeeStatus} from "../interfaces";
+import КузьменкоИгорь from '../assets/images/Кузьменко Игорь Владимирович1.jpeg'
 
 export const profileContestant = {
     employeeNumber: "00001",
@@ -8,7 +9,7 @@ export const profileContestant = {
     gosbName: undefined,
     funcDivisionName: undefined,
     positionName: 'КМ',
-    photoData: "Base64 ... ",
+    photoData: КузьменкоИгорь,
     colorCode: {
         primary: "blue-60",
         secondary: "blue-30"
