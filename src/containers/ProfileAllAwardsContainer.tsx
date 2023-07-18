@@ -17,10 +17,10 @@ export const ProfileAllAwardsContainer = () => {
 						lg: '0',
 					}}
 				>
-					<Text size="h30/48" variant="semibold">
+					<Text size="h24/32" variant="semibold">
 						Полученные награды
 					</Text>
-					<Text size="h30/48" variant="semibold" color="rgba(255, 255, 255, 0.6)">
+					<Text size="h24/32" variant="semibold" color="rgba(255, 255, 255, 0.6)">
 						{badges.badgesUserHas}
 					</Text>
 				</Flex>
