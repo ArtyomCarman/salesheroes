@@ -6,3 +6,4 @@ export * from './badges';
 export * from './progress';
 export * from './likes';
 export * from './ratingList';
+export * from './badgeLeaders';

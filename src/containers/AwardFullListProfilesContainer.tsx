@@ -1,10 +1,10 @@
-import { useMemo } from 'react';
-import { useSearchParams } from 'react-router-dom';
-import { Box, Fade, Text } from '@chakra-ui/react';
+import {useMemo} from 'react';
+import {useSearchParams} from 'react-router-dom';
+import {Box, Fade, Text} from '@chakra-ui/react';
 
-import { Empty, Leaders } from '../components';
-import { DivisionLevel } from '../interfaces';
-import { badgeIdProfiles } from "../models";
+import {Empty, Leaders} from '../components';
+import {DivisionLevel} from '../interfaces';
+import {badgeFullLeadersGOSB, badgeFullLeadersTerb, badgeFullList} from "../models";
 
 export const AwardFullListProfilesContainer = () => {
 	const [searchParams] = useSearchParams();
@@ -12,6 +12,17 @@ export const AwardFullListProfilesContainer = () => {
 	const searchParamsValue = searchParams.get('divisionLevel') as DivisionLevel;
 	const isSearchParamValid = Object.values(DivisionLevel).includes(searchParamsValue);
 	const divisionLevel = isSearchParamValid ? searchParamsValue : DivisionLevel['Страна'];
+
+	const badgeLeaders = useMemo(() => {
+		if (divisionLevel === DivisionLevel.Тербанк) {
+			return badgeFullLeadersTerb
+		}
+		if (divisionLevel === DivisionLevel.Подразделение) {
+			return badgeFullLeadersGOSB
+		}
+
+		return badgeFullList
+	}, [divisionLevel])
 
 	const divisionName = useMemo(() => {
 		if (divisionLevel === DivisionLevel.Тербанк) {
@@ -25,7 +36,7 @@ export const AwardFullListProfilesContainer = () => {
 	}, [divisionLevel]);
 
 
-	if (!badgeIdProfiles.badge.leaders.length) {
+	if (!badgeLeaders.badge.leaders.length) {
 		return (
 			<Empty>
 				<Text
@@ -49,9 +60,9 @@ export const AwardFullListProfilesContainer = () => {
 					pb="12px"
 					boxShadow="rgba(255, 255, 255, 0.2) 0px 1px 0px"
 				>
-					{badgeIdProfiles.badge.contestants}
+					{badgeLeaders.badge.contestants}
 				</Text>
-				{badgeIdProfiles.badge.leaders.map((item) => <Leaders leader={item} />)  }
+				{badgeLeaders.badge.leaders.map((item) => <Leaders leader={item} />)  }
 			</Box>
 		</Fade>
 	);

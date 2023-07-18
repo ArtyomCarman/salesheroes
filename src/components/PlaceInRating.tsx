@@ -6,7 +6,7 @@ import { ReactComponent as LightningIcon } from '../assets/icons/lightning.svg';
 
 interface Props {
 	reward?: IRewardProfiles;
-	placeInRating: number;
+	placeInRating?: number;
 	crystallEarned?: number;
 }
 

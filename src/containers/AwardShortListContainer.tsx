@@ -3,16 +3,16 @@ import { Box, Fade, Flex, Text } from "@chakra-ui/react";
 
 import { AppTabs } from "../components";
 import { AwardShortListProfilesContainer } from "./AwardShortListProfilesContainer";
-import { badgeAllProfiles } from "../models";
+import { badgeShortList } from "../models";
 
 export const AwardShortListContainer = () => {
   const tabs = useMemo(
     () =>
-      badgeAllProfiles.map((item) => ({
+        badgeShortList.map((item) => ({
         label: item.divisionLevelName,
         component: <AwardShortListProfilesContainer divisionLevel={item} />,
       })),
-    [badgeAllProfiles]
+    [badgeShortList]
   );
 
   return (

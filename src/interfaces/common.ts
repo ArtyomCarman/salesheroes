@@ -48,7 +48,7 @@ export interface ILeader {
 	crystalsEarned?: number;
 	terDivisionName: string;
 	indicatorValue: string;
-	placeInRating: number;
+	placeInRating?: number;
 	reward?: IRewardProfiles;
 	colorCode: IColorCode;
 	employeeStatus?: EmployeeStatus;
