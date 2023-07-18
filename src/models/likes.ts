@@ -4,7 +4,7 @@ export const likes = {
     isLiked: true,
     likesAmount: 12,
     bossNames: [
-        "Филиппов С.В",
+        "Попов А.Л",
         "Анисимова И.С.",
         "Константинопольский С.В."
     ],

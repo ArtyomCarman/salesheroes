@@ -29,9 +29,10 @@ export const ProfileAllAwardsContainer = () => {
 					<SimpleGrid gridTemplateColumns="repeat(2, 1fr)" gap="16px">
 						{badges.badgesType.map((badgeType) => (
 							<Fragment key={badgeType.badgeTypeName}>
-								{badgeType.badges.map((award) => (
-									<AwardsListItem key={award.badgeId} badge={award} status="EARNED" />
-								))}
+								{badgeType.badges.map((award) => {
+									if (!award.imageIsActive) return null
+									return <AwardsListItem key={award.badgeId} badge={award} status="EARNED"/>
+								})}
 							</Fragment>
 						))}
 					</SimpleGrid>
