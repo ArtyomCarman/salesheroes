@@ -100,7 +100,7 @@ export const badges = {
         },
         {
           imageId: Badge.SuperCup2023,
-          imageIsActive: false,
+          imageIsActive: true,
           badgeId: "00019",
           badgeName: "Победитель Суперкубка 2023",
           badgeAmount: 1,
