@@ -1,16 +1,18 @@
 {
   "files": {
     "main.css": "/salesheroes/static/css/main.705fd5b0.css",
-    "main.js": "/salesheroes/static/js/main.29a6630c.js",
+    "main.js": "/salesheroes/static/js/main.b66289ea.js",
     "static/js/787.35c0ec71.chunk.js": "/salesheroes/static/js/787.35c0ec71.chunk.js",
     "static/media/fake-avatars.svg": "/salesheroes/static/media/fake-avatars.35f89ae572727a59c4be0489afedf9ef.svg",
     "static/media/newsEmptyRating.png": "/salesheroes/static/media/newsEmptyRating.acad06254ada1045c3e2.png",
     "static/media/news-leaders.png": "/salesheroes/static/media/news-leaders.ca81a013c850b45fd252.png",
     "static/media/newsEmptyLeaders.png": "/salesheroes/static/media/newsEmptyLeaders.abccbba4c61f32eee2f1.png",
+    "static/media/Елена Чернышова.jpeg": "/salesheroes/static/media/Елена Чернышова.53bec97da084c2bdbf96.jpeg",
     "service-worker.js": "/salesheroes/service-worker.js",
     "static/media/Проскурина Елена Михайловна.jpeg": "/salesheroes/static/media/Проскурина Елена Михайловна.5e3ea5f4f946e9defb66.jpeg",
     "static/media/badgeCommission200k.svg": "/salesheroes/static/media/badgeCommission200k.83f1a9aa87fe28082ae9921ef33bed3e.svg",
     "static/media/badgeCommission50k.svg": "/salesheroes/static/media/badgeCommission50k.683409af2bd91eaf26e33bcf66b0e0ed.svg",
+    "static/media/Сергей Меламед.jpeg": "/salesheroes/static/media/Сергей Меламед.aa0486010bf4b423c29e.jpeg",
     "static/media/badgeCommissionX3.svg": "/salesheroes/static/media/badgeCommissionX3.2b77c4b4bb6e4c163e64213e0aec656c.svg",
     "static/media/badgeCommissionX4.svg": "/salesheroes/static/media/badgeCommissionX4.b9e1137b86e6df2604ec9fa97c197b93.svg",
     "static/media/badgeCommissionX2.svg": "/salesheroes/static/media/badgeCommissionX2.63cfb6429c72820c8a1467bc1c8e3679.svg",
@@ -57,11 +59,11 @@
     "static/media/lightning.svg": "/salesheroes/static/media/lightning.112b47d324cc6202e46730689d8c7976.svg",
     "index.html": "/salesheroes/index.html",
     "main.705fd5b0.css.map": "/salesheroes/static/css/main.705fd5b0.css.map",
-    "main.29a6630c.js.map": "/salesheroes/static/js/main.29a6630c.js.map",
+    "main.b66289ea.js.map": "/salesheroes/static/js/main.b66289ea.js.map",
     "787.35c0ec71.chunk.js.map": "/salesheroes/static/js/787.35c0ec71.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.705fd5b0.css",
-    "static/js/main.29a6630c.js"
+    "static/js/main.b66289ea.js"
   ]
 }
