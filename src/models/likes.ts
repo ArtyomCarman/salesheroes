@@ -7,7 +7,7 @@ import СеркбаеваАлтын from "../assets/images/Серкбаева А
 
 export const likes = {
     isLiked: true,
-    likesAmount: 12,
+    likesAmount: 8,
     bossNames: [
         "Попов А.Л",
         "Ситнов В.В.",
@@ -21,7 +21,7 @@ export const likes = {
             {
                 employeeNumber: "40",
                 photoData: '',
-                terDivisionName: "ЦБ",
+                terDivisionName: "ЦА",
                 firstName: "Анатолий",
                 lastName: "Попов",
                 colorCode: {
@@ -33,7 +33,7 @@ export const likes = {
             {
                 employeeNumber: "41",
                 photoData: "",
-                terDivisionName: "ЦБ",
+                terDivisionName: "ЦА",
                 firstName: "Владимир",
                 lastName: "Ситнов",
                 colorCode: {
@@ -45,7 +45,7 @@ export const likes = {
             {
                 employeeNumber: "42",
                 photoData: Меламед,
-                terDivisionName: "ЦБ",
+                terDivisionName: "ЦА",
                 firstName: "Сергей",
                 lastName: "Меламед",
                 colorCode: {
@@ -57,7 +57,7 @@ export const likes = {
             {
                 employeeNumber: "43",
                 photoData: ЧернышоваЕлена,
-                terDivisionName: "ЦБ",
+                terDivisionName: "ЦА",
                 firstName: "Елена",
                 lastName: "Чернышова",
                 colorCode: {
@@ -69,7 +69,7 @@ export const likes = {
             {
                 employeeNumber: "44",
                 photoData: Юлианна,
-                terDivisionName: "ЦБ",
+                terDivisionName: "ЦА",
                 firstName: "Юлианна",
                 lastName: "Егорова",
                 colorCode: {
