@@ -106,7 +106,6 @@ export const badges = {
           badgeAmount: 1,
           updateTooltip:
             "Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — 12 марта",
-          progressBarValue: 50,
           hasNftMark: false,
         },
         {
@@ -156,7 +155,7 @@ export const badges = {
       badges: [
         {
           imageId: Badge.ConditionalsChampionFirst,
-          imageIsActive: false,
+          imageIsActive: true,
           badgeId: "00024",
           badgeName: "Чемпион страны по условным сделкам",
           badgeAmount: 1,
