@@ -42,7 +42,7 @@ export const colorCodeSpecialist = {
 };
 
 const МитосевЯрослав = {
-  employeeNumber: '11',
+  employeeNumber: "11",
   lastName: "Митосев",
   firstName: "Ярослав",
   photoData: "",
@@ -55,7 +55,7 @@ const МитосевЯрослав = {
 };
 
 const БерстеневаАлена = {
-  employeeNumber: '19',
+  employeeNumber: "19",
   lastName: "Берстенева",
   firstName: "Алена",
   photoData: фотоБерстеневаАлена,
@@ -68,7 +68,7 @@ const БерстеневаАлена = {
 };
 
 const КротковНиколай = {
-  employeeNumber: '26',
+  employeeNumber: "26",
   lastName: "Кротков",
   firstName: "Николай",
   photoData: фотоКротковНиколай,
@@ -81,7 +81,7 @@ const КротковНиколай = {
 };
 
 const ДмитриеваВероника = {
-  employeeNumber: '10',
+  employeeNumber: "10",
   lastName: "Дмитриева",
   firstName: "Вероника",
   photoData: фотоДмитриеваВероника,
@@ -94,10 +94,10 @@ const ДмитриеваВероника = {
 };
 
 const БрусницынаМария = {
-  employeeNumber: '27',
+  employeeNumber: "27",
   lastName: "Брусницына",
   firstName: "Мария",
-  photoData: фотоДмитриеваВероника,
+  photoData: "",
   colorCode: colorCodeSpecialist,
   isMarked: false,
   indicatorValue: "4",
@@ -107,7 +107,7 @@ const БрусницынаМария = {
 };
 
 const КодоловаЕлена = {
-  employeeNumber: '6',
+  employeeNumber: "6",
   lastName: "Кодолова",
   firstName: "Елена",
   photoData: фотоКодоловаЕлена,
@@ -120,7 +120,7 @@ const КодоловаЕлена = {
 };
 
 const КирееваЮлия = {
-  employeeNumber: '29',
+  employeeNumber: "29",
   lastName: "Киреева",
   firstName: "Юлия",
   photoData: фотоКирееваЮлия,
@@ -133,7 +133,7 @@ const КирееваЮлия = {
 };
 
 const АдиевРашид = {
-  employeeNumber: '20',
+  employeeNumber: "20",
   lastName: "Адиев",
   firstName: "Рашид",
   photoData: фотоАдиевРашид,
@@ -146,7 +146,7 @@ const АдиевРашид = {
 };
 
 const ЗахаровАлександр = {
-  employeeNumber: '16',
+  employeeNumber: "16",
   lastName: "Захаров",
   firstName: "Александр",
   photoData: фотоКодоловаЕлена,
@@ -159,7 +159,7 @@ const ЗахаровАлександр = {
 };
 
 const КарагодинаМария = {
-  employeeNumber: '13',
+  employeeNumber: "13",
   lastName: "Карагодина",
   firstName: "Мария",
   photoData: фотоКарагодинаМария,
@@ -172,7 +172,7 @@ const КарагодинаМария = {
 };
 
 const СорокинИлья = {
-  employeeNumber: '8',
+  employeeNumber: "8",
   lastName: "Сорокин",
   firstName: "Илья",
   photoData: фотоСорокинИлья,
@@ -185,7 +185,7 @@ const СорокинИлья = {
 };
 
 const БобокАлександр = {
-  employeeNumber: '12',
+  employeeNumber: "12",
   lastName: "Бобок",
   firstName: "Александр",
   photoData: фотоБобокАлександр,
@@ -198,7 +198,7 @@ const БобокАлександр = {
 };
 
 const ПроскуринаЕлена = {
-  employeeNumber: '2',
+  employeeNumber: "2",
   lastName: "Проскурина",
   firstName: "Елена",
   photoData: фотоПроскуринаЕлена,
@@ -211,7 +211,7 @@ const ПроскуринаЕлена = {
 };
 
 const СорокинаМарина = {
-  employeeNumber: '17',
+  employeeNumber: "17",
   lastName: "Сорокина",
   firstName: "Марина",
   photoData: "",
@@ -223,7 +223,7 @@ const СорокинаМарина = {
   terDivisionName: "СЗБ",
 };
 const ТомсонЕкатерина = {
-  employeeNumber: '21',
+  employeeNumber: "21",
   lastName: "Томсон",
   firstName: "Екатерина",
   photoData: фотоТомсонЕкатерина,
@@ -236,7 +236,7 @@ const ТомсонЕкатерина = {
 };
 
 const ДуроваНаталья = {
-  employeeNumber: '28',
+  employeeNumber: "28",
   lastName: "Дурова",
   firstName: "Наталья",
   photoData: фотоДуроваНаталья,
@@ -249,7 +249,7 @@ const ДуроваНаталья = {
 };
 
 const МитренкоАндрей = {
-  employeeNumber: '7',
+  employeeNumber: "7",
   lastName: "Митренко",
   firstName: "Андрей",
   photoData: фотоМитренкоАндрей,
@@ -262,7 +262,7 @@ const МитренкоАндрей = {
 };
 
 const ХасаншинаВенера = {
-  employeeNumber: '5',
+  employeeNumber: "5",
   lastName: "Хасаншина",
   firstName: "Венера",
   photoData: фотоХасаншинаВенера,
@@ -275,20 +275,20 @@ const ХасаншинаВенера = {
 };
 
 const ШебановаОльга = {
-  employeeNumber: '31',
+  employeeNumber: "31",
   lastName: "Шебанова",
   firstName: "Ольга",
   photoData: фотоШебановаОльга,
   colorCode: colorCodeSpecialist,
   isMarked: false,
-  indicatorValue: "4",
+  indicatorValue: "17",
   reward: undefined,
   placeInRating: 15,
   terDivisionName: "ЮЗБ",
 };
 
 const ЧернецВиктория = {
-  employeeNumber: '33',
+  employeeNumber: "33",
   lastName: "Чернец",
   firstName: "Виктория",
   photoData: фотоЧернецВиктория,
@@ -301,7 +301,7 @@ const ЧернецВиктория = {
 };
 
 const ЖаглинаЖанна = {
-  employeeNumber: '30',
+  employeeNumber: "30",
   lastName: "Жаглина",
   firstName: "Жанна",
   photoData: фотоЖаглинаЖанна,
@@ -314,7 +314,7 @@ const ЖаглинаЖанна = {
 };
 
 const КунинаТатьяна = {
-  employeeNumber: '15',
+  employeeNumber: "15",
   lastName: "Кунина",
   firstName: "Татьяна",
   photoData: фотоКунинаТатьяна,
@@ -327,7 +327,7 @@ const КунинаТатьяна = {
 };
 
 const ЧернякРуфина = {
-  employeeNumber: '3',
+  employeeNumber: "3",
   lastName: "Черняк",
   firstName: "Руфина",
   photoData: "",
@@ -340,7 +340,7 @@ const ЧернякРуфина = {
 };
 
 const СавушкинаЭмма = {
-  employeeNumber: '18',
+  employeeNumber: "18",
   lastName: "Савушкина",
   firstName: "Эмма",
   photoData: фотоСавушкинаЭмма,
@@ -353,7 +353,7 @@ const СавушкинаЭмма = {
 };
 
 const БорбликМихаил = {
-  employeeNumber: '32',
+  employeeNumber: "32",
   lastName: "Борблик",
   firstName: "Михаил",
   photoData: фотоБорбликМихаил,
@@ -366,7 +366,7 @@ const БорбликМихаил = {
 };
 
 const ОрловаЮлия = {
-  employeeNumber: '13',
+  employeeNumber: "13",
   lastName: "Орлова",
   firstName: "Юлия",
   photoData: фотоОрловаЮлия,
@@ -379,7 +379,7 @@ const ОрловаЮлия = {
 };
 
 const СенотрусоваЮлия = {
-  employeeNumber: '9',
+  employeeNumber: "9",
   lastName: "Сенотрусова",
   firstName: "Юлия",
   photoData: фотоСенотрусоваЮлия,
@@ -392,7 +392,7 @@ const СенотрусоваЮлия = {
 };
 
 const МакаровПавел = {
-  employeeNumber: '1',
+  employeeNumber: "1",
   lastName: "Макаров",
   firstName: "Павел",
   photoData: фотоМакаровПавел,
@@ -405,7 +405,7 @@ const МакаровПавел = {
 };
 
 const ТихомироваМария = {
-  employeeNumber: '23',
+  employeeNumber: "23",
   lastName: "Тихомирова",
   firstName: "Мария",
   photoData: фотоТихомироваМария,
@@ -418,7 +418,7 @@ const ТихомироваМария = {
 };
 
 const КузьменкоИгорь = {
-  employeeNumber: '22',
+  employeeNumber: "22",
   lastName: "Кузьменко",
   firstName: "Игорь",
   photoData: фотоКузьменкоИгорь,
@@ -431,7 +431,7 @@ const КузьменкоИгорь = {
 };
 
 const ШаброваИрина = {
-  employeeNumber: '24',
+  employeeNumber: "24",
   lastName: "Шаброва",
   firstName: "Ирина",
   photoData: фотоШаброваИрина,
@@ -447,7 +447,7 @@ const ШаброваИрина = {
 };
 
 const КатаеваВероника = {
-  employeeNumber: '4',
+  employeeNumber: "4",
   lastName: "Катаева",
   firstName: "Вероника",
   photoData: "",
@@ -463,7 +463,7 @@ const КатаеваВероника = {
 };
 
 const СеркбаеваАлтын = {
-  employeeNumber: '25',
+  employeeNumber: "25",
   lastName: "Серкбаева",
   firstName: "Алтын",
   photoData: фотоСеркбаеваАлтын,

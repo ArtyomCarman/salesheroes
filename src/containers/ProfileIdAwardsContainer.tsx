@@ -117,7 +117,7 @@ export const ProfileIdAwardsContainer: FC = () => {
                               color="rgba(255, 255, 255, 0.8)"
                               minW="0"
                               title={badge.badgeName}
-                              size="body14/20"
+                              size="caption12/16"
                               variant="semibold"
                               justifyContent="center"
                               textAlign="center"
@@ -132,6 +132,7 @@ export const ProfileIdAwardsContainer: FC = () => {
                             >
                               {badge.hasNftMark && (
                                 <Text
+                                  size="caption12/16"
                                   as="span"
                                   display="inline-block"
                                   marginRight="4px"

@@ -1,4 +1,4 @@
-import {Box, Fade, SimpleGrid, Text} from "@chakra-ui/react";
+import { Box, Fade, SimpleGrid, Text } from "@chakra-ui/react";
 
 import {Empty, Leaders} from "../components";
 import {FC, useMemo} from "react";
@@ -13,7 +13,7 @@ import {
 import {useParams} from "react-router-dom";
 
 interface Props {
-  divisionLevel: DivisionLevel
+  divisionLevel: DivisionLevel;
 }
 
 export const TournamentFullListProfilesContainer: FC<Props> = ({ divisionLevel }) => {
@@ -34,8 +34,8 @@ export const TournamentFullListProfilesContainer: FC<Props> = ({ divisionLevel }
       return tournamentFullListCountryT2
     }
 
-    return tournamentFullListCountry
-  }, [divisionLevel])
+    return tournamentFullListCountry;
+  }, [divisionLevel]);
 
   if (!leaders.leaders.length) {
     return (<Empty>

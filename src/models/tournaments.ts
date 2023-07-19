@@ -1,6 +1,11 @@
 import { Badge, Reward } from "../interfaces";
 import КузьменкоИгорь from "../assets/images/Кузьменко Игорь Владимирович1.jpeg";
-import {colorCodeExpert, colorCodeMaster, colorCodeSpecialist, leaders} from "./tournamen-leaders";
+import {
+  colorCodeExpert,
+  colorCodeMaster,
+  colorCodeSpecialist,
+  leaders,
+} from "./tournamen-leaders";
 import фотоКузьменкоИгорь from "../assets/images/Кузьменко Игорь Владимирович1.jpeg";
 import фотоТихомироваМария from "../assets/images/Тихомирова Мария Алексеевна.jpeg";
 import фотоШаброваИрина from "../assets/images/Шаброва Ирина Сергеевна.jpeg";
@@ -271,7 +276,7 @@ export const archiveTournamentId = {
       },
     },
     {
-      divisionLevelName: "Тербанк",
+      divisionLevelName: "Кластер",
       contestants: 3,
       placeInRating: 2,
       reward: {
@@ -280,7 +285,7 @@ export const archiveTournamentId = {
       },
     },
     {
-      divisionLevelName: "ГОСБ",
+      divisionLevelName: "Аппарат ТБ",
       contestants: 1,
       placeInRating: 1,
       reward: {
@@ -343,7 +348,11 @@ export const tournamentShortList = [
     divisionLevelName: "Страна",
     tournamentIndicator: "Ставка",
     contestants: "33 участника",
-    leaders: leaders.sort((item1, item2) => item1.placeInRating > item2.placeInRating ? 1 : -1).slice(0, 5),
+    leaders: leaders
+      .sort((item1, item2) =>
+        item1.placeInRating > item2.placeInRating ? 1 : -1
+      )
+      .slice(0, 5),
   },
   {
     divisionLevelName: "Тербанк",
@@ -351,7 +360,7 @@ export const tournamentShortList = [
     contestants: "3 участника",
     leaders: [
       {
-        employeeNumber: '24',
+        employeeNumber: "24",
         lastName: "Шаброва",
         firstName: "Ирина",
         photoData: фотоШаброваИрина,
@@ -366,7 +375,7 @@ export const tournamentShortList = [
         terDivisionName: "СРБ",
       },
       {
-        employeeNumber: '22',
+        employeeNumber: "22",
         lastName: "Кузьменко",
         firstName: "Игорь",
         photoData: фотоКузьменкоИгорь,
@@ -381,7 +390,7 @@ export const tournamentShortList = [
         terDivisionName: "СРБ",
       },
       {
-        employeeNumber: '23',
+        employeeNumber: "23",
         lastName: "Тихомирова",
         firstName: "Мария",
         photoData: фотоТихомироваМария,
@@ -394,8 +403,8 @@ export const tournamentShortList = [
         },
         placeInRating: 3,
         terDivisionName: "СРБ",
-      }
-    ]
+      },
+    ],
   },
   {
     divisionLevelName: "ГОСБ",
@@ -403,7 +412,7 @@ export const tournamentShortList = [
     contestants: "1 участник",
     leaders: [
       {
-        employeeNumber: '22',
+        employeeNumber: "22",
         lastName: "Кузьменко",
         firstName: "Игорь",
         photoData: фотоКузьменкоИгорь,
@@ -425,7 +434,9 @@ export const tournamentFullListCountry = {
   tournamentId: "T1",
   tournamentIndicator: "Ставка",
   contestants: "33 участника",
-  leaders: leaders.sort((item1, item2) => item1.placeInRating > item2.placeInRating ? 1 : -1),
+  leaders: leaders.sort((item1, item2) =>
+    item1.placeInRating > item2.placeInRating ? 1 : -1
+  ),
 };
 export const tournamentFullListTerb = {
   tournamentId: "T1",
@@ -433,7 +444,7 @@ export const tournamentFullListTerb = {
   contestants: "3 участника",
   leaders: [
     {
-      employeeNumber: '24',
+      employeeNumber: "24",
       lastName: "Шаброва",
       firstName: "Ирина",
       photoData: фотоШаброваИрина,
@@ -448,7 +459,7 @@ export const tournamentFullListTerb = {
       terDivisionName: "СРБ",
     },
     {
-      employeeNumber: '22',
+      employeeNumber: "22",
       lastName: "Кузьменко",
       firstName: "Игорь",
       photoData: фотоКузьменкоИгорь,
@@ -463,7 +474,7 @@ export const tournamentFullListTerb = {
       terDivisionName: "СРБ",
     },
     {
-      employeeNumber: '23',
+      employeeNumber: "23",
       lastName: "Тихомирова",
       firstName: "Мария",
       photoData: фотоТихомироваМария,
@@ -476,7 +487,7 @@ export const tournamentFullListTerb = {
       },
       placeInRating: 3,
       terDivisionName: "СРБ",
-    }
+    },
   ],
 }
 
@@ -486,7 +497,7 @@ export const tournamentFullListGOSB = {
   contestants: "1 участник",
   leaders: [
     {
-      employeeNumber: '22',
+      employeeNumber: "22",
       lastName: "Кузьменко",
       firstName: "Игорь",
       photoData: фотоКузьменкоИгорь,
@@ -501,7 +512,7 @@ export const tournamentFullListGOSB = {
       terDivisionName: "СРБ",
     },
   ],
-}
+};
 
 export const archiveTournaments = {
   tournaments: [
@@ -527,7 +538,7 @@ export const archiveTournaments = {
           placeInRating: 5,
         },
         {
-          divisionLevelResult: "из 3 в стране",
+          divisionLevelResult: "из 3 в кластере",
           placeInRating: 2,
           reward: {
             icon: Reward.silver,
@@ -535,7 +546,7 @@ export const archiveTournaments = {
           },
         },
         {
-          divisionLevelResult: "из 1 в стране",
+          divisionLevelResult: "из 1 в аппарате ТБ",
           placeInRating: 1,
           reward: {
             icon: Reward.gold,

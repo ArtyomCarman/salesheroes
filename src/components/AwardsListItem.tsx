@@ -62,7 +62,7 @@ export const AwardsListItem: FC<Props> = ({ badge, status }) => {
         justifyContent="space-between"
       >
         <Box textAlign="center">
-          {badge.updateTooltip && status === "ALL" && (
+          {/* {badge.updateTooltip && status === "ALL" && (
             <AppTooltip
               text={badge.updateTooltip}
               position="absolute"
@@ -85,7 +85,7 @@ export const AwardsListItem: FC<Props> = ({ badge, status }) => {
             >
               <InfoIcon width="16px" />
             </AppTooltip>
-          )}
+          )} */}
           <Flex
             display="inline-flex"
             position="relative"
@@ -143,7 +143,7 @@ export const AwardsListItem: FC<Props> = ({ badge, status }) => {
                   <Text
                     display="inline-block"
                     marginRight="4px"
-                    size="body16/24"
+                    size={{ base: "caption12/16", lg: "body16/24" }}
                     variant="semibold"
                     bgClip="text"
                     color="transparent"
