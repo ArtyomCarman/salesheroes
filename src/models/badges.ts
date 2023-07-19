@@ -44,7 +44,7 @@ export const badges = {
           imageId: Badge.Commission3M,
           imageIsActive: true,
           badgeId: "00013",
-          receivingDate: "02.03.23",
+          receivingDate: "06.07.23",
           badgeName: "3 млн комиссии по сделкам с Индией",
           badgeAmount: 1,
           updateTooltip:
@@ -282,7 +282,7 @@ export const badgeID = [
     imageId: Badge.Commission3M,
     imageIsActive: true,
     badgeId: "00013",
-    receivingDate: "02.03.23",
+    receivingDate: "06.07.23",
     badgeName: "3 млн комиссии по сделкам с Индией",
     badgeAmount: 1,
     badgeType: "individual",

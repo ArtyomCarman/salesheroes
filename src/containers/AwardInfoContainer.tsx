@@ -127,22 +127,23 @@ export const AwardInfoContainer = () => {
                 mb="16px"
                 justifyContent={{ base: "center", lg: "flex-start" }}
               >
-                {badge.hasNftMark && (
-                  <Text
-                    variant="semibold"
-                    bgClip="text"
-                    size="body16/24"
-                    color="transparent"
-                    bgImage="linear-gradient(103.74deg, #875AC0 0.85%, #B675AF 47.94%, #875AC0 94.39%), linear-gradient(49.6deg, #875AC0 26.29%, #B675AF 50.86%, #875AC0 74.59%)"
-                  >
-                    NFT
-                  </Text>
-                )}
                 <Text
                   variant="semibold"
                   size="body16/24"
                   textAlign={{ base: "center", lg: "initial" }}
                 >
+                  {badge.hasNftMark && (
+                    <Text
+                      as="span"
+                      variant="semibold"
+                      bgClip="text"
+                      size="body16/24"
+                      color="transparent"
+                      bgImage="linear-gradient(103.74deg, #875AC0 0.85%, #B675AF 47.94%, #875AC0 94.39%), linear-gradient(49.6deg, #875AC0 26.29%, #B675AF 50.86%, #875AC0 74.59%)"
+                    >
+                      NFT{" "}
+                    </Text>
+                  )}
                   {badge.badgeName}
                 </Text>
               </Flex>

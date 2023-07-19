@@ -54,7 +54,7 @@ const TournamentAwardBadge: FC<Props> = ({ item }) => {
               sx={{
                 WebkitBoxOrient: "vertical",
                 WebkitLineClamp: "2",
-                wordBreak: "break-all",
+                wordBreak: "break-word",
               }}
             >
               {item.hasNftMark && (

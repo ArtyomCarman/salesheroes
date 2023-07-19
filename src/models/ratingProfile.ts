@@ -1,44 +1,44 @@
 export const ratingProfile = {
-    timePeriod: [
+  timePeriod: [
+    {
+      periodName: "Текущий квартал",
+      divisions: [
         {
-            periodName: "Текущий квартал",
-            divisions: [
-                {
-                    divisionName: "Страна",
-                    contestants: '33',
-                    placeInRating: 7
-                },
-                {
-                    divisionName: "Тербанк",
-                    contestants: '3',
-                    placeInRating: 1
-                },
-                {
-                    divisionName: "Подразделение",
-                    contestants: '1',
-                    placeInRating: 1
-                }
-            ]
+          divisionName: "Страна",
+          contestants: "33",
+          placeInRating: 7,
         },
         {
-            periodName: "За всё время",
-            divisions: [
-                {
-                    divisionName: "Страна",
-                    contestants: '33',
-                    placeInRating: 5
-                },
-                {
-                    divisionName: "Тербанк",
-                    contestants: '3',
-                    placeInRating: 2
-                },
-                {
-                    divisionName: "Подразделение",
-                    contestants: '1',
-                    placeInRating: 1
-                }
-            ]
-        }
-    ]
-}
+          divisionName: "Тербанк",
+          contestants: "3",
+          placeInRating: 1,
+        },
+        {
+          divisionName: "ГОСБ",
+          contestants: "1",
+          placeInRating: 1,
+        },
+      ],
+    },
+    {
+      periodName: "За всё время",
+      divisions: [
+        {
+          divisionName: "Страна",
+          contestants: "33",
+          placeInRating: 5,
+        },
+        {
+          divisionName: "Тербанк",
+          contestants: "3",
+          placeInRating: 2,
+        },
+        {
+          divisionName: "ГОСБ",
+          contestants: "1",
+          placeInRating: 1,
+        },
+      ],
+    },
+  ],
+};
