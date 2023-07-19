@@ -78,7 +78,7 @@ export const AppTemplate = () => {
         }}
         justifyContent="center"
         alignItems="start"
-        px={commonPadding}
+        px="5px"
         overflowY={{
           base: "initial",
           lg: "auto",
