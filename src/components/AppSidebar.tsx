@@ -14,6 +14,12 @@ export const AppSidebar: FC<Props> = ({ ...otherProps }) => (
       lg: "column",
     }}
     justifyContent="space-evenly"
+    display={{
+      base: 'grid',
+      lg: 'flex'
+    }}
+    gridAutoFlow="column"
+    gridAutoColumns="minmax(0, 1fr)"
     {...otherProps}
   >
     {sidebarModules.map(({ to, text, icon: Icon }) => (
@@ -41,12 +47,24 @@ export const AppSidebar: FC<Props> = ({ ...otherProps }) => (
           lg: "#fff",
         }}
         _hover={{
-          textDecoration: "none",
-          color: "#FFBF3E",
-          background: "rgba(87, 92, 112, 0.3)",
-          svg: {
-            fill: "#FFBF3E",
-          },
+          lg: {
+            textDecoration: "none",
+            color: "#FFBF3E",
+            background: "rgba(87, 92, 112, 0.3)",
+            svg: {
+              fill: "#FFBF3E",
+            },
+          }
+        }}
+        _active={{
+          base: {
+            textDecoration: "none",
+            color: "#FFBF3E",
+            background: "rgba(87, 92, 112, 0.3)",
+            svg: {
+              fill: "#FFBF3E",
+            },
+          }
         }}
         _activeLink={{
           "&.active": {
