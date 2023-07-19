@@ -1,9 +1,27 @@
-import { Box, Fade, SimpleGrid, Text } from "@chakra-ui/react";
+import {Box, Fade, SimpleGrid, Text} from "@chakra-ui/react";
 
-import { Leaders } from "../components";
-import { tournamentFullList } from "../models";
+import {Leaders} from "../components";
+import {FC, useMemo} from "react";
+import {DivisionLevel} from "../interfaces";
+import {tournamentFullListCountry, tournamentFullListGOSB, tournamentFullListTerb} from "../models";
 
-export const TournamentFullListProfilesContainer = () => {
+interface Props {
+  divisionLevel: DivisionLevel
+}
+
+export const TournamentFullListProfilesContainer: FC<Props> = ({ divisionLevel }) => {
+  console.log(divisionLevel)
+  const leaders = useMemo(() => {
+    if (divisionLevel === DivisionLevel.Тербанк) {
+      return tournamentFullListTerb
+    }
+    if (divisionLevel === DivisionLevel.Подразделение) {
+      return tournamentFullListGOSB
+    }
+
+    return tournamentFullListCountry
+  }, [divisionLevel])
+
   return (
     <Fade in>
       <Box>
@@ -19,7 +37,7 @@ export const TournamentFullListProfilesContainer = () => {
           zIndex="2"
         >
           <Text size="body14/20" color="rgba(255, 255, 255, 0.8)" mb="12px">
-            {tournamentFullList.contestants}
+            {leaders.contestants}
           </Text>
           <Text
             size="body14/20"
@@ -30,7 +48,7 @@ export const TournamentFullListProfilesContainer = () => {
             Сумма УС
           </Text>
         </SimpleGrid>
-        {tournamentFullList.leaders.map((item) => (
+        {leaders.leaders.map((item) => (
           <Leaders key={item.employeeNumber} leader={item} />
         ))}
       </Box>

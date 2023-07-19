@@ -1,6 +1,9 @@
 import { Badge, Reward } from "../interfaces";
 import КузьменкоИгорь from "../assets/images/Кузьменко Игорь Владимирович1.jpeg";
-import { leaders } from "./tournamen-leaders";
+import {colorCodeExpert, colorCodeMaster, colorCodeSpecialist, leaders} from "./tournamen-leaders";
+import фотоКузьменкоИгорь from "../assets/images/Кузьменко Игорь Владимирович1.jpeg";
+import фотоТихомироваМария from "../assets/images/Тихомирова Мария Алексеевна.jpeg";
+import фотоШаброваИрина from "../assets/images/Шаброва Ирина Сергеевна.jpeg";
 
 export const tournaments = {
   isArchiveButtonNeeds: true,
@@ -30,7 +33,7 @@ export const tournaments = {
           rating: [
             {
               divisionLevelResult: "из 33 в стране",
-              placeInRating: 12,
+              placeInRating: 4,
             },
             {
               divisionLevelResult: "из 3 в ТБ",
@@ -113,7 +116,7 @@ export const tournamentID = [
       {
         divisionLevelName: "Страна",
         contestants: 33,
-        placeInRating: 5,
+        placeInRating: 4,
       },
       {
         divisionLevelName: "Тербанк",
@@ -339,86 +342,165 @@ export const tournamentShortList = [
   {
     divisionLevelName: "Страна",
     tournamentIndicator: "Ставка",
-    contestants: "1 250 участников",
-    leaders,
+    contestants: "33 участника",
+    leaders: leaders.sort((item1, item2) => item1.placeInRating > item2.placeInRating ? 1 : -1).slice(0, 5),
   },
   {
     divisionLevelName: "Тербанк",
     tournamentIndicator: "Ставка",
-    contestants: "1 250 участников",
+    contestants: "3 участника",
     leaders: [
       {
-        employeeNumber: "010122",
-        lastName: "Герасимчук",
-        firstName: "Илья",
-        photoData: "URL_in_Base64",
-        indicatorValue: "22,6 %",
-        placeInRating: 22,
+        employeeNumber: '24',
+        lastName: "Шаброва",
+        firstName: "Ирина",
+        photoData: фотоШаброваИрина,
+        colorCode: colorCodeExpert,
+        isMarked: false,
+        indicatorValue: "28",
         reward: {
-          lightning: Reward.silver,
+          icon: Reward.gold,
           tooltip: "Претендент на победу",
         },
-        terDivisionName: "ЦА",
-        isMarked: true,
-        colorCode: {
-          primary: "blue-60",
-          secondary: "blue-30",
-        },
+        placeInRating: 1,
+        terDivisionName: "СРБ",
       },
-    ],
+      {
+        employeeNumber: '22',
+        lastName: "Кузьменко",
+        firstName: "Игорь",
+        photoData: фотоКузьменкоИгорь,
+        colorCode: colorCodeMaster,
+        isMarked: true,
+        indicatorValue: "27",
+        placeInRating: 2,
+        reward: {
+          icon: Reward.silver,
+          tooltip: "Претендент на победу",
+        },
+        terDivisionName: "СРБ",
+      },
+      {
+        employeeNumber: '23',
+        lastName: "Тихомирова",
+        firstName: "Мария",
+        photoData: фотоТихомироваМария,
+        colorCode: colorCodeSpecialist,
+        isMarked: false,
+        indicatorValue: "26",
+        reward: {
+          icon: Reward.silver,
+          tooltip: "Претендент на победу",
+        },
+        placeInRating: 3,
+        terDivisionName: "СРБ",
+      }
+    ]
   },
   {
     divisionLevelName: "ГОСБ",
     tournamentIndicator: "Ставка",
-    contestants: "1 250 участников",
+    contestants: "1 участник",
     leaders: [
       {
-        employeeNumber: "010122",
-        lastName: "Герасимчук",
-        firstName: "Илья",
-        photoData: "URL_in_Base64",
-        indicatorValue: "22,6 %",
-        placeInRating: 22,
+        employeeNumber: '22',
+        lastName: "Кузьменко",
+        firstName: "Игорь",
+        photoData: фотоКузьменкоИгорь,
+        colorCode: colorCodeMaster,
+        isMarked: true,
+        indicatorValue: "27",
+        placeInRating: 1,
         reward: {
-          lightning: Reward.gold,
+          icon: Reward.gold,
           tooltip: "Претендент на победу",
         },
-        terDivisionName: "ЦА",
-        isMarked: true,
-        colorCode: {
-          primary: "blue-60",
-          secondary: "blue-30",
-        },
+        terDivisionName: "СРБ",
       },
     ],
   },
 ];
 
-export const tournamentFullList = {
-  tournamentId: "5708a086-f0ba-47f4-92ec-afc49ab1aa62",
+export const tournamentFullListCountry = {
+  tournamentId: "T1",
   tournamentIndicator: "Ставка",
-  contestants: "1250 участников",
+  contestants: "33 участника",
+  leaders: leaders.sort((item1, item2) => item1.placeInRating > item2.placeInRating ? 1 : -1),
+};
+export const tournamentFullListTerb = {
+  tournamentId: "T1",
+  tournamentIndicator: "Ставка",
+  contestants: "3 участника",
   leaders: [
     {
-      employeeNumber: "010122",
-      lastName: "Герасимчук",
-      firstName: "Илья",
-      photoData: "URL_in_Base64",
-      indicatorValue: "22,6 %",
+      employeeNumber: '24',
+      lastName: "Шаброва",
+      firstName: "Ирина",
+      photoData: фотоШаброваИрина,
+      colorCode: colorCodeExpert,
+      isMarked: false,
+      indicatorValue: "28",
+      reward: {
+        icon: Reward.gold,
+        tooltip: "Претендент на победу",
+      },
       placeInRating: 1,
+      terDivisionName: "СРБ",
+    },
+    {
+      employeeNumber: '22',
+      lastName: "Кузьменко",
+      firstName: "Игорь",
+      photoData: фотоКузьменкоИгорь,
+      colorCode: colorCodeMaster,
+      isMarked: true,
+      indicatorValue: "27",
+      placeInRating: 2,
       reward: {
         icon: Reward.silver,
-        tooltip: "Победитель турнира",
+        tooltip: "Претендент на победу",
       },
-      terDivisionName: "ЦА",
+      terDivisionName: "СРБ",
+    },
+    {
+      employeeNumber: '23',
+      lastName: "Тихомирова",
+      firstName: "Мария",
+      photoData: фотоТихомироваМария,
+      colorCode: colorCodeSpecialist,
+      isMarked: false,
+      indicatorValue: "26",
+      reward: {
+        icon: Reward.silver,
+        tooltip: "Претендент на победу",
+      },
+      placeInRating: 3,
+      terDivisionName: "СРБ",
+    }
+  ],
+}
+export const tournamentFullListGOSB = {
+  tournamentId: "T1",
+  tournamentIndicator: "Ставка",
+  contestants: "3 участника",
+  leaders: [
+    {
+      employeeNumber: '22',
+      lastName: "Кузьменко",
+      firstName: "Игорь",
+      photoData: фотоКузьменкоИгорь,
+      colorCode: colorCodeMaster,
       isMarked: true,
-      colorCode: {
-        primary: "blue-60",
-        secondary: "blue-30",
+      indicatorValue: "27",
+      placeInRating: 1,
+      reward: {
+        icon: Reward.gold,
+        tooltip: "Претендент на победу",
       },
+      terDivisionName: "СРБ",
     },
   ],
-};
+}
 
 export const archiveTournaments = {
   tournaments: [

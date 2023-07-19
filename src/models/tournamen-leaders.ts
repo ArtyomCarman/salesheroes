@@ -27,580 +27,489 @@ import фотоШаброваИрина from "../assets/images/Шаброва И
 import фотоСеркбаеваАлтын from "../assets/images/Серкбаева Алтын Суннатовна.jpeg";
 import фотоЖаглинаЖанна from "../assets/images/Жаглина Жанна Маратовна.jpeg";
 
-const colorCodeExpert = {
+export const colorCodeExpert = {
   primary: "orange-60",
   secondary: "orange-30",
 };
-const colorCodeMaster = {
+export const colorCodeMaster = {
   primary: "blue-60",
   secondary: "blue-30",
 };
 
-const colorCodeSpecialist = {
+export const colorCodeSpecialist = {
   primary: "light-green-30",
   secondary: "light-green-20",
 };
 
 const МитосевЯрослав = {
-  employeeNumber: Math.random().toString(),
+  employeeNumber: '11',
   lastName: "Митосев",
   firstName: "Ярослав",
   photoData: "",
   colorCode: colorCodeExpert,
-  // others
   isMarked: false,
   indicatorValue: "1",
-  reward: {
-    icon: Reward.silver,
-    tooltip: "Победитель турнира",
-  },
-  placeInRating: 1,
-  terDivisionName: "ЦА",
+  reward: undefined,
+  placeInRating: 33,
+  terDivisionName: "МБ",
 };
 
 const БерстеневаАлена = {
-  employeeNumber: Math.random().toString(),
+  employeeNumber: '19',
   lastName: "Берстенева",
   firstName: "Алена",
   photoData: фотоБерстеневаАлена,
   colorCode: colorCodeMaster,
-  // others
   isMarked: false,
   indicatorValue: "2",
-  reward: {
-    icon: Reward.silver,
-    tooltip: "Победитель турнира",
-  },
-  //   terDivisionName: "ЦА",
+  reward: undefined,
+  placeInRating: 32,
+  terDivisionName: "СИБ",
 };
 
 const КротковНиколай = {
-  employeeNumber: Math.random().toString(),
+  employeeNumber: '26',
   lastName: "Кротков",
   firstName: "Николай",
   photoData: фотоКротковНиколай,
   colorCode: colorCodeExpert,
-  // others
   isMarked: false,
   indicatorValue: "3",
-  reward: {
-    icon: Reward.silver,
-    tooltip: "Победитель турнира",
-  },
-  //   terDivisionName: "ЦА",
+  reward: undefined,
+  placeInRating: 31,
+  terDivisionName: "УБ",
 };
 
 const ДмитриеваВероника = {
-  employeeNumber: Math.random().toString(),
+  employeeNumber: '10',
   lastName: "Дмитриева",
   firstName: "Вероника",
   photoData: фотоДмитриеваВероника,
   colorCode: colorCodeExpert,
-  // others
   isMarked: false,
-  indicatorValue: "4",
-  reward: {
-    icon: Reward.silver,
-    tooltip: "Победитель турнира",
-  },
-  //   terDivisionName: "ЦА",
+  indicatorValue: "3",
+  reward: undefined,
+  placeInRating: 30,
+  terDivisionName: "МБ",
 };
 
 const БрусницынаМария = {
-  employeeNumber: Math.random().toString(),
+  employeeNumber: '27',
   lastName: "Брусницына",
   firstName: "Мария",
   photoData: фотоДмитриеваВероника,
-  colorCode: colorCodeExpert,
-  // others
+  colorCode: colorCodeSpecialist,
   isMarked: false,
   indicatorValue: "4",
-  reward: {
-    icon: Reward.silver,
-    tooltip: "Победитель турнира",
-  },
-  //   terDivisionName: "ЦА",
+  reward: undefined,
+  placeInRating: 29,
+  terDivisionName: "УБ",
 };
 
 const КодоловаЕлена = {
-  employeeNumber: Math.random().toString(),
+  employeeNumber: '6',
   lastName: "Кодолова",
   firstName: "Елена",
   photoData: фотоКодоловаЕлена,
-  colorCode: colorCodeExpert,
-  // others
+  colorCode: colorCodeSpecialist,
   isMarked: false,
   indicatorValue: "4",
-  reward: {
-    icon: Reward.silver,
-    tooltip: "Победитель турнира",
-  },
-  //   terDivisionName: "ЦА",
+  reward: undefined,
+  terDivisionName: "ВВБ",
+  placeInRating: 28,
 };
 
 const КирееваЮлия = {
-  employeeNumber: Math.random().toString(),
+  employeeNumber: '29',
   lastName: "Киреева",
   firstName: "Юлия",
   photoData: фотоКирееваЮлия,
   colorCode: colorCodeExpert,
-  // others
   isMarked: false,
-  indicatorValue: "4",
-  reward: {
-    icon: Reward.silver,
-    tooltip: "Победитель турнира",
-  },
-  //   terDivisionName: "ЦА",
+  indicatorValue: "5",
+  reward: undefined,
+  terDivisionName: "ЦЧБ",
+  placeInRating: 27,
 };
 
 const АдиевРашид = {
-  employeeNumber: Math.random().toString(),
+  employeeNumber: '20',
   lastName: "Адиев",
   firstName: "Рашид",
   photoData: фотоАдиевРашид,
-  colorCode: colorCodeExpert,
-  // others
+  colorCode: colorCodeSpecialist,
   isMarked: false,
-  indicatorValue: "4",
-  reward: {
-    icon: Reward.silver,
-    tooltip: "Победитель турнира",
-  },
-  //   terDivisionName: "ЦА",
+  indicatorValue: "5",
+  reward: undefined,
+  terDivisionName: "СИБ",
+  placeInRating: 26,
 };
 
 const ЗахаровАлександр = {
-  employeeNumber: Math.random().toString(),
+  employeeNumber: '16',
   lastName: "Захаров",
   firstName: "Александр",
   photoData: фотоКодоловаЕлена,
   colorCode: colorCodeExpert,
-  // others
   isMarked: false,
-  indicatorValue: "4",
-  reward: {
-    icon: Reward.silver,
-    tooltip: "Победитель турнира",
-  },
-  //   terDivisionName: "ЦА",
+  indicatorValue: "5",
+  reward: undefined,
+  terDivisionName: "СЗБ",
+  placeInRating: 25,
 };
 
 const КарагодинаМария = {
-  employeeNumber: Math.random().toString(),
+  employeeNumber: '13',
   lastName: "Карагодина",
   firstName: "Мария",
   photoData: фотоКарагодинаМария,
   colorCode: colorCodeExpert,
-  // others
   isMarked: false,
-  indicatorValue: "4",
-  reward: {
-    icon: Reward.silver,
-    tooltip: "Победитель турнира",
-  },
-  //   terDivisionName: "ЦА",
+  indicatorValue: "5",
+  reward: undefined,
+  terDivisionName: "ПБ",
+  placeInRating: 24,
 };
 
 const СорокинИлья = {
-  employeeNumber: Math.random().toString(),
+  employeeNumber: '8',
   lastName: "Сорокин",
   firstName: "Илья",
   photoData: фотоСорокинИлья,
   colorCode: colorCodeExpert,
-  // others
   isMarked: false,
-  indicatorValue: "4",
-  reward: {
-    icon: Reward.silver,
-    tooltip: "Победитель турнира",
-  },
-  //   terDivisionName: "ЦА",
+  indicatorValue: "5",
+  reward: undefined,
+  placeInRating: 23,
+  terDivisionName: "ДВБ",
 };
 
 const БобокАлександр = {
-  employeeNumber: Math.random().toString(),
+  employeeNumber: '12',
   lastName: "Бобок",
   firstName: "Александр",
   photoData: фотоБобокАлександр,
-  colorCode: colorCodeExpert,
-  // others
+  colorCode: colorCodeSpecialist,
   isMarked: false,
-  indicatorValue: "4",
-  reward: {
-    icon: Reward.silver,
-    tooltip: "Победитель турнира",
-  },
-  //   terDivisionName: "ЦА",
+  indicatorValue: "7",
+  reward: undefined,
+  terDivisionName: "МБ",
+  placeInRating: 22,
 };
 
 const ПроскуринаЕлена = {
-  employeeNumber: Math.random().toString(),
+  employeeNumber: '2',
   lastName: "Проскурина",
   firstName: "Елена",
   photoData: фотоПроскуринаЕлена,
   colorCode: colorCodeExpert,
-  // others
   isMarked: false,
-  indicatorValue: "4",
-  reward: {
-    icon: Reward.silver,
-    tooltip: "Победитель турнира",
-  },
-  //   terDivisionName: "ЦА",
+  indicatorValue: "7",
+  reward: undefined,
+  terDivisionName: "ББ",
+  placeInRating: 21,
 };
 
 const СорокинаМарина = {
-  employeeNumber: Math.random().toString(),
+  employeeNumber: '17',
   lastName: "Сорокина",
   firstName: "Марина",
   photoData: "",
-  colorCode: colorCodeExpert,
-  // others
+  colorCode: colorCodeSpecialist,
   isMarked: false,
-  indicatorValue: "4",
-  reward: {
-    icon: Reward.silver,
-    tooltip: "Победитель турнира",
-  },
-  //   terDivisionName: "ЦА",
+  indicatorValue: "8",
+  reward: undefined,
+  placeInRating: 20,
+  terDivisionName: "СЗБ",
 };
 const ТомсонЕкатерина = {
-  employeeNumber: Math.random().toString(),
+  employeeNumber: '21',
   lastName: "Томсон",
   firstName: "Екатерина",
   photoData: фотоТомсонЕкатерина,
   colorCode: colorCodeExpert,
-  // others
   isMarked: false,
-  indicatorValue: "4",
-  reward: {
-    icon: Reward.silver,
-    tooltip: "Победитель турнира",
-  },
-  //   terDivisionName: "ЦА",
+  indicatorValue: "9",
+  reward: undefined,
+  terDivisionName: "СИБ",
+  placeInRating: 19,
 };
 
 const ДуроваНаталья = {
-  employeeNumber: Math.random().toString(),
+  employeeNumber: '28',
   lastName: "Дурова",
   firstName: "Наталья",
   photoData: фотоДуроваНаталья,
-  colorCode: colorCodeExpert,
-  // others
+  colorCode: colorCodeMaster,
   isMarked: false,
-  indicatorValue: "4",
-  reward: {
-    icon: Reward.silver,
-    tooltip: "Победитель турнира",
-  },
-  //   terDivisionName: "ЦА",
+  indicatorValue: "13",
+  reward: undefined,
+  terDivisionName: "ЦЧБ",
+  placeInRating: 18,
 };
 
 const МитренкоАндрей = {
-  employeeNumber: Math.random().toString(),
+  employeeNumber: '7',
   lastName: "Митренко",
   firstName: "Андрей",
   photoData: фотоМитренкоАндрей,
-  colorCode: colorCodeExpert,
-  // others
+  colorCode: colorCodeSpecialist,
   isMarked: false,
-  indicatorValue: "4",
-  reward: {
-    icon: Reward.silver,
-    tooltip: "Победитель турнира",
-  },
-  //   terDivisionName: "ЦА",
+  indicatorValue: "14",
+  reward: undefined,
+  terDivisionName: "ДВБ",
+  placeInRating: 17,
 };
 
 const ХасаншинаВенера = {
-  employeeNumber: Math.random().toString(),
+  employeeNumber: '5',
   lastName: "Хасаншина",
   firstName: "Венера",
   photoData: фотоХасаншинаВенера,
   colorCode: colorCodeExpert,
-  // others
   isMarked: false,
-  indicatorValue: "4",
-  reward: {
-    icon: Reward.silver,
-    tooltip: "Победитель турнира",
-  },
-  //   terDivisionName: "ЦА",
+  indicatorValue: "14",
+  reward: undefined,
+  placeInRating: 16,
+  terDivisionName: "ВВБ",
 };
 
 const ШебановаОльга = {
-  employeeNumber: Math.random().toString(),
+  employeeNumber: '31',
   lastName: "Шебанова",
   firstName: "Ольга",
   photoData: фотоШебановаОльга,
-  colorCode: colorCodeExpert,
-  // others
+  colorCode: colorCodeSpecialist,
   isMarked: false,
   indicatorValue: "4",
-  reward: {
-    icon: Reward.silver,
-    tooltip: "Победитель турнира",
-  },
-  //   terDivisionName: "ЦА",
+  reward: undefined,
+  placeInRating: 15,
+  terDivisionName: "ЮЗБ",
 };
 
 const ЧернецВиктория = {
-  employeeNumber: Math.random().toString(),
+  employeeNumber: '33',
   lastName: "Чернец",
   firstName: "Виктория",
   photoData: фотоЧернецВиктория,
   colorCode: colorCodeExpert,
-  // others
   isMarked: false,
-  indicatorValue: "4",
-  reward: {
-    icon: Reward.silver,
-    tooltip: "Победитель турнира",
-  },
-  //   terDivisionName: "ЦА",
+  indicatorValue: "19",
+  placeInRating: 14,
+  reward: undefined,
+  terDivisionName: "ЮЗБ",
 };
 
 const ЖаглинаЖанна = {
-  employeeNumber: Math.random().toString(),
+  employeeNumber: '30',
   lastName: "Жаглина",
   firstName: "Жанна",
   photoData: фотоЖаглинаЖанна,
   colorCode: colorCodeExpert,
-  // others
   isMarked: false,
-  indicatorValue: "4",
-  reward: {
-    icon: Reward.silver,
-    tooltip: "Победитель турнира",
-  },
-  //   terDivisionName: "ЦА",
+  indicatorValue: "19",
+  reward: undefined,
+  placeInRating: 13,
+  terDivisionName: "ЦЧБ",
 };
 
 const КунинаТатьяна = {
-  employeeNumber: Math.random().toString(),
+  employeeNumber: '15',
   lastName: "Кунина",
   firstName: "Татьяна",
   photoData: фотоКунинаТатьяна,
   colorCode: colorCodeExpert,
-  // others
   isMarked: false,
-  indicatorValue: "4",
-  reward: {
-    icon: Reward.silver,
-    tooltip: "Победитель турнира",
-  },
-  //   terDivisionName: "ЦА",
+  indicatorValue: "20",
+  placeInRating: 12,
+  reward: undefined,
+  terDivisionName: "ПБ",
 };
 
 const ЧернякРуфина = {
-  employeeNumber: Math.random().toString(),
+  employeeNumber: '3',
   lastName: "Черняк",
   firstName: "Руфина",
   photoData: "",
-  colorCode: colorCodeExpert,
-  // others
+  colorCode: colorCodeMaster,
   isMarked: false,
-  indicatorValue: "4",
-  reward: {
-    icon: Reward.silver,
-    tooltip: "Победитель турнира",
-  },
-  //   terDivisionName: "ЦА",
+  indicatorValue: "21",
+  reward: undefined,
+  placeInRating: 11,
+  terDivisionName: "ББ",
 };
 
 const СавушкинаЭмма = {
-  employeeNumber: Math.random().toString(),
+  employeeNumber: '18',
   lastName: "Савушкина",
   firstName: "Эмма",
   photoData: фотоСавушкинаЭмма,
   colorCode: colorCodeExpert,
-  // others
   isMarked: false,
-  indicatorValue: "4",
-  reward: {
-    icon: Reward.silver,
-    tooltip: "Победитель турнира",
-  },
-  //   terDivisionName: "ЦА",
+  indicatorValue: "22",
+  reward: undefined,
+  placeInRating: 10,
+  terDivisionName: "СЗБ",
 };
 
 const БорбликМихаил = {
-  employeeNumber: Math.random().toString(),
+  employeeNumber: '32',
   lastName: "Борблик",
   firstName: "Михаил",
   photoData: фотоБорбликМихаил,
-  colorCode: colorCodeExpert,
-  // others
+  colorCode: colorCodeMaster,
   isMarked: false,
-  indicatorValue: "4",
-  reward: {
-    icon: Reward.silver,
-    tooltip: "Победитель турнира",
-  },
-  //   terDivisionName: "ЦА",
+  indicatorValue: "23",
+  reward: undefined,
+  placeInRating: 9,
+  terDivisionName: "ЮЗБ",
 };
 
 const ОрловаЮлия = {
-  employeeNumber: Math.random().toString(),
+  employeeNumber: '13',
   lastName: "Орлова",
   firstName: "Юлия",
   photoData: фотоОрловаЮлия,
-  colorCode: colorCodeExpert,
-  // others
+  colorCode: colorCodeMaster,
   isMarked: false,
-  indicatorValue: "4",
-  reward: {
-    icon: Reward.silver,
-    tooltip: "Победитель турнира",
-  },
-  //   terDivisionName: "ЦА",
+  indicatorValue: "23",
+  reward: undefined,
+  placeInRating: 8,
+  terDivisionName: "ПБ",
 };
 
 const СенотрусоваЮлия = {
-  employeeNumber: Math.random().toString(),
+  employeeNumber: '9',
   lastName: "Сенотрусова",
   firstName: "Юлия",
   photoData: фотоСенотрусоваЮлия,
   colorCode: colorCodeExpert,
-  // others
   isMarked: false,
-  indicatorValue: "4",
-  reward: {
-    icon: Reward.silver,
-    tooltip: "Победитель турнира",
-  },
-  //   terDivisionName: "ЦА",
+  indicatorValue: "24",
+  reward: undefined,
+  placeInRating: 7,
+  terDivisionName: "ДВБ",
 };
 
 const МакаровПавел = {
-  employeeNumber: Math.random().toString(),
+  employeeNumber: '1',
   lastName: "Макаров",
   firstName: "Павел",
   photoData: фотоМакаровПавел,
   colorCode: colorCodeExpert,
-  // others
   isMarked: false,
-  indicatorValue: "4",
-  reward: {
-    icon: Reward.silver,
-    tooltip: "Победитель турнира",
-  },
-  //   terDivisionName: "ЦА",
+  indicatorValue: "24",
+  reward: undefined,
+  placeInRating: 6,
+  terDivisionName: "ББ",
 };
 
 const ТихомироваМария = {
-  employeeNumber: Math.random().toString(),
+  employeeNumber: '23',
   lastName: "Тихомирова",
   firstName: "Мария",
   photoData: фотоТихомироваМария,
-  colorCode: colorCodeExpert,
-  // others
+  colorCode: colorCodeSpecialist,
   isMarked: false,
-  indicatorValue: "4",
-  reward: {
-    icon: Reward.silver,
-    tooltip: "Победитель турнира",
-  },
-  //   terDivisionName: "ЦА",
+  indicatorValue: "26",
+  reward: undefined,
+  placeInRating: 5,
+  terDivisionName: "СРБ",
 };
 
 const КузьменкоИгорь = {
-  employeeNumber: Math.random().toString(),
+  employeeNumber: '22',
   lastName: "Кузьменко",
   firstName: "Игорь",
   photoData: фотоКузьменкоИгорь,
-  colorCode: colorCodeExpert,
-  // others
-  isMarked: false,
-  indicatorValue: "4",
-  reward: {
-    icon: Reward.silver,
-    tooltip: "Победитель турнира",
-  },
-  //   terDivisionName: "ЦА",
+  colorCode: colorCodeMaster,
+  isMarked: true,
+  indicatorValue: "27",
+  placeInRating: 4,
+  reward: undefined,
+  terDivisionName: "СРБ",
 };
 
 const ШаброваИрина = {
-  employeeNumber: Math.random().toString(),
+  employeeNumber: '24',
   lastName: "Шаброва",
   firstName: "Ирина",
   photoData: фотоШаброваИрина,
   colorCode: colorCodeExpert,
-  // others
   isMarked: false,
-  indicatorValue: "4",
+  indicatorValue: "28",
   reward: {
     icon: Reward.silver,
-    tooltip: "Победитель турнира",
+    tooltip: "Претендент на победу",
   },
-  //   terDivisionName: "ЦА",
+  placeInRating: 3,
+  terDivisionName: "СРБ",
 };
 
 const КатаеваВероника = {
-  employeeNumber: Math.random().toString(),
+  employeeNumber: '4',
   lastName: "Катаева",
   firstName: "Вероника",
   photoData: "",
   colorCode: colorCodeExpert,
-  // others
   isMarked: false,
-  indicatorValue: "4",
+  indicatorValue: "29",
   reward: {
     icon: Reward.silver,
-    tooltip: "Победитель турнира",
+    tooltip: "Претендент на победу",
   },
-  //   terDivisionName: "ЦА",
+  placeInRating: 2,
+  terDivisionName: "ВВБ",
 };
 
 const СеркбаеваАлтын = {
-  employeeNumber: Math.random().toString(),
+  employeeNumber: '25',
   lastName: "Серкбаева",
   firstName: "Алтын",
   photoData: фотоСеркбаеваАлтын,
-  colorCode: colorCodeExpert,
-  // others
+  colorCode: colorCodeMaster,
   isMarked: false,
-  indicatorValue: "4",
+  indicatorValue: "30",
   reward: {
-    icon: Reward.silver,
-    tooltip: "Победитель турнира",
+    icon: Reward.gold,
+    tooltip: "Претендент на победу",
   },
-  //   terDivisionName: "ЦА",
+  placeInRating: 1,
+  terDivisionName: "УБ",
 };
 
 export const leaders = [
   МитосевЯрослав,
-  // БерстеневаАлена,
-  // КротковНиколай,
-  // ДмитриеваВероника,
-  // БрусницынаМария,
-  // КодоловаЕлена,
-  // КирееваЮлия,
-  // АдиевРашид,
-  // ЗахаровАлександр,
-  // КарагодинаМария,
-  // СорокинИлья,
-  // БобокАлександр,
-  // ПроскуринаЕлена,
-  // СорокинаМарина,
-  // ТомсонЕкатерина,
-  // ДуроваНаталья,
-  // МитренкоАндрей,
-  // ХасаншинаВенера,
-  // ШебановаОльга,
-  // ЧернецВиктория,
-  // ЖаглинаЖанна,
-  // КунинаТатьяна,
-  // ЧернякРуфина,
-  // СавушкинаЭмма,
-  // БорбликМихаил,
-  // ОрловаЮлия,
-  // СенотрусоваЮлия,
-  // МакаровПавел,
-  // ТихомироваМария,
-  // КузьменкоИгорь,
-  // ШаброваИрина,
-  // КатаеваВероника,
-  // СеркбаеваАлтын,
+  БерстеневаАлена,
+  КротковНиколай,
+  ДмитриеваВероника,
+  БрусницынаМария,
+  КодоловаЕлена,
+  КирееваЮлия,
+  АдиевРашид,
+  ЗахаровАлександр,
+  КарагодинаМария,
+  СорокинИлья,
+  БобокАлександр,
+  ПроскуринаЕлена,
+  СорокинаМарина,
+  ТомсонЕкатерина,
+  ДуроваНаталья,
+  МитренкоАндрей,
+  ХасаншинаВенера,
+  ШебановаОльга,
+  ЧернецВиктория,
+  ЖаглинаЖанна,
+  КунинаТатьяна,
+  ЧернякРуфина,
+  СавушкинаЭмма,
+  БорбликМихаил,
+  ОрловаЮлия,
+  СенотрусоваЮлия,
+  МакаровПавел,
+  ТихомироваМария,
+  КузьменкоИгорь,
+  ШаброваИрина,
+  КатаеваВероника,
+  СеркбаеваАлтын,
 ];

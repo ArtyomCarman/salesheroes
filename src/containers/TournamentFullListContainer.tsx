@@ -14,8 +14,8 @@ export const TournamentFullListContainer = () => {
 			value: DivisionLevel['Страна'],
 		},
 		{
-			label: 'Кластер',
-			value: DivisionLevel['Кластер'],
+			label: 'Тербанк',
+			value: DivisionLevel['Тербанк'],
 		},
 		{
 			label: 'Подразделение',
@@ -49,7 +49,7 @@ export const TournamentFullListContainer = () => {
 						width="auto"
 						padding="16px"
 					/>
-					<TournamentFullListProfilesContainer key={searchParamsValue} />
+					<TournamentFullListProfilesContainer key={searchParamsValue} divisionLevel={searchParamsValue} />
 			</Flex>
 		</Box>
 	);
