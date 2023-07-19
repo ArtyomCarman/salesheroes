@@ -82,11 +82,6 @@ export const AppPopoverContent: FC<Props> = ({ targetRect, resetRect }) => {
       }}
       alignItems="flex-end"
     >
-      <div
-        css={{
-          background: "red",
-        }}
-      ></div>
       <SlideFade
         in
         ref={contentRef}
