@@ -1,4 +1,4 @@
-import { FC } from "react";
+import {FC} from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { Box, Flex, Show, SimpleGrid, Text } from "@chakra-ui/react";
 
@@ -9,8 +9,8 @@ import {
   ProfileAvatar,
 } from "../components";
 import { ReactComponent as ArrowRightIcon } from "../assets/icons/arrow-right.svg";
-import { archiveTournamentId } from "../models";
-import { ITournamentIdProfilesShortListBody, Status } from "../interfaces";
+import {archiveTournamentId} from "../models";
+import {DivisionLevel, ITournamentIdProfilesShortListBody, Status} from "../interfaces";
 
 export const TournamentShortListProfilesContainer: FC<Props> = ({
   divisionLevel,
@@ -59,7 +59,7 @@ export const TournamentShortListProfilesContainer: FC<Props> = ({
               textAlign="center"
               whiteSpace="pre-wrap"
             >
-              Пока нет участников. Вы можете стать первым!
+              Пока в вашем { divisionLevel.divisionLevelName === DivisionLevel.Тербанк ? 'тербанке' : 'ГОСБ'  } нет участников турнира. Вы можете стать первым!
             </Text>
           </Empty>
         </Box>

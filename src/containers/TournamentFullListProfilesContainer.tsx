@@ -1,26 +1,50 @@
 import {Box, Fade, SimpleGrid, Text} from "@chakra-ui/react";
 
-import {Leaders} from "../components";
+import {Empty, Leaders} from "../components";
 import {FC, useMemo} from "react";
 import {DivisionLevel} from "../interfaces";
-import {tournamentFullListCountry, tournamentFullListGOSB, tournamentFullListTerb} from "../models";
+import {
+  tournamentFullListCountry,
+  tournamentFullListCountryT2,
+  tournamentFullListGOSBT2,
+  tournamentFullListTerb,
+  tournamentFullListGOSB, tournamentFullListTerbT2,
+} from "../models";
+import {useParams} from "react-router-dom";
 
 interface Props {
   divisionLevel: DivisionLevel
 }
 
 export const TournamentFullListProfilesContainer: FC<Props> = ({ divisionLevel }) => {
-  console.log(divisionLevel)
+  const { tournamentId } = useParams();
   const leaders = useMemo(() => {
-    if (divisionLevel === DivisionLevel.Тербанк) {
+    if (divisionLevel === DivisionLevel.Тербанк && tournamentId !== 'T2') {
       return tournamentFullListTerb
     }
-    if (divisionLevel === DivisionLevel.Подразделение) {
+    if (divisionLevel === DivisionLevel.Подразделение && tournamentId !== 'T2') {
       return tournamentFullListGOSB
+    }
+    if (tournamentId === 'T2' && divisionLevel === DivisionLevel.Тербанк) {
+      return tournamentFullListTerbT2
+    }
+    if (tournamentId === 'T2' && divisionLevel === DivisionLevel.Подразделение) {
+      return tournamentFullListGOSBT2
+    }if (tournamentId === 'T2' && divisionLevel === DivisionLevel.Страна) {
+      return tournamentFullListCountryT2
     }
 
     return tournamentFullListCountry
   }, [divisionLevel])
+
+  if (!leaders.leaders.length) {
+    return (<Empty>
+      <Text size="sub18/24"
+            color="rgba(255, 255, 255, 0.6)"
+            textAlign="center"
+            whiteSpace="pre-wrap">Пока в вашем {divisionLevel === DivisionLevel.Тербанк ? 'тербанке' : 'ГОСБ'} нет участников турнира. Вы можете стать первым!</Text>
+    </Empty>)
+  }
 
   return (
     <Fade in>
@@ -54,4 +78,4 @@ export const TournamentFullListProfilesContainer: FC<Props> = ({ divisionLevel }
       </Box>
     </Fade>
   );
-};
+}

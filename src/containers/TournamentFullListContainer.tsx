@@ -18,7 +18,7 @@ export const TournamentFullListContainer = () => {
 			value: DivisionLevel['Тербанк'],
 		},
 		{
-			label: 'Подразделение',
+			label: 'ГОСБ',
 			value: DivisionLevel['Подразделение'],
 		},
 	];

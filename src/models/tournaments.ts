@@ -479,10 +479,11 @@ export const tournamentFullListTerb = {
     }
   ],
 }
+
 export const tournamentFullListGOSB = {
   tournamentId: "T1",
   tournamentIndicator: "Ставка",
-  contestants: "3 участника",
+  contestants: "1 участник",
   leaders: [
     {
       employeeNumber: '22',
@@ -545,3 +546,108 @@ export const archiveTournaments = {
     },
   ],
 };
+
+export const tournamentFullListGOSBT2 = {
+  tournamentId: "T2",
+  tournamentIndicator: "Ставка",
+  contestants: "0 участников",
+  leaders: [],
+}
+
+export const tournamentFullListTerbT2 = {
+  tournamentId: "T2",
+  tournamentIndicator: "Ставка",
+  contestants: "2 участника",
+  leaders: [
+    {
+      employeeNumber: '24',
+      lastName: "Шаброва",
+      firstName: "Ирина",
+      photoData: фотоШаброваИрина,
+      colorCode: colorCodeExpert,
+      isMarked: false,
+      indicatorValue: "28",
+      reward: {
+        icon: Reward.gold,
+        tooltip: "Претендент на победу",
+      },
+      placeInRating: 1,
+      terDivisionName: "СРБ",
+    },
+
+    {
+      employeeNumber: '23',
+      lastName: "Тихомирова",
+      firstName: "Мария",
+      photoData: фотоТихомироваМария,
+      colorCode: colorCodeSpecialist,
+      isMarked: false,
+      indicatorValue: "26",
+      reward: {
+        icon: Reward.silver,
+        tooltip: "Претендент на победу",
+      },
+      placeInRating: 2,
+      terDivisionName: "СРБ",
+    }
+  ],
+}
+
+export const tournamentFullListCountryT2 = {
+  tournamentId: "T1",
+  tournamentIndicator: "Ставка",
+  contestants: "32 участника",
+  leaders: leaders.sort((item1, item2) => item1.placeInRating > item2.placeInRating ? 1 : -1).filter((item) => !item.isMarked),
+};
+
+export const tournamentShortListT2 = [
+  {
+    divisionLevelName: "Страна",
+    tournamentIndicator: "Ставка",
+    contestants: "32 участника",
+    leaders: leaders.filter((item) => !item.isMarked).sort((item1, item2) => item1.placeInRating > item2.placeInRating ? 1 : -1).slice(0, 5),
+  },
+  {
+    divisionLevelName: "Тербанк",
+    tournamentIndicator: "Ставка",
+    contestants: "2 участника",
+    leaders: [
+      {
+        employeeNumber: '24',
+        lastName: "Шаброва",
+        firstName: "Ирина",
+        photoData: фотоШаброваИрина,
+        colorCode: colorCodeExpert,
+        isMarked: false,
+        indicatorValue: "28",
+        reward: {
+          icon: Reward.gold,
+          tooltip: "Претендент на победу",
+        },
+        placeInRating: 1,
+        terDivisionName: "СРБ",
+      },
+      {
+        employeeNumber: '23',
+        lastName: "Тихомирова",
+        firstName: "Мария",
+        photoData: фотоТихомироваМария,
+        colorCode: colorCodeSpecialist,
+        isMarked: false,
+        indicatorValue: "26",
+        reward: {
+          icon: Reward.silver,
+          tooltip: "Претендент на победу",
+        },
+        placeInRating: 3,
+        terDivisionName: "СРБ",
+      }
+    ]
+  },
+  {
+    divisionLevelName: "ГОСБ",
+    tournamentIndicator: "Ставка",
+    contestants: "0 участников",
+    leaders: [],
+  },
+];
