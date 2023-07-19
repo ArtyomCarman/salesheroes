@@ -320,7 +320,7 @@ export const archiveTournamentId = {
       hasNftMark: true,
     },
     {
-      divisionLevelName: "Тербанк",
+      divisionLevelName: "Кластер",
       rewardRule: "Бейдж получат 7% от числа участников турнира в вашем ТБ",
       badgeId: "00025",
       badgeName: "Чемпион ТБ по условным сделкам",
@@ -330,7 +330,7 @@ export const archiveTournamentId = {
       hasNftMark: false,
     },
     {
-      divisionLevelName: "ГОСБ",
+      divisionLevelName: "Аппарат ТБ",
       rewardRule:
         "Бейдж получат 10% от числа участников турнира в вашем подразделении",
       badgeId: "00026",
