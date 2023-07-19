@@ -69,7 +69,7 @@ export const Filters: FC<FiltersProps> = ({
           // eslint-disable-next-line react/no-unknown-property
           css={[styles.filter, activeFilter === value && styles.activeFilter]}
           type="button"
-          onPointerUp={handleFilterClick(value)}
+          onClick={handleFilterClick(value)}
         >
           {label}
         </Button>
