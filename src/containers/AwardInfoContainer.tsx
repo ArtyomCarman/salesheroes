@@ -119,6 +119,7 @@ export const AwardInfoContainer = () => {
               <BadgeIcon
                 imageId={badge.imageId}
                 isActive={badge.imageIsActive}
+                maxH="176px"
               />
             </Flex>
             <Box>

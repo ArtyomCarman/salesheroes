@@ -113,7 +113,11 @@ export const AwardsListItem: FC<Props> = ({ badge, status }) => {
                 : undefined
             }
           >
-            <BadgeIcon imageId={badge.imageId} isActive={badge.imageIsActive} />
+            <BadgeIcon
+              imageId={badge.imageId}
+              isActive={badge.imageIsActive}
+              maxH="176px"
+            />
           </Flex>
           <Tooltip
             label={badge.badgeName}

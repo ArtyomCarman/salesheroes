@@ -104,7 +104,7 @@ export const ProfileIdAwardsContainer: FC = () => {
                               : undefined
                           }
                         >
-                          <BadgeIcon imageId={badge.imageId} />
+                          <BadgeIcon imageId={badge.imageId} maxH="176px" />
                         </Flex>
                         <Flex direction="column" gap="4px">
                           <Tooltip
