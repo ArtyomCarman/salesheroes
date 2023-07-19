@@ -118,7 +118,7 @@ export const badges = {
           hasNftMark: false,
         },
         {
-          imageId: Badge.SuperBonus1,
+          imageId: Badge.SuperBonusNFT,
           imageIsActive: true,
           badgeId: "00020",
           receivingDate: "21.06.23",
@@ -129,7 +129,7 @@ export const badges = {
           hasNftMark: true,
         },
         {
-          imageId: Badge.SuperBonusTop10,
+          imageId: Badge.SuperBonus1,
           imageIsActive: true,
           badgeId: "00021",
           receivingDate: "09.06.23",
@@ -140,7 +140,7 @@ export const badges = {
           hasNftMark: false,
         },
         {
-          imageId: Badge.SuperBonusTop20,
+          imageId: Badge.SuperBonusTop10,
           imageIsActive: true,
           badgeId: "00022",
           receivingDate: "30.06.23",
@@ -151,7 +151,7 @@ export const badges = {
           hasNftMark: false,
         },
         {
-          imageId: Badge.SuperBonusNFT,
+          imageId: Badge.SuperBonusTop20,
           imageIsActive: true,
           badgeId: "00023",
           receivingDate: "13.07.23",
@@ -457,7 +457,7 @@ export const badgeID = [
     },
   },
   {
-    imageId: Badge.SuperBonus1,
+    imageId: Badge.SuperBonusNFT,
     imageIsActive: true,
     badgeId: "00020",
     receivingDate: "21.06.23",
@@ -481,7 +481,7 @@ export const badgeID = [
     },
   },
   {
-    imageId: Badge.SuperBonusTop10,
+    imageId: Badge.SuperBonus1,
     imageIsActive: true,
     badgeId: "00021",
     receivingDate: "09.06.23",
@@ -505,7 +505,7 @@ export const badgeID = [
     },
   },
   {
-    imageId: Badge.SuperBonusTop20,
+    imageId: Badge.SuperBonusTop10,
     imageIsActive: true,
     badgeId: "00022",
     receivingDate: "30.06.23",
@@ -529,7 +529,7 @@ export const badgeID = [
     },
   },
   {
-    imageId: Badge.SuperBonusNFT,
+    imageId: Badge.SuperBonusTop20,
     imageIsActive: true,
     badgeId: "00023",
     receivingDate: "13.07.23",
