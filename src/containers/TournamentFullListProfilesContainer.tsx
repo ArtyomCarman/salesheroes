@@ -22,6 +22,9 @@ export const TournamentFullListProfilesContainer: FC<Props> = ({ divisionLevel }
     if (divisionLevel === DivisionLevel.Тербанк && tournamentId !== 'T2') {
       return tournamentFullListTerb
     }
+    if (divisionLevel === DivisionLevel.Кластер && tournamentId !== 'T2') {
+      return tournamentFullListTerb
+    }
     if (divisionLevel === DivisionLevel.Подразделение && tournamentId !== 'T2') {
       return tournamentFullListGOSB
     }

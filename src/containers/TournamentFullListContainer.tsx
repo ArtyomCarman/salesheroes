@@ -1,4 +1,4 @@
-import { useSearchParams } from "react-router-dom";
+import {useParams, useSearchParams} from "react-router-dom";
 import { Box, Flex, Text } from "@chakra-ui/react";
 
 import { Filters } from "../components";
@@ -8,17 +8,18 @@ import { TournamentFullListProfilesContainer } from "./TournamentFullListProfile
 export const TournamentFullListContainer = () => {
   const [searchParams] = useSearchParams();
   const searchParamsValue = searchParams.get("divisionLevel") as DivisionLevel;
+  const { tournamentId } = useParams()
   const filters = [
     {
       label: "Страна",
       value: DivisionLevel["Страна"],
     },
     {
-      label: "Тербанк",
-      value: DivisionLevel["Тербанк"],
+      label: tournamentId === 'T3' ? 'Кластер' :  "Тербанк",
+      value: tournamentId === 'T3' ? DivisionLevel["Кластер"] :  DivisionLevel["Тербанк"],
     },
     {
-      label: "ГОСБ",
+      label: tournamentId === 'T3' ? 'Аппарат ТБ' :  "ГОСБ",
       value: DivisionLevel["Подразделение"],
     },
   ];

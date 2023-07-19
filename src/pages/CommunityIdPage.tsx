@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Box, Divider, Flex, Show, Text } from "@chakra-ui/react";
 
 import { CommunityNewsCard, ProfileAvatar } from "../components";
@@ -25,8 +25,7 @@ export const CommunityIdPage = () => {
             lg: "sub20/28",
           }}
           variant="semibold"
-          dangerouslySetInnerHTML={{ __html: newsId.newsText }}
-        />
+        >{newsId.newsText}<Link to='https://dfa.sber.ru/nft/tokens/view/2cDe52F4H3ixbxXeknmDWiEkopFNYV6WQ8oT1aTPutDAjWNJQGVxw8mKsiifqMALhF28vUqFHkxSHoejuiAHZd6iLef8D6u' target="_blank"><Box as='span' borderBottom='1px dashed #fff' _hover={{ background: 'rgba(87, 92, 112, 0.3)'}}>NFT на платформе ЦФА Сбера.</Box></Link></Text>
         <Flex color="rgba(255, 255, 255, 0.8)" gap="24px">
           <Flex gap="8px">
             <CalendarIcon width="24px" height="24px" />

@@ -269,11 +269,8 @@ export const archiveTournamentId = {
     {
       divisionLevelName: "Страна",
       contestants: 33,
-      placeInRating: 5,
-      reward: {
-        icon: "GOLD_LIGHTNING",
-        tooltip: "Претендент на победу",
-      },
+      placeInRating: 4,
+      reward: undefined,
     },
     {
       divisionLevelName: "Кластер",
@@ -662,3 +659,91 @@ export const tournamentShortListT2 = [
     leaders: [],
   },
 ];
+
+export const tournamentShortListT3 = [
+  {
+    divisionLevelName: "Страна",
+    tournamentIndicator: "Ставка",
+    contestants: "33 участника",
+    leaders: leaders
+        .sort((item1, item2) =>
+            item1.placeInRating > item2.placeInRating ? 1 : -1
+        )
+        .slice(0, 5),
+  },
+  {
+    divisionLevelName: "Кластер",
+    tournamentIndicator: "Ставка",
+    contestants: "3 участника",
+    leaders: [
+      {
+        employeeNumber: "24",
+        lastName: "Шаброва",
+        firstName: "Ирина",
+        photoData: фотоШаброваИрина,
+        colorCode: colorCodeExpert,
+        isMarked: false,
+        indicatorValue: "28",
+        reward: {
+          icon: Reward.gold,
+          tooltip: "Претендент на победу",
+        },
+        placeInRating: 1,
+        terDivisionName: "СРБ",
+      },
+      {
+        employeeNumber: "22",
+        lastName: "Кузьменко",
+        firstName: "Игорь",
+        photoData: фотоКузьменкоИгорь,
+        colorCode: colorCodeMaster,
+        isMarked: true,
+        indicatorValue: "27",
+        placeInRating: 2,
+        reward: {
+          icon: Reward.silver,
+          tooltip: "Претендент на победу",
+        },
+        terDivisionName: "СРБ",
+      },
+      {
+        employeeNumber: "23",
+        lastName: "Тихомирова",
+        firstName: "Мария",
+        photoData: фотоТихомироваМария,
+        colorCode: colorCodeSpecialist,
+        isMarked: false,
+        indicatorValue: "26",
+        reward: {
+          icon: Reward.silver,
+          tooltip: "Претендент на победу",
+        },
+        placeInRating: 3,
+        terDivisionName: "СРБ",
+      },
+    ],
+  },
+  {
+    divisionLevelName: "Аппарат ТБ",
+    tournamentIndicator: "Ставка",
+    contestants: "1 участник",
+    leaders: [
+      {
+        employeeNumber: "22",
+        lastName: "Кузьменко",
+        firstName: "Игорь",
+        photoData: фотоКузьменкоИгорь,
+        colorCode: colorCodeMaster,
+        isMarked: true,
+        indicatorValue: "27",
+        placeInRating: 1,
+        reward: {
+          icon: Reward.gold,
+          tooltip: "Претендент на победу",
+        },
+        terDivisionName: "СРБ",
+      },
+    ],
+  },
+];
+

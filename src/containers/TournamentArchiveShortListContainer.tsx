@@ -3,10 +3,10 @@ import { Fade, Flex, Text } from "@chakra-ui/react";
 
 import { AppTabs } from "../components";
 import { TournamentShortListProfilesContainer } from "./TournamentShortListProfilesContainer";
-import { tournamentShortList } from "../models";
+import { tournamentShortListT3 } from "../models";
 
 export const TournamentArchiveShortListContainer = () => {
-  const tabs = tournamentShortList.map((item) => ({
+  const tabs = tournamentShortListT3.map((item) => ({
     label: item.divisionLevelName,
     component: <TournamentShortListProfilesContainer divisionLevel={item} />,
   }));

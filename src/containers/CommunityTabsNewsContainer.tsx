@@ -1,5 +1,5 @@
 import { FC, MouseEvent, useMemo } from "react";
-import { useNavigate } from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 import { Box, Divider, Flex, Grid, Text } from "@chakra-ui/react";
 
 import { AppPopover, CommunityNewsCard, ProfileAvatar } from "../components";
@@ -13,7 +13,10 @@ export const CommunityTabsNewsContainer: FC<Props> = ({ news }) => {
     navigate(`/profile/${id}`);
   };
 
-  const handleCommunityId = () => navigate(news.newsId);
+  const handleCommunityId = (event: MouseEvent<HTMLDivElement>) => {
+    event.stopPropagation()
+    navigate(news.newsId)
+  };
 
   const MAX_LEADERS = 5;
   const showMoreLeaders = useMemo(
@@ -149,8 +152,7 @@ export const CommunityTabsNewsContainer: FC<Props> = ({ news }) => {
           lg: "sub20/28",
         }}
         variant="medium"
-        dangerouslySetInnerHTML={{ __html: news.newsText }}
-      />
+      >{news.newsText}<Link to='https://dfa.sber.ru/nft/tokens/view/2cDe52F4H3ixbxXeknmDWiEkopFNYV6WQ8oT1aTPutDAjWNJQGVxw8mKsiifqMALhF28vUqFHkxSHoejuiAHZd6iLef8D6u' target="_blank"><Box as='span' borderBottom='1px dashed #fff' _hover={{ background: 'rgba(87, 92, 112, 0.3)'}}>NFT на платформе ЦФА Сбера.</Box></Link></Text>
       <Divider borderColor="rgba(255, 255, 255, 0.2)" />
       <CommunityLikesContainer newsId={news.newsId} />
     </CommunityNewsCard>

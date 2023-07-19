@@ -71,7 +71,7 @@ export const AboutAwardsContainer = () => {
 						<Box as="span" fontWeight="600">
 							Серебро
 						</Box>{' '}
-						– за победу в кластере и{' '}
+						– за победу в тербанке и{' '}
 						<Box as="span" fontWeight="600">
 							Золото
 						</Box>{' '}
