@@ -29,7 +29,10 @@ export const ProfileAwardsContainer: FC = () => {
       <Flex
         borderRadius="16px"
         bgColor="rgba(87, 92, 112, 0.3)"
-        p="24px"
+        p={{
+          base: "24px 16px",
+          lg: "24px",
+        }}
         gap="16px"
         direction="column"
       >
@@ -47,8 +50,8 @@ export const ProfileAwardsContainer: FC = () => {
           <>
             <SimpleGrid
               templateColumns={{
-                base: "repeat(2, 1fr)",
-                lg: "repeat(3, 1fr)",
+                base: "repeat(2, minmax(0, 1fr))",
+                lg: "repeat(3, minmax(0, 1fr))",
               }}
               columnGap="8px"
             >
@@ -61,7 +64,7 @@ export const ProfileAwardsContainer: FC = () => {
                       key={badge.badgeId}
                       cursor="pointer"
                       onClick={goToBadge(badge.badgeId)}
-                      minW="0"
+                      p="8px 10px"
                       sx={{
                         "@media (pointer: fine)": {
                           "&:hover": {
@@ -77,7 +80,6 @@ export const ProfileAwardsContainer: FC = () => {
                       <Flex
                         alignSelf="center"
                         position="relative"
-                        padding="12px"
                         _before={
                           badge.badgeAmount > 1
                             ? {
@@ -118,8 +120,7 @@ export const ProfileAwardsContainer: FC = () => {
                             variant="semibold"
                             justifyContent="center"
                             textAlign="center"
-                            display="block"
-                            whiteSpace="nowrap"
+                            display="-webkit-box"
                             textOverflow="ellipsis"
                             overflow="hidden"
                             sx={{
