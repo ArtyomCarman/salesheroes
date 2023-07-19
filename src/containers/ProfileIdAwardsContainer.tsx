@@ -1,5 +1,5 @@
 import { FC, Fragment, useMemo } from "react";
-import {useNavigate, useParams} from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { Fade, Flex, SimpleGrid, Text, Tooltip } from "@chakra-ui/react";
 
 import { BadgeIcon, ButtonComponent, Empty } from "../components";
@@ -7,17 +7,17 @@ import { EmployeeStatus } from "../interfaces";
 import { badges, profileContestant } from "../models";
 
 export const ProfileIdAwardsContainer: FC = () => {
-	const navigate = useNavigate();
-	const { employeeNumber } = useParams()
-	const goToBadge = (id: string) => () => {
-		navigate(`/awards/${id}`);
-	};
-	const goToAllBadges = () => {
-		navigate(`/profile/${employeeNumber}/awards`);
-	};
-	const goToBadges = () => {
-		navigate('/awards');
-	};
+  const navigate = useNavigate();
+  const { employeeNumber } = useParams();
+  const goToBadge = (id: string) => () => {
+    navigate(`/awards/${id}`);
+  };
+  const goToAllBadges = () => {
+    navigate(`/profile/${employeeNumber}/awards`);
+  };
+  const goToBadges = () => {
+    navigate("/awards");
+  };
 
   const maxNumberOfBadges = useMemo(() => {
     if (!badges) return 0;
@@ -57,7 +57,7 @@ export const ProfileIdAwardsContainer: FC = () => {
               >
                 {badges.badgesType.map((badgeType) => (
                   <Fragment key={badgeType.badgeTypeName}>
-                    {badgeType.badges.slice(0,3).map((badge) => (
+                    {badgeType.badges.slice(0, 3).map((badge) => (
                       <Flex
                         direction="column"
                         key={badge.badgeId}
@@ -104,11 +104,7 @@ export const ProfileIdAwardsContainer: FC = () => {
                               : undefined
                           }
                         >
-                          <BadgeIcon
-                            imageId={badge.imageId}
-                            width="136px"
-                            height="136px"
-                          />
+                          <BadgeIcon imageId={badge.imageId} />
                         </Flex>
                         <Flex direction="column" gap="4px">
                           <Tooltip
@@ -157,10 +153,7 @@ export const ProfileIdAwardsContainer: FC = () => {
                 ))}
               </SimpleGrid>
 
-                <ButtonComponent
-                  onClick={goToAllBadges}
-                  text="Посмотреть все"
-                />
+              <ButtonComponent onClick={goToAllBadges} text="Посмотреть все" />
             </>
           ) : (
             <Empty

@@ -1,5 +1,6 @@
 import { Badge, Reward } from "../interfaces";
 import КузьменкоИгорь from "../assets/images/Кузьменко Игорь Владимирович1.jpeg";
+import { leaders } from "./tournamen-leaders";
 
 export const tournaments = {
   isArchiveButtonNeeds: true,
@@ -339,26 +340,7 @@ export const tournamentShortList = [
     divisionLevelName: "Страна",
     tournamentIndicator: "Ставка",
     contestants: "1 250 участников",
-    leaders: [
-      {
-        employeeNumber: "010122",
-        lastName: "Герасимчук",
-        firstName: "Илья",
-        photoData: "URL_in_Base64",
-        indicatorValue: "22,6 %",
-        placeInRating: 22,
-        reward: {
-          lightning: Reward.silver,
-          tooltip: "Претендент на победу",
-        },
-        terDivisionName: "ЦА",
-        isMarked: true,
-        colorCode: {
-          primary: "blue-60",
-          secondary: "blue-30",
-        },
-      },
-    ],
+    leaders,
   },
   {
     divisionLevelName: "Тербанк",

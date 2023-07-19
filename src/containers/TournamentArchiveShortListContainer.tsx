@@ -6,16 +6,11 @@ import { TournamentShortListProfilesContainer } from "./TournamentShortListProfi
 import { tournamentShortList } from "../models";
 
 export const TournamentArchiveShortListContainer = () => {
-  const tabs = useMemo(
-    () =>
-      tournamentShortList?.map((item) => ({
-        label: item.divisionLevelName,
-        component: (
-          <TournamentShortListProfilesContainer divisionLevel={item} />
-        ),
-      })),
-    [tournamentShortList]
-  );
+  const tabs = tournamentShortList.map((item) => ({
+    label: item.divisionLevelName,
+    component: <TournamentShortListProfilesContainer divisionLevel={item} />,
+  }));
+
   return (
     <Fade in>
       <Flex

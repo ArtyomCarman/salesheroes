@@ -113,12 +113,7 @@ export const AwardsListItem: FC<Props> = ({ badge, status }) => {
                 : undefined
             }
           >
-            <BadgeIcon
-              imageId={badge.imageId}
-              isActive={badge.imageIsActive}
-              width="152px"
-              height="152px"
-            />
+            <BadgeIcon imageId={badge.imageId} isActive={badge.imageIsActive} />
           </Flex>
           <Tooltip
             label={badge.badgeName}
@@ -133,7 +128,7 @@ export const AwardsListItem: FC<Props> = ({ badge, status }) => {
                 variant="medium"
                 title={badge.badgeName}
                 textAlign="center"
-                size="body16/24"
+                size={{ base: "caption12/16", lg: "body16/24" }}
                 display="-webkit-box"
                 sx={{
                   "-webkit-box-orient": "vertical",
