@@ -5,6 +5,7 @@ import {
   Grid,
   SlideFade,
   Text,
+  Flex,
   useBreakpointValue,
 } from "@chakra-ui/react";
 
@@ -123,14 +124,14 @@ export const AppPopoverContent: FC<Props> = ({ targetRect, resetRect }) => {
             <Text size="sub20/28" variant="medium">
               {header}
             </Text>
-            <Grid
+            <Flex
               justifyContent="end"
               alignContent="center"
               onClick={handleClose}
               cursor="pointer"
             >
               <CloseIcon width="24px" />
-            </Grid>
+            </Flex>
           </Grid>
           <Box overflowY="auto" css={scrollbarCSS}>
             {content}
