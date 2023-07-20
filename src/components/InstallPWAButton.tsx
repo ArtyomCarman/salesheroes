@@ -35,7 +35,7 @@ export const InstallPWAButton = () => {
             //@ts-ignore
             onClick={onClick}
             text='Скачать'
-            design='outlined'
+            design='transparent'
         />
     );
 };
