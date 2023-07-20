@@ -10,13 +10,13 @@ import {
 import { BadgeIcon, InfoBlock, ProgressBar } from "../components";
 import { gradient } from "../utils";
 import { ReactComponent as DiamondIcon } from "../assets/icons/diamond.svg";
-import { badgeID } from "../models";
+import { allBadges } from "../models";
 import { useParams } from "react-router-dom";
 import { IProfileBadgesIdBody } from "../interfaces";
 
 export const AwardInfoContainer = () => {
   const { badgeId } = useParams();
-  const badge = badgeID.find(
+  const badge = allBadges.find(
     (item) => item.badgeId === badgeId
   ) as IProfileBadgesIdBody;
 

@@ -25,7 +25,6 @@ export const AwardsContainer = () => {
                 <AwardsListItem
                   key={badge.badgeId}
                   badge={badge}
-                  status="ALL"
                 />
               ))}
             </SimpleGrid>

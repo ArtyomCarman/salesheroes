@@ -13,7 +13,7 @@ import { IBagdes } from "../interfaces";
 import { BadgeIcon } from "./BadgeIcon";
 import { ProgressBar } from "./ProgressBar";
 
-export const AwardsListItem: FC<Props> = ({ badge, status }) => {
+export const AwardsListItem: FC<Props> = ({ badge }) => {
   const navigate = useNavigate();
   const prefersReducedMotion = usePrefersReducedMotion();
   const gradient = keyframes`
@@ -168,5 +168,4 @@ export const AwardsListItem: FC<Props> = ({ badge, status }) => {
 
 interface Props {
   badge: IBagdes;
-  status: "ALL" | "EARNED";
 }

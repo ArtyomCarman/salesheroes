@@ -1,10 +1,11 @@
-import { Fragment } from 'react';
 import { Box, Fade, Flex, SimpleGrid, Text } from '@chakra-ui/react';
-import { badges } from '../models'
+import { badgeID, badges } from '../models'
 
 import { AwardsListItem } from '../components';
 
 export const ProfileAllAwardsContainer = () => {
+	const earnedBadges = badgeID.filter(({imageIsActive}) => imageIsActive)
+
 	return (
 		<Fade in>
 			<Box>
@@ -27,13 +28,8 @@ export const ProfileAllAwardsContainer = () => {
 
 				<Box>
 					<SimpleGrid gridTemplateColumns="repeat(2, 1fr)" gap="16px">
-						{badges.badgesType.map((badgeType) => (
-							<Fragment key={badgeType.badgeTypeName}>
-								{badgeType.badges.map((award) => {
-									if (!award.imageIsActive) return null
-									return <AwardsListItem key={award.badgeId} badge={award} status="EARNED"/>
-								})}
-							</Fragment>
+						{earnedBadges.map((badge) => (
+							 <AwardsListItem key={badge.badgeId} badge={badge} />
 						))}
 					</SimpleGrid>
 				</Box>

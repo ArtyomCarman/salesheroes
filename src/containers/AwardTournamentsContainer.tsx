@@ -2,12 +2,12 @@ import {useNavigate, useParams} from 'react-router-dom';
 import { Box, Fade, Flex, Text } from '@chakra-ui/react';
 
 import { ButtonComponent } from '../components';
-import {badgeID} from "../models";
+import {allBadges} from "../models";
 import { IProfileBadgesIdBody} from "../interfaces";
 
 export const AwardTournamentsContainer = () => {
 	const { badgeId } = useParams()
-	const badge = badgeID.find((item) => item.badgeId === badgeId) as IProfileBadgesIdBody
+	const badge = allBadges.find((item) => item.badgeId === badgeId) as IProfileBadgesIdBody
 	const navigate = useNavigate();
 	const navigateToTournament = (id: string) => () => {
 		navigate(`/tournaments/${id}`);
