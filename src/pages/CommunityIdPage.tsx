@@ -66,59 +66,63 @@ export const CommunityIdPage = () => {
       </Flex>
 
       <Divider borderColor="rgba(255, 255, 255, 0.2)" />
-      <Flex direction="column" gap="8px">
-        <Flex gap="12px">
-          <Text size="sub20/28">
-            {newsId.tournamentId ? "Победители" : "Получили бейдж"}
-          </Text>
-          <Text size="sub20/28" color="rgba(255, 255, 255, 0.6)">
-            {newsId.leaders.length}
-          </Text>
-        </Flex>
-        <Flex direction="column">
-          {newsId.leaders.map((leader) => (
-            <Flex
-              key={leader.employeeNumber}
-              gap="12px"
-              padding="12px 0 12px"
-              border="2px solid transparent"
-              cursor="pointer"
-              _hover={{
-                backgroundColor: "rgba(47, 52, 61, 1)",
-                margin: "0 -16px",
-                px: "16px",
-                borderRadius: "8px",
-                _notLast: { boxShadow: "none" },
-              }}
-              _active={{
-                backgroundColor: "rgba(47, 52, 61, 1)",
-                margin: "0 -16px",
-                px: "16px",
-                borderRadius: "8px",
-                _notLast: { boxShadow: "none" },
-              }}
-              _notLast={{
-                boxShadow: "28px 29px 0px -28px rgb(255 255 255 / 20%)",
-              }}
-              onClick={goToProfileId(leader.employeeNumber)}
-            >
-              <ProfileAvatar profile={leader} size="md" />
-              <Flex flexGrow={1} alignItems="center">
-                <Box flexGrow={1}>
-                  <Text variant="semibold">{`${leader.firstName} ${leader.lastName}`}</Text>
-                  <Text size="body14/24" color="rgba(255, 255, 255, 0.8)">
-                    {leader.terDivisionName}
-                  </Text>
-                </Box>
-                <Show above="md">
-                  <ArrowRightIcon width="24px" height="24px" />
-                </Show>
-              </Flex>
+      {newsId.newsId === "news2" && (
+        <>
+          <Flex direction="column" gap="8px">
+            <Flex gap="12px">
+              <Text size="sub20/28">
+                {newsId.tournamentId ? "Победители" : "Получили бейдж"}
+              </Text>
+              <Text size="sub20/28" color="rgba(255, 255, 255, 0.6)">
+                {newsId.leaders.length}
+              </Text>
             </Flex>
-          ))}
-        </Flex>
-      </Flex>
-      <Divider borderColor="rgba(255, 255, 255, 0.2)" />
+            <Flex direction="column">
+              {newsId.leaders.map((leader) => (
+                <Flex
+                  key={leader.employeeNumber}
+                  gap="12px"
+                  padding="12px 0 12px"
+                  border="2px solid transparent"
+                  cursor="pointer"
+                  _hover={{
+                    backgroundColor: "rgba(47, 52, 61, 1)",
+                    margin: "0 -16px",
+                    px: "16px",
+                    borderRadius: "8px",
+                    _notLast: { boxShadow: "none" },
+                  }}
+                  _active={{
+                    backgroundColor: "rgba(47, 52, 61, 1)",
+                    margin: "0 -16px",
+                    px: "16px",
+                    borderRadius: "8px",
+                    _notLast: { boxShadow: "none" },
+                  }}
+                  _notLast={{
+                    boxShadow: "28px 29px 0px -28px rgb(255 255 255 / 20%)",
+                  }}
+                  onClick={goToProfileId(leader.employeeNumber)}
+                >
+                  <ProfileAvatar profile={leader} size="md" />
+                  <Flex flexGrow={1} alignItems="center">
+                    <Box flexGrow={1}>
+                      <Text variant="semibold">{`${leader.firstName} ${leader.lastName}`}</Text>
+                      <Text size="body14/24" color="rgba(255, 255, 255, 0.8)">
+                        {leader.terDivisionName}
+                      </Text>
+                    </Box>
+                    <Show above="md">
+                      <ArrowRightIcon width="24px" height="24px" />
+                    </Show>
+                  </Flex>
+                </Flex>
+              ))}
+            </Flex>
+          </Flex>
+          <Divider borderColor="rgba(255, 255, 255, 0.2)" />
+        </>
+      )}
       <CommunityLikesContainer newsId={newsId.newsId} />
     </CommunityNewsCard>
   );

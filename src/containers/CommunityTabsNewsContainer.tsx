@@ -63,27 +63,30 @@ export const CommunityTabsNewsContainer: FC<Props> = ({ news }) => {
                         gap="12px"
                         gridTemplateColumns="auto 1fr"
                       >
-                        <ProfileAvatar
-                          profile={item}
-                          size="md"
-                          onClick={goToProfile(leader.employeeNumber)}
-                        />
                         <Box
-                          position="relative"
-                          _before={{
-                            content:
-                              !(itemIndex === news.leaders.length - 1) && "''",
-                            position: "absolute",
-                            bottom: "-11px",
-                            width: "100%",
-                            height: "1px",
-                            backgroundColor: "rgba(255, 255, 255, 0.2)",
-                          }}
+                          display="contents"
+                          onClick={goToProfile(item.employeeNumber)}
+                          cursor="pointer"
                         >
-                          <Text>
-                            {item.firstName} {item.lastName}
-                          </Text>
-                          <Text>{item.terDivisionName}</Text>
+                          <ProfileAvatar profile={item} size="md" />
+                          <Box
+                            position="relative"
+                            _before={{
+                              content:
+                                !(itemIndex === news.leaders.length - 1) &&
+                                "''",
+                              position: "absolute",
+                              bottom: "-11px",
+                              width: "100%",
+                              height: "1px",
+                              backgroundColor: "rgba(255, 255, 255, 0.2)",
+                            }}
+                          >
+                            <Text>
+                              {item.firstName} {item.lastName}
+                            </Text>
+                            <Text>{item.terDivisionName}</Text>
+                          </Box>
                         </Box>
                       </Grid>
                     ))}

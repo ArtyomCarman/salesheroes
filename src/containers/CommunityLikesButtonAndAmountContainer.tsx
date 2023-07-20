@@ -48,29 +48,29 @@ export const CommunityLikesButtonAndAmountContainer: FC<Props> = ({
               gap="12px"
               gridTemplateColumns="auto 1fr"
             >
-              <ProfileAvatar
-                profile={item}
-                size="md"
-                onClick={goToProfile(item.employeeNumber)}
-                cursor='pointer'
-              />
               <Box
-                position="relative"
-                _before={{
-                  content: !(itemIndex === people.length - 1) && "''",
-                  position: "absolute",
-                  bottom: "-11px",
-                  width: "100%",
-                  height: "1px",
-                  backgroundColor: "rgba(255, 255, 255, 0.2)",
-                }}
+                display="contents"
                 onClick={goToProfile(item.employeeNumber)}
-                cursor='pointer'
+                cursor="pointer"
               >
-                <Text>
-                  {item.firstName} {item.lastName}
-                </Text>
-                <Text>{item.terDivisionName}</Text>
+                <ProfileAvatar profile={item} size="md" cursor="pointer" />
+                <Box
+                  position="relative"
+                  _before={{
+                    content: !(itemIndex === people.length - 1) && "''",
+                    position: "absolute",
+                    bottom: "-11px",
+                    width: "100%",
+                    height: "1px",
+                    backgroundColor: "rgba(255, 255, 255, 0.2)",
+                  }}
+                  cursor="pointer"
+                >
+                  <Text>
+                    {item.firstName} {item.lastName}
+                  </Text>
+                  <Text>{item.terDivisionName}</Text>
+                </Box>
               </Box>
             </Grid>
           ))}
