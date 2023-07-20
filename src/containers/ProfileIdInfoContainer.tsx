@@ -8,10 +8,7 @@ import { IProfileBody } from '../interfaces';
 
 export const ProfileIdInfoContainer = () => {
 	const { employeeNumber } = useParams();
-
 	const profile = leaders.find((leader) => leader.employeeNumber === employeeNumber) as IProfileBody
-
-	console.log('profile', employeeNumber)
 
 	return (
 		<Fade in>

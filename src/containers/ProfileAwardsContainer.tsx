@@ -118,8 +118,8 @@ export const ProfileAwardsContainer: FC = () => {
                             textOverflow="ellipsis"
                             overflow="hidden"
                             sx={{
-                              "-webkit-box-orient": "vertical",
-                              "-webkit-line-clamp": "3",
+                              WebkitBoxOrient: "vertical",
+                              WebkitLineClamp: "3"
                             }}
                           >
                             {badge.hasNftMark && (

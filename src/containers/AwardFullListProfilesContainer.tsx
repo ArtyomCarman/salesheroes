@@ -62,7 +62,7 @@ export const AwardFullListProfilesContainer = () => {
 				>
 					{badgeLeaders.badge.contestants}
 				</Text>
-				{badgeLeaders.badge.leaders.map((item) => <Leaders leader={item} />)  }
+				{badgeLeaders.badge.leaders.map((item) => <Leaders key={item.employeeNumber} leader={item} />)  }
 			</Box>
 		</Fade>
 	);

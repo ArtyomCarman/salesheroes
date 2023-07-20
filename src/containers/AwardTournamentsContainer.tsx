@@ -38,8 +38,8 @@ export const AwardTournamentsContainer = () => {
 					display="-webkit-box"
 					overflow="hidden"
 					sx={{
-						'-webkit-box-orient': 'vertical',
-						'-webkit-line-clamp': '3',
+						WebkitBoxOrient: 'vertical',
+						WebkitLineClamp: '3'
 					}}
 				>
 					{badge.tournamentName}

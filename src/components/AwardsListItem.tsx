@@ -108,13 +108,15 @@ export const AwardsListItem: FC<Props> = ({ badge, status }) => {
                 textAlign="center"
                 size={{ base: "caption12/16", lg: "body16/24" }}
                 display="-webkit-box"
+                
                 sx={{
-                  "-webkit-box-orient": "vertical",
-                  "-webkit-line-clamp": "3",
+                  WebkitBoxOrient: 'vertical',
+                  WebkitLineClamp: '3'
                 }}
               >
                 {badge.hasNftMark && (
                   <Text
+                    as="span"
                     display="inline-block"
                     marginRight="4px"
                     size={{ base: "caption12/16", lg: "body16/24" }}

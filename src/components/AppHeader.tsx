@@ -74,7 +74,7 @@ export const AppHeader: FC = () => {
         </Flex>
         <Link
           as={NavLink}
-          to={`profile/${profileContestant.employeeNumber}`}
+          to="profile/22"
           state={{
             hideBackButton: true,
           }}
