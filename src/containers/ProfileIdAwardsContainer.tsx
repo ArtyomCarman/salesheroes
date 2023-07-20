@@ -119,7 +119,7 @@ export const ProfileIdAwardsContainer: FC = () => {
                               color="rgba(255, 255, 255, 0.8)"
                               minW="0"
                               title={badge.badgeName}
-                              size="caption12/16"
+                              size="body14/20"
                               variant="semibold"
                               justifyContent="center"
                               textAlign="center"

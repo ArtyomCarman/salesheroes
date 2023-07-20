@@ -107,7 +107,6 @@ export const AwardsListItem: FC<Props> = ({ badge, status }) => {
                 title={badge.badgeName}
                 textAlign="center"
                 size={{ base: "body14/20", lg: "body16/24" }}
-                // size={{ base: "caption12/16", lg: "body16/24" }}
                 display="-webkit-box"
                 p={{
                   base: '0 2px',
