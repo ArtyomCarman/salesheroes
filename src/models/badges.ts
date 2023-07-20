@@ -1,5 +1,88 @@
 import { Badge } from "../interfaces";
 
+const Commission50k = {
+  imageId: Badge.Commission50k,
+  badgeId: "00010",
+  imageIsActive: true,
+  receivingDate: "10.03.23",
+  badgeName: "50 тыс. руб. комиссии по сделкам с Индией",
+  badgeAmount: 2,
+  updateTooltip:
+    "Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — 24 июля",
+  hasNftMark: false,
+  rewardCrystalCount: 5,
+  specification: {
+    description:
+      'Войди в число лучших их лучших в турнире "Марафон по условным сделкам" на уровне всей страны.',
+    features: [
+      {
+        number: 1,
+        feature: "Факт получения бейджа попадает в ленту сообщества",
+      },
+    ],
+  },
+}
+
+const Commission200k = {
+  imageId: Badge.Commission200k,
+  imageIsActive: true,
+  badgeId: "00011",
+  receivingDate: "12.03.23",
+  badgeName: "200 тыс. руб. комиссии по сделкам с Индией",
+  badgeAmount: 1,
+  badgeType: "individual",
+  updateTooltip:
+    "Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — 24 июля",
+  hasNftMark: false,
+  rewardCrystalCount: 15,
+  specification: {
+    description:
+      "Продолжай в том же духе!\n" +
+      "Собери для банка 200 тыс.руб. комиссии от импортных сделок своих клиентов с индийскими контрагентами, номинированных в рублях и эта награда твоя!",
+    features: [
+      {
+        number: 1,
+        feature:
+          "Бейдж можно получить только один раз, накопив требуемую сумму комиссии",
+      },
+    ],
+  },
+}
+
+const Commission1M = {
+  imageIsActive: true,
+  imageId: Badge.Commission1M,
+  badgeId: "00012",
+  badgeName: "1 млн. руб. комиссии по сделкам с Индией",
+  badgeAmount: 1,
+  badgeType: "individual",
+  receivingDate: "21.03.23",
+  updateTooltip:
+    "Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — 24 июля",
+  hasNftMark: false,
+  rewardCrystalCount: 30,
+  specification: {
+    description:
+      "Ты уже отлично поработал!\n" +
+      "Следующая цель - 1 млн.руб. комиссии от импортных сделок своих клиентов с индийскими контрагентами, номинированных в рублях.",
+    features: [
+      {
+        number: 1,
+        feature:
+          "Бейдж можно получить только один раз, накопив требуемую сумму комиссии",
+      },
+    ],
+  },
+}
+
+
+
+export const allBadges = [
+  Commission50k,
+  Commission200k,
+  Commission1M,
+]
+
 export const badges = {
   badgesUserHas: 12,
   badgesInTotal: 30,
@@ -12,7 +95,7 @@ export const badges = {
           imageIsActive: true,
           receivingDate: "10.03.23",
           badgeId: "00010",
-          badgeName: "50 тыс. комиссии по сделкам с Индией",
+          badgeName: "50 тыс. руб. комиссии по сделкам с Индией",
           badgeAmount: 2,
           updateTooltip:
             "Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — 24 июля",
@@ -23,7 +106,7 @@ export const badges = {
           imageIsActive: true,
           badgeId: "00011",
           receivingDate: "12.03.23",
-          badgeName: "200 тыс. комиссии по сделкам с Индией",
+          badgeName: "200 тыс. руб. комиссии по сделкам с Индией",
           badgeAmount: 1,
           updateTooltip:
             "Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — 24 июля",
@@ -34,7 +117,7 @@ export const badges = {
           imageIsActive: true,
           badgeId: "00012",
           receivingDate: "21.03.23",
-          badgeName: "1 млн комиссии по сделкам с Индией",
+          badgeName: "1 млн. руб. комиссии по сделкам с Индией",
           badgeAmount: 1,
           updateTooltip:
             "Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — 24 июля",
@@ -45,7 +128,7 @@ export const badges = {
           imageIsActive: true,
           badgeId: "00013",
           receivingDate: "06.07.23",
-          badgeName: "3 млн комиссии по сделкам с Индией",
+          badgeName: "3 млн. руб. комиссии по сделкам с Индией",
           badgeAmount: 1,
           updateTooltip:
             "Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — 24 июля",
@@ -210,9 +293,8 @@ export const badgeID = [
     badgeId: "00010",
     imageIsActive: true,
     receivingDate: "10.03.23",
-    badgeName: "50 тыс. комиссии по сделкам с Индией",
+    badgeName: "50 тыс. руб. комиссии по сделкам с Индией",
     badgeAmount: 2,
-    badgeType: "individual",
     updateTooltip:
       "Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — 24 июля",
     hasNftMark: false,
@@ -233,7 +315,7 @@ export const badgeID = [
     imageIsActive: true,
     badgeId: "00011",
     receivingDate: "12.03.23",
-    badgeName: "200 тыс. комиссии по сделкам с Индией",
+    badgeName: "200 тыс. руб. комиссии по сделкам с Индией",
     badgeAmount: 1,
     badgeType: "individual",
     updateTooltip:
@@ -257,7 +339,7 @@ export const badgeID = [
     imageIsActive: true,
     imageId: Badge.Commission1M,
     badgeId: "00012",
-    badgeName: "1 млн комиссии по сделкам с Индией",
+    badgeName: "1 млн. руб. комиссии по сделкам с Индией",
     badgeAmount: 1,
     badgeType: "individual",
     receivingDate: "21.03.23",
@@ -283,7 +365,7 @@ export const badgeID = [
     imageIsActive: true,
     badgeId: "00013",
     receivingDate: "06.07.23",
-    badgeName: "3 млн комиссии по сделкам с Индией",
+    badgeName: "3 млн. руб. комиссии по сделкам с Индией",
     badgeAmount: 1,
     badgeType: "individual",
     updateTooltip:
@@ -368,7 +450,7 @@ export const badgeID = [
     progressBarValue: 60,
     progress: {
       current: "104 из 1000 тыс. руб.",
-      condition: "Осталось 896 тыс.",
+      condition: "Осталось 896 тыс. руб.",
     },
     specification: {
       description:
@@ -721,3 +803,7 @@ export const badgeID = [
     },
   },
 ];
+
+const profileBadge = {
+
+}

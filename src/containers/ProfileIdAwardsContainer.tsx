@@ -19,6 +19,8 @@ export const ProfileIdAwardsContainer: FC = () => {
     navigate("/awards");
   };
 
+  // const profileContestant = leaders.find()
+
   const maxNumberOfBadges = useMemo(() => {
     if (!badges) return 0;
 
@@ -121,8 +123,7 @@ export const ProfileIdAwardsContainer: FC = () => {
                               variant="semibold"
                               justifyContent="center"
                               textAlign="center"
-                              display="block"
-                              whiteSpace="nowrap"
+                              display="-webkit-box"
                               textOverflow="ellipsis"
                               overflow="hidden"
                               sx={{

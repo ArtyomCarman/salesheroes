@@ -136,7 +136,7 @@ export const AwardsListItem: FC<Props> = ({ badge, status }) => {
                 display="-webkit-box"
                 sx={{
                   "-webkit-box-orient": "vertical",
-                  "-webkit-line-clamp": "2",
+                  "-webkit-line-clamp": "3",
                 }}
               >
                 {badge.hasNftMark && (

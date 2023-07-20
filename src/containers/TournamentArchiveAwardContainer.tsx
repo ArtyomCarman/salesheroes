@@ -36,28 +36,31 @@ const TournamentAwardBadge: FC<Props> = ({ item }) => {
         <BadgeIcon imageId={item.imageId} width="176px" height="176px" />
         <Flex direction="column" gap="8px" alignItems="center">
           <Flex gap="4px">
-            {item.hasNftMark && (
-              <Text
-                variant="semibold"
-                bgClip="text"
-                size="h24/32"
-                color="transparent"
-                bgImage="linear-gradient(103.74deg, #875AC0 0.85%, #B675AF 47.94%, #875AC0 94.39%), linear-gradient(49.6deg, #875AC0 26.29%, #B675AF 50.86%, #875AC0 74.59%)"
-              >
-                NFT
-              </Text>
-            )}
-            <Text
-              size="h24/32"
+            
+            <Text 
+              size="body16/24"
               variant="semibold"
               overflow="hidden"
               display="-webkit-box"
               sx={{
                 WebkitBoxOrient: "vertical",
-                WebkitLineClamp: "1",
+                WebkitLineClamp: "2",
                 wordBreak: "break-word",
+                textAlign: 'center'
               }}
             >
+              {item.hasNftMark && (
+              <Text
+                as="span"
+                variant="semibold"
+                bgClip="text"
+                size="body16/24"
+                color="transparent"
+                bgImage="linear-gradient(103.74deg, #875AC0 0.85%, #B675AF 47.94%, #875AC0 94.39%), linear-gradient(49.6deg, #875AC0 26.29%, #B675AF 50.86%, #875AC0 74.59%)"
+              >
+                NFT{' '}
+              </Text>
+            )}
               {item.badgeName}
             </Text>
           </Flex>
