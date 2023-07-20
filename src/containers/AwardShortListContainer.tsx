@@ -27,7 +27,7 @@ export const AwardShortListContainer = () => {
         }}
       >
         <Flex direction="column" gap="24px">
-          <Grid >
+          <Grid gridTemplateColumns="max-content max-content" alignItems="baseline" gap="10px" >
           <Text size="h24/32" variant="semibold">
             Получили бейдж
           </Text>
