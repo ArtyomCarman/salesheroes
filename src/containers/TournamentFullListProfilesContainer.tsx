@@ -19,26 +19,19 @@ interface Props {
 export const TournamentFullListProfilesContainer: FC<Props> = ({ divisionLevel }) => {
   const { tournamentId } = useParams();
   const leaders = useMemo(() => {
-    if (divisionLevel === DivisionLevel.Тербанк && tournamentId !== 'T2') {
-      return tournamentFullListTerb
+   
+    if (divisionLevel === DivisionLevel.Тербанк) {
+      return tournamentId === 'T2' ? tournamentFullListTerbT2 :  tournamentFullListTerb 
     }
-    if (divisionLevel === DivisionLevel.Кластер && tournamentId !== 'T2') {
-      return tournamentFullListTerb
+    if (divisionLevel === DivisionLevel.Кластер) {
+      return tournamentId === 'T2' ? tournamentFullListTerbT2 :  tournamentFullListTerb 
     }
-    if (divisionLevel === DivisionLevel.Подразделение && tournamentId !== 'T2') {
-      return tournamentFullListGOSB
+    if (divisionLevel === DivisionLevel.Подразделение) {
+      return tournamentId === 'T2' ? tournamentFullListGOSBT2 :  tournamentFullListGOSB 
     }
-    if (tournamentId === 'T2' && divisionLevel === DivisionLevel.Тербанк) {
-      return tournamentFullListTerbT2
-    }
-    if (tournamentId === 'T2' && divisionLevel === DivisionLevel.Подразделение) {
-      return tournamentFullListGOSBT2
-    }
-    if (tournamentId === 'T2' && divisionLevel === DivisionLevel.Страна) {
-      return tournamentFullListCountryT2
-    }
-
-    return tournamentFullListCountry;
+    // if countru
+      return tournamentId === 'T2' ? tournamentFullListCountryT2 : tournamentFullListCountry
+ 
   }, [divisionLevel, tournamentId]);
 
   if (!leaders.leaders.length) {
