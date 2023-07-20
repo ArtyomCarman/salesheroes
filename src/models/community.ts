@@ -29,7 +29,7 @@ import МакаровПавел from "../assets/images/Макаров Павел
 export const news = {
   timePeriod: [
     {
-      name: "сегодня",
+      name: "Сегодня",
       news: [
         {
           newsId: "news1",
