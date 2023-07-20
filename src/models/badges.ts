@@ -442,8 +442,8 @@ export const badgeID = [
     rewardCrystalCount: 15,
     progressBarValue: 60,
     progress: {
-      current: "104 из 1000 тыс. руб.",
-      condition: "Осталось 896 тыс. руб.",
+      current: "1800 из 3000 тыс. руб.",
+      condition: "Осталось 1200 тыс. руб.",
     },
     specification: {
       description:

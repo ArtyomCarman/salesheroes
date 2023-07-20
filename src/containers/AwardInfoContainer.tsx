@@ -161,14 +161,20 @@ export const AwardInfoContainer = () => {
                 <>
                   <Flex justifyContent="space-between" mb="8px" gap="24px">
                     <Text
-                      size="body14/24"
+                      size={{
+                        base: "caption12/16",
+                        lg: "body14/24"
+                        }}
                       color="rgba(255, 255, 255, 0.8)"
                       whiteSpace="nowrap"
                     >
                       {badge?.progress?.current}
                     </Text>
                     <Text
-                      size="body14/24"
+                     size={{
+                      base: "caption12/16",
+                      lg: "body14/24"
+                      }}
                       color="rgba(255, 255, 255, 0.6)"
                       whiteSpace="nowrap"
                       overflow="hidden"
