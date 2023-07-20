@@ -382,7 +382,6 @@ export const tournamentShortList = [
         placeInRating: 2,
         reward: {
           icon: Reward.silver,
-          tooltip: "Претендент на победу",
         },
         terDivisionName: "СРБ",
       },
@@ -396,7 +395,6 @@ export const tournamentShortList = [
         indicatorValue: "26",
         reward: {
           icon: Reward.silver,
-          tooltip: "Претендент на победу",
         },
         placeInRating: 3,
         terDivisionName: "СРБ",
@@ -466,7 +464,6 @@ export const tournamentFullListTerb = {
       placeInRating: 2,
       reward: {
         icon: Reward.silver,
-        tooltip: "Претендент на победу",
       },
       terDivisionName: "СРБ",
     },
@@ -539,7 +536,6 @@ export const archiveTournaments = {
           placeInRating: 2,
           reward: {
             icon: Reward.silver,
-            tooltip: "Победитель турнира",
           },
         },
         {
@@ -593,7 +589,6 @@ export const tournamentFullListTerbT2 = {
       indicatorValue: "26",
       reward: {
         icon: Reward.silver,
-        tooltip: "Претендент на победу",
       },
       placeInRating: 2,
       terDivisionName: "СРБ",
@@ -645,7 +640,6 @@ export const tournamentShortListT2 = [
         indicatorValue: "26",
         reward: {
           icon: Reward.silver,
-          tooltip: "Претендент на победу",
         },
         placeInRating: 3,
         terDivisionName: "СРБ",
@@ -702,7 +696,6 @@ export const tournamentShortListT3 = [
         placeInRating: 2,
         reward: {
           icon: Reward.silver,
-          tooltip: "Претендент на победу",
         },
         terDivisionName: "СРБ",
       },
@@ -716,7 +709,6 @@ export const tournamentShortListT3 = [
         indicatorValue: "26",
         reward: {
           icon: Reward.silver,
-          tooltip: "Претендент на победу",
         },
         placeInRating: 3,
         terDivisionName: "СРБ",

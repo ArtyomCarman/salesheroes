@@ -440,7 +440,6 @@ const ШаброваИрина = {
   indicatorValue: "28",
   reward: {
     icon: Reward.silver,
-    tooltip: "Претендент на победу",
   },
   placeInRating: 3,
   terDivisionName: "СРБ",
@@ -456,7 +455,6 @@ const КатаеваВероника = {
   indicatorValue: "29",
   reward: {
     icon: Reward.silver,
-    tooltip: "Претендент на победу",
   },
   placeInRating: 2,
   terDivisionName: "ВВБ",

@@ -33,7 +33,8 @@ export const TournamentFullListProfilesContainer: FC<Props> = ({ divisionLevel }
     }
     if (tournamentId === 'T2' && divisionLevel === DivisionLevel.Подразделение) {
       return tournamentFullListGOSBT2
-    }if (tournamentId === 'T2' && divisionLevel === DivisionLevel.Страна) {
+    }
+    if (tournamentId === 'T2' && divisionLevel === DivisionLevel.Страна) {
       return tournamentFullListCountryT2
     }
 

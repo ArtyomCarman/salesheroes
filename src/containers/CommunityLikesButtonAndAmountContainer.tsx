@@ -52,6 +52,7 @@ export const CommunityLikesButtonAndAmountContainer: FC<Props> = ({
                 profile={item}
                 size="md"
                 onClick={goToProfile(item.employeeNumber)}
+                cursor='pointer'
               />
               <Box
                 position="relative"
@@ -63,6 +64,8 @@ export const CommunityLikesButtonAndAmountContainer: FC<Props> = ({
                   height: "1px",
                   backgroundColor: "rgba(255, 255, 255, 0.2)",
                 }}
+                onClick={goToProfile(item.employeeNumber)}
+                cursor='pointer'
               >
                 <Text>
                   {item.firstName} {item.lastName}
