@@ -29,7 +29,10 @@ export const ProfileIdAwardsContainer: FC = () => {
         <Flex
           borderRadius="16px"
           bgColor="rgba(87, 92, 112, 0.3)"
-          p="24px"
+          p={{
+            base: '24px 16px',
+            lg: '24px'
+          }}
           gap="16px"
           direction="column"
         >
@@ -73,11 +76,13 @@ export const ProfileIdAwardsContainer: FC = () => {
                         }}
                         borderRadius="8px"
                         position="relative"
+                        p="16px 8px 16px"
+                        gap="12px"
                       >
                         <Flex
                           position="relative"
                           alignSelf="center"
-                          padding="12px"
+                          p="0 4px"
                           _before={
                             badge.badgeAmount > 1
                               ? {
@@ -123,7 +128,7 @@ export const ProfileIdAwardsContainer: FC = () => {
                               overflow="hidden"
                               sx={{
                                 WebkitBoxOrient: "vertical",
-                                WebkitLineClamp: "2",
+                                WebkitLineClamp: "3",
                               }}
                             >
                               {badge.hasNftMark && (
