@@ -330,9 +330,10 @@ const SuperBonusTop10 = {
 
 const SuperBonusTop20 =  {
   imageId: Badge.SuperBonusTop20,
-  imageIsActive: false,
+  imageIsActive: true,
   badgeId: "00023",
   badgeName: "ТОП-20+% Сверхбонуса 1ПГ 2023",
+  receivingDate: "10.03.23",
   updateTooltip:
     "Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — 24 июля",
   badgeAmount: 1,

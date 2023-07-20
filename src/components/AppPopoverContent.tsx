@@ -86,11 +86,6 @@ export const AppPopoverContent: FC<Props> = ({ targetRect, resetRect }) => {
       <SlideFade
         in
         ref={contentRef}
-        // css={{
-        //   display: "flex",
-        //   minHeight: 0,
-        //   maxHeight: "450px",
-        // }}
       >
         <Box
           width={{
