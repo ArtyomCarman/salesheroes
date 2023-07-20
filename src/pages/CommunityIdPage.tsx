@@ -1,4 +1,4 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import { Box, Divider, Flex, Show, Text } from "@chakra-ui/react";
 
 import { CommunityNewsCard, ProfileAvatar } from "../components";
@@ -6,7 +6,8 @@ import { CommunityLikesContainer } from "../containers";
 import { ReactComponent as ArrowRightIcon } from "../assets/icons/arrow-right.svg";
 import { ReactComponent as CalendarIcon } from "../assets/icons/calendar.svg";
 import { ReactComponent as TournamentsIcon } from "../assets/icons/tournaments-24.svg";
-import { newsId } from "../models";
+import { news } from "../models";
+import { INews } from "../interfaces";
 
 export const CommunityIdPage = () => {
   const navigate = useNavigate();
@@ -15,6 +16,12 @@ export const CommunityIdPage = () => {
   };
 
   const handleTournamentId = () => navigate(`/awards/00013`);
+
+  const { id } = useParams();
+
+  const newsId = news.timePeriod
+    .flatMap(({ news }) => news)
+    .find(({ newsId }) => newsId === id) as INews;
 
   return (
     <CommunityNewsCard isTournamentNews={!!newsId.tournamentId}>
@@ -25,7 +32,23 @@ export const CommunityIdPage = () => {
             lg: "sub20/28",
           }}
           variant="semibold"
-        >{newsId.newsText}<Link to='https://dfa.sber.ru/nft/tokens/view/2cDe52F4H3ixbxXeknmDWiEkopFNYV6WQ8oT1aTPutDAjWNJQGVxw8mKsiifqMALhF28vUqFHkxSHoejuiAHZd6iLef8D6u' target="_blank"><Box as='span' borderBottom='1px dashed #fff' _hover={{ background: 'rgba(87, 92, 112, 0.3)'}}>NFT на платформе ЦФА Сбера.</Box></Link></Text>
+        >
+          {newsId.newsText}
+          {newsId.newsId === "news1" && (
+            <Link
+              to="https://dfa.sber.ru/nft/tokens/view/2cDe52F4H3ixbxXeknmDWiEkopFNYV6WQ8oT1aTPutDAjWNJQGVxw8mKsiifqMALhF28vUqFHkxSHoejuiAHZd6iLef8D6u"
+              target="_blank"
+            >
+              <Box
+                as="span"
+                borderBottom="1px dashed #fff"
+                _hover={{ background: "rgba(87, 92, 112, 0.3)" }}
+              >
+                NFT на платформе ЦФА Сбера.
+              </Box>
+            </Link>
+          )}
+        </Text>
         <Flex color="rgba(255, 255, 255, 0.8)" gap="24px">
           <Flex gap="8px">
             <CalendarIcon width="24px" height="24px" />

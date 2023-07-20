@@ -22,7 +22,7 @@ const Commission50k = {
       },
     ],
   },
-}
+};
 
 const Commission200k = {
   imageId: Badge.Commission200k,
@@ -47,7 +47,7 @@ const Commission200k = {
       },
     ],
   },
-}
+};
 
 const Commission1M = {
   imageIsActive: true,
@@ -73,7 +73,7 @@ const Commission1M = {
       },
     ],
   },
-}
+};
 
 const Commission3M = {
   imageId: Badge.Commission3M,
@@ -100,7 +100,7 @@ const Commission3M = {
       },
     ],
   },
-}
+};
 
 const CommissionX2 = {
   imageId: Badge.CommissionX2,
@@ -126,7 +126,7 @@ const CommissionX2 = {
       },
     ],
   },
-}
+};
 
 const CommissionX3 = {
   imageId: Badge.CommissionX3,
@@ -151,7 +151,7 @@ const CommissionX3 = {
       },
     ],
   },
-}
+};
 
 const CommissionX4 = {
   imageId: Badge.CommissionX4,
@@ -182,7 +182,7 @@ const CommissionX4 = {
       },
     ],
   },
-}
+};
 
 const ChampionLeague1 = {
   imageId: Badge.ChampionLeague1,
@@ -198,7 +198,7 @@ const ChampionLeague1 = {
   specification: {
     description:
       "Докажите, что лучшие!\n" +
-      "Войдите командой в Лигу Чимпионов 1ПГ 2023 года и получите награду!",
+      "Войдите командой в Лигу Чемпионов 1ПГ 2023 года и получите награду!",
     features: [
       {
         number: 1,
@@ -206,7 +206,7 @@ const ChampionLeague1 = {
       },
     ],
   },
-}
+};
 
 const ChampionLeague2 = {
   imageId: Badge.ChampionLeague2,
@@ -222,7 +222,7 @@ const ChampionLeague2 = {
   specification: {
     description:
       "Докажите, что лучшие!\n" +
-      "Войдите командой в Лигу Чимпионов 2ПГ 2023 года и получите награду!",
+      "Войдите командой в Лигу Чемпионов 2ПГ 2023 года и получите награду!",
     features: [
       {
         number: 1,
@@ -230,7 +230,7 @@ const ChampionLeague2 = {
       },
     ],
   },
-}
+};
 
 const SuperCup2023 = {
   imageId: Badge.SuperCup2023,
@@ -254,7 +254,7 @@ const SuperCup2023 = {
       },
     ],
   },
-}
+};
 
 const SuperBonusNFT = {
   imageId: Badge.SuperBonusNFT,
@@ -278,7 +278,7 @@ const SuperBonusNFT = {
       },
     ],
   },
-}
+};
 
 const SuperBonus1 = {
   imageId: Badge.SuperBonus1,
@@ -302,7 +302,7 @@ const SuperBonus1 = {
       },
     ],
   },
-}
+};
 
 const SuperBonusTop10 = {
   imageId: Badge.SuperBonusTop10,
@@ -326,9 +326,9 @@ const SuperBonusTop10 = {
       },
     ],
   },
-}
+};
 
-const SuperBonusTop20 =  {
+const SuperBonusTop20 = {
   imageId: Badge.SuperBonusTop20,
   imageIsActive: true,
   badgeId: "00023",
@@ -351,7 +351,7 @@ const SuperBonusTop20 =  {
       },
     ],
   },
-}
+};
 
 const ConditionalsChampionFirst = {
   imageId: Badge.ConditionalsChampionFirst,
@@ -407,7 +407,7 @@ const ConditionalsChampionFirst = {
       },
     ],
   },
-}
+};
 
 const ConditionalsChampionSecond = {
   imageId: Badge.ConditionalsChampionSecond,
@@ -464,7 +464,7 @@ const ConditionalsChampionSecond = {
       },
     ],
   },
-}
+};
 
 const ConditionalsChampionThird = {
   imageId: Badge.ConditionalsChampionThird,
@@ -521,8 +521,7 @@ const ConditionalsChampionThird = {
       },
     ],
   },
-}
-
+};
 
 export const allBadges = [
   Commission50k,
@@ -542,7 +541,7 @@ export const allBadges = [
   ConditionalsChampionFirst,
   ConditionalsChampionSecond,
   ConditionalsChampionThird,
-]
+];
 
 export const badges = {
   badgesUserHas: 12,
@@ -550,11 +549,13 @@ export const badges = {
   badgesType: [
     {
       badgeTypeName: "Индивидуальные бейджи",
-      badges: allBadges.filter(({badgeType}) => badgeType === 'individual')
+      badges: allBadges.filter(({ badgeType }) => badgeType === "individual"),
     },
     {
       badgeTypeName: "Бейджи за победы в турнирах",
-      badges: allBadges.filter(({badgeType}) => badgeType === 'forTheTournament')
+      badges: allBadges.filter(
+        ({ badgeType }) => badgeType === "forTheTournament"
+      ),
     },
   ],
 };

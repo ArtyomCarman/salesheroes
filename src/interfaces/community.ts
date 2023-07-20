@@ -1,76 +1,71 @@
-import { DivisionLevel, IColorCode, INewsLeader } from './common';
+import { DivisionLevel, IColorCode, INewsLeader } from "./common";
 
 export interface INews {
-	tournamentId?: string;
-	newsId: string;
-	date: string;
-	newsText: string;
-	leaders: Array<INewsLeader>;
+  tournamentId?: string;
+  newsId: string;
+  date: string;
+  newsText: string;
+  leaders: Array<INewsLeader>;
 }
 
 export interface INewsList {
-	timePeriod: Array<{
-		name?: string;
-		news: Array<INews>;
-	}>;
-	page: {
-		total: number;
-		isLast: boolean;
-		num: number;
-	};
+  timePeriod: Array<{
+    name?: string;
+    news: Array<INews>;
+  }>;
 }
 
 export interface INewsParams {
-	params: {
-		pageNum?: number;
-		divisionLevel: DivisionLevel;
-	};
+  params: {
+    pageNum?: number;
+    divisionLevel: DivisionLevel;
+  };
 }
 
 export interface INewsRatingListParams {
-	employeeNumber: string;
-	params: {
-		pageNum?: number;
-		divisionLevel: DivisionLevel;
-	};
+  employeeNumber: string;
+  params: {
+    pageNum?: number;
+    divisionLevel: DivisionLevel;
+  };
 }
 
 export interface INewsRatingParams {
-	params: {
-		pageNum?: number;
-		divisionLevel: DivisionLevel;
-	};
+  params: {
+    pageNum?: number;
+    divisionLevel: DivisionLevel;
+  };
 }
 
 export interface INewsRatingLeader {
-	employeeNumber: string;
-	firstName: string;
-	lastName: string;
-	photoData: string;
-	terDivisionName: string;
-	placeInRating: number;
-	colorCode: IColorCode;
+  employeeNumber: string;
+  firstName: string;
+  lastName: string;
+  photoData: string;
+  terDivisionName: string;
+  placeInRating: number;
+  colorCode: IColorCode;
 }
 
 export interface INewsRating {
-	heading: string;
-	usersPosition: string;
-	leaders: INewsRatingLeader[];
+  heading: string;
+  usersPosition: string;
+  leaders: INewsRatingLeader[];
 }
 
 export interface INewsLikesPayload {
-	employeeNumber: string;
-	newsId: string;
+  employeeNumber: string;
+  newsId: string;
 }
 
 interface ILikesPeople {
-	position: string;
-	list: INewsLeader[];
+  position: string;
+  list: INewsLeader[];
 }
 
 export interface INewsLikes {
-	isLiked: boolean;
-	likesAmount: number;
-	bossNames?: string[];
-	people: ILikesPeople[];
+  isLiked: boolean;
+  likesAmount: number;
+  bossNames?: string[];
+  people: ILikesPeople[];
 }
