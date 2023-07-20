@@ -35,7 +35,7 @@ export const AwardsListItem: FC<Props> = ({ badge, status }) => {
       bgColor="rgba(87, 92, 112, 0.3)"
       borderRadius="16px"
       p={{
-        base: "24px 16px",
+        base: "24px 14px 16px",
         lg: "16px 24px 24px",
       }}
       minW="0"
@@ -58,12 +58,12 @@ export const AwardsListItem: FC<Props> = ({ badge, status }) => {
         alignItems="center"
         h="100%"
         justifyContent="space-between"
+        gap="10px"
       >
-        <Box textAlign="center">
+        <Box textAlign="center" display="flex" flexDirection="column" gap="10px">
           <Flex
             display="inline-flex"
             position="relative"
-            padding="12px"
             _before={
               badge.badgeAmount > 1
                 ? {
@@ -108,6 +108,10 @@ export const AwardsListItem: FC<Props> = ({ badge, status }) => {
                 textAlign="center"
                 size={{ base: "caption12/16", lg: "body16/24" }}
                 display="-webkit-box"
+                p={{
+                  base: '0 2px',
+                  lg: 0,
+                }}
                 
                 sx={{
                   WebkitBoxOrient: 'vertical',

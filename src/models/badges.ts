@@ -173,7 +173,6 @@ export const badges = {
           badgeId: "00017",
           badgeName: "Победитель Лиги Чемпионов 1ПГ 2023",
           badgeAmount: 1,
-          receivingDate: "30.04.23",
           updateTooltip:
             "Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — 24 июля",
           hasNftMark: false,
@@ -182,7 +181,6 @@ export const badges = {
           imageId: Badge.ChampionLeague2,
           imageIsActive: true,
           badgeId: "00018",
-          receivingDate: "12.05.23",
           badgeName: "Победитель Лиги Чемпионов 2ПГ 2023",
           badgeAmount: 1,
           hasNftMark: false,
@@ -193,7 +191,6 @@ export const badges = {
           imageId: Badge.SuperCup2023,
           imageIsActive: true,
           badgeId: "00019",
-          receivingDate: "13.05.23",
           badgeName: "Победитель Суперкубка 2023",
           badgeAmount: 1,
           updateTooltip:
@@ -204,7 +201,6 @@ export const badges = {
           imageId: Badge.SuperBonusNFT,
           imageIsActive: true,
           badgeId: "00020",
-          receivingDate: "21.06.23",
           badgeName: "1 место Сверхбонуса 1ПГ 2023",
           updateTooltip:
             "Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — 24 июля",
@@ -215,7 +211,6 @@ export const badges = {
           imageId: Badge.SuperBonus1,
           imageIsActive: true,
           badgeId: "00021",
-          receivingDate: "09.06.23",
           badgeName: "ТОП-10% Сверхбонуса 1ПГ 2023",
           updateTooltip:
             "Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — 24 июля",
@@ -226,7 +221,6 @@ export const badges = {
           imageId: Badge.SuperBonusTop10,
           imageIsActive: true,
           badgeId: "00022",
-          receivingDate: "30.06.23",
           badgeName: "ТОП-20% Сверхбонуса 1ПГ 2023",
           updateTooltip:
             "Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — 24 июля",
@@ -237,7 +231,6 @@ export const badges = {
           imageId: Badge.SuperBonusTop20,
           imageIsActive: true,
           badgeId: "00023",
-          receivingDate: "13.07.23",
           badgeName: "ТОП-20+% Сверхбонуса 1ПГ 2023",
           updateTooltip:
             "Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — 24 июля",
@@ -472,7 +465,6 @@ export const badgeID = [
     badgeId: "00017",
     badgeName: "Победитель Лиги Чемпионов 1ПГ 2023",
     badgeAmount: 1,
-    receivingDate: "30.04.23",
     badgeType: "individual",
     updateTooltip:
       "Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — 24 июля",
@@ -496,7 +488,6 @@ export const badgeID = [
     badgeId: "00018",
     badgeName: "Победитель Лиги Чемпионов 2ПГ 2023",
     badgeAmount: 1,
-    receivingDate: "12.05.23",
     badgeType: "individual",
     updateTooltip:
       "Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — 24 июля",
@@ -520,7 +511,6 @@ export const badgeID = [
     badgeId: "00019",
     badgeName: "Победитель Суперкубка 2023",
     badgeAmount: 1,
-    receivingDate: "13.05.23",
     updateTooltip:
       "Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — 24 июля",
     badgeType: "individual",
@@ -542,7 +532,6 @@ export const badgeID = [
     imageId: Badge.SuperBonusNFT,
     imageIsActive: true,
     badgeId: "00020",
-    receivingDate: "21.06.23",
     badgeName: "1 место Сверхбонуса 1ПГ 2023",
     updateTooltip:
       "Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — 24 июля",
@@ -566,7 +555,6 @@ export const badgeID = [
     imageId: Badge.SuperBonus1,
     imageIsActive: true,
     badgeId: "00021",
-    receivingDate: "09.06.23",
     badgeName: "ТОП-10% Сверхбонуса 1ПГ 2023",
     updateTooltip:
       "Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — 24 июля",
@@ -590,7 +578,6 @@ export const badgeID = [
     imageId: Badge.SuperBonusTop10,
     imageIsActive: true,
     badgeId: "00022",
-    receivingDate: "30.06.23",
     badgeName: "ТОП-20% Сверхбонуса 1ПГ 2023",
     updateTooltip:
       "Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — 24 июля",
@@ -614,7 +601,6 @@ export const badgeID = [
     imageId: Badge.SuperBonusTop20,
     imageIsActive: true,
     badgeId: "00023",
-    receivingDate: "13.07.23",
     badgeName: "ТОП-20+% Сверхбонуса 1ПГ 2023",
     updateTooltip:
       "Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — 24 июля",
