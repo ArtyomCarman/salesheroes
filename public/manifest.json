@@ -3,13 +3,25 @@
   "name": "Герои продаж",
   "icons": [
     {
-      "src": "logo.svg",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "src": "favicon.ico",
+      "sizes": "78x100",
+      "type": "image/x-icon",
+      "purpose": "any"
+    },
+    {
+      "src": "Logo-32.png",
+      "type": "image/png",
+      "sizes": "25x32",
+      "purpose": "any"
+    },
+    {
+      "src": "react-logo192.png",
+      "type": "image/png",
+      "sizes": "512x512"
     }
   ],
   "start_url": ".",
-  "display": "standalone",
+  "display": "fullscreen",
   "theme_color": "#000000",
   "background_color": "#ffffff"
 }
