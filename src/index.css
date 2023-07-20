@@ -45,10 +45,5 @@ body {
   background-color: black;
   overflow: unset;
 }
-/* FIX FOR TV */
-div[class^='_root'] {
-  height: initial;
-  width: initial;
-}
 
 

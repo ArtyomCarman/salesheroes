@@ -54,7 +54,7 @@ export const AppTemplate = () => {
   }, [scrollContainer]);
 
   return (
-    <Flex height="100dvh" flexDirection="column" sx={sx}>
+    <Flex height="100dvh" flexDirection="column" sx={sx} pb="env(safe-area-inset-bottom)">
       <AppHeader />
       <Grid
         ref={mainRef}
