@@ -1,4 +1,3 @@
-import { useMemo } from "react";
 import { Fade, Flex, Text } from "@chakra-ui/react";
 
 import { AppTabs } from "../components";

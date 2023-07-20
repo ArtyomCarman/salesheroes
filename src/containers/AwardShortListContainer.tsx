@@ -13,7 +13,7 @@ export const AwardShortListContainer = () => {
         label: item.divisionLevelName,
         component: <AwardShortListProfilesContainer divisionLevel={item} />,
       })),
-    [badgeShortList]
+    []
   );
 
   return (

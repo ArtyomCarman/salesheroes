@@ -11,11 +11,12 @@ import { ProfileIdPage } from "./ProfileIdPage";
 
 export const ProfilePage = () => {
   const { employeeNumber } = useParams();
-  console.log('employeeNumber', employeeNumber);
   
   if ('18' !== employeeNumber) {
-  	return <ProfileIdPage />;
+  	return <ProfileIdPage  />;
   }
+
+  
 
   return (
     <Flex direction="column" gap="16px">

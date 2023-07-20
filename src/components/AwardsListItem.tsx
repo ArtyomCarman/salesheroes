@@ -10,8 +10,6 @@ import {
 } from "@chakra-ui/react";
 
 import { IBagdes } from "../interfaces";
-import { ReactComponent as InfoIcon } from "../assets/icons/info.svg";
-import { AppTooltip } from "./AppTooltip";
 import { BadgeIcon } from "./BadgeIcon";
 import { ProgressBar } from "./ProgressBar";
 
@@ -62,30 +60,6 @@ export const AwardsListItem: FC<Props> = ({ badge, status }) => {
         justifyContent="space-between"
       >
         <Box textAlign="center">
-          {/* {badge.updateTooltip && status === "ALL" && (
-            <AppTooltip
-              text={badge.updateTooltip}
-              position="absolute"
-              zIndex="1"
-              top={{ base: "16px", lg: "24px" }}
-              right={{ base: "16px", lg: "24px" }}
-              display="flex"
-              alignItems="center"
-              justifyContent="center"
-              _before={{
-                display: {
-                  base: "inline-block",
-                  lg: "none",
-                },
-                content: "''",
-                position: "absolute",
-                width: "48px",
-                height: "48px",
-              }}
-            >
-              <InfoIcon width="16px" />
-            </AppTooltip>
-          )} */}
           <Flex
             display="inline-flex"
             position="relative"

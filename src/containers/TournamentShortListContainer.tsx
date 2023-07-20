@@ -3,7 +3,7 @@ import { Fade, Flex, Text } from "@chakra-ui/react";
 
 import { AppTabs } from "../components";
 import { TournamentShortListProfilesContainer } from "./TournamentShortListProfilesContainer";
-import {tournamentShortList, tournamentShortListT2, tournamentShortListT3} from "../models";
+import {tournamentShortList, tournamentShortListT2} from "../models";
 import {useParams} from "react-router-dom";
 
 export const TournamentShortListContainer = () => {
@@ -14,7 +14,7 @@ export const TournamentShortListContainer = () => {
         }
 
         return tournamentShortList
-    }, [])
+    }, [tournamentId])
 
   const tabs = useMemo(
     () =>
@@ -24,7 +24,7 @@ export const TournamentShortListContainer = () => {
           <TournamentShortListProfilesContainer divisionLevel={item} />
         ),
       })),
-    [tournamentShortList]
+    [leaders]
   );
 
   return (

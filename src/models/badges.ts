@@ -803,7 +803,3 @@ export const badgeID = [
     },
   },
 ];
-
-const profileBadge = {
-
-}

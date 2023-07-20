@@ -47,7 +47,7 @@ const styles = {
     fontSize: "14px",
     fontWeight: "500",
     borderRadius: "0",
-    "&:first-child": {
+    "&:first-of-type": {
       borderTopLeftRadius: "8px",
       borderBottomLeftRadius: "8px",
     },

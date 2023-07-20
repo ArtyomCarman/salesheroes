@@ -18,7 +18,6 @@ export * from "./AwardsListItem";
 export * from "./TournamentCard";
 export * from "./TournamentCardWrapper";
 export * from "./TournamentCardProgress";
-export * from "./ScrollToTop";
 export * from "./CommunityNewsRatingProfile";
 export * from "./CommunityNewsCard";
 export * from "./PopoverList";

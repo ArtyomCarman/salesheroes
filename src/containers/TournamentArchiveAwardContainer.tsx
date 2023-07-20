@@ -83,7 +83,7 @@ export const TournamentArchiveAwardContainer = () => {
         label: item.divisionLevelName,
         component: <TournamentAwardBadge item={item} />,
       })) || [],
-    [archiveTournamentId]
+    []
   );
 
   return (

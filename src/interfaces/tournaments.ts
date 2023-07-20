@@ -1,7 +1,6 @@
 import { Badge } from './badges';
 import {
 	DivisionLevel,
-	DivisionLevelName,
 	EmployeeStatus,
 	IColorCode,
 	ILeader,

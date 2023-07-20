@@ -13,7 +13,7 @@ export const ProfileRatingContainer = () => {
           <Ratings divisions={item.divisions} timePeriod={item.periodName} />
         ),
       })),
-    [ratingProfile.timePeriod]
+    []
   );
 
   return (

@@ -1,4 +1,4 @@
-import { FC, Fragment, useMemo } from "react";
+import { FC, Fragment } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { Fade, Flex, SimpleGrid, Text, Tooltip } from "@chakra-ui/react";
 
@@ -17,12 +17,6 @@ export const ProfileAwardsContainer: FC = () => {
   const goToBadges = () => {
     navigate("/awards");
   };
-
-  const maxNumberOfBadges = useMemo(() => {
-    if (!badges) return 0;
-
-    return badges.badgesType.flatMap((badgesType) => badgesType.badges).length;
-  }, [badges]);
 
   return (
     <Fade in>

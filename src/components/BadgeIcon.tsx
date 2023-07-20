@@ -46,7 +46,7 @@ export const BadgeIcon: FC<Props> = ({ imageId, isActive = true, ...props }) => 
 		if (imageId === Badge.SuperBonusNFT) return SuperBonusNFT;
 
 		return FakeBadgeIcon;
-	}, []);
+	}, [imageId]);
 
 	return (
 		<ChakraIcon

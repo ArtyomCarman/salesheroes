@@ -8,12 +8,13 @@ import {
 } from '../containers';
 import { EmployeeStatus } from '../interfaces';
 
+
 export const ProfileIdPage = () => {
 	const showRating = profileContestant.employeeStatus === EmployeeStatus.Contestant;
 
 	return (
 		<Flex direction="column" gap="16px">
-				<ProfileIdInfoContainer />
+				<ProfileIdInfoContainer  />
 			{showRating ? (
 					<ProfileIdRatingContainer />
 			) : null}

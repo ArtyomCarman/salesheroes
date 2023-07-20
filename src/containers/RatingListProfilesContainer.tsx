@@ -30,7 +30,7 @@ export const RatingListProfilesContainer: FC<Props> = ({ divisionLevel, timePeri
 		}
 
 		return ratingList
-	}, [divisionLevel])
+	}, [divisionLevel, timePeriod])
 
 	if (rating.leaders.length === 0) {
 		return (

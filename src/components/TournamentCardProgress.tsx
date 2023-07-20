@@ -2,8 +2,6 @@ import { FC } from "react";
 import { SimpleGrid, Text } from "@chakra-ui/react";
 
 import { Tournament } from "../interfaces";
-import { ReactComponent as InfoIcon } from "../assets/icons/info.svg";
-import { AppTooltip } from "./AppTooltip";
 import { ProgressBar } from "./ProgressBar";
 
 export const TournamentCardProgress: FC<Props> = ({ tournament }) => (
@@ -26,21 +24,6 @@ export const TournamentCardProgress: FC<Props> = ({ tournament }) => (
     >
       {tournament.tournamentInfo}
     </Text>
-    {/* {tournament.updateTooltip && (
-			<AppTooltip
-				text={tournament.updateTooltip}
-				_before={{
-					content: "''",
-					width: '32px',
-					height: '32px',
-					position: 'absolute',
-					top: '16px',
-					right: '16px',
-				}}
-			>
-				<InfoIcon width="16px" />
-			</AppTooltip>
-		)} */}
   </SimpleGrid>
 );
 

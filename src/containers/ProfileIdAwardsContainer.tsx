@@ -1,10 +1,11 @@
-import { FC, Fragment, useMemo } from "react";
+import { FC, Fragment } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { Fade, Flex, SimpleGrid, Text, Tooltip } from "@chakra-ui/react";
 
 import { BadgeIcon, ButtonComponent, Empty } from "../components";
-import { EmployeeStatus } from "../interfaces";
-import { badges, profileContestant } from "../models";
+import { EmployeeStatus, IProfileBody } from "../interfaces";
+import { badges } from "../models";
+import { leaders } from "../models/tournamen-leaders";
 
 export const ProfileIdAwardsContainer: FC = () => {
   const navigate = useNavigate();
@@ -19,18 +20,12 @@ export const ProfileIdAwardsContainer: FC = () => {
     navigate("/awards");
   };
 
-  // const profileContestant = leaders.find()
-
-  const maxNumberOfBadges = useMemo(() => {
-    if (!badges) return 0;
-
-    return badges.badgesType.flatMap((badgesType) => badgesType.badges).length;
-  }, [badges]);
+  const leader = leaders.find((leader) => leader.employeeNumber === employeeNumber) as IProfileBody
 
   return (
     <Fade in>
       {badges.badgesType.length !== 0 &&
-      profileContestant.employeeStatus !== EmployeeStatus.Non_Contestant ? (
+      leader.employeeStatus !== EmployeeStatus.Non_Contestant ? (
         <Flex
           borderRadius="16px"
           bgColor="rgba(87, 92, 112, 0.3)"

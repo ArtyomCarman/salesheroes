@@ -16,7 +16,7 @@ export const Empty: FC<Props> = ({ children, icon, buttonText, onClick }) => {
 		}
 
 		return <NoAwardsIcon width="64px" height="64px" />;
-	}, []);
+	}, [icon]);
 
 	return (
 		<Flex borderRadius="16px" p="8px 0 8px" gap="16px" direction="column">

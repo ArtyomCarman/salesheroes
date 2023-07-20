@@ -1,20 +1,16 @@
-import { useMemo } from "react";
 import { Box, Fade, Flex, Text } from "@chakra-ui/react";
 
 import { Ratings, AppTabs } from "../components";
 import { ratingProfile } from "../models";
 
 export const ProfileIdRatingContainer = () => {
-  const tabs = useMemo(
-    () =>
-      ratingProfile.timePeriod.map((item) => ({
+  const tabs = ratingProfile.timePeriod.map((item) => ({
         label: item.periodName,
         component: (
           <Ratings divisions={item.divisions} timePeriod={item.periodName} />
         ),
-      })),
-    [ratingProfile.timePeriod]
-  );
+      }))
+
 
   return (
     <Fade in>

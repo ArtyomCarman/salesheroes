@@ -1,24 +1,24 @@
 import { FC } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Box, Flex, SimpleGrid, Text } from "@chakra-ui/react";
 
-import { DivisionLevel, IDivisions, TimePeriod } from "../interfaces";
+import {  IDivisions } from "../interfaces";
 import { Empty } from "./Empty";
 
 export const Ratings: FC<Props> = ({ divisions, timePeriod, profileId }) => {
-  const navigate = useNavigate();
-  const goToRating = (divisionLevel: keyof typeof DivisionLevel) => () => {
-    if (timePeriod === "Текущий квартал") {
-      navigate(
-        `/rating?divisionLevel=${DivisionLevel[divisionLevel]}&timePeriod=${TimePeriod["Текущий квартал"]}`
-      );
-    }
-    if (timePeriod === "За всё время") {
-      navigate(
-        `/rating?divisionLevel=${DivisionLevel[divisionLevel]}&timePeriod=${TimePeriod["За всё время"]}`
-      );
-    }
-  };
+  // const navigate = useNavigate();
+  // const goToRating = (divisionLevel: keyof typeof DivisionLevel) => () => {
+  //   if (timePeriod === "Текущий квартал") {
+  //     navigate(
+  //       `/rating?divisionLevel=${DivisionLevel[divisionLevel]}&timePeriod=${TimePeriod["Текущий квартал"]}`
+  //     );
+  //   }
+  //   if (timePeriod === "За всё время") {
+  //     navigate(
+  //       `/rating?divisionLevel=${DivisionLevel[divisionLevel]}&timePeriod=${TimePeriod["За всё время"]}`
+  //     );
+  //   }
+  // };
 
   if (divisions.length === 0 && timePeriod === "За всё время") {
     return (

@@ -18,7 +18,7 @@ export const ProgressBar: FC<Props> = ({ color, value, height = '12px', text }) 
 			const minVal = Number(((parseInt(height, 10) / width) * 100).toFixed(1));
 			setMinValue(minVal);
 		}
-	}, []);
+	}, [height]);
 
 	return (
 		<Flex position="relative" alignItems="center">

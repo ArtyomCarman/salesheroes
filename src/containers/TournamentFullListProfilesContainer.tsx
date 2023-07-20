@@ -39,7 +39,7 @@ export const TournamentFullListProfilesContainer: FC<Props> = ({ divisionLevel }
     }
 
     return tournamentFullListCountry;
-  }, [divisionLevel]);
+  }, [divisionLevel, tournamentId]);
 
   if (!leaders.leaders.length) {
     return (<Empty>
