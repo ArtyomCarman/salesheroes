@@ -9,15 +9,16 @@
       "purpose": "any"
     },
     {
-      "src": "logo-25x32.png",
+      "src": "Logo-32.png",
       "type": "image/png",
       "sizes": "25x32",
       "purpose": "any"
     },
     {
-      "src": "logo512.png",
-      "type": "image/png",
-      "sizes": "400x512"
+      "src": "logo512.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
     }
   ],
   "start_url": ".",

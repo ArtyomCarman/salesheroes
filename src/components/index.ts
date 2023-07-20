@@ -27,3 +27,4 @@ export * from "./EmptyRatingBlock";
 export * from "./AppTooltip";
 export * from "./AppPopover";
 export * from "./TournamentsArchiveCard";
+export * from "./InstallPWAButton";
