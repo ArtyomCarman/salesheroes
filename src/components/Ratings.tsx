@@ -1,9 +1,10 @@
 import { FC } from "react";
-import { Link } from "react-router-dom";
+import {Link, useParams} from "react-router-dom";
 import { Box, Flex, SimpleGrid, Text } from "@chakra-ui/react";
 
-import {  IDivisions } from "../interfaces";
+import {IDivisions, IProfileBody} from "../interfaces";
 import { Empty } from "./Empty";
+import {leaders} from "../models/tournamen-leaders";
 
 export const Ratings: FC<Props> = ({ divisions, timePeriod, profileId }) => {
   // const navigate = useNavigate();
@@ -19,6 +20,7 @@ export const Ratings: FC<Props> = ({ divisions, timePeriod, profileId }) => {
   //     );
   //   }
   // };
+  const { employeeNumber } = useParams()
 
   if (divisions.length === 0 && timePeriod === "За всё время") {
     return (
