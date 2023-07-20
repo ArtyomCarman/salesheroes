@@ -59,6 +59,9 @@ export const CommunityNewsCard: FC<Props> = ({ children, isTournamentNews, ...ot
 				  }
 				: undefined
 		}
+		sx={{
+			'-webkit-tap-highlight-color': 'rgba(0, 0, 0, 0)'
+		}}
 		{...otherProps}
 	>
 		{children}
