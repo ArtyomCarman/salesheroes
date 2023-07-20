@@ -14,7 +14,7 @@ export interface IProfileBody {
 	lastName: string;
 	firstName: string;
 	tbCode?: string;
-	tbShortName?: string;
+	terDivisionName?: string;
 	gosbCode?: string;
 	gosbName?: string;
 	funcDivisionName?: string;

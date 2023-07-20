@@ -24,8 +24,6 @@ export const ProfileIdAwardsContainer: FC = () => {
 
   return (
     <Fade in>
-      {badges.badgesType.length !== 0 &&
-      leader.employeeStatus !== EmployeeStatus.Non_Contestant ? (
         <Flex
           borderRadius="16px"
           bgColor="rgba(87, 92, 112, 0.3)"
@@ -172,7 +170,6 @@ export const ProfileIdAwardsContainer: FC = () => {
             </Empty>
           )}
         </Flex>
-      ) : null}
     </Fade>
   );
 };

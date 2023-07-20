@@ -21,24 +21,14 @@ export const ProfileInfo: FC<Props> = ({ profile, progress, text }) => {
 			return {
 				background:
 					'linear-gradient(135deg, #FFBF3E 0%, #FF7317 50.87%, #F83B4A 58.16%, #875AC0 100%)',
-				text: `${profile?.tbShortName}
+				text: `${profile?.terDivisionName}
 			${profile.positionName ? ` • ${profile.positionName}` : null}`,
 			};
 		}
-		if (profile.employeeStatus === EmployeeStatus.Contestant) {
 			return {
 				background: `radial-gradient(66.32% 66.32% at 50% 10%, var(--${profile?.colorCode?.primary}) 30.03%, var(--${profile?.colorCode?.secondary}) 100%)`,
-				text: profile?.tbShortName,
+				text: profile?.terDivisionName,
 			};
-		}
-		if (profile.employeeStatus === EmployeeStatus.Resigned) {
-			return {
-				background: 'none',
-				text: profile?.positionName,
-			};
-		}
-
-		return { background: 'none', text: profile?.tbShortName };
 	}, [profile]);
 
 	return (
