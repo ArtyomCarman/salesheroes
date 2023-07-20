@@ -26,9 +26,8 @@ const Commission50k = {
 
 const Commission200k = {
   imageId: Badge.Commission200k,
-  imageIsActive: true,
+  imageIsActive: false,
   badgeId: "00011",
-  receivingDate: "12.03.23",
   badgeName: "200 тыс. руб. комиссии по сделкам с Индией",
   badgeAmount: 1,
   badgeType: "individual",
@@ -131,9 +130,8 @@ const CommissionX2 = {
 
 const CommissionX3 = {
   imageId: Badge.CommissionX3,
-  imageIsActive: true,
+  imageIsActive: false,
   badgeId: "00015",
-  receivingDate: "19.04.23",
   badgeName: "х3 комиссии по сделкам с Индией",
   badgeAmount: 1,
   badgeType: "individual",
@@ -212,7 +210,7 @@ const ChampionLeague1 = {
 
 const ChampionLeague2 = {
   imageId: Badge.ChampionLeague2,
-  imageIsActive: true,
+  imageIsActive: false,
   badgeId: "00018",
   badgeName: "Победитель Лиги Чемпионов 2ПГ 2023",
   badgeAmount: 1,
@@ -284,7 +282,7 @@ const SuperBonusNFT = {
 
 const SuperBonus1 = {
   imageId: Badge.SuperBonus1,
-  imageIsActive: true,
+  imageIsActive: false,
   badgeId: "00021",
   badgeName: "ТОП-10% Сверхбонуса 1ПГ 2023",
   updateTooltip:
@@ -308,7 +306,7 @@ const SuperBonus1 = {
 
 const SuperBonusTop10 = {
   imageId: Badge.SuperBonusTop10,
-  imageIsActive: true,
+  imageIsActive: false,
   badgeId: "00022",
   badgeName: "ТОП-20% Сверхбонуса 1ПГ 2023",
   updateTooltip:
@@ -332,7 +330,7 @@ const SuperBonusTop10 = {
 
 const SuperBonusTop20 =  {
   imageId: Badge.SuperBonusTop20,
-  imageIsActive: true,
+  imageIsActive: false,
   badgeId: "00023",
   badgeName: "ТОП-20+% Сверхбонуса 1ПГ 2023",
   updateTooltip:
@@ -356,9 +354,8 @@ const SuperBonusTop20 =  {
 
 const ConditionalsChampionFirst = {
   imageId: Badge.ConditionalsChampionFirst,
-  imageIsActive: true,
+  imageIsActive: false,
   badgeId: "00024",
-  receivingDate: "09.06.23",
   badgeName: "Чемпион страны по условным сделкам",
   badgeAmount: 1,
   updateTooltip:
