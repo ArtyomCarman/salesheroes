@@ -73,7 +73,7 @@ export const AppSidebar: FC<Props> = ({ ...otherProps }) => (
               fill: "#FFBF3E",
             },
 
-            "@media screen and (min-width: 48em)": {
+            "@media screen and (min-width: 62em)": {
               background: "rgba(87, 92, 112, 0.3)",
             },
           },
