@@ -78,7 +78,7 @@ export const AppPopoverContent: FC<Props> = ({ targetRect, resetRect }) => {
       }}
       backdropFilter={{ base: "blur(4px)", lg: "blur(0)" }}
       bgColor={{
-        base: "rgba(87, 92, 112, 0.5)",
+        base: "rgba(0, 0, 0, 0.2)",
         lg: "transparent",
       }}
       alignItems="flex-end"
