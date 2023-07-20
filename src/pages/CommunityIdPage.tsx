@@ -32,9 +32,10 @@ export const CommunityIdPage = () => {
             lg: "sub20/28",
           }}
           variant="semibold"
+          whiteSpace="pre-line"
         >
           {newsId.newsText}
-          {newsId.newsId === "news1" && (
+          {newsId.newsId === "news2" && (
             <Link
               to="https://dfa.sber.ru/nft/tokens/view/2cDe52F4H3ixbxXeknmDWiEkopFNYV6WQ8oT1aTPutDAjWNJQGVxw8mKsiifqMALhF28vUqFHkxSHoejuiAHZd6iLef8D6u"
               target="_blank"
