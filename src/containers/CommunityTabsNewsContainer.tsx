@@ -53,7 +53,7 @@ export const CommunityTabsNewsContainer: FC<Props> = ({ news }) => {
                   },
                 }}
               >
-                {showMoreLeaders && index === news.leaders.length - 1 ? (
+                {showMoreLeaders && index === leadersList.length - 1 ? (
                   <AppPopover
                     header="Победители"
                     content={news.leaders.map((item, itemIndex) => (
