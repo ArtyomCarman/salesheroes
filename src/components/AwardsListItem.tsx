@@ -58,9 +58,9 @@ export const AwardsListItem: FC<Props> = ({ badge, status }) => {
         alignItems="center"
         h="100%"
         justifyContent="space-between"
-        gap="10px"
+        gap="16px"
       >
-        <Box textAlign="center" display="flex" flexDirection="column" gap="10px">
+        <Box textAlign="center" display="flex" flexDirection="column" gap="16px">
           <Flex
             display="inline-flex"
             position="relative"
@@ -106,7 +106,8 @@ export const AwardsListItem: FC<Props> = ({ badge, status }) => {
                 variant="medium"
                 title={badge.badgeName}
                 textAlign="center"
-                size={{ base: "caption12/16", lg: "body16/24" }}
+                size={{ base: "body14/20", lg: "body16/24" }}
+                // size={{ base: "caption12/16", lg: "body16/24" }}
                 display="-webkit-box"
                 p={{
                   base: '0 2px',
@@ -123,7 +124,7 @@ export const AwardsListItem: FC<Props> = ({ badge, status }) => {
                     as="span"
                     display="inline-block"
                     marginRight="4px"
-                    size={{ base: "caption12/16", lg: "body16/24" }}
+                    size={{ base: "body14/20", lg: "body16/24" }}
                     variant="semibold"
                     bgClip="text"
                     color="transparent"
@@ -139,9 +140,12 @@ export const AwardsListItem: FC<Props> = ({ badge, status }) => {
             </Box>
           </Tooltip>
         </Box>
-        <Flex direction="column" w="100%" gap="8px">
+        <Flex direction="column" w="100%" gap="8px"  p={{
+                  base: '0 2px',
+                  lg: 0,
+                }}>
           {badge.progressBarValue && (
-            <Box py="4px">
+            <Box>
               <ProgressBar
                 value={badge.progressBarValue}
                 color="light-blue-50"
@@ -152,7 +156,7 @@ export const AwardsListItem: FC<Props> = ({ badge, status }) => {
             <Text
               textAlign="center"
               color="rgba(255, 255, 255, 0.6)"
-              size="body14/20"
+              size={{ base: "caption12/16", lg: "body14/20" }}
             >
               {badge.receivingDate}
             </Text>
