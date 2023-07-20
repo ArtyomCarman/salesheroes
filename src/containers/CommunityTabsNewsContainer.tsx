@@ -35,6 +35,9 @@ export const CommunityTabsNewsContainer: FC<Props> = ({ news }) => {
       isTournamentNews={!news.tournamentId}
       cursor="pointer"
       onClick={handleCommunityId}
+      sx={{
+          '-webkit-tap-highlight-color': 'rgba(0 0 0 0)'
+      }}
     >
       <Flex gap="12px" justifyContent="space-between">
         {news.tournamentId ? (
