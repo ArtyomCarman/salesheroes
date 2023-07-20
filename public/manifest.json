@@ -15,9 +15,9 @@
       "purpose": "any"
     },
     {
-      "src": "react-logo192.png",
+      "src": "logo512.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "400x512"
     }
   ],
   "start_url": ".",
