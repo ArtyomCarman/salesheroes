@@ -47,7 +47,7 @@ export const news: INewsList = {
           date: "06.07.23",
           tournamentId: "T3",
           newsText:
-            "<h3>Новое достижение! Игорь и еще 32 участника заработали для банка по 3 млн. руб. от сделок с индийскими компаниями. Поздравляем ребят с крутым достижением! Дополнительно каждому выпущена награда в формате <a style='border-bottom: 1px dashed #fff' href='https://dfa.sber.ru/nft/tokens/view/2cDe52F4H3ixbxXeknmDWiEkopFNYV6WQ8oT1aTPutDAjWNJQGVxw8mKsiifqMALhF28vUqFHkxSHoejuiAHZd6iLef8D6u' target='_blank'>NFT на платформе ЦФА Сбера.</a></h3>",
+            "<h3>Новое достижение! Игорь и еще 32 участника заработали для банка по 3 млн руб. от сделок с индийскими компаниями. Поздравляем ребят с крутым достижением! Дополнительно каждому выпущена награда в формате <a style='border-bottom: 1px dashed #fff' href='https://dfa.sber.ru/nft/tokens/view/2cDe52F4H3ixbxXeknmDWiEkopFNYV6WQ8oT1aTPutDAjWNJQGVxw8mKsiifqMALhF28vUqFHkxSHoejuiAHZd6iLef8D6u' target='_blank'>NFT на платформе ЦФА Сбера.</a></h3>",
           leaders,
         },
       ],
