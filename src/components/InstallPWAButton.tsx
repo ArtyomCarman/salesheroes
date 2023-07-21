@@ -56,7 +56,7 @@ export const InstallPWAButton = () => {
                 }}
             >
                 <Text size="sm" color="white.80" letterSpacing="0.01em">
-                    Вы можете установить приложение на свое устройство
+                    Установить приложение на устройство
                 </Text>
                 <Flex justifySelf='flex-end' gap='12px'>
                 <Box
