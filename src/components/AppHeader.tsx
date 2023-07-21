@@ -73,7 +73,6 @@ export const AppHeader: FC = () => {
             </Show>
           </Flex>
         </Flex>
-        <InstallPWAButton />
         <Link
           as={NavLink}
           to="profile/22"
