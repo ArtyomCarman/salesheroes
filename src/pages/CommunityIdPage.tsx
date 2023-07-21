@@ -35,14 +35,7 @@ export const CommunityIdPage = () => {
               }
             }}
             dangerouslySetInnerHTML={{ __html: newsId.newsText }}
-            overflow="hidden"
-            textOverflow="ellipsis"
-            display="-webkit-box"
             whiteSpace="pre-line"
-            sx={{
-              WebkitLineClamp: "14",
-              WebkitBoxOrient: "vertical",
-            }}
             css={{
               h3: {
                 fontSize: "18px",
