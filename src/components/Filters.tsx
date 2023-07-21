@@ -52,11 +52,16 @@ export const Filters: FC<FiltersProps> = ({
   }, [filters, searchParams, searchParam]);
 
   const handleFilterClick = (value: string) => () => {
-    setSearchParams((params) => {
-      params.set(searchParam, value);
+    setSearchParams(
+      (params) => {
+        params.set(searchParam, value);
 
-      return params;
-    });
+        return params;
+      },
+      {
+        replace: true,
+      }
+    );
   };
 
   return (
