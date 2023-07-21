@@ -1,6 +1,5 @@
 import { useEffect, useState} from "react";
-import {Box, SimpleGrid, Text} from "@chakra-ui/react";
-import {ButtonComponent} from "./ButtonComponent";
+import {Box, Flex, SimpleGrid, Text} from "@chakra-ui/react";
 
 export const InstallPWAButton = () => {
     const [supportsPWA, setSupportsPWA] = useState(false);
@@ -46,8 +45,8 @@ export const InstallPWAButton = () => {
                 maxWidth="840px"
                 width="100%"
                 templateColumns={{
-                    base: 'auto 1fr',
-                    lg: 'auto 1fr auto',
+                    base: '1fr',
+                    lg: 'auto auto',
                 }}
                 alignItems="start"
                 gap="12px"
@@ -59,6 +58,7 @@ export const InstallPWAButton = () => {
                 <Text size="sm" color="white.80" letterSpacing="0.01em">
                     Вы можете установить приложение на свое устройство
                 </Text>
+                <Flex justifySelf='flex-end' gap='12px'>
                 <Box
                     padding="0 4px"
                      _hover={{
@@ -109,6 +109,7 @@ export const InstallPWAButton = () => {
                         Скачать
                     </Text>
                 </Box>
+                </Flex>
             </SimpleGrid>
         </SimpleGrid>
     );
