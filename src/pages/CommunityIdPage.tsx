@@ -1,4 +1,4 @@
-import { Link, useNavigate, useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { Box, Divider, Flex, Show, Text } from "@chakra-ui/react";
 
 import { CommunityNewsCard, ProfileAvatar } from "../components";
@@ -26,30 +26,36 @@ export const CommunityIdPage = () => {
   return (
     <CommunityNewsCard isTournamentNews={!!newsId.tournamentId}>
       <Flex flexDirection="column" gap="16px">
-        <Text
-          size={{
-            base: "sub18/24",
-            lg: "sub20/28",
-          }}
-          variant="semibold"
-          whiteSpace="pre-line"
-        >
-          {newsId.newsText}
-          {newsId.newsId === "news2" && (
-            <Link
-              to="https://dfa.sber.ru/nft/tokens/view/2cDe52F4H3ixbxXeknmDWiEkopFNYV6WQ8oT1aTPutDAjWNJQGVxw8mKsiifqMALhF28vUqFHkxSHoejuiAHZd6iLef8D6u"
-              target="_blank"
-            >
-              <Box
-                as="span"
-                borderBottom="1px dashed #fff"
-                _hover={{ background: "rgba(87, 92, 112, 0.3)" }}
-              >
-                NFT на платформе ЦФА Сбера.
-              </Box>
-            </Link>
-          )}
-        </Text>
+        <Box>
+          <Box
+            onClick={(e) => {
+              // @ts-ignore
+              if (e.target.href) {
+                e.stopPropagation();
+              }
+            }}
+            dangerouslySetInnerHTML={{ __html: newsId.newsText }}
+            overflow="hidden"
+            textOverflow="ellipsis"
+            display="-webkit-box"
+            whiteSpace="pre-line"
+            sx={{
+              WebkitLineClamp: "14",
+              WebkitBoxOrient: "vertical",
+            }}
+            css={{
+              h3: {
+                fontSize: "18px",
+                lineHeight: "24px",
+                fontWeight: "500",
+              },
+              p: {
+                fontSize: "16px",
+                lineHeight: "24px",
+              },
+            }}
+          />
+        </Box>
         <Flex color="rgba(255, 255, 255, 0.8)" gap="24px">
           <Flex gap="8px">
             <CalendarIcon width="24px" height="24px" />
