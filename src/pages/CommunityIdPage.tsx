@@ -11,8 +11,8 @@ import { INews } from "../interfaces";
 
 export const CommunityIdPage = () => {
   const navigate = useNavigate();
-  const goToProfileId = (employeeNumber: string) => () => {
-    navigate(`/profile/${employeeNumber}`);
+  const goToProfileId = (profileNumber: string) => () => {
+    navigate(`/profile/${profileNumber}`);
   };
 
   const handleTournamentId = () => navigate(`/awards/00013`);
@@ -79,7 +79,7 @@ export const CommunityIdPage = () => {
             <Flex direction="column">
               {newsId.leaders.map((leader) => (
                 <Flex
-                  key={leader.employeeNumber}
+                  key={leader.profileNumber}
                   gap="12px"
                   padding="12px 0 12px"
                   border="2px solid transparent"
@@ -101,7 +101,7 @@ export const CommunityIdPage = () => {
                   _notLast={{
                     boxShadow: "28px 29px 0px -28px rgb(255 255 255 / 20%)",
                   }}
-                  onClick={goToProfileId(leader.employeeNumber)}
+                  onClick={goToProfileId(leader.profileNumber)}
                 >
                   <ProfileAvatar profile={leader} size="md" />
                   <Flex flexGrow={1} alignItems="center">

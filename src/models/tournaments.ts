@@ -18,7 +18,7 @@ export const tournaments = {
       tournaments: [
         {
           employee: {
-            employeeNumber: "22",
+            profileNumber: "22",
             photoData: ГайнРоман,
             firstName: "Роман",
             lastName: "Гайн",
@@ -357,7 +357,7 @@ export const tournamentShortList = [
     contestants: "3 участника",
     leaders: [
       {
-        employeeNumber: "24",
+        profileNumber: "24",
         lastName: "Шаброва",
         firstName: "Ирина",
         photoData: фотоШаброваИрина,
@@ -372,7 +372,7 @@ export const tournamentShortList = [
         terDivisionName: "СРБ",
       },
       {
-        employeeNumber: "22",
+        profileNumber: "22",
         lastName: "Гайн",
         firstName: "Роман",
         photoData: фотоГайнРоман,
@@ -386,7 +386,7 @@ export const tournamentShortList = [
         terDivisionName: "СРБ",
       },
       {
-        employeeNumber: "23",
+        profileNumber: "23",
         lastName: "Тихомирова",
         firstName: "Мария",
         photoData: фотоТихомироваМария,
@@ -407,7 +407,7 @@ export const tournamentShortList = [
     contestants: "1 участник",
     leaders: [
       {
-        employeeNumber: "22",
+        profileNumber: "22",
         lastName: "Гайн",
         firstName: "Роман",
         photoData: фотоГайнРоман,
@@ -439,7 +439,7 @@ export const tournamentFullListTerb = {
   contestants: "3 участника",
   leaders: [
     {
-      employeeNumber: "24",
+      profileNumber: "24",
       lastName: "Шаброва",
       firstName: "Ирина",
       photoData: фотоШаброваИрина,
@@ -454,7 +454,7 @@ export const tournamentFullListTerb = {
       terDivisionName: "СРБ",
     },
     {
-      employeeNumber: "22",
+      profileNumber: "22",
       lastName: "Гайн",
       firstName: "Роман",
       photoData: фотоГайнРоман,
@@ -468,7 +468,7 @@ export const tournamentFullListTerb = {
       terDivisionName: "СРБ",
     },
     {
-      employeeNumber: "23",
+      profileNumber: "23",
       lastName: "Тихомирова",
       firstName: "Мария",
       photoData: фотоТихомироваМария,
@@ -491,7 +491,7 @@ export const tournamentFullListGOSB = {
   contestants: "1 участник",
   leaders: [
     {
-      employeeNumber: "22",
+      profileNumber: "22",
       lastName: "Гайн",
       firstName: "Роман",
       photoData: фотоГайнРоман,
@@ -512,7 +512,7 @@ export const archiveTournaments = {
   tournaments: [
     {
       employee: {
-        employeeNumber: "22",
+        profileNumber: "22",
         photoData: ГайнРоман,
         firstName: "Роман",
         lastName: "Гайн",
@@ -564,7 +564,7 @@ export const tournamentFullListTerbT2 = {
   contestants: "2 участника",
   leaders: [
     {
-      employeeNumber: "24",
+      profileNumber: "24",
       lastName: "Шаброва",
       firstName: "Ирина",
       photoData: фотоШаброваИрина,
@@ -580,7 +580,7 @@ export const tournamentFullListTerbT2 = {
     },
 
     {
-      employeeNumber: "23",
+      profileNumber: "23",
       lastName: "Тихомирова",
       firstName: "Мария",
       photoData: фотоТихомироваМария,
@@ -625,7 +625,7 @@ export const tournamentShortListT2 = [
     contestants: "2 участника",
     leaders: [
       {
-        employeeNumber: "24",
+        profileNumber: "24",
         lastName: "Шаброва",
         firstName: "Ирина",
         photoData: фотоШаброваИрина,
@@ -640,7 +640,7 @@ export const tournamentShortListT2 = [
         terDivisionName: "СРБ",
       },
       {
-        employeeNumber: "23",
+        profileNumber: "23",
         lastName: "Тихомирова",
         firstName: "Мария",
         photoData: фотоТихомироваМария,
@@ -680,7 +680,7 @@ export const tournamentShortListT3 = [
     contestants: "3 участника",
     leaders: [
       {
-        employeeNumber: "24",
+        profileNumber: "24",
         lastName: "Шаброва",
         firstName: "Ирина",
         photoData: фотоШаброваИрина,
@@ -695,7 +695,7 @@ export const tournamentShortListT3 = [
         terDivisionName: "СРБ",
       },
       {
-        employeeNumber: "22",
+        profileNumber: "22",
         lastName: "Гайн",
         firstName: "Роман",
         photoData: фотоГайнРоман,
@@ -709,7 +709,7 @@ export const tournamentShortListT3 = [
         terDivisionName: "СРБ",
       },
       {
-        employeeNumber: "23",
+        profileNumber: "23",
         lastName: "Тихомирова",
         firstName: "Мария",
         photoData: фотоТихомироваМария,
@@ -730,7 +730,7 @@ export const tournamentShortListT3 = [
     contestants: "1 участник",
     leaders: [
       {
-        employeeNumber: "22",
+        profileNumber: "22",
         lastName: "Гайн",
         firstName: "Роман",
         photoData: фотоГайнРоман,

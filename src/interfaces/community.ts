@@ -24,7 +24,7 @@ export interface INewsParams {
 }
 
 export interface INewsRatingListParams {
-  employeeNumber: string;
+  profileNumber: string;
   params: {
     pageNum?: number;
     divisionLevel: DivisionLevel;
@@ -39,7 +39,7 @@ export interface INewsRatingParams {
 }
 
 export interface INewsRatingLeader {
-  employeeNumber: string;
+  profileNumber: string;
   firstName: string;
   lastName: string;
   photoData: string;
@@ -55,7 +55,7 @@ export interface INewsRating {
 }
 
 export interface INewsLikesPayload {
-  employeeNumber: string;
+  profileNumber: string;
   newsId: string;
 }
 

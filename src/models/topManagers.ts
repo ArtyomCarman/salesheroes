@@ -4,7 +4,7 @@ import ЧернышоваЕлена from "../assets/images/Елена Черны
 import Юлианна from "../assets/images/Юлианна Егорова.jpeg";
 
 const ПоповАнатолий = {
-  employeeNumber: "40",
+  profileNumber: "40",
   photoData: "",
   terDivisionName: "ЦА",
   firstName: "Анатолий",
@@ -22,7 +22,7 @@ const ПоповАнатолий = {
 };
 
 const СитновВладимир = {
-  employeeNumber: "41",
+  profileNumber: "41",
   photoData: "",
   terDivisionName: "ЦА",
   firstName: "Владимир",
@@ -40,7 +40,7 @@ const СитновВладимир = {
 };
 
 const МеламедСергей = {
-  employeeNumber: "42",
+  profileNumber: "42",
   photoData: Меламед,
   terDivisionName: "ЦА",
   firstName: "Сергей",
@@ -58,7 +58,7 @@ const МеламедСергей = {
 };
 
 const ЕленаЧернышова = {
-  employeeNumber: "43",
+  profileNumber: "43",
   photoData: ЧернышоваЕлена,
   terDivisionName: "ЦА",
   firstName: "Елена",
@@ -75,7 +75,7 @@ const ЕленаЧернышова = {
   positionName: "Управляющий директор",
 };
 const ЕгороваЮлианна = {
-  employeeNumber: "44",
+  profileNumber: "44",
   photoData: Юлианна,
   terDivisionName: "ЦА",
   firstName: "Юлианна",

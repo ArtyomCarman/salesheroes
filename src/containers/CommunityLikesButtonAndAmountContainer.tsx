@@ -44,13 +44,13 @@ export const CommunityLikesButtonAndAmountContainer: FC<Props> = ({
           content={people.map((item, itemIndex) => (
             <Grid
               p="12px 16px"
-              key={item.employeeNumber}
+              key={item.profileNumber}
               gap="12px"
               gridTemplateColumns="auto 1fr"
             >
               <Box
                 display="contents"
-                onClick={goToProfile(item.employeeNumber)}
+                onClick={goToProfile(item.profileNumber)}
                 cursor="pointer"
               >
                 <ProfileAvatar profile={item} size="md" cursor="pointer" />

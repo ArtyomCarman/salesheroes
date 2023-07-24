@@ -7,7 +7,7 @@ import { ProfileAvatar } from "./ProfileAvatar";
 import { ReactComponent as SalesHerosIcon } from "../assets/icons/sales-heros-logo.svg";
 import { ReactComponent as ArrowThickLeftIcon } from "../assets/icons/arrow-thick-left.svg";
 import { profileContestant } from "../models";
-import {InstallPWAButton} from "./InstallPWAButton";
+import { InstallPWAButton } from "./InstallPWAButton";
 
 export const AppHeader: FC = () => {
   const navigate = useNavigate();
@@ -34,8 +34,8 @@ export const AppHeader: FC = () => {
         maxWidth="840px"
         width="100%"
         templateColumns={{
-          base: "1fr auto auto",
-          lg: "196px 1fr auto auto",
+          base: "1fr auto",
+          lg: "196px 1fr auto ",
         }}
         gap="24px"
         alignItems="center"

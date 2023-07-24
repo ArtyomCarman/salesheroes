@@ -1,87 +1,87 @@
-import { IBadgesType } from './badges';
+import { IBadgesType } from "./badges";
 import {
-	DivisionLevel,
-	EmployeeStatus,
-	IColorCode,
-	IDivisions,
-	ILeader,
-	IPage,
-	TimePeriod,
-} from './common';
+  DivisionLevel,
+  EmployeeStatus,
+  IColorCode,
+  IDivisions,
+  ILeader,
+  IPage,
+  TimePeriod,
+} from "./common";
 
 export interface IProfileBody {
-	employeeNumber: string;
-	lastName: string;
-	firstName: string;
-	tbCode?: string;
-	terDivisionName?: string;
-	gosbCode?: string;
-	gosbName?: string;
-	funcDivisionName?: string;
-	positionName?: string;
-	photoData?: string;
-	colorCode?: IColorCode;
-	employeeStatus?: EmployeeStatus;
+  profileNumber: string;
+  lastName: string;
+  firstName: string;
+  tbCode?: string;
+  terDivisionName?: string;
+  gosbCode?: string;
+  gosbName?: string;
+  funcDivisionName?: string;
+  positionName?: string;
+  photoData?: string;
+  colorCode?: IColorCode;
+  employeeStatus?: EmployeeStatus;
 }
 
 export interface IProfileRatingBody {
-	timePeriod: Array<{
-		periodName: keyof typeof TimePeriod;
-		divisions: IDivisions[];
-	}>;
+  timePeriod: Array<{
+    periodName: keyof typeof TimePeriod;
+    divisions: IDivisions[];
+  }>;
 }
 
 export interface ILevelsDirectory {
-	name: string;
-	code: string;
-	lowBound: number;
-	achievementConditions: string;
-	colorCode: IColorCode;
+  name: string;
+  code: string;
+  lowBound: number;
+  achievementConditions: string;
+  colorCode: IColorCode;
 }
 
 interface IUserLevel {
-	currentLevelName: string;
-	colorCode: IColorCode;
-	progressBar?: {
-		value: number;
-		info: string;
-	};
+  currentLevelName: string;
+  colorCode: IColorCode;
+  progressBar?: {
+    value: number;
+    info: string;
+  };
 }
 
 interface ICristals {
-	crystalsEarned: number;
+  crystalsEarned: number;
 }
 
 export interface IProfileProgressBody {
-	crystals: ICristals;
-	userLevel: IUserLevel;
-	levelsDirectory: ILevelsDirectory[];
+  crystals: ICristals;
+  userLevel: IUserLevel;
+  levelsDirectory: ILevelsDirectory[];
 }
 
 export interface IProfileBadgesBody {
-	badgesUserHas: number;
-	badgesInTotal: number;
-	badgesType: IBadgesType[];
+  badgesUserHas: number;
+  badgesInTotal: number;
+  badgesType: IBadgesType[];
 }
 
 export interface IProfileIdParams {
-	profileId: string;
+  profileId: string;
 }
 
 export interface IGetProfileRatingList {
-	params: {
-		pageNum: number;
-		divisionLevel: DivisionLevel;
-		timePeriod: TimePeriod;
-	};
+  params: {
+    pageNum: number;
+    divisionLevel: DivisionLevel;
+    timePeriod: TimePeriod;
+  };
 }
 
 export interface IRating {
-	contestants: string;
-	leaders: ILeader[];
+  contestants: string;
+  leaders: ILeader[];
 }
 
 export interface IProfileRatingListBody {
-	rating: IRating;
-	page: IPage;
+  rating: IRating;
+  page: IPage;
 }

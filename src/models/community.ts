@@ -57,7 +57,7 @@ export const news: INewsList = {
                 position: "1",
                 list: [
                   {
-                    employeeNumber: "40",
+                    profileNumber: "40",
                     photoData: "",
                     terDivisionName: "ЦА",
                     firstName: "Анатолий",
@@ -69,7 +69,7 @@ export const news: INewsList = {
                     employeeStatus: EmployeeStatus.Top_Manager,
                   },
                   {
-                    employeeNumber: "41",
+                    profileNumber: "41",
                     photoData: "",
                     terDivisionName: "ЦА",
                     firstName: "Владимир",
@@ -81,7 +81,7 @@ export const news: INewsList = {
                     employeeStatus: EmployeeStatus.Top_Manager,
                   },
                   {
-                    employeeNumber: "42",
+                    profileNumber: "42",
                     photoData: Меламед,
                     terDivisionName: "ЦА",
                     firstName: "Сергей",
@@ -93,7 +93,7 @@ export const news: INewsList = {
                     employeeStatus: EmployeeStatus.Top_Manager,
                   },
                   {
-                    employeeNumber: "43",
+                    profileNumber: "43",
                     photoData: ЧернышоваЕлена,
                     terDivisionName: "ЦА",
                     firstName: "Елена",
@@ -105,7 +105,7 @@ export const news: INewsList = {
                     employeeStatus: EmployeeStatus.Top_Manager,
                   },
                   {
-                    employeeNumber: "44",
+                    profileNumber: "44",
                     photoData: Юлианна,
                     terDivisionName: "ЦА",
                     firstName: "Юлианна",
@@ -117,7 +117,7 @@ export const news: INewsList = {
                     employeeStatus: EmployeeStatus.Top_Manager,
                   },
                   {
-                    employeeNumber: "25",
+                    profileNumber: "25",
                     isMarked: false,
                     firstName: "Алтын",
                     lastName: "Серкбаева",
@@ -130,7 +130,7 @@ export const news: INewsList = {
                     employeeStatus: EmployeeStatus.Contestant,
                   },
                   {
-                    employeeNumber: "11",
+                    profileNumber: "11",
                     isMarked: false,
                     firstName: "Ярослав",
                     lastName: "Митосев",
@@ -143,7 +143,7 @@ export const news: INewsList = {
                     employeeStatus: EmployeeStatus.Contestant,
                   },
                   {
-                    employeeNumber: "31",
+                    profileNumber: "31",
                     isMarked: false,
                     firstName: "Ольга",
                     lastName: "Шебанова",
@@ -187,7 +187,7 @@ export const news: INewsList = {
                 position: "1",
                 list: [
                   {
-                    employeeNumber: "40",
+                    profileNumber: "40",
                     photoData: "",
                     terDivisionName: "ЦА",
                     firstName: "Анатолий",
@@ -199,7 +199,7 @@ export const news: INewsList = {
                     employeeStatus: EmployeeStatus.Top_Manager,
                   },
                   {
-                    employeeNumber: "41",
+                    profileNumber: "41",
                     photoData: "",
                     terDivisionName: "ЦА",
                     firstName: "Владимир",
@@ -211,7 +211,7 @@ export const news: INewsList = {
                     employeeStatus: EmployeeStatus.Top_Manager,
                   },
                   {
-                    employeeNumber: "42",
+                    profileNumber: "42",
                     photoData: Меламед,
                     terDivisionName: "ЦА",
                     firstName: "Сергей",
@@ -223,7 +223,7 @@ export const news: INewsList = {
                     employeeStatus: EmployeeStatus.Top_Manager,
                   },
                   {
-                    employeeNumber: "43",
+                    profileNumber: "43",
                     photoData: ЧернышоваЕлена,
                     terDivisionName: "ЦА",
                     firstName: "Елена",
@@ -235,7 +235,7 @@ export const news: INewsList = {
                     employeeStatus: EmployeeStatus.Top_Manager,
                   },
                   {
-                    employeeNumber: "11",
+                    profileNumber: "11",
                     isMarked: false,
                     firstName: "Ярослав",
                     lastName: "Митосев",
@@ -248,7 +248,7 @@ export const news: INewsList = {
                     employeeStatus: EmployeeStatus.Contestant,
                   },
                   {
-                    employeeNumber: "31",
+                    profileNumber: "31",
                     isMarked: false,
                     firstName: "Ольга",
                     lastName: "Шебанова",
@@ -292,7 +292,7 @@ export const news: INewsList = {
                 position: "1",
                 list: [
                   {
-                    employeeNumber: "40",
+                    profileNumber: "40",
                     photoData: "",
                     terDivisionName: "ЦА",
                     firstName: "Анатолий",
@@ -304,7 +304,7 @@ export const news: INewsList = {
                     employeeStatus: EmployeeStatus.Top_Manager,
                   },
                   {
-                    employeeNumber: "41",
+                    profileNumber: "41",
                     photoData: "",
                     terDivisionName: "ЦА",
                     firstName: "Владимир",
@@ -316,7 +316,7 @@ export const news: INewsList = {
                     employeeStatus: EmployeeStatus.Top_Manager,
                   },
                   {
-                    employeeNumber: "42",
+                    profileNumber: "42",
                     photoData: Меламед,
                     terDivisionName: "ЦА",
                     firstName: "Сергей",
@@ -328,7 +328,7 @@ export const news: INewsList = {
                     employeeStatus: EmployeeStatus.Top_Manager,
                   },
                   {
-                    employeeNumber: "43",
+                    profileNumber: "43",
                     photoData: ЧернышоваЕлена,
                     terDivisionName: "ЦА",
                     firstName: "Елена",
@@ -340,7 +340,7 @@ export const news: INewsList = {
                     employeeStatus: EmployeeStatus.Top_Manager,
                   },
                   {
-                    employeeNumber: "44",
+                    profileNumber: "44",
                     photoData: Юлианна,
                     terDivisionName: "ЦА",
                     firstName: "Юлианна",
@@ -352,7 +352,7 @@ export const news: INewsList = {
                     employeeStatus: EmployeeStatus.Top_Manager,
                   },
                   {
-                    employeeNumber: "25",
+                    profileNumber: "25",
                     isMarked: false,
                     firstName: "Алтын",
                     lastName: "Серкбаева",
@@ -365,7 +365,7 @@ export const news: INewsList = {
                     employeeStatus: EmployeeStatus.Contestant,
                   },
                   {
-                    employeeNumber: "11",
+                    profileNumber: "11",
                     isMarked: false,
                     firstName: "Ярослав",
                     lastName: "Митосев",
@@ -395,7 +395,7 @@ export const news: INewsList = {
             "<h3>Ирина смогла удвоить заработанную комиссию по сделкам с индийскими контрагентами по сравнению с предыдущим месяцем. Так держать!</h3>",
           leaders: [
             leaders.find(
-              ({ employeeNumber }) => employeeNumber === "24"
+              ({ profileNumber }) => profileNumber === "24"
             ) as INewsLeader,
           ],
           likes: {
@@ -413,7 +413,7 @@ export const news: INewsList = {
                 position: "1",
                 list: [
                   {
-                    employeeNumber: "40",
+                    profileNumber: "40",
                     photoData: "",
                     terDivisionName: "ЦА",
                     firstName: "Анатолий",
@@ -425,7 +425,7 @@ export const news: INewsList = {
                     employeeStatus: EmployeeStatus.Top_Manager,
                   },
                   {
-                    employeeNumber: "41",
+                    profileNumber: "41",
                     photoData: "",
                     terDivisionName: "ЦА",
                     firstName: "Владимир",
@@ -437,7 +437,7 @@ export const news: INewsList = {
                     employeeStatus: EmployeeStatus.Top_Manager,
                   },
                   {
-                    employeeNumber: "42",
+                    profileNumber: "42",
                     photoData: Меламед,
                     terDivisionName: "ЦА",
                     firstName: "Сергей",
@@ -449,7 +449,7 @@ export const news: INewsList = {
                     employeeStatus: EmployeeStatus.Top_Manager,
                   },
                   {
-                    employeeNumber: "43",
+                    profileNumber: "43",
                     photoData: ЧернышоваЕлена,
                     terDivisionName: "ЦА",
                     firstName: "Елена",
@@ -461,7 +461,7 @@ export const news: INewsList = {
                     employeeStatus: EmployeeStatus.Top_Manager,
                   },
                   {
-                    employeeNumber: "44",
+                    profileNumber: "44",
                     photoData: Юлианна,
                     terDivisionName: "ЦА",
                     firstName: "Юлианна",
@@ -473,7 +473,7 @@ export const news: INewsList = {
                     employeeStatus: EmployeeStatus.Top_Manager,
                   },
                   {
-                    employeeNumber: "25",
+                    profileNumber: "25",
                     isMarked: false,
                     firstName: "Алтын",
                     lastName: "Серкбаева",
@@ -486,7 +486,7 @@ export const news: INewsList = {
                     employeeStatus: EmployeeStatus.Contestant,
                   },
                   {
-                    employeeNumber: "11",
+                    profileNumber: "11",
                     isMarked: false,
                     firstName: "Ярослав",
                     lastName: "Митосев",
@@ -499,7 +499,7 @@ export const news: INewsList = {
                     employeeStatus: EmployeeStatus.Contestant,
                   },
                   {
-                    employeeNumber: "31",
+                    profileNumber: "31",
                     isMarked: false,
                     firstName: "Ольга",
                     lastName: "Шебанова",
@@ -526,7 +526,7 @@ export const newsRatingCountry = {
   usersPosition: "Вы на 1 из 33 месте",
   leaders: [
     {
-      employeeNumber: "22",
+      profileNumber: "22",
       firstName: "Роман",
       lastName: "Гайн",
       photoData: ГайнРоман,
@@ -538,7 +538,7 @@ export const newsRatingCountry = {
       },
     },
     {
-      employeeNumber: "19",
+      profileNumber: "19",
       isMarked: false,
       firstName: "Алёна",
       lastName: "Берстенева",
@@ -553,7 +553,7 @@ export const newsRatingCountry = {
       },
     },
     {
-      employeeNumber: "3",
+      profileNumber: "3",
       isMarked: false,
       firstName: "Руфина",
       lastName: "Черняк",
@@ -568,7 +568,7 @@ export const newsRatingCountry = {
       },
     },
     {
-      employeeNumber: "28",
+      profileNumber: "28",
       isMarked: false,
       firstName: "Наталья",
       lastName: "Дурова",
@@ -583,7 +583,7 @@ export const newsRatingCountry = {
       },
     },
     {
-      employeeNumber: "14",
+      profileNumber: "14",
       isMarked: false,
       firstName: "Юлия",
       lastName: "Орлова",
@@ -602,7 +602,7 @@ export const newsRatingTERB = {
   usersPosition: "Вы на 1 из 3 месте",
   leaders: [
     {
-      employeeNumber: "22",
+      profileNumber: "22",
       firstName: "Роман",
       lastName: "Гайн",
       photoData: ГайнРоман,
@@ -614,7 +614,7 @@ export const newsRatingTERB = {
       },
     },
     {
-      employeeNumber: "24",
+      profileNumber: "24",
       isMarked: false,
       firstName: "Ирина",
       lastName: "Шаброва",
@@ -627,7 +627,7 @@ export const newsRatingTERB = {
       },
     },
     {
-      employeeNumber: "23",
+      profileNumber: "23",
       isMarked: false,
       firstName: "Мария",
       lastName: "Тихомирова",
@@ -647,7 +647,7 @@ export const newsRatingGOSB = {
   usersPosition: "Вы на 1 из 1 месте",
   leaders: [
     {
-      employeeNumber: "22",
+      profileNumber: "22",
       firstName: "Роман",
       lastName: "Гайн",
       photoData: ГайнРоман,
@@ -666,7 +666,7 @@ export const newsRating = {
   usersPosition: "Вы на 12 из 1240 месте",
   leaders: [
     {
-      employeeNumber: "010122",
+      profileNumber: "010122",
       firstName: "Илья",
       lastName: "Герасимчук",
       photoData: "URL_in_Base64",

@@ -3,7 +3,7 @@ import ГайнРоман from "../assets/images/romanGayn.png";
 import МеламедСергей from "../assets/images/Сергей Меламед.jpeg";
 
 export const profileContestant = {
-  employeeNumber: "22",
+  profileNumber: "22",
   lastName: "Гайн",
   firstName: "Роман",
   tbShortName: "СРБ",
@@ -19,7 +19,7 @@ export const profileContestant = {
 };
 
 export const profileObserver = {
-  employeeNumber: "00002",
+  profileNumber: "00002",
   lastName: "Гайн",
   firstName: "Роман",
   tbShortName: "ЦЧБ",
@@ -35,7 +35,7 @@ export const profileObserver = {
 };
 
 export const profileTopManager = {
-  employeeNumber: "00003",
+  profileNumber: "00003",
   lastName: "Меламед",
   firstName: "Сергей",
   tbShortName: "ЦЧБ",
@@ -52,7 +52,7 @@ export const profileTopManager = {
 };
 
 // {
-//   employeeNumber: "22",
+//   profileNumber: "22",
 //   isMarked: true,
 //   firstName: "Роман",
 //   lastName: "Гайн",

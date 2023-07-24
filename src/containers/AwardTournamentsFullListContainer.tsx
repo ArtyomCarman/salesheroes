@@ -13,7 +13,7 @@ const tournaments = {
         {
           tournamentId: "T1",
           employee: {
-            employeeNumber: "22",
+            profileNumber: "22",
             photoData: ГайнРоман,
             firstName: "Роман",
             lastName: "Гайн",
@@ -78,7 +78,7 @@ const tournaments = {
         {
           tournamentId: "T3",
           employee: {
-            employeeNumber: "22",
+            profileNumber: "22",
             photoData: ГайнРоман,
             firstName: "Роман",
             lastName: "Гайн",

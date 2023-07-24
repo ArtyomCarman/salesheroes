@@ -12,7 +12,7 @@ export const CommunityNewsRatingProfile: FC<Props> = ({ leader, total }) => {
 
   const handleProfile = (event: MouseEvent<HTMLDivElement>) => {
     event.stopPropagation();
-    navigate(`/profile/${leader.employeeNumber}`);
+    navigate(`/profile/${leader.profileNumber}`);
   };
 
   const order = useMemo(() => {
@@ -50,7 +50,7 @@ export const CommunityNewsRatingProfile: FC<Props> = ({ leader, total }) => {
 
   return (
     <Flex
-      key={leader.employeeNumber}
+      key={leader.profileNumber}
       flexDirection="column"
       alignItems="center"
       order={order}

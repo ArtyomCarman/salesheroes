@@ -41,7 +41,7 @@ export const CommunityTabsNewsContainer: FC<Props> = ({ news }) => {
           <Flex>
             {leadersList.map((leader, index) => (
               <Box
-                key={leader.employeeNumber}
+                key={leader.profileNumber}
                 _notFirst={{
                   marginLeft: "-8px",
                   // transform: `translateX(-${index * 8}px)`,
@@ -59,13 +59,13 @@ export const CommunityTabsNewsContainer: FC<Props> = ({ news }) => {
                     content={news.leaders.map((item, itemIndex) => (
                       <Grid
                         p="12px 16px"
-                        key={item.employeeNumber}
+                        key={item.profileNumber}
                         gap="12px"
                         gridTemplateColumns="auto 1fr"
                       >
                         <Box
                           display="contents"
-                          onClick={goToProfile(item.employeeNumber)}
+                          onClick={goToProfile(item.profileNumber)}
                           cursor="pointer"
                         >
                           <ProfileAvatar profile={item} size="md" />
@@ -113,7 +113,7 @@ export const CommunityTabsNewsContainer: FC<Props> = ({ news }) => {
                   <ProfileAvatar
                     profile={leader}
                     size="md"
-                    onClick={goToProfile(leader.employeeNumber)}
+                    onClick={goToProfile(leader.profileNumber)}
                   />
                 )}
               </Box>
@@ -123,9 +123,9 @@ export const CommunityTabsNewsContainer: FC<Props> = ({ news }) => {
           <>
             {news.leaders.map((leader) => (
               <Flex
-                key={leader.employeeNumber}
+                key={leader.profileNumber}
                 gap="12px"
-                onClick={goToProfile(leader.employeeNumber)}
+                onClick={goToProfile(leader.profileNumber)}
               >
                 <ProfileAvatar profile={leader} size="md" />
                 <Flex flexDirection="column" flexGrow={1}>

@@ -30,7 +30,7 @@ export const ratingList = {
   contestants: "33 участника",
   leaders: [
     {
-      employeeNumber: "22",
+      profileNumber: "22",
       isMarked: true,
       firstName: "Роман",
       lastName: "Гайн",
@@ -45,7 +45,7 @@ export const ratingList = {
       },
     },
     {
-      employeeNumber: "19",
+      profileNumber: "19",
       isMarked: false,
       firstName: "Алёна",
       lastName: "Берстенева",
@@ -60,7 +60,7 @@ export const ratingList = {
       },
     },
     {
-      employeeNumber: "3",
+      profileNumber: "3",
       isMarked: false,
       firstName: "Руфина",
       lastName: "Черняк",
@@ -75,7 +75,7 @@ export const ratingList = {
       },
     },
     {
-      employeeNumber: "28",
+      profileNumber: "28",
       isMarked: false,
       firstName: "Наталья",
       lastName: "Дурова",
@@ -90,7 +90,7 @@ export const ratingList = {
       },
     },
     {
-      employeeNumber: "14",
+      profileNumber: "14",
       isMarked: false,
       firstName: "Юлия",
       lastName: "Орлова",
@@ -105,7 +105,7 @@ export const ratingList = {
       },
     },
     {
-      employeeNumber: "25",
+      profileNumber: "25",
       isMarked: false,
       firstName: "Алтын",
       lastName: "Серкбаева",
@@ -120,7 +120,7 @@ export const ratingList = {
       },
     },
     {
-      employeeNumber: "32",
+      profileNumber: "32",
       isMarked: false,
       firstName: "Михаил",
       lastName: "Борблик",
@@ -135,7 +135,7 @@ export const ratingList = {
       },
     },
     {
-      employeeNumber: "18",
+      profileNumber: "18",
       isMarked: false,
       firstName: "Эмма",
       lastName: "Савушкина",
@@ -150,7 +150,7 @@ export const ratingList = {
       },
     },
     {
-      employeeNumber: "13",
+      profileNumber: "13",
       isMarked: false,
       firstName: "Мария",
       lastName: "Карагодина",
@@ -165,7 +165,7 @@ export const ratingList = {
       },
     },
     {
-      employeeNumber: "1",
+      profileNumber: "1",
       isMarked: false,
       firstName: "Павел",
       lastName: "Макаров",
@@ -180,7 +180,7 @@ export const ratingList = {
       },
     },
     {
-      employeeNumber: "21",
+      profileNumber: "21",
       isMarked: false,
       firstName: "Екатерина",
       lastName: "Томсон",
@@ -195,7 +195,7 @@ export const ratingList = {
       },
     },
     {
-      employeeNumber: "24",
+      profileNumber: "24",
       isMarked: false,
       firstName: "Ирина",
       lastName: "Шаброва",
@@ -210,7 +210,7 @@ export const ratingList = {
       },
     },
     {
-      employeeNumber: "15",
+      profileNumber: "15",
       isMarked: false,
       firstName: "Татьяна",
       lastName: "Кунина",
@@ -225,7 +225,7 @@ export const ratingList = {
       },
     },
     {
-      employeeNumber: "8",
+      profileNumber: "8",
       isMarked: false,
       firstName: "Илья",
       lastName: "Сорокин",
@@ -240,7 +240,7 @@ export const ratingList = {
       },
     },
     {
-      employeeNumber: "2",
+      profileNumber: "2",
       isMarked: false,
       firstName: "Елена",
       lastName: "Проскурина",
@@ -255,7 +255,7 @@ export const ratingList = {
       },
     },
     {
-      employeeNumber: "26",
+      profileNumber: "26",
       isMarked: false,
       firstName: "Николай",
       lastName: "Кротков",
@@ -270,7 +270,7 @@ export const ratingList = {
       },
     },
     {
-      employeeNumber: "33",
+      profileNumber: "33",
       isMarked: false,
       firstName: "Виктория",
       lastName: "Чернец",
@@ -285,7 +285,7 @@ export const ratingList = {
       },
     },
     {
-      employeeNumber: "16",
+      profileNumber: "16",
       isMarked: false,
       firstName: "Александр",
       lastName: "Захаров",
@@ -300,7 +300,7 @@ export const ratingList = {
       },
     },
     {
-      employeeNumber: "29",
+      profileNumber: "29",
       isMarked: false,
       firstName: "Юлия",
       lastName: "Киреева",
@@ -315,7 +315,7 @@ export const ratingList = {
       },
     },
     {
-      employeeNumber: "5",
+      profileNumber: "5",
       isMarked: false,
       firstName: "Венера",
       lastName: "Хасаншина",
@@ -330,7 +330,7 @@ export const ratingList = {
       },
     },
     {
-      employeeNumber: "30",
+      profileNumber: "30",
       isMarked: false,
       firstName: "Жанна",
       lastName: "Жаглина",
@@ -345,7 +345,7 @@ export const ratingList = {
       },
     },
     {
-      employeeNumber: "4",
+      profileNumber: "4",
       isMarked: false,
       firstName: "Елена",
       lastName: "Проскурина",
@@ -360,7 +360,7 @@ export const ratingList = {
       },
     },
     {
-      employeeNumber: "9",
+      profileNumber: "9",
       isMarked: false,
       firstName: "Юлия",
       lastName: "Сенотрусова",
@@ -375,7 +375,7 @@ export const ratingList = {
       },
     },
     {
-      employeeNumber: "10",
+      profileNumber: "10",
       isMarked: false,
       firstName: "Вероника",
       lastName: "Дмитриева",
@@ -390,7 +390,7 @@ export const ratingList = {
       },
     },
     {
-      employeeNumber: "11",
+      profileNumber: "11",
       isMarked: false,
       firstName: "Ярослав",
       lastName: "Митосев",
@@ -405,7 +405,7 @@ export const ratingList = {
       },
     },
     {
-      employeeNumber: "31",
+      profileNumber: "31",
       isMarked: false,
       firstName: "Ольга",
       lastName: "Шебанова",
@@ -420,7 +420,7 @@ export const ratingList = {
       },
     },
     {
-      employeeNumber: "17",
+      profileNumber: "17",
       isMarked: false,
       firstName: "Марина",
       lastName: "Сорокина",
@@ -435,7 +435,7 @@ export const ratingList = {
       },
     },
     {
-      employeeNumber: "6",
+      profileNumber: "6",
       isMarked: false,
       firstName: "Елена",
       lastName: "Кодолова",
@@ -450,7 +450,7 @@ export const ratingList = {
       },
     },
     {
-      employeeNumber: "7",
+      profileNumber: "7",
       isMarked: false,
       firstName: "Андрей",
       lastName: "Митренко",
@@ -465,7 +465,7 @@ export const ratingList = {
       },
     },
     {
-      employeeNumber: "27",
+      profileNumber: "27",
       isMarked: false,
       firstName: "Мария",
       lastName: "Брусницына",
@@ -480,7 +480,7 @@ export const ratingList = {
       },
     },
     {
-      employeeNumber: "20",
+      profileNumber: "20",
       isMarked: false,
       firstName: "Рашид",
       lastName: "Адиев",
@@ -495,7 +495,7 @@ export const ratingList = {
       },
     },
     {
-      employeeNumber: "23",
+      profileNumber: "23",
       isMarked: false,
       firstName: "Мария",
       lastName: "Тихомирова",
@@ -510,7 +510,7 @@ export const ratingList = {
       },
     },
     {
-      employeeNumber: "12",
+      profileNumber: "12",
       isMarked: false,
       firstName: "Александр",
       lastName: "Бобок",
@@ -531,7 +531,7 @@ export const ratingListQuarter = {
   contestants: "33 участника",
   leaders: [
     {
-      employeeNumber: "22",
+      profileNumber: "22",
       isMarked: true,
       firstName: "Роман",
       lastName: "Гайн",
@@ -546,7 +546,7 @@ export const ratingListQuarter = {
       },
     },
     {
-      employeeNumber: "19",
+      profileNumber: "19",
       isMarked: false,
       firstName: "Алёна",
       lastName: "Берстенева",
@@ -561,7 +561,7 @@ export const ratingListQuarter = {
       },
     },
     {
-      employeeNumber: "3",
+      profileNumber: "3",
       isMarked: false,
       firstName: "Руфина",
       lastName: "Черняк",
@@ -576,7 +576,7 @@ export const ratingListQuarter = {
       },
     },
     {
-      employeeNumber: "28",
+      profileNumber: "28",
       isMarked: false,
       firstName: "Наталья",
       lastName: "Дурова",
@@ -591,7 +591,7 @@ export const ratingListQuarter = {
       },
     },
     {
-      employeeNumber: "14",
+      profileNumber: "14",
       isMarked: false,
       firstName: "Юлия",
       lastName: "Орлова",
@@ -606,7 +606,7 @@ export const ratingListQuarter = {
       },
     },
     {
-      employeeNumber: "25",
+      profileNumber: "25",
       isMarked: false,
       firstName: "Алтын",
       lastName: "Серкбаева",
@@ -621,7 +621,7 @@ export const ratingListQuarter = {
       },
     },
     {
-      employeeNumber: "32",
+      profileNumber: "32",
       isMarked: false,
       firstName: "Михаил",
       lastName: "Борблик",
@@ -636,7 +636,7 @@ export const ratingListQuarter = {
       },
     },
     {
-      employeeNumber: "18",
+      profileNumber: "18",
       isMarked: false,
       firstName: "Эмма",
       lastName: "Савушкина",
@@ -651,7 +651,7 @@ export const ratingListQuarter = {
       },
     },
     {
-      employeeNumber: "13",
+      profileNumber: "13",
       isMarked: false,
       firstName: "Мария",
       lastName: "Карагодина",
@@ -666,7 +666,7 @@ export const ratingListQuarter = {
       },
     },
     {
-      employeeNumber: "1",
+      profileNumber: "1",
       isMarked: false,
       firstName: "Павел",
       lastName: "Макаров",
@@ -681,7 +681,7 @@ export const ratingListQuarter = {
       },
     },
     {
-      employeeNumber: "21",
+      profileNumber: "21",
       isMarked: false,
       firstName: "Екатерина",
       lastName: "Томсон",
@@ -696,7 +696,7 @@ export const ratingListQuarter = {
       },
     },
     {
-      employeeNumber: "24",
+      profileNumber: "24",
       isMarked: false,
       firstName: "Ирина",
       lastName: "Шаброва",
@@ -711,7 +711,7 @@ export const ratingListQuarter = {
       },
     },
     {
-      employeeNumber: "15",
+      profileNumber: "15",
       isMarked: false,
       firstName: "Татьяна",
       lastName: "Кунина",
@@ -726,7 +726,7 @@ export const ratingListQuarter = {
       },
     },
     {
-      employeeNumber: "8",
+      profileNumber: "8",
       isMarked: false,
       firstName: "Илья",
       lastName: "Сорокин",
@@ -741,7 +741,7 @@ export const ratingListQuarter = {
       },
     },
     {
-      employeeNumber: "2",
+      profileNumber: "2",
       isMarked: false,
       firstName: "Елена",
       lastName: "Проскурина",
@@ -756,7 +756,7 @@ export const ratingListQuarter = {
       },
     },
     {
-      employeeNumber: "26",
+      profileNumber: "26",
       isMarked: false,
       firstName: "Николай",
       lastName: "Кротков",
@@ -771,7 +771,7 @@ export const ratingListQuarter = {
       },
     },
     {
-      employeeNumber: "33",
+      profileNumber: "33",
       isMarked: false,
       firstName: "Виктория",
       lastName: "Чернец",
@@ -786,7 +786,7 @@ export const ratingListQuarter = {
       },
     },
     {
-      employeeNumber: "16",
+      profileNumber: "16",
       isMarked: false,
       firstName: "Александр",
       lastName: "Захаров",
@@ -801,7 +801,7 @@ export const ratingListQuarter = {
       },
     },
     {
-      employeeNumber: "29",
+      profileNumber: "29",
       isMarked: false,
       firstName: "Юлия",
       lastName: "Киреева",
@@ -816,7 +816,7 @@ export const ratingListQuarter = {
       },
     },
     {
-      employeeNumber: "5",
+      profileNumber: "5",
       isMarked: false,
       firstName: "Венера",
       lastName: "Хасаншина",
@@ -831,7 +831,7 @@ export const ratingListQuarter = {
       },
     },
     {
-      employeeNumber: "30",
+      profileNumber: "30",
       isMarked: false,
       firstName: "Жанна",
       lastName: "Жаглина",
@@ -846,7 +846,7 @@ export const ratingListQuarter = {
       },
     },
     {
-      employeeNumber: "4",
+      profileNumber: "4",
       isMarked: false,
       firstName: "Елена",
       lastName: "Проскурина",
@@ -861,7 +861,7 @@ export const ratingListQuarter = {
       },
     },
     {
-      employeeNumber: "9",
+      profileNumber: "9",
       isMarked: false,
       firstName: "Юлия",
       lastName: "Сенотрусова",
@@ -876,7 +876,7 @@ export const ratingListQuarter = {
       },
     },
     {
-      employeeNumber: "10",
+      profileNumber: "10",
       isMarked: false,
       firstName: "Вероника",
       lastName: "Дмитриева",
@@ -891,7 +891,7 @@ export const ratingListQuarter = {
       },
     },
     {
-      employeeNumber: "11",
+      profileNumber: "11",
       isMarked: false,
       firstName: "Ярослав",
       lastName: "Митосев",
@@ -906,7 +906,7 @@ export const ratingListQuarter = {
       },
     },
     {
-      employeeNumber: "31",
+      profileNumber: "31",
       isMarked: false,
       firstName: "Ольга",
       lastName: "Шебанова",
@@ -921,7 +921,7 @@ export const ratingListQuarter = {
       },
     },
     {
-      employeeNumber: "17",
+      profileNumber: "17",
       isMarked: false,
       firstName: "Марина",
       lastName: "Сорокина",
@@ -936,7 +936,7 @@ export const ratingListQuarter = {
       },
     },
     {
-      employeeNumber: "6",
+      profileNumber: "6",
       isMarked: false,
       firstName: "Елена",
       lastName: "Кодолова",
@@ -951,7 +951,7 @@ export const ratingListQuarter = {
       },
     },
     {
-      employeeNumber: "7",
+      profileNumber: "7",
       isMarked: false,
       firstName: "Андрей",
       lastName: "Митренко",
@@ -966,7 +966,7 @@ export const ratingListQuarter = {
       },
     },
     {
-      employeeNumber: "27",
+      profileNumber: "27",
       isMarked: false,
       firstName: "Мария",
       lastName: "Брусницына",
@@ -981,7 +981,7 @@ export const ratingListQuarter = {
       },
     },
     {
-      employeeNumber: "20",
+      profileNumber: "20",
       isMarked: false,
       firstName: "Рашид",
       lastName: "Адиев",
@@ -996,7 +996,7 @@ export const ratingListQuarter = {
       },
     },
     {
-      employeeNumber: "23",
+      profileNumber: "23",
       isMarked: false,
       firstName: "Мария",
       lastName: "Тихомирова",
@@ -1011,7 +1011,7 @@ export const ratingListQuarter = {
       },
     },
     {
-      employeeNumber: "12",
+      profileNumber: "12",
       isMarked: false,
       firstName: "Александр",
       lastName: "Бобок",
@@ -1032,7 +1032,7 @@ export const ratingListTB = {
   contestants: "3 участника",
   leaders: [
     {
-      employeeNumber: "22",
+      profileNumber: "22",
       isMarked: true,
       firstName: "Роман",
       lastName: "Гайн",
@@ -1047,7 +1047,7 @@ export const ratingListTB = {
       },
     },
     {
-      employeeNumber: "24",
+      profileNumber: "24",
       isMarked: false,
       firstName: "Ирина",
       lastName: "Шаброва",
@@ -1062,7 +1062,7 @@ export const ratingListTB = {
       },
     },
     {
-      employeeNumber: "23",
+      profileNumber: "23",
       isMarked: false,
       firstName: "Мария",
       lastName: "Тихомирова",
@@ -1083,7 +1083,7 @@ export const ratingListTBQuarter = {
   contestants: "3 участника",
   leaders: [
     {
-      employeeNumber: "22",
+      profileNumber: "22",
       isMarked: true,
       firstName: "Роман",
       lastName: "Гайн",
@@ -1098,7 +1098,7 @@ export const ratingListTBQuarter = {
       },
     },
     {
-      employeeNumber: "24",
+      profileNumber: "24",
       isMarked: false,
       firstName: "Ирина",
       lastName: "Шаброва",
@@ -1113,7 +1113,7 @@ export const ratingListTBQuarter = {
       },
     },
     {
-      employeeNumber: "23",
+      profileNumber: "23",
       isMarked: false,
       firstName: "Мария",
       lastName: "Тихомирова",
@@ -1134,7 +1134,7 @@ export const ratingListGOSB = {
   contestants: "1 участник",
   leaders: [
     {
-      employeeNumber: "22",
+      profileNumber: "22",
       isMarked: true,
       firstName: "Роман",
       lastName: "Гайн",
@@ -1155,7 +1155,7 @@ export const ratingListGOSBQuarter = {
   contestants: "1 участник",
   leaders: [
     {
-      employeeNumber: "22",
+      profileNumber: "22",
       isMarked: true,
       firstName: "Роман",
       lastName: "Гайн",

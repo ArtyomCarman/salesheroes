@@ -1,46 +1,63 @@
 import { Box, Fade, SimpleGrid, Text } from "@chakra-ui/react";
 
-import {Empty, Leaders} from "../components";
-import {FC, useMemo} from "react";
-import {DivisionLevel} from "../interfaces";
+import { Empty, Leaders } from "../components";
+import { FC, useMemo } from "react";
+import { DivisionLevel } from "../interfaces";
 import {
   tournamentFullListCountry,
   tournamentFullListCountryT2,
   tournamentFullListGOSBT2,
   tournamentFullListTerb,
-  tournamentFullListGOSB, tournamentFullListTerbT2,
+  tournamentFullListGOSB,
+  tournamentFullListTerbT2,
 } from "../models";
-import {useParams} from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 interface Props {
   divisionLevel: DivisionLevel;
 }
 
-export const TournamentFullListProfilesContainer: FC<Props> = ({ divisionLevel }) => {
+export const TournamentFullListProfilesContainer: FC<Props> = ({
+  divisionLevel,
+}) => {
   const { tournamentId } = useParams();
   const leaders = useMemo(() => {
-   
     if (divisionLevel === DivisionLevel.Тербанк) {
-      return tournamentId === 'T2' ? tournamentFullListTerbT2 :  tournamentFullListTerb 
+      return tournamentId === "T2"
+        ? tournamentFullListTerbT2
+        : tournamentFullListTerb;
     }
     if (divisionLevel === DivisionLevel.Кластер) {
-      return tournamentId === 'T2' ? tournamentFullListTerbT2 :  tournamentFullListTerb 
+      return tournamentId === "T2"
+        ? tournamentFullListTerbT2
+        : tournamentFullListTerb;
     }
     if (divisionLevel === DivisionLevel.Подразделение) {
-      return tournamentId === 'T2' ? tournamentFullListGOSBT2 :  tournamentFullListGOSB 
+      return tournamentId === "T2"
+        ? tournamentFullListGOSBT2
+        : tournamentFullListGOSB;
     }
     // if countru
-      return tournamentId === 'T2' ? tournamentFullListCountryT2 : tournamentFullListCountry
- 
+    return tournamentId === "T2"
+      ? tournamentFullListCountryT2
+      : tournamentFullListCountry;
   }, [divisionLevel, tournamentId]);
 
   if (!leaders.leaders.length) {
-    return (<Empty>
-      <Text size="sub18/24"
-            color="rgba(255, 255, 255, 0.6)"
-            textAlign="center"
-            whiteSpace="pre-wrap">Пока в вашем {divisionLevel === DivisionLevel.Тербанк ? 'тербанке' : 'ГОСБ'} нет участников турнира. Вы можете стать первым!</Text>
-    </Empty>)
+    return (
+      <Empty>
+        <Text
+          size="sub18/24"
+          color="rgba(255, 255, 255, 0.6)"
+          textAlign="center"
+          whiteSpace="pre-wrap"
+        >
+          Пока в вашем{" "}
+          {divisionLevel === DivisionLevel.Тербанк ? "тербанке" : "ГОСБ"} нет
+          участников турнира. Вы можете стать первым!
+        </Text>
+      </Empty>
+    );
   }
 
   return (
@@ -70,9 +87,9 @@ export const TournamentFullListProfilesContainer: FC<Props> = ({ divisionLevel }
           </Text>
         </SimpleGrid>
         {leaders.leaders.map((item) => (
-          <Leaders key={item.employeeNumber} leader={item} />
+          <Leaders key={item.profileNumber} leader={item} />
         ))}
       </Box>
     </Fade>
   );
-}
+};

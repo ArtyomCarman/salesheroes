@@ -32,7 +32,7 @@ export const badgeShortList = [
     contestants: "33 участника",
     leaders: [
       {
-        employeeNumber: "22",
+        profileNumber: "22",
         isMarked: true,
         firstName: "Роман",
         lastName: "Гайн",
@@ -46,7 +46,7 @@ export const badgeShortList = [
         },
       },
       {
-        employeeNumber: "19",
+        profileNumber: "19",
         isMarked: false,
         firstName: "Алёна",
         lastName: "Берстенева",
@@ -60,7 +60,7 @@ export const badgeShortList = [
         },
       },
       {
-        employeeNumber: "3",
+        profileNumber: "3",
         isMarked: false,
         firstName: "Руфина",
         lastName: "Черняк",
@@ -74,7 +74,7 @@ export const badgeShortList = [
         },
       },
       {
-        employeeNumber: "28",
+        profileNumber: "28",
         isMarked: false,
         firstName: "Наталья",
         lastName: "Дурова",
@@ -88,7 +88,7 @@ export const badgeShortList = [
         },
       },
       {
-        employeeNumber: "14",
+        profileNumber: "14",
         isMarked: false,
         firstName: "Юлия",
         lastName: "Орлова",
@@ -108,7 +108,7 @@ export const badgeShortList = [
     contestants: "3 участника",
     leaders: [
       {
-        employeeNumber: "22",
+        profileNumber: "22",
         isMarked: true,
         firstName: "Роман",
         lastName: "Гайн",
@@ -122,7 +122,7 @@ export const badgeShortList = [
         },
       },
       {
-        employeeNumber: "24",
+        profileNumber: "24",
         isMarked: false,
         firstName: "Ирина",
         lastName: "Шаброва",
@@ -136,7 +136,7 @@ export const badgeShortList = [
         },
       },
       {
-        employeeNumber: "23",
+        profileNumber: "23",
         isMarked: false,
         firstName: "Мария",
         lastName: "Тихомирова",
@@ -156,7 +156,7 @@ export const badgeShortList = [
     contestants: "1 участник",
     leaders: [
       {
-        employeeNumber: "22",
+        profileNumber: "22",
         isMarked: true,
         firstName: "Роман",
         lastName: "Гайн",
@@ -179,7 +179,7 @@ export const badgeFullList = {
     contestants: "33 участника",
     leaders: [
       {
-        employeeNumber: "22",
+        profileNumber: "22",
         isMarked: true,
         firstName: "Роман",
         lastName: "Гайн",
@@ -192,7 +192,7 @@ export const badgeFullList = {
         },
       },
       {
-        employeeNumber: "19",
+        profileNumber: "19",
         isMarked: false,
         firstName: "Алёна",
         lastName: "Берстенева",
@@ -205,7 +205,7 @@ export const badgeFullList = {
         },
       },
       {
-        employeeNumber: "3",
+        profileNumber: "3",
         isMarked: false,
         firstName: "Руфина",
         lastName: "Черняк",
@@ -218,7 +218,7 @@ export const badgeFullList = {
         },
       },
       {
-        employeeNumber: "28",
+        profileNumber: "28",
         isMarked: false,
         firstName: "Наталья",
         lastName: "Дурова",
@@ -231,7 +231,7 @@ export const badgeFullList = {
         },
       },
       {
-        employeeNumber: "14",
+        profileNumber: "14",
         isMarked: false,
         firstName: "Юлия",
         lastName: "Орлова",
@@ -244,7 +244,7 @@ export const badgeFullList = {
         },
       },
       {
-        employeeNumber: "25",
+        profileNumber: "25",
         isMarked: false,
         firstName: "Алтын",
         lastName: "Серкбаева",
@@ -257,7 +257,7 @@ export const badgeFullList = {
         },
       },
       {
-        employeeNumber: "32",
+        profileNumber: "32",
         isMarked: false,
         firstName: "Михаил",
         lastName: "Борблик",
@@ -270,7 +270,7 @@ export const badgeFullList = {
         },
       },
       {
-        employeeNumber: "18",
+        profileNumber: "18",
         isMarked: false,
         firstName: "Эмма",
         lastName: "Савушкина",
@@ -283,7 +283,7 @@ export const badgeFullList = {
         },
       },
       {
-        employeeNumber: "13",
+        profileNumber: "13",
         isMarked: false,
         firstName: "Мария",
         lastName: "Карагодина",
@@ -296,7 +296,7 @@ export const badgeFullList = {
         },
       },
       {
-        employeeNumber: "1",
+        profileNumber: "1",
         isMarked: false,
         firstName: "Павел",
         lastName: "Макаров",
@@ -309,7 +309,7 @@ export const badgeFullList = {
         },
       },
       {
-        employeeNumber: "21",
+        profileNumber: "21",
         isMarked: false,
         firstName: "Екатерина",
         lastName: "Томсон",
@@ -322,7 +322,7 @@ export const badgeFullList = {
         },
       },
       {
-        employeeNumber: "24",
+        profileNumber: "24",
         isMarked: false,
         firstName: "Ирина",
         lastName: "Шаброва",
@@ -335,7 +335,7 @@ export const badgeFullList = {
         },
       },
       {
-        employeeNumber: "15",
+        profileNumber: "15",
         isMarked: false,
         firstName: "Татьяна",
         lastName: "Кунина",
@@ -348,7 +348,7 @@ export const badgeFullList = {
         },
       },
       {
-        employeeNumber: "8",
+        profileNumber: "8",
         isMarked: false,
         firstName: "Илья",
         lastName: "Сорокин",
@@ -361,7 +361,7 @@ export const badgeFullList = {
         },
       },
       {
-        employeeNumber: "2",
+        profileNumber: "2",
         isMarked: false,
         firstName: "Елена",
         lastName: "Проскурина",
@@ -374,7 +374,7 @@ export const badgeFullList = {
         },
       },
       {
-        employeeNumber: "26",
+        profileNumber: "26",
         isMarked: false,
         firstName: "Николай",
         lastName: "Кротков",
@@ -387,7 +387,7 @@ export const badgeFullList = {
         },
       },
       {
-        employeeNumber: "33",
+        profileNumber: "33",
         isMarked: false,
         firstName: "Виктория",
         lastName: "Чернец",
@@ -400,7 +400,7 @@ export const badgeFullList = {
         },
       },
       {
-        employeeNumber: "16",
+        profileNumber: "16",
         isMarked: false,
         firstName: "Александр",
         lastName: "Захаров",
@@ -413,7 +413,7 @@ export const badgeFullList = {
         },
       },
       {
-        employeeNumber: "29",
+        profileNumber: "29",
         isMarked: false,
         firstName: "Юлия",
         lastName: "Киреева",
@@ -426,7 +426,7 @@ export const badgeFullList = {
         },
       },
       {
-        employeeNumber: "5",
+        profileNumber: "5",
         isMarked: false,
         firstName: "Венера",
         lastName: "Хасаншина",
@@ -439,7 +439,7 @@ export const badgeFullList = {
         },
       },
       {
-        employeeNumber: "30",
+        profileNumber: "30",
         isMarked: false,
         firstName: "Жанна",
         lastName: "Жаглина",
@@ -452,7 +452,7 @@ export const badgeFullList = {
         },
       },
       {
-        employeeNumber: "4",
+        profileNumber: "4",
         isMarked: false,
         firstName: "Елена",
         lastName: "Проскурина",
@@ -465,7 +465,7 @@ export const badgeFullList = {
         },
       },
       {
-        employeeNumber: "9",
+        profileNumber: "9",
         isMarked: false,
         firstName: "Юлия",
         lastName: "Сенотрусова",
@@ -478,7 +478,7 @@ export const badgeFullList = {
         },
       },
       {
-        employeeNumber: "10",
+        profileNumber: "10",
         isMarked: false,
         firstName: "Вероника",
         lastName: "Дмитриева",
@@ -491,7 +491,7 @@ export const badgeFullList = {
         },
       },
       {
-        employeeNumber: "11",
+        profileNumber: "11",
         isMarked: false,
         firstName: "Ярослав",
         lastName: "Митосев",
@@ -504,7 +504,7 @@ export const badgeFullList = {
         },
       },
       {
-        employeeNumber: "31",
+        profileNumber: "31",
         isMarked: false,
         firstName: "Ольга",
         lastName: "Шебанова",
@@ -517,7 +517,7 @@ export const badgeFullList = {
         },
       },
       {
-        employeeNumber: "17",
+        profileNumber: "17",
         isMarked: false,
         firstName: "Марина",
         lastName: "Сорокина",
@@ -530,7 +530,7 @@ export const badgeFullList = {
         },
       },
       {
-        employeeNumber: "6",
+        profileNumber: "6",
         isMarked: false,
         firstName: "Елена",
         lastName: "Кодолова",
@@ -543,7 +543,7 @@ export const badgeFullList = {
         },
       },
       {
-        employeeNumber: "7",
+        profileNumber: "7",
         isMarked: false,
         firstName: "Андрей",
         lastName: "Митренко",
@@ -556,7 +556,7 @@ export const badgeFullList = {
         },
       },
       {
-        employeeNumber: "27",
+        profileNumber: "27",
         isMarked: false,
         firstName: "Мария",
         lastName: "Брусницына",
@@ -569,7 +569,7 @@ export const badgeFullList = {
         },
       },
       {
-        employeeNumber: "20",
+        profileNumber: "20",
         isMarked: false,
         firstName: "Рашид",
         lastName: "Адиев",
@@ -582,7 +582,7 @@ export const badgeFullList = {
         },
       },
       {
-        employeeNumber: "23",
+        profileNumber: "23",
         isMarked: false,
         firstName: "Мария",
         lastName: "Тихомирова",
@@ -595,7 +595,7 @@ export const badgeFullList = {
         },
       },
       {
-        employeeNumber: "12",
+        profileNumber: "12",
         isMarked: false,
         firstName: "Александр",
         lastName: "Бобок",
@@ -617,7 +617,7 @@ export const badgeFullLeadersTerb = {
     contestants: "3 участника",
     leaders: [
       {
-        employeeNumber: "22",
+        profileNumber: "22",
         isMarked: true,
         firstName: "Роман",
         lastName: "Гайн",
@@ -630,7 +630,7 @@ export const badgeFullLeadersTerb = {
         },
       },
       {
-        employeeNumber: "24",
+        profileNumber: "24",
         isMarked: false,
         firstName: "Ирина",
         lastName: "Шаброва",
@@ -643,7 +643,7 @@ export const badgeFullLeadersTerb = {
         },
       },
       {
-        employeeNumber: "23",
+        profileNumber: "23",
         isMarked: false,
         firstName: "Мария",
         lastName: "Тихомирова",
@@ -665,7 +665,7 @@ export const badgeFullLeadersGOSB = {
     contestants: "1 участника",
     leaders: [
       {
-        employeeNumber: "22",
+        profileNumber: "22",
         isMarked: true,
         firstName: "Роман",
         lastName: "Гайн",

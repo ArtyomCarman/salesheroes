@@ -1,4 +1,4 @@
-import {FC} from "react";
+import { FC } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { Box, Flex, Show, SimpleGrid, Text } from "@chakra-ui/react";
 
@@ -9,8 +9,12 @@ import {
   ProfileAvatar,
 } from "../components";
 import { ReactComponent as ArrowRightIcon } from "../assets/icons/arrow-right.svg";
-import {archiveTournamentId} from "../models";
-import {DivisionLevel, ITournamentIdProfilesShortListBody, Status} from "../interfaces";
+import { archiveTournamentId } from "../models";
+import {
+  DivisionLevel,
+  ITournamentIdProfilesShortListBody,
+  Status,
+} from "../interfaces";
 
 export const TournamentShortListProfilesContainer: FC<Props> = ({
   divisionLevel,
@@ -59,7 +63,11 @@ export const TournamentShortListProfilesContainer: FC<Props> = ({
               textAlign="center"
               whiteSpace="pre-wrap"
             >
-              Пока в вашем { divisionLevel.divisionLevelName === DivisionLevel.Тербанк ? 'тербанке' : 'ГОСБ'  } нет участников турнира. Вы можете стать первым!
+              Пока в вашем{" "}
+              {divisionLevel.divisionLevelName === DivisionLevel.Тербанк
+                ? "тербанке"
+                : "ГОСБ"}{" "}
+              нет участников турнира. Вы можете стать первым!
             </Text>
           </Empty>
         </Box>
@@ -93,7 +101,7 @@ export const TournamentShortListProfilesContainer: FC<Props> = ({
         </SimpleGrid>
         {divisionLevel.leaders.map((item) => (
           <Flex
-            key={item.employeeNumber}
+            key={item.profileNumber}
             gap="8px"
             padding="12px 0 12px"
             border="2px solid transparent"
@@ -139,7 +147,7 @@ export const TournamentShortListProfilesContainer: FC<Props> = ({
             _notLast={{
               boxShadow: "28px 29px 0px -28px rgb(255 255 255 / 20%)",
             }}
-            onClick={goToProfileId(item.employeeNumber)}
+            onClick={goToProfileId(item.profileNumber)}
           >
             <PlaceInRating
               reward={item.reward}

@@ -7,12 +7,12 @@ import { badges } from "../models";
 
 export const ProfileAwardsContainer: FC = () => {
   const navigate = useNavigate();
-  const { employeeNumber } = useParams();
+  const { profileNumber } = useParams();
   const goToBadge = (id: string) => () => {
     navigate(`/awards/${id}`);
   };
   const goToAllBadges = () => {
-    navigate(`/profile/${employeeNumber}/awards`);
+    navigate(`/profile/${profileNumber}/awards`);
   };
   const goToBadges = () => {
     navigate("/awards");
@@ -119,7 +119,7 @@ export const ProfileAwardsContainer: FC = () => {
                             overflow="hidden"
                             sx={{
                               WebkitBoxOrient: "vertical",
-                              WebkitLineClamp: "3"
+                              WebkitLineClamp: "3",
                             }}
                           >
                             {badge.hasNftMark && (

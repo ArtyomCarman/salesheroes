@@ -10,9 +10,9 @@ import {
 import { ProfileIdPage } from "./ProfileIdPage";
 
 export const ProfilePage = () => {
-  const { employeeNumber } = useParams();
+  const { profileNumber } = useParams();
 
-  if ("22" !== employeeNumber) {
+  if ("22" !== profileNumber) {
     return <ProfileIdPage />;
   }
 

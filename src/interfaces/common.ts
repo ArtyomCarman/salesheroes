@@ -14,7 +14,7 @@ export interface IDivisions {
 }
 
 export interface INewsLeader {
-  employeeNumber: string;
+  profileNumber: string;
   photoData: string;
   terDivisionName: string;
   firstName: string;
@@ -41,7 +41,7 @@ export interface IRewardProfiles {
 }
 
 export interface ILeader {
-  employeeNumber: string;
+  profileNumber: string;
   isMarked: boolean;
   firstName: string;
   lastName: string;
