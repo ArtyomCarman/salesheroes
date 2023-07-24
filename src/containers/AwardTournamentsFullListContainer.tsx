@@ -2,7 +2,7 @@ import { Flex, Text } from "@chakra-ui/react";
 
 import { TournamentArchiveCard, TournamentCard } from "../components";
 import { Reward } from "../interfaces";
-import КузьменкоИгорь from "../assets/images/Кузьменко Игорь Владимирович1.jpeg";
+import ГайнРоман from "../assets/images/romanGayn.png";
 
 const tournaments = {
   tournamentName: "Марафон по условным сделкам",
@@ -14,9 +14,9 @@ const tournaments = {
           tournamentId: "T1",
           employee: {
             employeeNumber: "22",
-            photoData: КузьменкоИгорь,
-            firstName: "Игорь",
-            lastName: "Кузьменко",
+            photoData: ГайнРоман,
+            firstName: "Роман",
+            lastName: "Гайн",
             colorCode: {
               primary: "blue-60",
               secondary: "blue-30",
@@ -79,9 +79,9 @@ const tournaments = {
           tournamentId: "T3",
           employee: {
             employeeNumber: "22",
-            photoData: КузьменкоИгорь,
-            firstName: "Игорь",
-            lastName: "Кузьменко",
+            photoData: ГайнРоман,
+            firstName: "Роман",
+            lastName: "Гайн",
             colorCode: {
               primary: "blue-60",
               secondary: "blue-30",

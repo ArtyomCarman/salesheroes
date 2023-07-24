@@ -9,7 +9,7 @@ import КарагодинаМария from "../assets/images/Карагодин�
 import КирееваЮлия from "../assets/images/Киреева Юлия Сергеевна.jpeg";
 import КодоловаЕлена from "../assets/images/Кодолова Елена Аркадьевна.jpeg";
 import КротковНиколай from "../assets/images/Кротков Николай Андреевич.jpeg";
-import КузьменкоИгорь from "../assets/images/Кузьменко Игорь Владимирович1.jpeg";
+import ГайнРоман from "../assets/images/romanGayn.png";
 import КунинаТатьяна from "../assets/images/Кунина Татьяна Сергеевна.jpeg";
 import МитренкоАндрей from "../assets/images/Митренко Андрей Игоревич.jpeg";
 import ОрловаЮлия from "../assets/images/Орлова Юлия Валериевна.jpeg";
@@ -32,9 +32,9 @@ export const ratingList = {
     {
       employeeNumber: "22",
       isMarked: true,
-      firstName: "Игорь",
-      lastName: "Кузьменко",
-      photoData: КузьменкоИгорь,
+      firstName: "Роман",
+      lastName: "Гайн",
+      photoData: ГайнРоман,
       terDivisionName: "СРБ",
       placeInRating: 1,
       crystalsEarned: 120,
@@ -533,9 +533,9 @@ export const ratingListQuarter = {
     {
       employeeNumber: "22",
       isMarked: true,
-      firstName: "Игорь",
-      lastName: "Кузьменко",
-      photoData: КузьменкоИгорь,
+      firstName: "Роман",
+      lastName: "Гайн",
+      photoData: ГайнРоман,
       terDivisionName: "СРБ",
       placeInRating: 7,
       crystalsEarned: 35,
@@ -1034,9 +1034,9 @@ export const ratingListTB = {
     {
       employeeNumber: "22",
       isMarked: true,
-      firstName: "Игорь",
-      lastName: "Кузьменко",
-      photoData: КузьменкоИгорь,
+      firstName: "Роман",
+      lastName: "Гайн",
+      photoData: ГайнРоман,
       terDivisionName: "СРБ",
       placeInRating: 1,
       crystalsEarned: 120,
@@ -1085,9 +1085,9 @@ export const ratingListTBQuarter = {
     {
       employeeNumber: "22",
       isMarked: true,
-      firstName: "Игорь",
-      lastName: "Кузьменко",
-      photoData: КузьменкоИгорь,
+      firstName: "Роман",
+      lastName: "Гайн",
+      photoData: ГайнРоман,
       terDivisionName: "СРБ",
       placeInRating: 1,
       crystalsEarned: 35,
@@ -1136,9 +1136,9 @@ export const ratingListGOSB = {
     {
       employeeNumber: "22",
       isMarked: true,
-      firstName: "Игорь",
-      lastName: "Кузьменко",
-      photoData: КузьменкоИгорь,
+      firstName: "Роман",
+      lastName: "Гайн",
+      photoData: ГайнРоман,
       terDivisionName: "СРБ",
       placeInRating: 1,
       crystalsEarned: 120,
@@ -1157,9 +1157,9 @@ export const ratingListGOSBQuarter = {
     {
       employeeNumber: "22",
       isMarked: true,
-      firstName: "Игорь",
-      lastName: "Кузьменко",
-      photoData: КузьменкоИгорь,
+      firstName: "Роман",
+      lastName: "Гайн",
+      photoData: ГайнРоман,
       terDivisionName: "СРБ",
       placeInRating: 1,
       crystalsEarned: 35,

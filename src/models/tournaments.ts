@@ -1,12 +1,12 @@
 import { Badge, Reward } from "../interfaces";
-import КузьменкоИгорь from "../assets/images/Кузьменко Игорь Владимирович1.jpeg";
+import ГайнРоман from "../assets/images/romanGayn.png";
 import {
   colorCodeExpert,
   colorCodeMaster,
   colorCodeSpecialist,
   leaders,
 } from "./tournamen-leaders";
-import фотоКузьменкоИгорь from "../assets/images/Кузьменко Игорь Владимирович1.jpeg";
+import фотоГайнРоман from "../assets/images/romanGayn.png";
 import фотоТихомироваМария from "../assets/images/Тихомирова Мария Алексеевна.jpeg";
 import фотоШаброваИрина from "../assets/images/Шаброва Ирина Сергеевна.jpeg";
 
@@ -19,9 +19,9 @@ export const tournaments = {
         {
           employee: {
             employeeNumber: "22",
-            photoData: КузьменкоИгорь,
-            firstName: "Игорь",
-            lastName: "Кузьменко",
+            photoData: ГайнРоман,
+            firstName: "Роман",
+            lastName: "Гайн",
             colorCode: {
               primary: "blue-60",
               secondary: "blue-30",
@@ -373,9 +373,9 @@ export const tournamentShortList = [
       },
       {
         employeeNumber: "22",
-        lastName: "Кузьменко",
-        firstName: "Игорь",
-        photoData: фотоКузьменкоИгорь,
+        lastName: "Гайн",
+        firstName: "Роман",
+        photoData: фотоГайнРоман,
         colorCode: colorCodeMaster,
         isMarked: true,
         indicatorValue: "27",
@@ -408,9 +408,9 @@ export const tournamentShortList = [
     leaders: [
       {
         employeeNumber: "22",
-        lastName: "Кузьменко",
-        firstName: "Игорь",
-        photoData: фотоКузьменкоИгорь,
+        lastName: "Гайн",
+        firstName: "Роман",
+        photoData: фотоГайнРоман,
         colorCode: colorCodeMaster,
         isMarked: true,
         indicatorValue: "27",
@@ -455,9 +455,9 @@ export const tournamentFullListTerb = {
     },
     {
       employeeNumber: "22",
-      lastName: "Кузьменко",
-      firstName: "Игорь",
-      photoData: фотоКузьменкоИгорь,
+      lastName: "Гайн",
+      firstName: "Роман",
+      photoData: фотоГайнРоман,
       colorCode: colorCodeMaster,
       isMarked: true,
       indicatorValue: "27",
@@ -483,7 +483,7 @@ export const tournamentFullListTerb = {
       terDivisionName: "СРБ",
     },
   ],
-}
+};
 
 export const tournamentFullListGOSB = {
   tournamentId: "T1",
@@ -492,9 +492,9 @@ export const tournamentFullListGOSB = {
   leaders: [
     {
       employeeNumber: "22",
-      lastName: "Кузьменко",
-      firstName: "Игорь",
-      photoData: фотоКузьменкоИгорь,
+      lastName: "Гайн",
+      firstName: "Роман",
+      photoData: фотоГайнРоман,
       colorCode: colorCodeMaster,
       isMarked: true,
       indicatorValue: "27",
@@ -513,9 +513,9 @@ export const archiveTournaments = {
     {
       employee: {
         employeeNumber: "22",
-        photoData: КузьменкоИгорь,
-        firstName: "Игорь",
-        lastName: "Кузьменко",
+        photoData: ГайнРоман,
+        firstName: "Роман",
+        lastName: "Гайн",
         colorCode: {
           primary: "blue-60",
           secondary: "blue-30",
@@ -556,7 +556,7 @@ export const tournamentFullListGOSBT2 = {
   tournamentIndicator: "Ставка",
   contestants: "0 участников",
   leaders: [],
-}
+};
 
 export const tournamentFullListTerbT2 = {
   tournamentId: "T2",
@@ -564,7 +564,7 @@ export const tournamentFullListTerbT2 = {
   contestants: "2 участника",
   leaders: [
     {
-      employeeNumber: '24',
+      employeeNumber: "24",
       lastName: "Шаброва",
       firstName: "Ирина",
       photoData: фотоШаброваИрина,
@@ -580,7 +580,7 @@ export const tournamentFullListTerbT2 = {
     },
 
     {
-      employeeNumber: '23',
+      employeeNumber: "23",
       lastName: "Тихомирова",
       firstName: "Мария",
       photoData: фотоТихомироваМария,
@@ -592,15 +592,19 @@ export const tournamentFullListTerbT2 = {
       },
       placeInRating: 2,
       terDivisionName: "СРБ",
-    }
+    },
   ],
-}
+};
 
 export const tournamentFullListCountryT2 = {
   tournamentId: "T1",
   tournamentIndicator: "Ставка",
   contestants: "32 участника",
-  leaders: leaders.sort((item1, item2) => item1.placeInRating > item2.placeInRating ? 1 : -1).filter((item) => !item.isMarked),
+  leaders: leaders
+    .sort((item1, item2) =>
+      item1.placeInRating > item2.placeInRating ? 1 : -1
+    )
+    .filter((item) => !item.isMarked),
 };
 
 export const tournamentShortListT2 = [
@@ -608,7 +612,12 @@ export const tournamentShortListT2 = [
     divisionLevelName: "Страна",
     tournamentIndicator: "Ставка",
     contestants: "32 участника",
-    leaders: leaders.filter((item) => !item.isMarked).sort((item1, item2) => item1.placeInRating > item2.placeInRating ? 1 : -1).slice(0, 5),
+    leaders: leaders
+      .filter((item) => !item.isMarked)
+      .sort((item1, item2) =>
+        item1.placeInRating > item2.placeInRating ? 1 : -1
+      )
+      .slice(0, 5),
   },
   {
     divisionLevelName: "Тербанк",
@@ -616,7 +625,7 @@ export const tournamentShortListT2 = [
     contestants: "2 участника",
     leaders: [
       {
-        employeeNumber: '24',
+        employeeNumber: "24",
         lastName: "Шаброва",
         firstName: "Ирина",
         photoData: фотоШаброваИрина,
@@ -631,7 +640,7 @@ export const tournamentShortListT2 = [
         terDivisionName: "СРБ",
       },
       {
-        employeeNumber: '23',
+        employeeNumber: "23",
         lastName: "Тихомирова",
         firstName: "Мария",
         photoData: фотоТихомироваМария,
@@ -643,8 +652,8 @@ export const tournamentShortListT2 = [
         },
         placeInRating: 3,
         terDivisionName: "СРБ",
-      }
-    ]
+      },
+    ],
   },
   {
     divisionLevelName: "ГОСБ",
@@ -660,10 +669,10 @@ export const tournamentShortListT3 = [
     tournamentIndicator: "Ставка",
     contestants: "33 участника",
     leaders: leaders
-        .sort((item1, item2) =>
-            item1.placeInRating > item2.placeInRating ? 1 : -1
-        )
-        .slice(0, 5),
+      .sort((item1, item2) =>
+        item1.placeInRating > item2.placeInRating ? 1 : -1
+      )
+      .slice(0, 5),
   },
   {
     divisionLevelName: "Кластер",
@@ -687,9 +696,9 @@ export const tournamentShortListT3 = [
       },
       {
         employeeNumber: "22",
-        lastName: "Кузьменко",
-        firstName: "Игорь",
-        photoData: фотоКузьменкоИгорь,
+        lastName: "Гайн",
+        firstName: "Роман",
+        photoData: фотоГайнРоман,
         colorCode: colorCodeMaster,
         isMarked: true,
         indicatorValue: "27",
@@ -722,9 +731,9 @@ export const tournamentShortListT3 = [
     leaders: [
       {
         employeeNumber: "22",
-        lastName: "Кузьменко",
-        firstName: "Игорь",
-        photoData: фотоКузьменкоИгорь,
+        lastName: "Гайн",
+        firstName: "Роман",
+        photoData: фотоГайнРоман,
         colorCode: colorCodeMaster,
         isMarked: true,
         indicatorValue: "27",
@@ -738,4 +747,3 @@ export const tournamentShortListT3 = [
     ],
   },
 ];
-

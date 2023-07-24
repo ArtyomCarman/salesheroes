@@ -6,6 +6,7 @@ export interface INews {
   date: string;
   newsText: string;
   leaders: Array<INewsLeader>;
+  likes: INewsLikes;
 }
 
 export interface INewsList {

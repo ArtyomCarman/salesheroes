@@ -22,7 +22,7 @@ import фотоОрловаЮлия from "../assets/images/Орлова Юлия
 import фотоМакаровПавел from "../assets/images/Макаров Павел Сергеевич.jpeg";
 import фотоСенотрусоваЮлия from "../assets/images/Сенотрусова Юлия Юрьевна.jpeg";
 import фотоТихомироваМария from "../assets/images/Тихомирова Мария Алексеевна.jpeg";
-import фотоКузьменкоИгорь from "../assets/images/Кузьменко Игорь Владимирович1.jpeg";
+import фотоГайнРоман from "../assets/images/romanGayn.png";
 import фотоШаброваИрина from "../assets/images/Шаброва Ирина Сергеевна.jpeg";
 import фотоСеркбаеваАлтын from "../assets/images/Серкбаева Алтын Суннатовна.jpeg";
 import фотоЖаглинаЖанна from "../assets/images/Жаглина Жанна Маратовна.jpeg";
@@ -417,11 +417,11 @@ const ТихомироваМария = {
   terDivisionName: "СРБ",
 };
 
-const КузьменкоИгорь = {
+const ГайнРоман = {
   employeeNumber: "22",
-  lastName: "Кузьменко",
-  firstName: "Игорь",
-  photoData: фотоКузьменкоИгорь,
+  lastName: "Гайн",
+  firstName: "Роман",
+  photoData: фотоГайнРоман,
   colorCode: colorCodeMaster,
   isMarked: true,
   indicatorValue: "27",
@@ -506,7 +506,7 @@ export const leaders = [
   СенотрусоваЮлия,
   МакаровПавел,
   ТихомироваМария,
-  КузьменкоИгорь,
+  ГайнРоман,
   ШаброваИрина,
   КатаеваВероника,
   СеркбаеваАлтын,

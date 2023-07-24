@@ -1,4 +1,4 @@
-import КузьменкоИгорь from "../assets/images/Кузьменко Игорь Владимирович1.jpeg";
+import ГайнРоман from "../assets/images/romanGayn.png";
 import БерстеневаАлена from "../assets/images/Берстенева Алена Викторовна.jpeg";
 import ДуроваНаталья from "../assets/images/Дурова Наталья Юрьевна.jpeg";
 import ОрловаЮлия from "../assets/images/Орлова Юлия Валериевна.jpeg";
@@ -34,9 +34,9 @@ export const badgeShortList = [
       {
         employeeNumber: "22",
         isMarked: true,
-        firstName: "Игорь",
-        lastName: "Кузьменко",
-        photoData: КузьменкоИгорь,
+        firstName: "Роман",
+        lastName: "Гайн",
+        photoData: ГайнРоман,
         terDivisionName: "СРБ",
         placeInRating: 1,
         indicatorValue: "12",
@@ -110,9 +110,9 @@ export const badgeShortList = [
       {
         employeeNumber: "22",
         isMarked: true,
-        firstName: "Игорь",
-        lastName: "Кузьменко",
-        photoData: КузьменкоИгорь,
+        firstName: "Роман",
+        lastName: "Гайн",
+        photoData: ГайнРоман,
         terDivisionName: "СРБ",
         placeInRating: 1,
         indicatorValue: "",
@@ -158,9 +158,9 @@ export const badgeShortList = [
       {
         employeeNumber: "22",
         isMarked: true,
-        firstName: "Игорь",
-        lastName: "Кузьменко",
-        photoData: КузьменкоИгорь,
+        firstName: "Роман",
+        lastName: "Гайн",
+        photoData: ГайнРоман,
         terDivisionName: "СРБ",
         placeInRating: 1,
         indicatorValue: "",
@@ -181,9 +181,9 @@ export const badgeFullList = {
       {
         employeeNumber: "22",
         isMarked: true,
-        firstName: "Игорь",
-        lastName: "Кузьменко",
-        photoData: КузьменкоИгорь,
+        firstName: "Роман",
+        lastName: "Гайн",
+        photoData: ГайнРоман,
         terDivisionName: "СРБ",
         indicatorValue: "",
         colorCode: {
@@ -619,9 +619,9 @@ export const badgeFullLeadersTerb = {
       {
         employeeNumber: "22",
         isMarked: true,
-        firstName: "Игорь",
-        lastName: "Кузьменко",
-        photoData: КузьменкоИгорь,
+        firstName: "Роман",
+        lastName: "Гайн",
+        photoData: ГайнРоман,
         terDivisionName: "СРБ",
         indicatorValue: "",
         colorCode: {
@@ -667,9 +667,9 @@ export const badgeFullLeadersGOSB = {
       {
         employeeNumber: "22",
         isMarked: true,
-        firstName: "Игорь",
-        lastName: "Кузьменко",
-        photoData: КузьменкоИгорь,
+        firstName: "Роман",
+        lastName: "Гайн",
+        photoData: ГайнРоман,
         terDivisionName: "СРБ",
         indicatorValue: "",
         colorCode: {

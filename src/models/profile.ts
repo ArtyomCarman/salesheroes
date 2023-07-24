@@ -1,16 +1,16 @@
 import { EmployeeStatus } from "../interfaces";
-import КузьменкоИгорь from "../assets/images/Кузьменко Игорь Владимирович1.jpeg";
+import ГайнРоман from "../assets/images/romanGayn.png";
 import МеламедСергей from "../assets/images/Сергей Меламед.jpeg";
 
 export const profileContestant = {
-  employeeNumber: "00001",
-  lastName: "Кузьменко",
-  firstName: "Игорь",
+  employeeNumber: "22",
+  lastName: "Гайн",
+  firstName: "Роман",
   tbShortName: "СРБ",
   gosbName: undefined,
   funcDivisionName: undefined,
   positionName: "КМ",
-  photoData: КузьменкоИгорь,
+  photoData: ГайнРоман,
   colorCode: {
     primary: "blue-60",
     secondary: "blue-30",
@@ -54,9 +54,9 @@ export const profileTopManager = {
 // {
 //   employeeNumber: "22",
 //   isMarked: true,
-//   firstName: "Игорь",
-//   lastName: "Кузьменко",
-//   photoData: КузьменкоИгорь,
+//   firstName: "Роман",
+//   lastName: "Гайн",
+//   photoData: ГайнРоман,
 //   terDivisionName: "СРБ",
 //   placeInRating: 1,
 //   crystalsEarned: 120,

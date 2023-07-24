@@ -1,11 +1,17 @@
 import БерстеневаАлена from "../assets/images/Берстенева Алена Викторовна.jpeg";
 import ДуроваНаталья from "../assets/images/Дурова Наталья Юрьевна.jpeg";
-import КузьменкоИгорь from "../assets/images/Кузьменко Игорь Владимирович1.jpeg";
+import ГайнРоман from "../assets/images/romanGayn.png";
 import ОрловаЮлия from "../assets/images/Орлова Юлия Валериевна.jpeg";
 import ТихомироваМария from "../assets/images/Тихомирова Мария Алексеевна.jpeg";
 import ШаброваИрина from "../assets/images/Шаброва Ирина Сергеевна.jpeg";
+import Меламед from "../assets/images/Сергей Меламед.jpeg";
+import ЧернышоваЕлена from "../assets/images/Елена Чернышова.jpeg";
+import Юлианна from "../assets/images/Юлианна Егорова.jpeg";
+import ШебановаОльга from "../assets/images/Шебанова Ольга Евгеньевна.jpeg";
+import СеркбаеваАлтын from "../assets/images/Серкбаева Алтын Суннатовна.jpeg";
+
 import { profileTopManager } from "./profile";
-import { INewsList } from "../interfaces";
+import { EmployeeStatus, INewsLeader, INewsList } from "../interfaces";
 import { leaders } from "./tournamen-leaders";
 
 export const news: INewsList = {
@@ -36,6 +42,228 @@ export const news: INewsList = {
           
           Нам удалось создать продукт на пересечении бизнеса, искусства и технологий. И по сути изменить бизнес модель — перейти от классического планирования к более результативной модели, основанной на соревновательности. Сегодня Сбер возглавляет этот тренд», – рассказал директор департамента развития корпоративного бизнеса Сергей Меламед.</p>`,
           leaders: [profileTopManager],
+          likes: {
+            isLiked: true,
+            likesAmount: 8,
+            bossNames: [
+              "Попов А.Л",
+              "Ситнов В.В.",
+              "Меламед С.В.",
+              "Чернышова Е.В.",
+              "Егорова Ю.И.",
+            ],
+            people: [
+              {
+                position: "1",
+                list: [
+                  {
+                    employeeNumber: "40",
+                    photoData: "",
+                    terDivisionName: "ЦА",
+                    firstName: "Анатолий",
+                    lastName: "Попов",
+                    colorCode: {
+                      primary: "gradient",
+                      secondary: "gradient",
+                    },
+                    employeeStatus: EmployeeStatus.Top_Manager,
+                  },
+                  {
+                    employeeNumber: "41",
+                    photoData: "",
+                    terDivisionName: "ЦА",
+                    firstName: "Владимир",
+                    lastName: "Ситнов",
+                    colorCode: {
+                      primary: "gradient",
+                      secondary: "gradient",
+                    },
+                    employeeStatus: EmployeeStatus.Top_Manager,
+                  },
+                  {
+                    employeeNumber: "42",
+                    photoData: Меламед,
+                    terDivisionName: "ЦА",
+                    firstName: "Сергей",
+                    lastName: "Меламед",
+                    colorCode: {
+                      primary: "gradient",
+                      secondary: "gradient",
+                    },
+                    employeeStatus: EmployeeStatus.Top_Manager,
+                  },
+                  {
+                    employeeNumber: "43",
+                    photoData: ЧернышоваЕлена,
+                    terDivisionName: "ЦА",
+                    firstName: "Елена",
+                    lastName: "Чернышова",
+                    colorCode: {
+                      primary: "gradient",
+                      secondary: "gradient",
+                    },
+                    employeeStatus: EmployeeStatus.Top_Manager,
+                  },
+                  {
+                    employeeNumber: "44",
+                    photoData: Юлианна,
+                    terDivisionName: "ЦА",
+                    firstName: "Юлианна",
+                    lastName: "Егорова",
+                    colorCode: {
+                      primary: "gradient",
+                      secondary: "gradient",
+                    },
+                    employeeStatus: EmployeeStatus.Top_Manager,
+                  },
+                  {
+                    employeeNumber: "25",
+                    isMarked: false,
+                    firstName: "Алтын",
+                    lastName: "Серкбаева",
+                    photoData: СеркбаеваАлтын,
+                    terDivisionName: "УБ",
+                    colorCode: {
+                      primary: "blue-60",
+                      secondary: "blue-30",
+                    },
+                    employeeStatus: EmployeeStatus.Contestant,
+                  },
+                  {
+                    employeeNumber: "11",
+                    isMarked: false,
+                    firstName: "Ярослав",
+                    lastName: "Митосев",
+                    photoData: "",
+                    terDivisionName: "МБ",
+                    colorCode: {
+                      primary: "orange-60",
+                      secondary: "orange-30",
+                    },
+                    employeeStatus: EmployeeStatus.Contestant,
+                  },
+                  {
+                    employeeNumber: "31",
+                    isMarked: false,
+                    firstName: "Ольга",
+                    lastName: "Шебанова",
+                    photoData: ШебановаОльга,
+                    terDivisionName: "ЮЗБ",
+                    colorCode: {
+                      primary: "light-green-30",
+                      secondary: "light-green-20",
+                    },
+                    employeeStatus: EmployeeStatus.Contestant,
+                  },
+                ],
+              },
+            ],
+          },
+        },
+      ],
+    },
+    {
+      name: "Вчера",
+      news: [
+        {
+          newsId: "news2",
+          date: "26.07.23",
+          tournamentId: "T3",
+          newsText:
+            "<h3>30 менеджеров получили награду. Их КПК вошли в Лигу чемпионов ⁣ ⁣по итогам 1 полугодия 2023. Новых побед и успехов!</h3>",
+          leaders: leaders.slice(0, 31),
+          likes: {
+            isLiked: true,
+            likesAmount: 6,
+            bossNames: [
+              "Попов А.Л",
+              "Ситнов В.В.",
+              "Меламед С.В.",
+              "Чернышова Е.В.",
+              "Егорова Ю.И.",
+            ],
+            people: [
+              {
+                position: "1",
+                list: [
+                  {
+                    employeeNumber: "40",
+                    photoData: "",
+                    terDivisionName: "ЦА",
+                    firstName: "Анатолий",
+                    lastName: "Попов",
+                    colorCode: {
+                      primary: "gradient",
+                      secondary: "gradient",
+                    },
+                    employeeStatus: EmployeeStatus.Top_Manager,
+                  },
+                  {
+                    employeeNumber: "41",
+                    photoData: "",
+                    terDivisionName: "ЦА",
+                    firstName: "Владимир",
+                    lastName: "Ситнов",
+                    colorCode: {
+                      primary: "gradient",
+                      secondary: "gradient",
+                    },
+                    employeeStatus: EmployeeStatus.Top_Manager,
+                  },
+                  {
+                    employeeNumber: "42",
+                    photoData: Меламед,
+                    terDivisionName: "ЦА",
+                    firstName: "Сергей",
+                    lastName: "Меламед",
+                    colorCode: {
+                      primary: "gradient",
+                      secondary: "gradient",
+                    },
+                    employeeStatus: EmployeeStatus.Top_Manager,
+                  },
+                  {
+                    employeeNumber: "43",
+                    photoData: ЧернышоваЕлена,
+                    terDivisionName: "ЦА",
+                    firstName: "Елена",
+                    lastName: "Чернышова",
+                    colorCode: {
+                      primary: "gradient",
+                      secondary: "gradient",
+                    },
+                    employeeStatus: EmployeeStatus.Top_Manager,
+                  },
+                  {
+                    employeeNumber: "11",
+                    isMarked: false,
+                    firstName: "Ярослав",
+                    lastName: "Митосев",
+                    photoData: "",
+                    terDivisionName: "МБ",
+                    colorCode: {
+                      primary: "orange-60",
+                      secondary: "orange-30",
+                    },
+                    employeeStatus: EmployeeStatus.Contestant,
+                  },
+                  {
+                    employeeNumber: "31",
+                    isMarked: false,
+                    firstName: "Ольга",
+                    lastName: "Шебанова",
+                    photoData: ШебановаОльга,
+                    terDivisionName: "ЮЗБ",
+                    colorCode: {
+                      primary: "light-green-30",
+                      secondary: "light-green-20",
+                    },
+                    employeeStatus: EmployeeStatus.Contestant,
+                  },
+                ],
+              },
+            ],
+          },
         },
       ],
     },
@@ -43,12 +271,250 @@ export const news: INewsList = {
       name: "Три недели назад",
       news: [
         {
-          newsId: "news2",
+          newsId: "news3",
           date: "06.07.23",
           tournamentId: "T3",
           newsText:
-            "<h3>Новое достижение! Игорь и еще 32 участника заработали для банка по 3 млн руб. от сделок с индийскими компаниями. Поздравляем ребят с крутым достижением! Дополнительно каждому выпущена награда в формате <a style='border-bottom: 1px dashed #fff' href='https://dfa.sber.ru/nft/tokens/view/2cDe52F4H3ixbxXeknmDWiEkopFNYV6WQ8oT1aTPutDAjWNJQGVxw8mKsiifqMALhF28vUqFHkxSHoejuiAHZd6iLef8D6u' target='_blank'>NFT на платформе ЦФА Сбера.</a></h3>",
+            "<h3>Новое достижение! Роман и еще 32 участника заработали для банка по 3 млн руб. от сделок с индийскими компаниями. Поздравляем ребят с крутым достижением! Дополнительно каждому выпущена награда в формате <a style='border-bottom: 1px dashed #fff' href='https://dfa.sber.ru/nft/tokens/view/2cDe52F4H3ixbxXeknmDWiEkopFNYV6WQ8oT1aTPutDAjWNJQGVxw8mKsiifqMALhF28vUqFHkxSHoejuiAHZd6iLef8D6u' target='_blank'>NFT на платформе ЦФА Сбера.</a></h3>",
           leaders,
+          likes: {
+            isLiked: true,
+            likesAmount: 7,
+            bossNames: [
+              "Попов А.Л",
+              "Ситнов В.В.",
+              "Меламед С.В.",
+              "Чернышова Е.В.",
+              "Егорова Ю.И.",
+            ],
+            people: [
+              {
+                position: "1",
+                list: [
+                  {
+                    employeeNumber: "40",
+                    photoData: "",
+                    terDivisionName: "ЦА",
+                    firstName: "Анатолий",
+                    lastName: "Попов",
+                    colorCode: {
+                      primary: "gradient",
+                      secondary: "gradient",
+                    },
+                    employeeStatus: EmployeeStatus.Top_Manager,
+                  },
+                  {
+                    employeeNumber: "41",
+                    photoData: "",
+                    terDivisionName: "ЦА",
+                    firstName: "Владимир",
+                    lastName: "Ситнов",
+                    colorCode: {
+                      primary: "gradient",
+                      secondary: "gradient",
+                    },
+                    employeeStatus: EmployeeStatus.Top_Manager,
+                  },
+                  {
+                    employeeNumber: "42",
+                    photoData: Меламед,
+                    terDivisionName: "ЦА",
+                    firstName: "Сергей",
+                    lastName: "Меламед",
+                    colorCode: {
+                      primary: "gradient",
+                      secondary: "gradient",
+                    },
+                    employeeStatus: EmployeeStatus.Top_Manager,
+                  },
+                  {
+                    employeeNumber: "43",
+                    photoData: ЧернышоваЕлена,
+                    terDivisionName: "ЦА",
+                    firstName: "Елена",
+                    lastName: "Чернышова",
+                    colorCode: {
+                      primary: "gradient",
+                      secondary: "gradient",
+                    },
+                    employeeStatus: EmployeeStatus.Top_Manager,
+                  },
+                  {
+                    employeeNumber: "44",
+                    photoData: Юлианна,
+                    terDivisionName: "ЦА",
+                    firstName: "Юлианна",
+                    lastName: "Егорова",
+                    colorCode: {
+                      primary: "gradient",
+                      secondary: "gradient",
+                    },
+                    employeeStatus: EmployeeStatus.Top_Manager,
+                  },
+                  {
+                    employeeNumber: "25",
+                    isMarked: false,
+                    firstName: "Алтын",
+                    lastName: "Серкбаева",
+                    photoData: СеркбаеваАлтын,
+                    terDivisionName: "УБ",
+                    colorCode: {
+                      primary: "blue-60",
+                      secondary: "blue-30",
+                    },
+                    employeeStatus: EmployeeStatus.Contestant,
+                  },
+                  {
+                    employeeNumber: "11",
+                    isMarked: false,
+                    firstName: "Ярослав",
+                    lastName: "Митосев",
+                    photoData: "",
+                    terDivisionName: "МБ",
+                    colorCode: {
+                      primary: "orange-60",
+                      secondary: "orange-30",
+                    },
+                    employeeStatus: EmployeeStatus.Contestant,
+                  },
+                ],
+              },
+            ],
+          },
+        },
+      ],
+    },
+    {
+      name: "Более старые",
+      news: [
+        {
+          newsId: "news4",
+          date: "10.04.23",
+          tournamentId: "",
+          newsText:
+            "<h3>Ирина смогла удвоить заработанную комиссию по сделкам с индийскими контрагентами по сравнению с предыдущим месяцем. Так держать!</h3>",
+          leaders: [
+            leaders.find(
+              ({ employeeNumber }) => employeeNumber === "24"
+            ) as INewsLeader,
+          ],
+          likes: {
+            isLiked: true,
+            likesAmount: 8,
+            bossNames: [
+              "Попов А.Л",
+              "Ситнов В.В.",
+              "Меламед С.В.",
+              "Чернышова Е.В.",
+              "Егорова Ю.И.",
+            ],
+            people: [
+              {
+                position: "1",
+                list: [
+                  {
+                    employeeNumber: "40",
+                    photoData: "",
+                    terDivisionName: "ЦА",
+                    firstName: "Анатолий",
+                    lastName: "Попов",
+                    colorCode: {
+                      primary: "gradient",
+                      secondary: "gradient",
+                    },
+                    employeeStatus: EmployeeStatus.Top_Manager,
+                  },
+                  {
+                    employeeNumber: "41",
+                    photoData: "",
+                    terDivisionName: "ЦА",
+                    firstName: "Владимир",
+                    lastName: "Ситнов",
+                    colorCode: {
+                      primary: "gradient",
+                      secondary: "gradient",
+                    },
+                    employeeStatus: EmployeeStatus.Top_Manager,
+                  },
+                  {
+                    employeeNumber: "42",
+                    photoData: Меламед,
+                    terDivisionName: "ЦА",
+                    firstName: "Сергей",
+                    lastName: "Меламед",
+                    colorCode: {
+                      primary: "gradient",
+                      secondary: "gradient",
+                    },
+                    employeeStatus: EmployeeStatus.Top_Manager,
+                  },
+                  {
+                    employeeNumber: "43",
+                    photoData: ЧернышоваЕлена,
+                    terDivisionName: "ЦА",
+                    firstName: "Елена",
+                    lastName: "Чернышова",
+                    colorCode: {
+                      primary: "gradient",
+                      secondary: "gradient",
+                    },
+                    employeeStatus: EmployeeStatus.Top_Manager,
+                  },
+                  {
+                    employeeNumber: "44",
+                    photoData: Юлианна,
+                    terDivisionName: "ЦА",
+                    firstName: "Юлианна",
+                    lastName: "Егорова",
+                    colorCode: {
+                      primary: "gradient",
+                      secondary: "gradient",
+                    },
+                    employeeStatus: EmployeeStatus.Top_Manager,
+                  },
+                  {
+                    employeeNumber: "25",
+                    isMarked: false,
+                    firstName: "Алтын",
+                    lastName: "Серкбаева",
+                    photoData: СеркбаеваАлтын,
+                    terDivisionName: "УБ",
+                    colorCode: {
+                      primary: "blue-60",
+                      secondary: "blue-30",
+                    },
+                    employeeStatus: EmployeeStatus.Contestant,
+                  },
+                  {
+                    employeeNumber: "11",
+                    isMarked: false,
+                    firstName: "Ярослав",
+                    lastName: "Митосев",
+                    photoData: "",
+                    terDivisionName: "МБ",
+                    colorCode: {
+                      primary: "orange-60",
+                      secondary: "orange-30",
+                    },
+                    employeeStatus: EmployeeStatus.Contestant,
+                  },
+                  {
+                    employeeNumber: "31",
+                    isMarked: false,
+                    firstName: "Ольга",
+                    lastName: "Шебанова",
+                    photoData: ШебановаОльга,
+                    terDivisionName: "ЮЗБ",
+                    colorCode: {
+                      primary: "light-green-30",
+                      secondary: "light-green-20",
+                    },
+                    employeeStatus: EmployeeStatus.Contestant,
+                  },
+                ],
+              },
+            ],
+          },
         },
       ],
     },
@@ -56,14 +522,14 @@ export const news: INewsList = {
 };
 
 export const newsRatingCountry = {
-  heading: "Игорь Кузьменко из СРБ на 1 месте!",
+  heading: "Роман Гайн из СРБ на 1 месте!",
   usersPosition: "Вы на 1 из 33 месте",
   leaders: [
     {
       employeeNumber: "22",
-      firstName: "Игорь",
-      lastName: "Кузьменко",
-      photoData: КузьменкоИгорь,
+      firstName: "Роман",
+      lastName: "Гайн",
+      photoData: ГайнРоман,
       terDivisionName: "СРБ",
       placeInRating: 1,
       colorCode: {
@@ -132,14 +598,14 @@ export const newsRatingCountry = {
   ],
 };
 export const newsRatingTERB = {
-  heading: "Игорь Кузьменко из СРБ на 1 месте!",
+  heading: "Роман Гайн из СРБ на 1 месте!",
   usersPosition: "Вы на 1 из 3 месте",
   leaders: [
     {
       employeeNumber: "22",
-      firstName: "Игорь",
-      lastName: "Кузьменко",
-      photoData: КузьменкоИгорь,
+      firstName: "Роман",
+      lastName: "Гайн",
+      photoData: ГайнРоман,
       terDivisionName: "СРБ",
       placeInRating: 1,
       colorCode: {
@@ -177,14 +643,14 @@ export const newsRatingTERB = {
 };
 
 export const newsRatingGOSB = {
-  heading: "Игорь Кузьменко из СРБ на 1 месте!",
+  heading: "Роман Гайн из СРБ на 1 месте!",
   usersPosition: "Вы на 1 из 1 месте",
   leaders: [
     {
       employeeNumber: "22",
-      firstName: "Игорь",
-      lastName: "Кузьменко",
-      photoData: КузьменкоИгорь,
+      firstName: "Роман",
+      lastName: "Гайн",
+      photoData: ГайнРоман,
       terDivisionName: "СРБ",
       placeInRating: 1,
       colorCode: {
