@@ -32,7 +32,7 @@ export const AwardInfoContainer = () => {
         <Box
           position="relative"
           p={{
-            base: "24px 16px",
+            base: "32px 16px 24px",
             lg: "24px",
           }}
           borderRadius="16px"
@@ -72,7 +72,7 @@ export const AwardInfoContainer = () => {
           }}
         >
           <SimpleGrid
-            gap="0 24px"
+            gap="24px"
             gridTemplateColumns={{
               base: "auto",
               lg: "176px 1fr",
@@ -92,7 +92,6 @@ export const AwardInfoContainer = () => {
             <Flex
               position="relative"
               alignSelf="center"
-              padding="12px"
               _before={
                 badge.badgeAmount > 1
                   ? {
@@ -130,7 +129,7 @@ export const AwardInfoContainer = () => {
               >
                 <Text
                   variant="semibold"
-                  size="body16/24"
+                  size="h24/32"
                   textAlign={{ base: "center", lg: "initial" }}
                 >
                   {badge.hasNftMark && (
@@ -138,7 +137,7 @@ export const AwardInfoContainer = () => {
                       as="span"
                       variant="semibold"
                       bgClip="text"
-                      size="body16/24"
+                      size="h24/32"
                       color="transparent"
                       bgImage="linear-gradient(103.74deg, #875AC0 0.85%, #B675AF 47.94%, #875AC0 94.39%), linear-gradient(49.6deg, #875AC0 26.29%, #B675AF 50.86%, #875AC0 74.59%)"
                     >
@@ -163,17 +162,17 @@ export const AwardInfoContainer = () => {
                     <Text
                       size={{
                         base: "caption12/16",
-                        lg: "body14/24"
-                        }}
+                        lg: "body14/24",
+                      }}
                       color="rgba(255, 255, 255, 0.8)"
                       whiteSpace="nowrap"
                     >
                       {badge?.progress?.current}
                     </Text>
                     <Text
-                     size={{
-                      base: "caption12/16",
-                      lg: "body14/24"
+                      size={{
+                        base: "caption12/16",
+                        lg: "body14/24",
                       }}
                       color="rgba(255, 255, 255, 0.6)"
                       whiteSpace="nowrap"

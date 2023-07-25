@@ -19,7 +19,7 @@ export const InfoBlock: FC<Props> = ({ text }) => {
       templateColumns="auto 1fr"
     >
       <Info width="24px" height="24px" />
-      <Text size="caption12/16" color="rgba(255, 255, 255, 0.6)">
+      <Text size="body14/20" color="rgba(255, 255, 255, 0.6)">
         {text}
       </Text>
     </Grid>

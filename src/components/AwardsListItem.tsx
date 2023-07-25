@@ -58,9 +58,14 @@ export const AwardsListItem: FC<Props> = ({ badge }) => {
         alignItems="center"
         h="100%"
         justifyContent="space-between"
-        gap="16px"
+        gap="12px"
       >
-        <Box textAlign="center" display="flex" flexDirection="column" gap="16px">
+        <Box
+          textAlign="center"
+          display="flex"
+          flexDirection="column"
+          gap="16px"
+        >
           <Flex
             display="inline-flex"
             position="relative"
@@ -109,13 +114,12 @@ export const AwardsListItem: FC<Props> = ({ badge }) => {
                 size={{ base: "body14/20", lg: "body16/24" }}
                 display="-webkit-box"
                 p={{
-                  base: '0 2px',
+                  base: "0 2px",
                   lg: 0,
                 }}
-                
                 sx={{
-                  WebkitBoxOrient: 'vertical',
-                  WebkitLineClamp: '3'
+                  WebkitBoxOrient: "vertical",
+                  WebkitLineClamp: "3",
                 }}
               >
                 {badge.hasNftMark && (
@@ -139,28 +143,35 @@ export const AwardsListItem: FC<Props> = ({ badge }) => {
             </Box>
           </Tooltip>
         </Box>
-        <Flex direction="column" w="100%" gap="8px"  p={{
-                  base: '0 2px',
-                  lg: 0,
-                }}>
-          {badge.progressBarValue && (
-            <Box>
-              <ProgressBar
-                value={badge.progressBarValue}
-                color="light-blue-50"
-              />
-            </Box>
-          )}
-          {badge.receivingDate && (
-            <Text
-              textAlign="center"
-              color="rgba(255, 255, 255, 0.6)"
-              size={{ base: "caption12/16", lg: "body14/20" }}
-            >
-              {badge.receivingDate}
-            </Text>
-          )}
-        </Flex>
+        {(badge.progressBarValue || badge.receivingDate) && (
+          <Flex
+            direction="column"
+            w="100%"
+            gap="8px"
+            p={{
+              base: "0 2px",
+              lg: 0,
+            }}
+          >
+            {badge.progressBarValue && (
+              <Box>
+                <ProgressBar
+                  value={badge.progressBarValue}
+                  color="light-blue-50"
+                />
+              </Box>
+            )}
+            {badge.receivingDate && (
+              <Text
+                textAlign="center"
+                color="rgba(255, 255, 255, 0.6)"
+                size={{ base: "caption12/16", lg: "body14/20" }}
+              >
+                {badge.receivingDate}
+              </Text>
+            )}
+          </Flex>
+        )}
       </Flex>
     </Box>
   );
