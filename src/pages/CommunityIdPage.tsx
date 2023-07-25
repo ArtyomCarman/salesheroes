@@ -35,16 +35,23 @@ export const CommunityIdPage = () => {
               }
             }}
             dangerouslySetInnerHTML={{ __html: newsId.newsText }}
-            whiteSpace="pre-line"
             css={{
               h3: {
                 fontSize: "18px",
                 lineHeight: "24px",
                 fontWeight: "500",
+
+                "&:not(last-of-type)": {
+                  marginBottom: "9px",
+                },
               },
               p: {
                 fontSize: "16px",
                 lineHeight: "24px",
+
+                "&:not(last-of-type)": {
+                  marginBottom: "8px",
+                },
               },
             }}
           />

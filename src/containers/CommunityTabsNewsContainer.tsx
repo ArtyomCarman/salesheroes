@@ -161,7 +161,6 @@ export const CommunityTabsNewsContainer: FC<Props> = ({ news }) => {
           overflow="hidden"
           textOverflow="ellipsis"
           display="-webkit-box"
-          whiteSpace="pre-line"
           sx={{
             WebkitLineClamp: "14",
             WebkitBoxOrient: "vertical",
@@ -171,10 +170,18 @@ export const CommunityTabsNewsContainer: FC<Props> = ({ news }) => {
               fontSize: "18px",
               lineHeight: "24px",
               fontWeight: "500",
+
+              "&:not(last-of-type)": {
+                marginBottom: "9px",
+              },
             },
             p: {
               fontSize: "16px",
               lineHeight: "24px",
+
+              "&:not(last-of-type)": {
+                marginBottom: "8px",
+              },
             },
           }}
         />
