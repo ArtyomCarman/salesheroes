@@ -4,7 +4,9 @@ export const scrollbarCSS = css({
   scrollbarGutter: "stable",
 
   "&::-webkit-scrollbar": {
-    width: "12px",
+    "@media screen and (min-width: 62em)": {
+      width: "12px",
+    },
   },
 
   "&::-webkit-scrollbar-track": {

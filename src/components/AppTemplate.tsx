@@ -5,7 +5,7 @@ import { AppSidebar } from "./AppSidebar";
 import { AppHeader } from "./AppHeader";
 import { scrollbarCSS, throttle } from "../utils";
 import { useIsFirstRender } from "../hooks";
-import {InstallPWAButton} from "./InstallPWAButton";
+import { InstallPWAButton } from "./InstallPWAButton";
 
 export const AppTemplate = () => {
   const location = useLocation();
@@ -55,7 +55,12 @@ export const AppTemplate = () => {
   }, [scrollContainer]);
 
   return (
-    <Flex height="100dvh" flexDirection="column" sx={sx} pb="env(safe-area-inset-bottom)">
+    <Flex
+      height="100dvh"
+      flexDirection="column"
+      sx={sx}
+      pb="env(safe-area-inset-bottom)"
+    >
       <InstallPWAButton />
       <AppHeader />
       <Grid
@@ -80,7 +85,7 @@ export const AppTemplate = () => {
         }}
         justifyContent="center"
         alignItems="start"
-        px="5px"
+        px="1px"
         overflowY={{
           base: "initial",
           lg: "auto",

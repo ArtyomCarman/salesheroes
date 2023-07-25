@@ -58,7 +58,9 @@ export const ProfileAwardsContainer: FC = () => {
                       key={badge.badgeId}
                       cursor="pointer"
                       onClick={goToBadge(badge.badgeId)}
-                      p="8px 10px"
+                      p={{
+                        base: "16px 8px",
+                      }}
                       sx={{
                         "@media (pointer: fine)": {
                           "&:hover": {
@@ -70,6 +72,7 @@ export const ProfileAwardsContainer: FC = () => {
                         bgColor: "rgba(87, 92, 112, 0.3)",
                       }}
                       borderRadius="8px"
+                      gap="12px"
                     >
                       <Flex
                         alignSelf="center"
@@ -110,7 +113,10 @@ export const ProfileAwardsContainer: FC = () => {
                             color="rgba(255, 255, 255, 0.8)"
                             minW="0"
                             title={badge.badgeName}
-                            size="body14/20"
+                            size={{
+                              base: "caption12/16",
+                              lg: "body14/20",
+                            }}
                             variant="semibold"
                             justifyContent="center"
                             textAlign="center"
@@ -119,7 +125,7 @@ export const ProfileAwardsContainer: FC = () => {
                             overflow="hidden"
                             sx={{
                               WebkitBoxOrient: "vertical",
-                              WebkitLineClamp: "3",
+                              WebkitLineClamp: "2",
                             }}
                           >
                             {badge.hasNftMark && (
