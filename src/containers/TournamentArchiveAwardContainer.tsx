@@ -36,9 +36,8 @@ const TournamentAwardBadge: FC<Props> = ({ item }) => {
         <BadgeIcon imageId={item.imageId} width="176px" height="176px" />
         <Flex direction="column" gap="8px" alignItems="center">
           <Flex gap="4px">
-            
-            <Text 
-              size="body16/24"
+            <Text
+              size="sub18/24"
               variant="semibold"
               overflow="hidden"
               display="-webkit-box"
@@ -46,21 +45,21 @@ const TournamentAwardBadge: FC<Props> = ({ item }) => {
                 WebkitBoxOrient: "vertical",
                 WebkitLineClamp: "2",
                 wordBreak: "break-word",
-                textAlign: 'center'
+                textAlign: "center",
               }}
             >
               {item.hasNftMark && (
-              <Text
-                as="span"
-                variant="semibold"
-                bgClip="text"
-                size="body16/24"
-                color="transparent"
-                bgImage="linear-gradient(103.74deg, #875AC0 0.85%, #B675AF 47.94%, #875AC0 94.39%), linear-gradient(49.6deg, #875AC0 26.29%, #B675AF 50.86%, #875AC0 74.59%)"
-              >
-                NFT{' '}
-              </Text>
-            )}
+                <Text
+                  as="span"
+                  variant="semibold"
+                  bgClip="text"
+                  size="sub18/24"
+                  color="transparent"
+                  bgImage="linear-gradient(103.74deg, #875AC0 0.85%, #B675AF 47.94%, #875AC0 94.39%), linear-gradient(49.6deg, #875AC0 26.29%, #B675AF 50.86%, #875AC0 74.59%)"
+                >
+                  NFT{" "}
+                </Text>
+              )}
               {item.badgeName}
             </Text>
           </Flex>

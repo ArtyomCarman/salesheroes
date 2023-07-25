@@ -7,11 +7,11 @@ import { ReactComponent as LightningIcon } from "../assets/icons/lightning.svg";
 import { tournaments } from "../models";
 
 export const TournamentContainer = () => {
-	const navigate = useNavigate();
-	const goToArchive = () => navigate('/tournaments/archive');
+  const navigate = useNavigate();
+  const goToArchive = () => navigate("/tournaments/archive");
 
   return (
-    <Flex direction="column" gap={"16px"}>
+    <Flex direction="column" gap={"48px"}>
       {tournaments.ratingCategories.map((ratingCategory) => (
         <Flex
           direction="column"

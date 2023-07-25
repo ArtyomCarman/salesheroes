@@ -46,7 +46,7 @@ const TournamentAwardBadge: FC<Props> = ({ item }) => {
         <Flex direction="column" gap="8px" alignItems="center">
           <Flex gap="4px">
             <Text
-              size="body16/24"
+              size="sub18/24"
               variant="semibold"
               overflow="hidden"
               display="-webkit-box"
@@ -62,7 +62,7 @@ const TournamentAwardBadge: FC<Props> = ({ item }) => {
                   as="span"
                   variant="semibold"
                   bgClip="text"
-                  size="body16/24"
+                  size="sub18/24"
                   color="transparent"
                   bgImage="linear-gradient(103.74deg, #875AC0 0.85%, #B675AF 47.94%, #875AC0 94.39%), linear-gradient(49.6deg, #875AC0 26.29%, #B675AF 50.86%, #875AC0 74.59%)"
                 >
