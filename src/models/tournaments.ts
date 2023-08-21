@@ -65,7 +65,7 @@ export const tournaments = {
       tournaments: [
         {
           tournamentId: "T2",
-          tournamentName: "Марафон по условным сделкам",
+          tournamentName: "Максимальное сальдо выдач по кредитам",
           tournamentInfo: "Осталось 4 дня",
           tournamentDurationName: "ТУРНИР НЕДЕЛИ",
           progressBarValue: 50,

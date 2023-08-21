@@ -378,7 +378,7 @@ export const news: INewsList = {
       ],
     },
     {
-      name: "Более старые",
+      name: "Более ранние",
       news: [
         {
           newsId: "news4",
