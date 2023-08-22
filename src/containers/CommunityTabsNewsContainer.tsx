@@ -162,7 +162,7 @@ export const CommunityTabsNewsContainer: FC<Props> = ({ news }) => {
           textOverflow="ellipsis"
           display="-webkit-box"
           sx={{
-            WebkitLineClamp: "14",
+            WebkitLineClamp: "8",
             WebkitBoxOrient: "vertical",
           }}
           css={{

@@ -5,12 +5,11 @@ import { ratingProfile } from "../models";
 
 export const ProfileIdRatingContainer = () => {
   const tabs = ratingProfile.timePeriod.map((item) => ({
-        label: item.periodName,
-        component: (
-          <Ratings divisions={item.divisions} timePeriod={item.periodName} />
-        ),
-      }))
-
+    label: item.periodName,
+    component: (
+      <Ratings divisions={item.divisions} timePeriod={item.periodName} />
+    ),
+  }));
 
   return (
     <Fade in>

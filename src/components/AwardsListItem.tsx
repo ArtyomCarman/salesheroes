@@ -65,6 +65,7 @@ export const AwardsListItem: FC<Props> = ({ badge }) => {
           display="flex"
           flexDirection="column"
           gap="16px"
+          alignItems="center"
         >
           <Flex
             display="inline-flex"
@@ -95,7 +96,7 @@ export const AwardsListItem: FC<Props> = ({ badge }) => {
             <BadgeIcon
               imageId={badge.imageId}
               isActive={badge.imageIsActive}
-              maxH="176px"
+              maxW="176px"
             />
           </Flex>
           <Tooltip

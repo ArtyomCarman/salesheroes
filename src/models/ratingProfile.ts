@@ -1,4 +1,6 @@
-export const ratingProfile = {
+import { IDivisions } from "../interfaces";
+
+export const ratingProfile: RatingProfile = {
   timePeriod: [
     {
       periodName: "Текущий квартал",
@@ -42,3 +44,10 @@ export const ratingProfile = {
     },
   ],
 };
+
+interface RatingProfile {
+  timePeriod: Array<{
+    divisions: IDivisions[];
+    periodName: string;
+  }>;
+}

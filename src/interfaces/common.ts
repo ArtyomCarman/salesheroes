@@ -8,7 +8,7 @@ export enum EmployeeStatus {
 }
 
 export interface IDivisions {
-  divisionName: string;
+  divisionName: keyof typeof DivisionLevel;
   contestants: string;
   placeInRating: number;
 }
@@ -63,6 +63,7 @@ export interface IColorCode {
 export enum DivisionLevel {
   "Тербанк" = "TERB",
   "Страна" = "COUNTRY",
+  "ГОСБ" = "GOSB",
   "Подразделение" = "GOSB",
   "Кластер" = "CLUSTER",
 }

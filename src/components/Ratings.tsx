@@ -1,26 +1,24 @@
 import { FC } from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Box, Flex, SimpleGrid, Text } from "@chakra-ui/react";
 
-import { IDivisions, IProfileBody } from "../interfaces";
+import { DivisionLevel, IDivisions, TimePeriod } from "../interfaces";
 import { Empty } from "./Empty";
-import { leaders } from "../models/tournamen-leaders";
 
 export const Ratings: FC<Props> = ({ divisions, timePeriod, profileId }) => {
-  // const navigate = useNavigate();
-  // const goToRating = (divisionLevel: keyof typeof DivisionLevel) => () => {
-  //   if (timePeriod === "Текущий квартал") {
-  //     navigate(
-  //       `/rating?divisionLevel=${DivisionLevel[divisionLevel]}&timePeriod=${TimePeriod["Текущий квартал"]}`
-  //     );
-  //   }
-  //   if (timePeriod === "За всё время") {
-  //     navigate(
-  //       `/rating?divisionLevel=${DivisionLevel[divisionLevel]}&timePeriod=${TimePeriod["За всё время"]}`
-  //     );
-  //   }
-  // };
-  const { profileNumber } = useParams();
+  const navigate = useNavigate();
+  const goToRating = (divisionLevel: keyof typeof DivisionLevel) => () => {
+    if (timePeriod === "Текущий квартал") {
+      navigate(
+        `/rating?divisionLevel=${DivisionLevel[divisionLevel]}&timePeriod=${TimePeriod["Текущий квартал"]}`
+      );
+    }
+    if (timePeriod === "За всё время") {
+      navigate(
+        `/rating?divisionLevel=${DivisionLevel[divisionLevel]}&timePeriod=${TimePeriod["За всё время"]}`
+      );
+    }
+  };
 
   if (divisions.length === 0 && timePeriod === "За всё время") {
     return (
@@ -129,7 +127,7 @@ export const Ratings: FC<Props> = ({ divisions, timePeriod, profileId }) => {
           cursor="pointer"
           _hover={{ bgColor: "rgba(87, 92, 112, 0.5)" }}
           _active={{ bgColor: "rgba(87, 92, 112, 0.5)" }}
-          // onClick={goToRating(item.divisionName)}
+          onClick={goToRating(item.divisionName)}
         >
           <Text variant="semibold">{item.divisionName}</Text>
           <Text color="rgba(255, 255, 255, 0.6)" size="sub18/24">
