@@ -178,6 +178,12 @@ export const CommunityTabsNewsContainer: FC<Props> = ({ news }) => {
             p: {
               fontSize: "16px",
               lineHeight: "24px",
+              display: "inline",
+
+              "&:after": {
+                content: "''",
+                whiteSpace: "pre",
+              },
 
               "&:not(last-of-type)": {
                 marginBottom: "8px",

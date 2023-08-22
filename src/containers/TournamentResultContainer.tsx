@@ -1,16 +1,29 @@
 import { Fade, Flex, Grid, Icon as ChakraIcon, Text } from "@chakra-ui/react";
 
 import { Empty } from "../components";
-import { IProfileTournamentsIdBody, Reward, Status } from "../interfaces";
+import {
+  DivisionLevel,
+  IProfileTournamentsIdBody,
+  Reward,
+  Status,
+} from "../interfaces";
 import { ReactComponent as LightningIcon } from "../assets/icons/lightning.svg";
 import { tournamentID } from "../models";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 
 export const TournamentResultContainer = () => {
   const { tournamentId } = useParams();
   const tournament = tournamentID.find(
     (item) => item.tournamentId === tournamentId
   ) as IProfileTournamentsIdBody;
+
+  const navigate = useNavigate();
+
+  const goToRating = (divisionLevel: DivisionLevel) => () => {
+    navigate(
+      `/tournaments/${tournamentId}/leaders?divisionLevel=${divisionLevel}`
+    );
+  };
   return (
     <Fade in>
       <Flex
@@ -43,6 +56,10 @@ export const TournamentResultContainer = () => {
                 bgColor="rgba(87, 92, 112, 0.3)"
                 direction="column"
                 position="relative"
+                onClick={goToRating(DivisionLevel[item.divisionLevelName])}
+                cursor="pointer"
+                _hover={{ bgColor: "rgba(87, 92, 112, 0.5)" }}
+                _active={{ bgColor: "rgba(87, 92, 112, 0.5)" }}
               >
                 <Text variant="semibold">{item.divisionLevelName}</Text>
                 <Text size="sub18/24" color="rgba(255, 255, 255, 0.6)">

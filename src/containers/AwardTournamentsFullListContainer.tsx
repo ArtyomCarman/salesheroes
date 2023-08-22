@@ -4,6 +4,16 @@ import { TournamentArchiveCard, TournamentCard } from "../components";
 import { Reward } from "../interfaces";
 import ГайнРоман from "../assets/images/romanGayn.png";
 
+const formatter = new Intl.DateTimeFormat("ru", {
+  month: "long",
+  day: "numeric",
+});
+
+const d = new Date();
+d.setDate(d.getDate() - 1);
+
+const date = formatter.format(d);
+
 const tournaments = {
   tournamentName: "Марафон по условным сделкам",
   activityTypes: [
@@ -26,8 +36,7 @@ const tournaments = {
           tournamentInfo: "осталось 2 дня",
           tournamentDurationName: "ТУРНИР НЕДЕЛИ",
           progressBarValue: 70,
-          updateTooltip:
-            "Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — 24 июля",
+          updateTooltip: `Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — ${date}`,
           reward: Reward.gold,
           rating: [
             {
@@ -58,8 +67,7 @@ const tournaments = {
           tournamentInfo: "Осталось 4 дня",
           tournamentDurationName: "ТУРНИР НЕДЕЛИ",
           progressBarValue: 50,
-          updateTooltip:
-            "Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — 24 июля",
+          updateTooltip: `Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — ${date}`,
           reward: undefined,
           rating: [
             {

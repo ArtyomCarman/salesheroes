@@ -16,6 +16,7 @@ export const profileContestant = {
     secondary: "blue-30",
   },
   employeeStatus: EmployeeStatus.Contestant,
+  progress: undefined,
 };
 
 export const profileObserver = {

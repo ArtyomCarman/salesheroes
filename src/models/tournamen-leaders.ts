@@ -52,6 +52,12 @@ const МитосевЯрослав = {
   reward: undefined,
   placeInRating: 33,
   terDivisionName: "МБ",
+  progress: {
+    userLevel: {
+      currentLevelName: "Эксперт",
+      colorCode: colorCodeExpert,
+    },
+  },
 };
 
 const БерстеневаАлена = {
@@ -65,6 +71,12 @@ const БерстеневаАлена = {
   reward: undefined,
   placeInRating: 32,
   terDivisionName: "СИБ",
+  progress: {
+    userLevel: {
+      currentLevelName: "Мастер",
+      colorCode: colorCodeMaster,
+    },
+  },
 };
 
 const КротковНиколай = {
@@ -78,6 +90,12 @@ const КротковНиколай = {
   reward: undefined,
   placeInRating: 31,
   terDivisionName: "УБ",
+  progress: {
+    userLevel: {
+      currentLevelName: "Эксперт",
+      colorCode: colorCodeExpert,
+    },
+  },
 };
 
 const ДмитриеваВероника = {
@@ -91,6 +109,12 @@ const ДмитриеваВероника = {
   reward: undefined,
   placeInRating: 30,
   terDivisionName: "МБ",
+  progress: {
+    userLevel: {
+      currentLevelName: "Эксперт",
+      colorCode: colorCodeExpert,
+    },
+  },
 };
 
 const БрусницынаМария = {
@@ -104,6 +128,12 @@ const БрусницынаМария = {
   reward: undefined,
   placeInRating: 29,
   terDivisionName: "УБ",
+  progress: {
+    userLevel: {
+      currentLevelName: "Специалист",
+      colorCode: colorCodeSpecialist,
+    },
+  },
 };
 
 const КодоловаЕлена = {
@@ -117,6 +147,12 @@ const КодоловаЕлена = {
   reward: undefined,
   terDivisionName: "ВВБ",
   placeInRating: 28,
+  progress: {
+    userLevel: {
+      currentLevelName: "Специалист",
+      colorCode: colorCodeSpecialist,
+    },
+  },
 };
 
 const КирееваЮлия = {
@@ -130,6 +166,12 @@ const КирееваЮлия = {
   reward: undefined,
   terDivisionName: "ЦЧБ",
   placeInRating: 27,
+  progress: {
+    userLevel: {
+      currentLevelName: "Эксперт",
+      colorCode: colorCodeExpert,
+    },
+  },
 };
 
 const АдиевРашид = {
@@ -143,19 +185,31 @@ const АдиевРашид = {
   reward: undefined,
   terDivisionName: "СИБ",
   placeInRating: 26,
+  progress: {
+    userLevel: {
+      currentLevelName: "Специалист",
+      colorCode: colorCodeSpecialist,
+    },
+  },
 };
 
 const ЗахаровАлександр = {
   profileNumber: "16",
   lastName: "Захаров",
   firstName: "Александр",
-  photoData: фотоКодоловаЕлена,
+  photoData: "",
   colorCode: colorCodeExpert,
   isMarked: false,
   indicatorValue: "5",
   reward: undefined,
   terDivisionName: "СЗБ",
   placeInRating: 25,
+  progress: {
+    userLevel: {
+      currentLevelName: "Эксперт",
+      colorCode: colorCodeExpert,
+    },
+  },
 };
 
 const КарагодинаМария = {
@@ -169,6 +223,12 @@ const КарагодинаМария = {
   reward: undefined,
   terDivisionName: "ПБ",
   placeInRating: 24,
+  progress: {
+    userLevel: {
+      currentLevelName: "Эксперт",
+      colorCode: colorCodeExpert,
+    },
+  },
 };
 
 const СорокинИлья = {
@@ -182,6 +242,12 @@ const СорокинИлья = {
   reward: undefined,
   placeInRating: 23,
   terDivisionName: "ДВБ",
+  progress: {
+    userLevel: {
+      currentLevelName: "Эксперт",
+      colorCode: colorCodeExpert,
+    },
+  },
 };
 
 const БобокАлександр = {
@@ -195,6 +261,12 @@ const БобокАлександр = {
   reward: undefined,
   terDivisionName: "МБ",
   placeInRating: 22,
+  progress: {
+    userLevel: {
+      currentLevelName: "Специалист",
+      colorCode: colorCodeSpecialist,
+    },
+  },
 };
 
 const ПроскуринаЕлена = {
@@ -208,6 +280,12 @@ const ПроскуринаЕлена = {
   reward: undefined,
   terDivisionName: "ББ",
   placeInRating: 21,
+  progress: {
+    userLevel: {
+      currentLevelName: "Эксперт",
+      colorCode: colorCodeExpert,
+    },
+  },
 };
 
 const СорокинаМарина = {
@@ -221,6 +299,12 @@ const СорокинаМарина = {
   reward: undefined,
   placeInRating: 20,
   terDivisionName: "СЗБ",
+  progress: {
+    userLevel: {
+      currentLevelName: "Специалист",
+      colorCode: colorCodeSpecialist,
+    },
+  },
 };
 const ТомсонЕкатерина = {
   profileNumber: "21",
@@ -233,6 +317,12 @@ const ТомсонЕкатерина = {
   reward: undefined,
   terDivisionName: "СИБ",
   placeInRating: 19,
+  progress: {
+    userLevel: {
+      currentLevelName: "Эксперт",
+      colorCode: colorCodeExpert,
+    },
+  },
 };
 
 const ДуроваНаталья = {
@@ -246,6 +336,12 @@ const ДуроваНаталья = {
   reward: undefined,
   terDivisionName: "ЦЧБ",
   placeInRating: 18,
+  progress: {
+    userLevel: {
+      currentLevelName: "Мастер",
+      colorCode: colorCodeMaster,
+    },
+  },
 };
 
 const МитренкоАндрей = {
@@ -259,6 +355,12 @@ const МитренкоАндрей = {
   reward: undefined,
   terDivisionName: "ДВБ",
   placeInRating: 17,
+  progress: {
+    userLevel: {
+      currentLevelName: "Специалист",
+      colorCode: colorCodeSpecialist,
+    },
+  },
 };
 
 const ХасаншинаВенера = {
@@ -272,6 +374,12 @@ const ХасаншинаВенера = {
   reward: undefined,
   placeInRating: 16,
   terDivisionName: "ВВБ",
+  progress: {
+    userLevel: {
+      currentLevelName: "Эксперт",
+      colorCode: colorCodeExpert,
+    },
+  },
 };
 
 const ШебановаОльга = {
@@ -285,6 +393,12 @@ const ШебановаОльга = {
   reward: undefined,
   placeInRating: 15,
   terDivisionName: "ЮЗБ",
+  progress: {
+    userLevel: {
+      currentLevelName: "Специалист",
+      colorCode: colorCodeSpecialist,
+    },
+  },
 };
 
 const ЧернецВиктория = {
@@ -298,6 +412,12 @@ const ЧернецВиктория = {
   placeInRating: 14,
   reward: undefined,
   terDivisionName: "ЮЗБ",
+  progress: {
+    userLevel: {
+      currentLevelName: "Эксперт",
+      colorCode: colorCodeExpert,
+    },
+  },
 };
 
 const ЖаглинаЖанна = {
@@ -311,6 +431,12 @@ const ЖаглинаЖанна = {
   reward: undefined,
   placeInRating: 13,
   terDivisionName: "ЦЧБ",
+  progress: {
+    userLevel: {
+      currentLevelName: "Эксперт",
+      colorCode: colorCodeExpert,
+    },
+  },
 };
 
 const КунинаТатьяна = {
@@ -324,6 +450,12 @@ const КунинаТатьяна = {
   placeInRating: 12,
   reward: undefined,
   terDivisionName: "ПБ",
+  progress: {
+    userLevel: {
+      currentLevelName: "Эксперт",
+      colorCode: colorCodeExpert,
+    },
+  },
 };
 
 const ЧернякРуфина = {
@@ -337,6 +469,12 @@ const ЧернякРуфина = {
   reward: undefined,
   placeInRating: 11,
   terDivisionName: "ББ",
+  progress: {
+    userLevel: {
+      currentLevelName: "Мастер",
+      colorCode: colorCodeMaster,
+    },
+  },
 };
 
 const СавушкинаЭмма = {
@@ -350,6 +488,12 @@ const СавушкинаЭмма = {
   reward: undefined,
   placeInRating: 10,
   terDivisionName: "СЗБ",
+  progress: {
+    userLevel: {
+      currentLevelName: "Эксперт",
+      colorCode: colorCodeExpert,
+    },
+  },
 };
 
 const БорбликМихаил = {
@@ -363,6 +507,12 @@ const БорбликМихаил = {
   reward: undefined,
   placeInRating: 9,
   terDivisionName: "ЮЗБ",
+  progress: {
+    userLevel: {
+      currentLevelName: "Мастер",
+      colorCode: colorCodeMaster,
+    },
+  },
 };
 
 const ОрловаЮлия = {
@@ -376,6 +526,12 @@ const ОрловаЮлия = {
   reward: undefined,
   placeInRating: 8,
   terDivisionName: "ПБ",
+  progress: {
+    userLevel: {
+      currentLevelName: "Мастер",
+      colorCode: colorCodeMaster,
+    },
+  },
 };
 
 const СенотрусоваЮлия = {
@@ -389,6 +545,12 @@ const СенотрусоваЮлия = {
   reward: undefined,
   placeInRating: 7,
   terDivisionName: "ДВБ",
+  progress: {
+    userLevel: {
+      currentLevelName: "Эксперт",
+      colorCode: colorCodeExpert,
+    },
+  },
 };
 
 const МакаровПавел = {
@@ -402,6 +564,12 @@ const МакаровПавел = {
   reward: undefined,
   placeInRating: 6,
   terDivisionName: "ББ",
+  progress: {
+    userLevel: {
+      currentLevelName: "Эксперт",
+      colorCode: colorCodeExpert,
+    },
+  },
 };
 
 const ТихомироваМария = {
@@ -415,6 +583,12 @@ const ТихомироваМария = {
   reward: undefined,
   placeInRating: 5,
   terDivisionName: "СРБ",
+  progress: {
+    userLevel: {
+      currentLevelName: "Специалист",
+      colorCode: colorCodeSpecialist,
+    },
+  },
 };
 
 const ГайнРоман = {
@@ -443,6 +617,12 @@ const ШаброваИрина = {
   },
   placeInRating: 3,
   terDivisionName: "СРБ",
+  progress: {
+    userLevel: {
+      currentLevelName: "Эксперт",
+      colorCode: colorCodeExpert,
+    },
+  },
 };
 
 const КатаеваВероника = {
@@ -458,6 +638,12 @@ const КатаеваВероника = {
   },
   placeInRating: 2,
   terDivisionName: "ВВБ",
+  progress: {
+    userLevel: {
+      currentLevelName: "Эксперт",
+      colorCode: colorCodeExpert,
+    },
+  },
 };
 
 const СеркбаеваАлтын = {
@@ -474,6 +660,12 @@ const СеркбаеваАлтын = {
   },
   placeInRating: 1,
   terDivisionName: "УБ",
+  progress: {
+    userLevel: {
+      currentLevelName: "Мастер",
+      colorCode: colorCodeMaster,
+    },
+  },
 };
 
 export const leaders = [

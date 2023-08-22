@@ -10,6 +10,16 @@ import фотоГайнРоман from "../assets/images/romanGayn.png";
 import фотоТихомироваМария from "../assets/images/Тихомирова Мария Алексеевна.jpeg";
 import фотоШаброваИрина from "../assets/images/Шаброва Ирина Сергеевна.jpeg";
 
+const formatter = new Intl.DateTimeFormat("ru", {
+  month: "long",
+  day: "numeric",
+});
+
+const d = new Date();
+d.setDate(d.getDate() - 1);
+
+const date = formatter.format(d);
+
 export const tournaments = {
   isArchiveButtonNeeds: true,
   ratingCategories: [
@@ -30,10 +40,9 @@ export const tournaments = {
           tournamentId: "T1",
           tournamentName: "Марафон по условным сделкам",
           tournamentInfo: "Осталось 2 дня",
-          tournamentDurationName: "ТУРНИР НЕДЕЛИ",
+          tournamentDurationName: "ТУРНИР МЕСЯЦА",
           progressBarValue: 70,
-          updateTooltip:
-            "Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — 24 июля",
+          updateTooltip: `Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — ${date}`,
           reward: Reward.gold,
           rating: [
             {
@@ -61,16 +70,62 @@ export const tournaments = {
       ],
     },
     {
-      ratingCategoryName: "Успейте поучаствовать",
+      ratingCategoryName: "Нужно поднажать",
       tournaments: [
         {
           tournamentId: "T2",
+          tournamentName: "Турнир по условным сделкам",
+          tournamentInfo: "Осталось 4 дня",
+          tournamentDurationName: "ТУРНИР НЕДЕЛИ",
+          progressBarValue: 50,
+          updateTooltip: `Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — ${date}`,
+          reward: undefined,
+          rating: [
+            {
+              divisionLevelResult: "33 в стране",
+            },
+            {
+              divisionLevelResult: "3 в ТБ",
+            },
+          ],
+        },
+      ],
+    },
+    {
+      ratingCategoryName: "Успейте поучаствовать",
+      tournaments: [
+        {
+          tournamentId: "T3",
           tournamentName: "Максимальное сальдо выдач по кредитам",
           tournamentInfo: "Осталось 4 дня",
           tournamentDurationName: "ТУРНИР НЕДЕЛИ",
           progressBarValue: 50,
-          updateTooltip:
-            "Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — 24 июля",
+          updateTooltip: `Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — ${date}`,
+          reward: undefined,
+          rating: [
+            {
+              divisionLevelResult: "33 в стране",
+            },
+            {
+              divisionLevelResult: "3 в ТБ",
+            },
+            {
+              divisionLevelResult: "2 в ГОСБ",
+            },
+          ],
+        },
+      ],
+    },
+    {
+      ratingCategoryName: "Подведение итогов",
+      tournaments: [
+        {
+          tournamentId: "T4",
+          tournamentName: "Турнир по условным сделкам",
+          tournamentInfo: "Осталось 0 дней",
+          tournamentDurationName: "ТУРНИР НЕДЕЛИ",
+          progressBarValue: 100,
+          updateTooltip: `Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — ${date}`,
           reward: undefined,
           rating: [
             {
@@ -112,11 +167,10 @@ export const tournamentID = [
     status: "ACTIVE",
     ratingCategoryName: "Вы в лидерах",
     tournamentInfo: "Осталось 5 дней",
-    tournamentDurationName: "турнир недели",
-    lasting: "24 июля 2023 - 30 июля 2023",
+    tournamentDurationName: "турнир месяца",
+    lasting: "21 августа 2023 - 17 сентября 2023",
     percentageIndicator: 70,
-    updateTooltip:
-      "Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — 24 июля",
+    updateTooltip: `Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — ${date}`,
     rating: [
       {
         divisionLevelName: "Страна",
@@ -192,25 +246,23 @@ export const tournamentID = [
     ],
   },
   {
-    tournamentId: "T2",
+    tournamentId: "T3",
     hasNftMark: true,
-    tournamentName: "Марафон по условным сделкам",
+    tournamentName: "Максимальное сальдо выдач по кредитам",
     status: "ACTIVE",
     ratingCategoryName: "Вы в лидерах",
     tournamentInfo: "Осталось 4 дней",
     tournamentDurationName: "турнир недели",
     lasting: "17 июля 2023 - 23 июля 2023",
     percentageIndicator: 70,
-    updateTooltip:
-      "Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — 24 июля",
+    updateTooltip: `Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — ${date}`,
     rating: [],
     totalParticipants: "33 участников",
     specification: {
       description:
-        "Том Лонгбоут по праву считается величайшим марафонцем всех времен!\n" +
-        "Бери пример с лучших - закрывай каждую полную неделю турнира минимум 2 условные сделки. Если в какую-либо неделю условие не выполняется - участник выбывает из гонки.\n" +
-        "\n" +
-        "Покажешь результат по сумме УС лучше всех - станешь победителем турнира. Удачи!",
+        "Покажи максимальное среди коллег сальдо выдач-гашений по всем кредитным договорам своих клиентов ККСБ и стань победителем турнира.\n" +
+        "В расчет учитываются только положительные сальдо.\n" +
+        "Удачи!",
       features: [
         {
           number: 1,
@@ -263,8 +315,7 @@ export const archiveTournamentId = {
   ratingCategoryName: "Вы в лидерах",
   tournamentDurationName: "Турнир недели",
   lasting: "03 июля — 09 июля 2023",
-  updateTooltip:
-    "Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — 24 июля",
+  updateTooltip: `Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — ${date}`,
   rating: [
     {
       divisionLevelName: "Страна",
@@ -693,6 +744,7 @@ export const tournamentShortListT3 = [
         },
         placeInRating: 1,
         terDivisionName: "СРБ",
+        progress: undefined,
       },
       {
         profileNumber: "22",
@@ -707,6 +759,7 @@ export const tournamentShortListT3 = [
           icon: Reward.silver,
         },
         terDivisionName: "СРБ",
+        progress: undefined,
       },
       {
         profileNumber: "23",
@@ -721,6 +774,7 @@ export const tournamentShortListT3 = [
         },
         placeInRating: 3,
         terDivisionName: "СРБ",
+        progress: undefined,
       },
     ],
   },
@@ -743,6 +797,7 @@ export const tournamentShortListT3 = [
           tooltip: "Претендент на победу",
         },
         terDivisionName: "СРБ",
+        progress: undefined,
       },
     ],
   },

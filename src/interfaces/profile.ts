@@ -22,6 +22,7 @@ export interface IProfileBody {
   photoData?: string;
   colorCode?: IColorCode;
   employeeStatus?: EmployeeStatus;
+  progress: unknown;
 }
 
 export interface IProfileRatingBody {

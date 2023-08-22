@@ -53,6 +53,7 @@ export interface ILeader {
   reward?: IRewardProfiles;
   colorCode: IColorCode;
   employeeStatus?: EmployeeStatus;
+  progress?: unknown;
 }
 
 export interface IColorCode {
@@ -66,6 +67,7 @@ export enum DivisionLevel {
   "ГОСБ" = "GOSB",
   "Подразделение" = "GOSB",
   "Кластер" = "CLUSTER",
+  "Аппарат ТБ" = "GOSB",
 }
 
 export enum TimePeriod {

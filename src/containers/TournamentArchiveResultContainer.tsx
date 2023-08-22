@@ -1,11 +1,20 @@
 import { Fade, Flex, Grid, Icon as ChakraIcon, Text } from "@chakra-ui/react";
 
 import { Empty } from "../components";
-import { Reward, Status } from "../interfaces";
+import { DivisionLevel, Reward, Status } from "../interfaces";
 import { ReactComponent as LightningIcon } from "../assets/icons/lightning.svg";
 import { archiveTournamentId } from "../models";
+import { useNavigate, useParams } from "react-router-dom";
 
 export const TournamentArchiveResultContainer = () => {
+  const navigate = useNavigate();
+  const { tournamentId } = useParams();
+
+  const goToRating = (divisionLevel: DivisionLevel) => () => {
+    navigate(
+      `/tournaments/${tournamentId}/leaders?divisionLevel=${divisionLevel}`
+    );
+  };
   return (
     <Fade in>
       <Flex
@@ -38,6 +47,14 @@ export const TournamentArchiveResultContainer = () => {
                 bgColor="rgba(87, 92, 112, 0.3)"
                 direction="column"
                 position="relative"
+                onClick={goToRating(
+                  DivisionLevel[
+                    item.divisionLevelName as keyof typeof DivisionLevel
+                  ]
+                )}
+                cursor="pointer"
+                _hover={{ bgColor: "rgba(87, 92, 112, 0.5)" }}
+                _active={{ bgColor: "rgba(87, 92, 112, 0.5)" }}
               >
                 <Text variant="semibold">{item.divisionLevelName}</Text>
                 <Text size="sub20/28" color="rgba(255, 255, 255, 0.6)">

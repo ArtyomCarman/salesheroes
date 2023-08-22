@@ -1,5 +1,15 @@
 import { Badge } from "../interfaces";
 
+const formatter = new Intl.DateTimeFormat("ru", {
+  month: "long",
+  day: "numeric",
+});
+
+const d = new Date();
+d.setDate(d.getDate() - 1);
+
+const date = formatter.format(d);
+
 const Commission50k = {
   imageId: Badge.Commission50k,
   badgeId: "00010",
@@ -8,8 +18,7 @@ const Commission50k = {
   badgeName: "50 тыс. руб. комиссии по сделкам с Индией",
   badgeAmount: 2,
   badgeType: "individual",
-  updateTooltip:
-    "Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — 24 июля",
+  updateTooltip: `Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — ${date}`,
   hasNftMark: false,
   rewardCrystalCount: 5,
   specification: {
@@ -31,8 +40,7 @@ const Commission200k = {
   badgeName: "200 тыс. руб. комиссии по сделкам с Индией",
   badgeAmount: 1,
   badgeType: "individual",
-  updateTooltip:
-    "Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — 24 июля",
+  updateTooltip: `Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — ${date}`,
   hasNftMark: false,
   rewardCrystalCount: 15,
   specification: {
@@ -57,8 +65,7 @@ const Commission1M = {
   badgeAmount: 1,
   badgeType: "individual",
   receivingDate: "21.03.23",
-  updateTooltip:
-    "Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — 24 июля",
+  updateTooltip: `Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — ${date}`,
   hasNftMark: false,
   rewardCrystalCount: 30,
   specification: {
@@ -83,8 +90,7 @@ const Commission3M = {
   badgeName: "3 млн руб. комиссии по сделкам с Индией",
   badgeAmount: 1,
   badgeType: "individual",
-  updateTooltip:
-    "Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — 24 июля",
+  updateTooltip: `Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — ${date}`,
   hasNftMark: true,
   rewardCrystalCount: 50,
   specification: {
@@ -110,8 +116,7 @@ const CommissionX2 = {
   badgeName: "х2 комиссии по сделкам с Индией",
   badgeAmount: 2,
   badgeType: "individual",
-  updateTooltip:
-    "Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — 24 июля",
+  updateTooltip: `Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — ${date}`,
   hasNftMark: false,
   rewardCrystalCount: 3,
   specification: {
@@ -135,8 +140,7 @@ const CommissionX3 = {
   badgeName: "х3 комиссии по сделкам с Индией",
   badgeAmount: 1,
   badgeType: "individual",
-  updateTooltip:
-    "Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — 24 июля",
+  updateTooltip: `Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — ${date}`,
   hasNftMark: false,
   rewardCrystalCount: 7,
   specification: {
@@ -160,8 +164,7 @@ const CommissionX4 = {
   badgeAmount: 1,
   badgeName: "х4 комиссии по сделкам с Индией",
   badgeType: "individual",
-  updateTooltip:
-    "Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — 24 июля",
+  updateTooltip: `Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — ${date}`,
   hasNftMark: false,
   rewardCrystalCount: 15,
   progressBarValue: 60,
@@ -191,8 +194,7 @@ const ChampionLeague1 = {
   badgeName: "Победитель Лиги Чемпионов 1ПГ 2023",
   badgeAmount: 1,
   badgeType: "individual",
-  updateTooltip:
-    "Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — 24 июля",
+  updateTooltip: `Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — ${date}`,
   hasNftMark: false,
   rewardCrystalCount: 30,
   specification: {
@@ -215,8 +217,7 @@ const ChampionLeague2 = {
   badgeName: "Победитель Лиги Чемпионов 2ПГ 2023",
   badgeAmount: 1,
   badgeType: "individual",
-  updateTooltip:
-    "Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — 24 июля",
+  updateTooltip: `Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — ${date}`,
   hasNftMark: false,
   rewardCrystalCount: 30,
   specification: {
@@ -238,8 +239,7 @@ const SuperCup2023 = {
   badgeId: "00019",
   badgeName: "Победитель Суперкубка 2023",
   badgeAmount: 1,
-  updateTooltip:
-    "Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — 24 июля",
+  updateTooltip: `Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — ${date}`,
   badgeType: "individual",
   hasNftMark: false,
   rewardCrystalCount: 40,
@@ -261,8 +261,7 @@ const SuperBonusNFT = {
   imageIsActive: true,
   badgeId: "00020",
   badgeName: "1 место Сверхбонуса 1ПГ 2023",
-  updateTooltip:
-    "Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — 24 июля",
+  updateTooltip: `Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — ${date}`,
   badgeAmount: 1,
   badgeType: "individual",
   hasNftMark: true,
@@ -285,8 +284,7 @@ const SuperBonus1 = {
   imageIsActive: false,
   badgeId: "00021",
   badgeName: "ТОП-10% Сверхбонуса 1ПГ 2023",
-  updateTooltip:
-    "Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — 24 июля",
+  updateTooltip: `Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — ${date}`,
   badgeAmount: 1,
   badgeType: "individual",
   hasNftMark: false,
@@ -309,8 +307,7 @@ const SuperBonusTop10 = {
   imageIsActive: false,
   badgeId: "00022",
   badgeName: "ТОП-20% Сверхбонуса 1ПГ 2023",
-  updateTooltip:
-    "Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — 24 июля",
+  updateTooltip: `Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — ${date}`,
   badgeAmount: 1,
   badgeType: "individual",
   hasNftMark: false,
@@ -334,8 +331,7 @@ const SuperBonusTop20 = {
   badgeId: "00023",
   badgeName: "ТОП-20+% Сверхбонуса 1ПГ 2023",
   receivingDate: "10.03.23",
-  updateTooltip:
-    "Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — 24 июля",
+  updateTooltip: `Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — ${date}`,
   badgeAmount: 1,
   badgeType: "individual",
   hasNftMark: false,
@@ -359,8 +355,7 @@ const ConditionalsChampionFirst = {
   badgeId: "00024",
   badgeName: "Чемпион страны по условным сделкам",
   badgeAmount: 1,
-  updateTooltip:
-    "Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — 24 июля",
+  updateTooltip: `Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — ${date}`,
   hasNftMark: true,
   badgeType: "forTheTournament",
   rewardCrystalCount: 30,
@@ -416,8 +411,7 @@ const ConditionalsChampionSecond = {
   receivingDate: "09.06.23",
   badgeName: "Чемпион ТБ по условным сделкам",
   badgeAmount: 2,
-  updateTooltip:
-    "Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — 24 июля",
+  updateTooltip: `Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — ${date}`,
   hasNftMark: false,
   badgeType: "forTheTournament",
   rewardCrystalCount: 30,
@@ -473,8 +467,7 @@ const ConditionalsChampionThird = {
   receivingDate: "09.06.23",
   badgeName: "Чемпион подразделения по условным сделкам",
   badgeAmount: 1,
-  updateTooltip:
-    "Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — 24 июля",
+  updateTooltip: `Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — ${date}`,
   hasNftMark: false,
   badgeType: "forTheTournament",
   rewardCrystalCount: 5,

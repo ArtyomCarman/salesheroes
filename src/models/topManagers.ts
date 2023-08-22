@@ -19,6 +19,7 @@ const ПоповАнатолий = {
   reward: undefined,
   placeInRating: 27,
   positionName: "Заместитель Председателя Правления",
+  progress: undefined,
 };
 
 const СитновВладимир = {
@@ -37,6 +38,7 @@ const СитновВладимир = {
   reward: undefined,
   placeInRating: 27,
   positionName: "Старший вице-президент",
+  progress: undefined,
 };
 
 const МеламедСергей = {
@@ -55,6 +57,7 @@ const МеламедСергей = {
   reward: undefined,
   placeInRating: 27,
   positionName: "Старший управляющий директор-директор департамента",
+  progress: undefined,
 };
 
 const ЕленаЧернышова = {
@@ -73,6 +76,7 @@ const ЕленаЧернышова = {
   reward: undefined,
   placeInRating: 27,
   positionName: "Управляющий директор",
+  progress: undefined,
 };
 const ЕгороваЮлианна = {
   profileNumber: "44",
@@ -90,6 +94,7 @@ const ЕгороваЮлианна = {
   reward: undefined,
   placeInRating: 27,
   positionName: "Управляющий директор",
+  progress: undefined,
 };
 
 export const topManagers = [

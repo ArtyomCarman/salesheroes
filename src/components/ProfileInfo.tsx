@@ -73,7 +73,7 @@ export const ProfileInfo: FC<Props> = ({ profile, progress, text }) => {
           </Text>
           <Text color="rgba(255, 255, 255, 0.8)">{settings.text}</Text>
         </Flex>
-        {profile.employeeStatus === EmployeeStatus.Contestant && progress ? (
+        {progress ? (
           <Flex
             alignItems="center"
             gap="10px"

@@ -628,6 +628,7 @@ export const badgeFullLeadersTerb = {
           primary: "blue-60",
           secondary: "blue-30",
         },
+        progress: undefined,
       },
       {
         profileNumber: "24",
@@ -641,6 +642,7 @@ export const badgeFullLeadersTerb = {
           primary: "orange-60",
           secondary: "orange-30",
         },
+        progress: undefined,
       },
       {
         profileNumber: "23",
@@ -654,6 +656,7 @@ export const badgeFullLeadersTerb = {
           primary: "light-green-30",
           secondary: "light-green-20",
         },
+        progress: undefined,
       },
     ],
   },
@@ -676,6 +679,7 @@ export const badgeFullLeadersGOSB = {
           primary: "blue-60",
           secondary: "blue-30",
         },
+        progress: undefined,
       },
     ],
   },

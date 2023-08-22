@@ -93,7 +93,7 @@ export interface IProfileTournamentsIdBody {
   lasting: string;
   updateTooltip?: string;
   rating: Array<{
-    divisionLevelName: string;
+    divisionLevelName: keyof typeof DivisionLevel;
     contestants: number;
     placeInRating: number;
     reward: IReward;
