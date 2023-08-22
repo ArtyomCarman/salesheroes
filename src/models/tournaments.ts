@@ -15,6 +15,7 @@ const formatter = new Intl.DateTimeFormat("ru", {
   day: "numeric",
 });
 
+
 const d = new Date();
 d.setDate(d.getDate() - 1);
 
@@ -39,9 +40,9 @@ export const tournaments = {
           },
           tournamentId: "T1",
           tournamentName: "Марафон по условным сделкам",
-          tournamentInfo: "Осталось 2 дня",
+          tournamentInfo: "Осталось 26 дней",
           tournamentDurationName: "ТУРНИР МЕСЯЦА",
-          progressBarValue: 70,
+          progressBarValue: 15,
           updateTooltip: `Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — ${date}`,
           reward: Reward.gold,
           rating: [
@@ -121,9 +122,9 @@ export const tournaments = {
         {
           tournamentId: "T3",
           tournamentName: "Максимальное сальдо выдач по кредитам",
-          tournamentInfo: "Осталось 4 дня",
+          tournamentInfo: "Осталось 39 дней",
           tournamentDurationName: "ТУРНИР квартала",
-          progressBarValue: 50,
+          progressBarValue: 65,
           updateTooltip: `Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — ${date}`,
           reward: undefined,
           rating: [
@@ -168,10 +169,10 @@ export const tournamentID = [
     tournamentName: "Марафон по условным сделкам",
     status: "ACTIVE",
     ratingCategoryName: "Вы в лидерах",
-    tournamentInfo: "Осталось 5 дней",
+    tournamentInfo: "Осталось 26 дней",
     tournamentDurationName: "турнир месяца",
     lasting: "21 августа 2023 - 17 сентября 2023",
-    percentageIndicator: 70,
+    percentageIndicator: 15,
     updateTooltip: `Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — ${date}`,
     rating: [
       {
@@ -253,10 +254,10 @@ export const tournamentID = [
     tournamentName: "Турнир по условным сделкам",
     status: "ACTIVE",
     ratingCategoryName: "Вы в лидерах",
-    tournamentInfo: "Осталось 4 дней",
+    tournamentInfo: "Завершён  •  Подведение итогов",
     tournamentDurationName: "турнир 3 недели",
     lasting: "31 июля 2023 - 20 августа 2023",
-    percentageIndicator: 70,
+    percentageIndicator: 100,
     updateTooltip: `Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — ${date}`,
     rating: [
       {
@@ -338,10 +339,10 @@ export const tournamentID = [
     tournamentName: "Максимальное сальдо выдач по кредитам",
     status: "ACTIVE",
     ratingCategoryName: "Вы в лидерах",
-    tournamentInfo: "Осталось 4 дней",
+    tournamentInfo: "Осталось 39 дней",
     tournamentDurationName: "турнир недели",
     lasting: "01 июля 2023 - 30 сентября 2023",
-    percentageIndicator: 70,
+    percentageIndicator: 65,
     updateTooltip: `Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — ${date}`,
     rating: [],
     totalParticipants: "33 участников",
