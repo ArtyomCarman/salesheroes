@@ -73,19 +73,43 @@ export const tournaments = {
       ratingCategoryName: "Нужно поднажать",
       tournaments: [
         {
+          employee: {
+            profileNumber: "22",
+            photoData: ГайнРоман,
+            firstName: "Роман",
+            lastName: "Гайн",
+            colorCode: {
+              primary: "blue-60",
+              secondary: "blue-30",
+            },
+          },
           tournamentId: "T2",
           tournamentName: "Турнир по условным сделкам",
-          tournamentInfo: "Осталось 4 дня",
-          tournamentDurationName: "ТУРНИР НЕДЕЛИ",
-          progressBarValue: 50,
+          tournamentInfo: "Завершён  •  Подведение итогов",
+          tournamentDurationName: "ТУРНИР 3 НЕДЕЛИ",
+          progressBarValue: 100,
           updateTooltip: `Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — ${date}`,
           reward: undefined,
           rating: [
             {
-              divisionLevelResult: "33 в стране",
+              divisionLevelResult: "из 33 в стране",
+              placeInRating: 4,
             },
             {
-              divisionLevelResult: "3 в ТБ",
+              divisionLevelResult: "из 3 в ТБ",
+              placeInRating: 2,
+              reward: {
+                icon: Reward.silver,
+                tooltip: "Претендент на победу",
+              },
+            },
+            {
+              divisionLevelResult: "из 2 в ГОСБ",
+              placeInRating: 2,
+              reward: {
+                icon: Reward.silver,
+                tooltip: "Претендент на победу",
+              },
             },
           ],
         },
@@ -98,7 +122,7 @@ export const tournaments = {
           tournamentId: "T3",
           tournamentName: "Максимальное сальдо выдач по кредитам",
           tournamentInfo: "Осталось 4 дня",
-          tournamentDurationName: "ТУРНИР НЕДЕЛИ",
+          tournamentDurationName: "ТУРНИР квартала",
           progressBarValue: 50,
           updateTooltip: `Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — ${date}`,
           reward: undefined,
@@ -111,28 +135,6 @@ export const tournaments = {
             },
             {
               divisionLevelResult: "2 в ГОСБ",
-            },
-          ],
-        },
-      ],
-    },
-    {
-      ratingCategoryName: "Подведение итогов",
-      tournaments: [
-        {
-          tournamentId: "T4",
-          tournamentName: "Турнир по условным сделкам",
-          tournamentInfo: "Осталось 0 дней",
-          tournamentDurationName: "ТУРНИР НЕДЕЛИ",
-          progressBarValue: 100,
-          updateTooltip: `Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — ${date}`,
-          reward: undefined,
-          rating: [
-            {
-              divisionLevelResult: "33 в стране",
-            },
-            {
-              divisionLevelResult: "3 в ТБ",
             },
           ],
         },
@@ -246,6 +248,91 @@ export const tournamentID = [
     ],
   },
   {
+    tournamentId: "T2",
+    hasNftMark: true,
+    tournamentName: "Турнир по условным сделкам",
+    status: "ACTIVE",
+    ratingCategoryName: "Вы в лидерах",
+    tournamentInfo: "Осталось 4 дней",
+    tournamentDurationName: "турнир 3 недели",
+    lasting: "31 июля 2023 - 20 августа 2023",
+    percentageIndicator: 70,
+    updateTooltip: `Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — ${date}`,
+    rating: [
+      {
+        divisionLevelName: "Страна",
+        contestants: 33,
+        placeInRating: 4,
+      },
+      {
+        divisionLevelName: "ТБ",
+        contestants: 3,
+        placeInRating: 2,
+        reward: {
+          icon: Reward.silver,
+          tooltip: "Претендент на победу",
+        },
+      },
+      {
+        divisionLevelName: "ГОСБ",
+        contestants: 2,
+        placeInRating: 2,
+        reward: {
+          icon: Reward.silver,
+          tooltip: "Претендент на победу",
+        },
+      },
+    ],
+    totalParticipants: "33 участников",
+    specification: {
+      description:
+          "Том Лонгбоут по праву считается величайшим марафонцем всех времен!\n" +
+          "Бери пример с лучших - закрывай каждую полную неделю турнира минимум 2 условные сделки. Если в какую-либо неделю условие не выполняется - участник выбывает из гонки.\n" +
+          "\n" +
+          "Покажешь результат по сумме УС лучше всех - станешь победителем турнира. Удачи!",
+      features: [
+        {
+          number: 1,
+          feature: "В турнире разыгрывается три комплекта наград",
+        },
+      ],
+    },
+    rewards: [
+      {
+        divisionLevelName: "Страна",
+        rewardRule:
+            "Бейдж получит 1% от числа участников турнира по всей стране",
+        badgeId: "00024",
+        badgeName: "Чемпион страны по условным сделкам",
+        imageId: Badge.ConditionalsChampionFirst,
+        badgeIcon: Badge.ConditionalsChampionFirst,
+        rewardCrystalCount: 30,
+        hasNftMark: true,
+      },
+      {
+        divisionLevelName: "Тербанк",
+        rewardRule: "Бейдж получат 7% от числа участников турнира в вашем ТБ",
+        badgeId: "00025",
+        badgeName: "Чемпион ТБ по условным сделкам",
+        imageId: Badge.ConditionalsChampionSecond,
+        badgeIcon: Badge.ConditionalsChampionSecond,
+        rewardCrystalCount: 15,
+        hasNftMark: false,
+      },
+      {
+        divisionLevelName: "ГОСБ",
+        rewardRule:
+            "Бейдж получат 10% от числа участников турнира в вашем подразделении",
+        badgeId: "00026",
+        badgeName: "Чемпион подразделения по условным сделкам",
+        imageId: Badge.ConditionalsChampionThird,
+        badgeIcon: Badge.ConditionalsChampionThird,
+        rewardCrystalCount: 5,
+        hasNftMark: false,
+      },
+    ],
+  },
+  {
     tournamentId: "T3",
     hasNftMark: true,
     tournamentName: "Максимальное сальдо выдач по кредитам",
@@ -253,7 +340,7 @@ export const tournamentID = [
     ratingCategoryName: "Вы в лидерах",
     tournamentInfo: "Осталось 4 дней",
     tournamentDurationName: "турнир недели",
-    lasting: "17 июля 2023 - 23 июля 2023",
+    lasting: "01 июля 2023 - 30 сентября 2023",
     percentageIndicator: 70,
     updateTooltip: `Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — ${date}`,
     rating: [],
@@ -308,13 +395,13 @@ export const tournamentID = [
 ];
 
 export const archiveTournamentId = {
-  tournamentId: "T3",
+  tournamentId: "T4",
   hasNftMark: true,
   tournamentName: "Марафон по условным сделкам",
   status: "ACTIVE",
   ratingCategoryName: "Вы в лидерах",
-  tournamentDurationName: "Турнир недели",
-  lasting: "03 июля — 09 июля 2023",
+  tournamentDurationName: "Турнир 4 недели",
+  lasting: "03 июня — 30 июня 2023",
   updateTooltip: `Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — ${date}`,
   rating: [
     {
@@ -572,9 +659,9 @@ export const archiveTournaments = {
           secondary: "blue-30",
         },
       },
-      tournamentId: "T3",
+      tournamentId: "T4",
       tournamentName: "Марафон по условным сделкам",
-      tournamentInfo: "Турнир недели завершён • 07.03–07.09.23",
+      tournamentInfo: "Турнир 4 недели завершён • 03.06–30.06.23",
       tournamentDurationName: "",
       reward: Reward.gold,
       rating: [
@@ -709,8 +796,38 @@ export const tournamentShortListT2 = [
   {
     divisionLevelName: "ГОСБ",
     tournamentIndicator: "Ставка",
-    contestants: "0 участников",
-    leaders: [],
+    contestants: "2 участника",
+    leaders: [{
+      profileNumber: "24",
+      lastName: "Шаброва",
+      firstName: "Ирина",
+      photoData: фотоШаброваИрина,
+      colorCode: colorCodeExpert,
+      isMarked: false,
+      indicatorValue: "28",
+      reward: {
+        icon: Reward.gold,
+        tooltip: "Претендент на победу",
+      },
+      placeInRating: 1,
+      terDivisionName: "СРБ",
+    },
+      {
+        profileNumber: "22",
+        lastName: "Гайн",
+        firstName: "Роман",
+        photoData: фотоГайнРоман,
+        colorCode: colorCodeMaster,
+        isMarked: true,
+        indicatorValue: "27",
+        placeInRating: 1,
+        reward: {
+          icon: Reward.gold,
+          tooltip: "Претендент на победу",
+        },
+        terDivisionName: "СРБ",
+        progress: undefined,
+      },],
   },
 ];
 
