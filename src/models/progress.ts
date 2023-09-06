@@ -1,3 +1,5 @@
+import { Reward } from "../interfaces";
+
 export const progress = {
   crystals: {
     crystalsEarned: 120,
@@ -42,3 +44,27 @@ export const progress = {
     },
   ],
 };
+
+export const progressRating = [
+  {
+    divisionLevel: "Страна",
+    updateNumber: "+1",
+    placeInRating: 7,
+    divisionLevelResult: "из 1243",
+    reward: Reward.silver,
+  },
+  {
+    divisionLevel: "Тербанк",
+    updateNumber: "+2",
+    placeInRating: 1,
+    divisionLevelResult: "из 33",
+    reward: Reward.silver,
+  },
+  {
+    divisionLevel: "ГОСБ",
+    updateNumber: null,
+    placeInRating: 1,
+    divisionLevelResult: "из 15",
+    reward: Reward.gold,
+  },
+];

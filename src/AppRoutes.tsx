@@ -9,7 +9,7 @@ import {
   CommunityIdPage,
   CommunityPage,
   ProfileAllAwardsPage,
-  ProfilePage,
+  ProfilePage, ProgressPage,
   RatingListPage,
   TournamentIdArchivePage,
   TournamentsArchivePage,
@@ -28,6 +28,7 @@ export const AppRoutes = () => {
           <Route index element={<ProfilePage />} />
           <Route path="awards" element={<ProfileAllAwardsPage />} />
         </Route>
+        <Route path="progress" element={<ProgressPage />} />
         <Route path="community" element={<CommunityPage />} />
         <Route path="community/:id" element={<CommunityIdPage />} />
         <Route path="rating" element={<RatingListPage />} />

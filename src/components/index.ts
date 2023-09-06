@@ -28,3 +28,4 @@ export * from "./AppTooltip";
 export * from "./AppPopover";
 export * from "./TournamentsArchiveCard";
 export * from "./InstallPWAButton";
+export * from "./LightningInHexagon";

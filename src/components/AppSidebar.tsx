@@ -5,6 +5,7 @@ import { ReactComponent as AboutUsIcon } from "../assets/icons/about-us.svg";
 import { ReactComponent as AwardsIcon } from "../assets/icons/awards.svg";
 import { ReactComponent as CommunityIcon } from "../assets/icons/community.svg";
 import { ReactComponent as TournamentsIcon } from "../assets/icons/tournaments-24.svg";
+import { ReactComponent as ProgressIcon } from "../assets/icons/progress.svg";
 
 export const AppSidebar: FC<Props> = ({ ...otherProps }) => (
   <Flex
@@ -89,6 +90,11 @@ export const AppSidebar: FC<Props> = ({ ...otherProps }) => (
 );
 
 const sidebarModules = [
+  {
+    to: "/progress",
+    icon: ProgressIcon,
+    text: "Прогресс"
+  },
   {
     to: "/community",
     icon: CommunityIcon,

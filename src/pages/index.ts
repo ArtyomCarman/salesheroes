@@ -15,3 +15,4 @@ export * from './TournamentIdArchivePage';
 export * from './AwardTournamentsPage';
 export * from './NonContestantProfilePage';
 export * from './AboutPage';
+export * from './ProgressPage';
