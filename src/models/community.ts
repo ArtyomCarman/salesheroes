@@ -14,15 +14,24 @@ import { profileTopManager } from "./profile";
 import { EmployeeStatus, INewsLeader, INewsList } from "../interfaces";
 import { leaders } from "./tournamen-leaders";
 
+const formatter = new Intl.DateTimeFormat("ru");
+
+function getPreviousDay(days: number) {
+  const today = new Date();
+  const previous = new Date(today.getTime());
+  previous.setDate(today.getDate() - days);
+
+  return formatter.format(previous);
+}
+
 export const news: INewsList = {
   timePeriod: [
     {
       name: "Сегодня",
-
       news: [
         {
           newsId: "news1",
-          date: "27.07.26",
+          date: getPreviousDay(0),
           tournamentId: "",
           newsText: `
           <h3>Игровые механики и соревновательность сотрудников позволила Сберу зарабатать 10 млрд дополнительного дохода в год</h3>
@@ -160,10 +169,110 @@ export const news: INewsList = {
       news: [
         {
           newsId: "news2",
-          date: "26.07.23",
+          date: `${getPreviousDay(1)}`,
           tournamentId: "T3",
           newsText:
-            "<h3>30 менеджеров получили награду. Их КПК вошли в Лигу чемпионов ⁣ ⁣по итогам 1 полугодия 2023. Новых побед и успехов!</h3>",
+            "<h3>30 менеджеров получили награду. Их КПК вошли в Лигу чемпионов ⁣по итогам 1 полугодия 2023. Новых побед и успехов!</h3>",
+          leaders: leaders.slice(0, 31),
+          likes: {
+            isLiked: true,
+            likesAmount: 6,
+            bossNames: [
+              "Попов А.Л",
+              "Ситнов В.В.",
+              "Меламед С.В.",
+              "Чернышова Е.В.",
+              "Егорова Ю.И.",
+            ],
+            people: [
+              {
+                position: "1",
+                list: [
+                  {
+                    profileNumber: "40",
+                    photoData: "",
+                    terDivisionName: "ЦА",
+                    firstName: "Анатолий",
+                    lastName: "Попов",
+                    colorCode: {
+                      primary: "gradient",
+                      secondary: "gradient",
+                    },
+                    employeeStatus: EmployeeStatus.Top_Manager,
+                  },
+                  {
+                    profileNumber: "41",
+                    photoData: "",
+                    terDivisionName: "ЦА",
+                    firstName: "Владимир",
+                    lastName: "Ситнов",
+                    colorCode: {
+                      primary: "gradient",
+                      secondary: "gradient",
+                    },
+                    employeeStatus: EmployeeStatus.Top_Manager,
+                  },
+                  {
+                    profileNumber: "42",
+                    photoData: Меламед,
+                    terDivisionName: "ЦА",
+                    firstName: "Сергей",
+                    lastName: "Меламед",
+                    colorCode: {
+                      primary: "gradient",
+                      secondary: "gradient",
+                    },
+                    employeeStatus: EmployeeStatus.Top_Manager,
+                  },
+                  {
+                    profileNumber: "43",
+                    photoData: ЧернышоваЕлена,
+                    terDivisionName: "ЦА",
+                    firstName: "Елена",
+                    lastName: "Чернышова",
+                    colorCode: {
+                      primary: "gradient",
+                      secondary: "gradient",
+                    },
+                    employeeStatus: EmployeeStatus.Top_Manager,
+                  },
+                  {
+                    profileNumber: "11",
+                    isMarked: false,
+                    firstName: "Ярослав",
+                    lastName: "Митосев",
+                    photoData: "",
+                    terDivisionName: "МБ",
+                    colorCode: {
+                      primary: "orange-60",
+                      secondary: "orange-30",
+                    },
+                    employeeStatus: EmployeeStatus.Contestant,
+                  },
+                  {
+                    profileNumber: "31",
+                    isMarked: false,
+                    firstName: "Ольга",
+                    lastName: "Шебанова",
+                    photoData: ШебановаОльга,
+                    terDivisionName: "ЮЗБ",
+                    colorCode: {
+                      primary: "light-green-30",
+                      secondary: "light-green-20",
+                    },
+                    employeeStatus: EmployeeStatus.Contestant,
+                  },
+                ],
+              },
+            ],
+          },
+        },
+        {
+          newsId: "news3",
+          date: `${getPreviousDay(1)}`,
+          tournamentId: "T3",
+          newsText:
+            "<h3>Ирина Шаброва и еще 32 участника стали победителями турнира “Марафон по условным сделкам”. Они показали лучший результат в стране</h3>",
           leaders: leaders.slice(0, 31),
           likes: {
             isLiked: true,
@@ -261,14 +370,126 @@ export const news: INewsList = {
       ],
     },
     {
-      name: "Три недели назад",
+      name: "На прошлой неделе",
       news: [
         {
-          newsId: "news3",
-          date: "06.07.23",
+          newsId: "news4",
+          date: getPreviousDay(7),
           tournamentId: "T3",
           newsText:
             "<h3>Новое достижение! Роман и еще 32 участника заработали для банка по 3 млн руб. от сделок с индийскими компаниями. Поздравляем ребят с крутым достижением! Дополнительно каждому выпущена награда в формате <a style='border-bottom: 1px dashed #fff' href='https://dfa.sber.ru/nft/tokens/view/2cDe52F4H3ixbxXeknmDWiEkopFNYV6WQ8oT1aTPutDAjWNJQGVxw8mKsiifqMALhF28vUqFHkxSHoejuiAHZd6iLef8D6u' target='_blank'>NFT на платформе ЦФА Сбера.</a></h3>",
+          leaders,
+          likes: {
+            isLiked: true,
+            likesAmount: 7,
+            bossNames: [
+              "Попов А.Л",
+              "Ситнов В.В.",
+              "Меламед С.В.",
+              "Чернышова Е.В.",
+              "Егорова Ю.И.",
+            ],
+            people: [
+              {
+                position: "1",
+                list: [
+                  {
+                    profileNumber: "40",
+                    photoData: "",
+                    terDivisionName: "ЦА",
+                    firstName: "Анатолий",
+                    lastName: "Попов",
+                    colorCode: {
+                      primary: "gradient",
+                      secondary: "gradient",
+                    },
+                    employeeStatus: EmployeeStatus.Top_Manager,
+                  },
+                  {
+                    profileNumber: "41",
+                    photoData: "",
+                    terDivisionName: "ЦА",
+                    firstName: "Владимир",
+                    lastName: "Ситнов",
+                    colorCode: {
+                      primary: "gradient",
+                      secondary: "gradient",
+                    },
+                    employeeStatus: EmployeeStatus.Top_Manager,
+                  },
+                  {
+                    profileNumber: "42",
+                    photoData: Меламед,
+                    terDivisionName: "ЦА",
+                    firstName: "Сергей",
+                    lastName: "Меламед",
+                    colorCode: {
+                      primary: "gradient",
+                      secondary: "gradient",
+                    },
+                    employeeStatus: EmployeeStatus.Top_Manager,
+                  },
+                  {
+                    profileNumber: "43",
+                    photoData: ЧернышоваЕлена,
+                    terDivisionName: "ЦА",
+                    firstName: "Елена",
+                    lastName: "Чернышова",
+                    colorCode: {
+                      primary: "gradient",
+                      secondary: "gradient",
+                    },
+                    employeeStatus: EmployeeStatus.Top_Manager,
+                  },
+                  {
+                    profileNumber: "44",
+                    photoData: Юлианна,
+                    terDivisionName: "ЦА",
+                    firstName: "Юлианна",
+                    lastName: "Егорова",
+                    colorCode: {
+                      primary: "gradient",
+                      secondary: "gradient",
+                    },
+                    employeeStatus: EmployeeStatus.Top_Manager,
+                  },
+                  {
+                    profileNumber: "25",
+                    isMarked: false,
+                    firstName: "Алтын",
+                    lastName: "Серкбаева",
+                    photoData: СеркбаеваАлтын,
+                    terDivisionName: "УБ",
+                    colorCode: {
+                      primary: "blue-60",
+                      secondary: "blue-30",
+                    },
+                    employeeStatus: EmployeeStatus.Contestant,
+                  },
+                  {
+                    profileNumber: "11",
+                    isMarked: false,
+                    firstName: "Ярослав",
+                    lastName: "Митосев",
+                    photoData: "",
+                    terDivisionName: "МБ",
+                    colorCode: {
+                      primary: "orange-60",
+                      secondary: "orange-30",
+                    },
+                    employeeStatus: EmployeeStatus.Contestant,
+                  },
+                ],
+              },
+            ],
+          },
+        },
+        {
+          newsId: "news5",
+          date: getPreviousDay(10),
+          tournamentId: "T3",
+          newsText:
+            "<h3>Ростислав сделал в прошедшем месяце тройную сумму комиссии по сделкам с индийскими компаниями, чем месяцем ранее. Взята высокая планка!</h3>",
           leaders,
           likes: {
             isLiked: true,
@@ -381,7 +602,7 @@ export const news: INewsList = {
       name: "Более ранние",
       news: [
         {
-          newsId: "news4",
+          newsId: "news6",
           date: "10.04.23",
           tournamentId: "",
           newsText:

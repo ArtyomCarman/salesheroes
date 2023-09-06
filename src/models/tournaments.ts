@@ -20,6 +20,15 @@ d.setDate(d.getDate() - 1);
 
 const date = formatter.format(d);
 
+const date1 = new Date("09/30/2023"); // 30 сентября
+const date2 = new Date();
+
+const difference = date1.getTime() - date2.getTime();
+
+const days = Math.ceil(difference / (1000 * 3600 * 24));
+
+const daysLeft = days + 1;
+
 export const tournaments = {
   isArchiveButtonNeeds: true,
   ratingCategories: [
@@ -39,7 +48,7 @@ export const tournaments = {
           },
           tournamentId: "T1",
           tournamentName: "Марафон по условным сделкам",
-          tournamentInfo: "Осталось 26 дней",
+          tournamentInfo: `Осталось ${daysLeft} дней`,
           tournamentDurationName: "ТУРНИР МЕСЯЦА",
           progressBarValue: 15,
           updateTooltip: `Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — ${date}`,
@@ -133,9 +142,9 @@ export const tournamentID = [
     tournamentName: "Марафон по условным сделкам",
     status: "ACTIVE",
     ratingCategoryName: "Вы в лидерах",
-    tournamentInfo: "Осталось 26 дней",
+    tournamentInfo: `Осталось ${daysLeft} дней`,
     tournamentDurationName: "турнир месяца",
-    lasting: "21 августа 2023 - 17 сентября 2023",
+    lasting: "1 сентября 2023 - 30 сентября 2023",
     percentageIndicator: 15,
     updateTooltip: `Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — ${date}`,
     rating: [
@@ -163,7 +172,7 @@ export const tournamentID = [
         },
       },
     ],
-    totalParticipants: "33 участников",
+    totalParticipants: "33 участника",
     specification: {
       description:
         "Том Лонгбоут по праву считается величайшим марафонцем всех времен!\n" +
@@ -303,8 +312,8 @@ export const tournamentID = [
     tournamentName: "Максимальное сальдо выдач по кредитам",
     status: "ACTIVE",
     ratingCategoryName: "Вы в лидерах",
-    tournamentInfo: "Осталось 39 дней",
-    tournamentDurationName: "турнир недели",
+    tournamentInfo: `Осталось ${daysLeft} дней`,
+    tournamentDurationName: "турнир квартала",
     lasting: "01 июля 2023 - 30 сентября 2023",
     percentageIndicator: 65,
     updateTooltip: `Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — ${date}`,
