@@ -15,7 +15,6 @@ const formatter = new Intl.DateTimeFormat("ru", {
   day: "numeric",
 });
 
-
 const d = new Date();
 d.setDate(d.getDate() - 1);
 
@@ -74,21 +73,11 @@ export const tournaments = {
       ratingCategoryName: "Нужно поднажать",
       tournaments: [
         {
-          employee: {
-            profileNumber: "22",
-            photoData: ГайнРоман,
-            firstName: "Роман",
-            lastName: "Гайн",
-            colorCode: {
-              primary: "blue-60",
-              secondary: "blue-30",
-            },
-          },
-          tournamentId: "T2",
-          tournamentName: "Турнир по условным сделкам",
-          tournamentInfo: "Завершён  •  Подведение итогов",
-          tournamentDurationName: "ТУРНИР 3 НЕДЕЛИ",
-          progressBarValue: 100,
+          tournamentId: "T3",
+          tournamentName: "Максимальное сальдо выдач по кредитам",
+          tournamentInfo: "Осталось 39 дней",
+          tournamentDurationName: "ТУРНИР квартала",
+          progressBarValue: 65,
           updateTooltip: `Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — ${date}`,
           reward: undefined,
           rating: [
@@ -111,31 +100,6 @@ export const tournaments = {
                 icon: Reward.silver,
                 tooltip: "Претендент на победу",
               },
-            },
-          ],
-        },
-      ],
-    },
-    {
-      ratingCategoryName: "Успейте поучаствовать",
-      tournaments: [
-        {
-          tournamentId: "T3",
-          tournamentName: "Максимальное сальдо выдач по кредитам",
-          tournamentInfo: "Осталось 39 дней",
-          tournamentDurationName: "ТУРНИР квартала",
-          progressBarValue: 65,
-          updateTooltip: `Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — ${date}`,
-          reward: undefined,
-          rating: [
-            {
-              divisionLevelResult: "33 в стране",
-            },
-            {
-              divisionLevelResult: "3 в ТБ",
-            },
-            {
-              divisionLevelResult: "2 в ГОСБ",
             },
           ],
         },
@@ -287,10 +251,10 @@ export const tournamentID = [
     totalParticipants: "33 участников",
     specification: {
       description:
-          "Том Лонгбоут по праву считается величайшим марафонцем всех времен!\n" +
-          "Бери пример с лучших - закрывай каждую полную неделю турнира минимум 2 условные сделки. Если в какую-либо неделю условие не выполняется - участник выбывает из гонки.\n" +
-          "\n" +
-          "Покажешь результат по сумме УС лучше всех - станешь победителем турнира. Удачи!",
+        "Том Лонгбоут по праву считается величайшим марафонцем всех времен!\n" +
+        "Бери пример с лучших - закрывай каждую полную неделю турнира минимум 2 условные сделки. Если в какую-либо неделю условие не выполняется - участник выбывает из гонки.\n" +
+        "\n" +
+        "Покажешь результат по сумме УС лучше всех - станешь победителем турнира. Удачи!",
       features: [
         {
           number: 1,
@@ -302,7 +266,7 @@ export const tournamentID = [
       {
         divisionLevelName: "Страна",
         rewardRule:
-            "Бейдж получит 1% от числа участников турнира по всей стране",
+          "Бейдж получит 1% от числа участников турнира по всей стране",
         badgeId: "00024",
         badgeName: "Чемпион страны по условным сделкам",
         imageId: Badge.ConditionalsChampionFirst,
@@ -323,7 +287,7 @@ export const tournamentID = [
       {
         divisionLevelName: "ГОСБ",
         rewardRule:
-            "Бейдж получат 10% от числа участников турнира в вашем подразделении",
+          "Бейдж получат 10% от числа участников турнира в вашем подразделении",
         badgeId: "00026",
         badgeName: "Чемпион подразделения по условным сделкам",
         imageId: Badge.ConditionalsChampionThird,
@@ -798,21 +762,22 @@ export const tournamentShortListT2 = [
     divisionLevelName: "ГОСБ",
     tournamentIndicator: "Ставка",
     contestants: "2 участника",
-    leaders: [{
-      profileNumber: "24",
-      lastName: "Шаброва",
-      firstName: "Ирина",
-      photoData: фотоШаброваИрина,
-      colorCode: colorCodeExpert,
-      isMarked: false,
-      indicatorValue: "28",
-      reward: {
-        icon: Reward.gold,
-        tooltip: "Претендент на победу",
+    leaders: [
+      {
+        profileNumber: "24",
+        lastName: "Шаброва",
+        firstName: "Ирина",
+        photoData: фотоШаброваИрина,
+        colorCode: colorCodeExpert,
+        isMarked: false,
+        indicatorValue: "28",
+        reward: {
+          icon: Reward.gold,
+          tooltip: "Претендент на победу",
+        },
+        placeInRating: 1,
+        terDivisionName: "СРБ",
       },
-      placeInRating: 1,
-      terDivisionName: "СРБ",
-    },
       {
         profileNumber: "22",
         lastName: "Гайн",
@@ -828,7 +793,8 @@ export const tournamentShortListT2 = [
         },
         terDivisionName: "СРБ",
         progress: undefined,
-      },],
+      },
+    ],
   },
 ];
 
