@@ -48,6 +48,7 @@ const shopCards = [
     title: "Выходной день",
     price: 560,
     icon: 1,
+    hasBg: true,
   },
   {
     title: "Абонемент на тренинг «Счастье и искусство жить»",

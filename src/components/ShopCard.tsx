@@ -10,12 +10,16 @@ export const ShopCard: FC<Props> = ({ card, canBuy }) => {
       borderRadius="16px"
       overflow="hidden"
       bgColor="#1A1C22"
-      bg={`url(${ShopTreePng})`}
+      bg={card.hasBg ? `url(${ShopTreePng})` : undefined}
       bgSize="cover"
     >
       <Box
         p="24px"
-        bg="linear-gradient(0deg, rgba(91, 67, 6, 0.54) 0%, rgba(0, 0, 0, 0.00) 74.47%), linear-gradient(0deg, rgba(0, 0, 0, 0.29) 0%, rgba(0, 0, 0, 0.29) 100%), linear-gradient(270deg, rgba(104, 11, 78, 0.64) 0%, rgba(6, 14, 84, 0.72) 78.65%)"
+        bg={
+          card.hasBg
+            ? "linear-gradient(0deg, rgba(91, 67, 6, 0.54) 0%, rgba(0, 0, 0, 0.00) 74.47%), linear-gradient(0deg, rgba(0, 0, 0, 0.29) 0%, rgba(0, 0, 0, 0.29) 100%), linear-gradient(270deg, rgba(104, 11, 78, 0.64) 0%, rgba(6, 14, 84, 0.72) 78.65%)"
+            : undefined
+        }
       >
         <Text mb="16px">{card.title}</Text>
         <Grid gap="24px">
@@ -41,6 +45,7 @@ interface Props {
     title: string;
     price: number;
     icon: number;
+    hasBg?: boolean;
   };
   canBuy?: boolean;
 }
