@@ -21,7 +21,9 @@ export const ShopPage = () => {
             label: "Доступные товары",
             component: (
               <Grid gap="16px">
-                <ShopCard />
+                {shopCards.map((card) => (
+                  <ShopCard card={card} canBuy />
+                ))}
               </Grid>
             ),
           },
@@ -29,7 +31,9 @@ export const ShopPage = () => {
             label: "Мои заказы",
             component: (
               <Grid gap="16px">
-                <ShopCard />
+                {shopCards.map((card) => (
+                  <ShopCard card={card} />
+                ))}
               </Grid>
             ),
           },
@@ -39,10 +43,25 @@ export const ShopPage = () => {
   );
 };
 
-// const shopCards = [
-//   {
-//     title: "Выходной день",
-//     price: 500,
-//     icon: 1,
-//   },
-// ];
+const shopCards = [
+  {
+    title: "Выходной день",
+    price: 560,
+    icon: 1,
+  },
+  {
+    title: "Абонемент на тренинг «Счастье и искусство жить»",
+    price: 500,
+    icon: 1,
+  },
+  {
+    title: "Обед с Председателем",
+    price: 430,
+    icon: 1,
+  },
+  {
+    title: "Машина из автопарка Сбера на неделю",
+    price: 250,
+    icon: 1,
+  },
+];
