@@ -25,7 +25,7 @@ export const ShopCard: FC<Props> = ({ card, canBuy }) => {
         }
       >
         <Text mb="16px">{card.title}</Text>
-        <Grid templateColumns="1fr auto" gap="8px" alignItems="end">
+        <Grid templateColumns="1fr auto" gap="8px" alignItems="start">
           <Grid gap="24px">
             <Flex gap="8px">
               <Text>{card.price}</Text>
