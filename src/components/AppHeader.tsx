@@ -7,7 +7,7 @@ import { ProfileAvatar } from "./ProfileAvatar";
 import { ReactComponent as SalesHerosIcon } from "../assets/icons/sales-heros-logo.svg";
 import { ReactComponent as ArrowThickLeftIcon } from "../assets/icons/arrow-thick-left.svg";
 import { profileContestant } from "../models";
-import { InstallPWAButton } from "./InstallPWAButton";
+// import { InstallPWAButton } from "./InstallPWAButton";
 
 export const AppHeader: FC = () => {
   const navigate = useNavigate();
@@ -16,8 +16,9 @@ export const AppHeader: FC = () => {
 
   const showBackButton = useMemo(
     () =>
-      !/\/(awards|community|tournaments|about)$/gi.test(pathname) &&
-      !state?.hideBackButton,
+      !/\/(awards|community|tournaments|about|shop|progress)$/gi.test(
+        pathname
+      ) && !state?.hideBackButton,
     [pathname, state]
   );
 
