@@ -1,8 +1,11 @@
 import { Box, Flex, Text } from "@chakra-ui/react";
 import { LightningInHexagon } from "../components";
 import { ReactComponent as ArrowRight } from "../assets/icons/arrow-right.svg";
+import { useNavigate } from "react-router-dom";
 
 export const ProgressTournamentContainer = () => {
+  const navigate = useNavigate();
+  const goToTournament = () => navigate(`/tournaments/T1`);
   return (
     <Flex
       direction="column"
@@ -41,10 +44,11 @@ export const ProgressTournamentContainer = () => {
         _hover={{
           backgroundColor: "rgba(87, 92, 112, 0.5)",
         }}
+        onClick={goToTournament}
       >
         <Box>
-          <Text variant="semibold">Максимальный прирост условных сделок</Text>
-          <Text color="rgba(255, 255, 255, 0.6)">До окончания 2 дня</Text>
+          <Text variant="semibold">Марафон по условным сделкам</Text>
+          <Text color="rgba(255, 255, 255, 0.6)">До окончания 24 дня</Text>
         </Box>
         <ArrowRight width="24px" height="24px" />
       </Flex>

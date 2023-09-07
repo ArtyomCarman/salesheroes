@@ -1,6 +1,6 @@
 import { IProgressAwards } from "../interfaces";
 import { FC } from "react";
-import { Flex, Text } from "@chakra-ui/react";
+import { Box, Flex, Text } from "@chakra-ui/react";
 import { BadgeIcon } from "../components";
 import { ReactComponent as DiamondIcon } from "../assets/icons/diamond.svg";
 
@@ -54,13 +54,53 @@ export const ProgressAwardContainer: FC<Props> = ({ award }) => {
           </Flex>
         )}
       </Flex>
-      <Text
-        size="sub20/28"
-        textAlign="center"
-        color="rgba(255, 255, 255, 0.8)"
-        zIndex="1"
-        dangerouslySetInnerHTML={{ __html: award.text }}
-      />
+      <Flex direction="column" gap="12px" alignItems="center">
+        <Text
+          size="sub20/28"
+          textAlign="center"
+          color="rgba(255, 255, 255, 0.8)"
+          zIndex="1"
+          dangerouslySetInnerHTML={{ __html: award.text }}
+        />
+        {award.progressBarValue && (
+          <Flex position="relative" alignItems="center">
+            <Box
+              as="progress"
+              value={award.progressBarValue}
+              max={100}
+              height="12px"
+              width="230px"
+              sx={{
+                "&::-webkit-progress-bar": {
+                  borderRadius: "100px",
+                  bgColor: "rgba(255, 255, 255, 0.2)",
+                },
+                "&::-webkit-progress-value": {
+                  borderRadius: "100px",
+                  background: "var(--blue-30)",
+                },
+              }}
+            />
+            <Flex
+              position="absolute"
+              padding="2px 8px"
+              gap="4px"
+              border="2px solid rgb(29, 37, 50)"
+              borderRadius="100px"
+              left="60%"
+              background="var(--blue-30)"
+            >
+              <Text
+                size="caption12/16"
+                variant="semibold"
+                color="rgb(29, 37, 50)"
+              >
+                +27 090
+              </Text>
+            </Flex>
+          </Flex>
+        )}
+      </Flex>
       <Text
         size="caption14/24"
         color="rgba(255, 255, 255, 0.6)"

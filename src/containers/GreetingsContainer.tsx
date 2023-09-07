@@ -14,8 +14,13 @@ export const GreetingsContainer = () => {
       <Text size="h24/32" variant="semibold">
         Привет, Роман!
       </Text>
-      <Text size="sub20/28" color="rgba(255, 255, 255, 0.6)" textAlign="center">
-        Это ваш прогресс с 4 августа по 10 сентября
+      <Text
+        size="sub20/28"
+        color="rgba(255, 255, 255, 0.6)"
+        textAlign="center"
+        whiteSpace="pre-wrap"
+      >
+        Это ваш прогресс{"\n"} с 4 августа по 10 сентября
       </Text>
     </Flex>
   );

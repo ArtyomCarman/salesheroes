@@ -1,8 +1,15 @@
 import { Box, Flex, Text, SimpleGrid } from "@chakra-ui/react";
 import { progressRating } from "../models";
-import { Reward } from "../interfaces";
+import { DivisionLevel, Reward, TimePeriod } from "../interfaces";
+import { useNavigate } from "react-router-dom";
 
 export const ProgressRatingContainer = () => {
+  const navigate = useNavigate();
+  const goToRating = (divisionLevel: DivisionLevel) => () => {
+    navigate(
+      `/rating?divisionLevel=${divisionLevel}&timePeriod=${TimePeriod["За всё время"]}`,
+    );
+  };
   return (
     <Flex
       direction="column"
@@ -48,6 +55,7 @@ export const ProgressRatingContainer = () => {
             cursor="pointer"
             _hover={{ bgColor: "rgba(87, 92, 112, 0.5)" }}
             _active={{ bgColor: "rgba(87, 92, 112, 0.5)" }}
+            onClick={goToRating(item.divisionLevelCode)}
           >
             <Flex justifyContent="space-between">
               <Text variant="semibold">{item.divisionLevel}</Text>

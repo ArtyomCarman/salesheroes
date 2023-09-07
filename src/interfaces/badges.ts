@@ -140,6 +140,7 @@ export interface IProgressAwards {
   tournament?: {
     tournamentName: string;
     tournamentDate: string;
+    tournamentId: string;
   };
   progressBarValue?: number;
   progressBarCount?: string;

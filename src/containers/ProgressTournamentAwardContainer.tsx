@@ -5,11 +5,16 @@ import { BadgeIcon } from "../components";
 import { ReactComponent as DiamondIcon } from "../assets/icons/diamond.svg";
 import { ReactComponent as ArrowRight } from "../assets/icons/arrow-right.svg";
 import Confetti from "../assets/images/confetti.png";
+import { useNavigate } from "react-router-dom";
 
 interface Props {
   award: IProgressAwards;
 }
 export const ProgressTournamentAwardContainer: FC<Props> = ({ award }) => {
+  const navigate = useNavigate();
+  const goToTournament = (id: string) => () => {
+    navigate(`/tournaments/${id}`);
+  };
   return (
     <Flex
       direction="column"
@@ -85,6 +90,7 @@ export const ProgressTournamentAwardContainer: FC<Props> = ({ award }) => {
           _hover={{
             backgroundColor: "rgba(87, 92, 112, 0.5)",
           }}
+          onClick={goToTournament(award.tournament.tournamentId)}
         >
           <Box>
             <Text variant="semibold">{award.tournament.tournamentName}</Text>

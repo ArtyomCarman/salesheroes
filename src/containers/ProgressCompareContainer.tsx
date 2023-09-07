@@ -14,8 +14,9 @@ export const ProgressCompareContainer = () => {
         variant="semibold"
         textAlign="center"
         color="rgba(255, 255, 255, 0.6)"
+        whiteSpace="pre-wrap"
       >
-        Ваш прогресс выше, чем у 70% участников
+        Ваш прогресс выше,{"\n"} чем у 70% участников
       </Text>
       <Text size="sub20/28" color="rgba(255, 255, 255, 0.6)" textAlign="center">
         Так держать!

@@ -1,4 +1,4 @@
-import { Badge, Reward } from "../interfaces";
+import { Badge, DivisionLevel, Reward } from "../interfaces";
 
 export const progress = {
   crystals: {
@@ -48,6 +48,7 @@ export const progress = {
 export const progressRating = [
   {
     divisionLevel: "Страна",
+    divisionLevelCode: DivisionLevel.Страна,
     updateNumber: "+1",
     placeInRating: 7,
     divisionLevelResult: "из 1243",
@@ -55,6 +56,7 @@ export const progressRating = [
   },
   {
     divisionLevel: "Тербанк",
+    divisionLevelCode: DivisionLevel.Тербанк,
     updateNumber: "+2",
     placeInRating: 1,
     divisionLevelResult: "из 33",
@@ -62,6 +64,7 @@ export const progressRating = [
   },
   {
     divisionLevel: "ГОСБ",
+    divisionLevelCode: DivisionLevel.ГОСБ,
     updateNumber: null,
     placeInRating: 1,
     divisionLevelResult: "из 15",
@@ -82,8 +85,9 @@ export const progressTournamentAwards = [
     crystalEarned: 50,
     text: "<span style='font-weight: 600'>Вы победили</span> в турнире среди 15 участников в вашем подразделении",
     tournament: {
-      tournamentName: "Максимальный прирост условных сделок",
-      tournamentDate: "Турнир завершён",
+      tournamentName: "Марафон по условным сделкам",
+      tournamentDate: "Турнир завершён • 01.08 – 30.08.23",
+      tournamentId: "archive/T4",
     },
   },
   {
@@ -97,10 +101,11 @@ export const progressTournamentAwards = [
       },
     },
     crystalEarned: 80,
-    text: "<span style='font-weight: 600'>Вы победили</span> турнире среди 1250 участников по стране и выиграли NFT-награду",
+    text: "<span style='font-weight: 600'>Вы победили</span> турнире среди 1 250 участников по стране и выиграли <span style='color: rgba(182, 117, 175, 1); font-weight: 600'>NFT-награду</span>",
     tournament: {
-      tournamentName: "Максимальный прирост условных сделок",
-      tournamentDate: "Турнир завершён",
+      tournamentName: "Марафон по условным сделкам",
+      tournamentDate: "Турнир завершён  •  01.08 – 30.08.23",
+      tournamentId: "archive/T4",
     },
   },
 ];
@@ -130,8 +135,8 @@ export const progressAwards = [
       },
     },
     crystalEarned: 20,
-    text: "50 тыс. руб. комиссии по сделкам с Индией",
-    progressBarValue: 60,
+    text: "200 тыс. руб. комиссии по сделкам с Индией",
+    progressBarValue: 75,
     progressBarCount: "+27 090",
     leftToEarnText:
       "Осталось заработать комиссии на 53 820 тыс. руб. и награда ваша",
