@@ -93,7 +93,7 @@ const sidebarModules = [
   {
     to: "/progress",
     icon: ProgressIcon,
-    text: "Прогресс"
+    text: "Прогресс",
   },
   {
     to: "/community",
@@ -113,7 +113,7 @@ const sidebarModules = [
   {
     to: "/shop",
     icon: AboutUsIcon,
-    text: "Магазиг",
+    text: "Магазин",
   },
   {
     to: "/about",
