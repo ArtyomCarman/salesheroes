@@ -52,3 +52,7 @@ export * from "./GreetingsContainer";
 export * from "./ProgressNewLevelContainer";
 export * from "./ProgressRatingContainer";
 export * from "./ProgressTournamentContainer";
+export * from "./ProgressTournamentAwardContainer";
+export * from "./ProgressCrystalEarnedContainer";
+export * from "./ProgressAwardContainer";
+export * from "./ProgressCompareContainer";

@@ -8,12 +8,13 @@ export const GreetingsContainer = () => {
       gap="8px"
       alignItems="center"
       justifyContent="center"
+      marginBottom="16px"
     >
       <HelloIcon width="112px" height="112px" />
       <Text size="h24/32" variant="semibold">
         Привет, Роман!
       </Text>
-      <Text size="sub20/28" color="rgba(255, 255, 255, 0.6)">
+      <Text size="sub20/28" color="rgba(255, 255, 255, 0.6)" textAlign="center">
         Это ваш прогресс с 4 августа по 10 сентября
       </Text>
     </Flex>
