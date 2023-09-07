@@ -1,5 +1,5 @@
 import { IProgressAwards } from "../interfaces";
-import { FC } from "react";
+import { FC, MouseEvent } from "react";
 import { Box, Flex, Image, Text } from "@chakra-ui/react";
 import { BadgeIcon } from "../components";
 import { ReactComponent as DiamondIcon } from "../assets/icons/diamond.svg";
@@ -12,8 +12,15 @@ interface Props {
 }
 export const ProgressTournamentAwardContainer: FC<Props> = ({ award }) => {
   const navigate = useNavigate();
-  const goToTournament = (id: string) => () => {
+  const goToTournament = (
+    event: MouseEvent<HTMLDivElement>,
+    id: string | undefined,
+  ) => {
+    event.stopPropagation();
     navigate(`/tournaments/${id}`);
+  };
+  const goToBadge = (id: string) => () => {
+    navigate(`/awards/${id}`);
   };
   return (
     <Flex
@@ -26,6 +33,8 @@ export const ProgressTournamentAwardContainer: FC<Props> = ({ award }) => {
       backgroundColor="rgba(87, 92, 112, 0.3)"
       borderRadius="16px"
       padding="24px"
+      cursor="pointer"
+      onClick={goToBadge(award.award.awardId)}
       _before={{
         content: "''",
         position: "absolute",
@@ -90,7 +99,9 @@ export const ProgressTournamentAwardContainer: FC<Props> = ({ award }) => {
           _hover={{
             backgroundColor: "rgba(87, 92, 112, 0.5)",
           }}
-          onClick={goToTournament(award.tournament.tournamentId)}
+          onClick={(event) =>
+            goToTournament(event, award?.tournament?.tournamentId)
+          }
         >
           <Box>
             <Text variant="semibold">{award.tournament.tournamentName}</Text>

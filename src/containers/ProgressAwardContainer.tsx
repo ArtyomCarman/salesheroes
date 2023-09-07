@@ -3,11 +3,16 @@ import { FC } from "react";
 import { Box, Flex, Text } from "@chakra-ui/react";
 import { BadgeIcon } from "../components";
 import { ReactComponent as DiamondIcon } from "../assets/icons/diamond.svg";
+import { useNavigate } from "react-router-dom";
 
 interface Props {
   award: IProgressAwards;
 }
 export const ProgressAwardContainer: FC<Props> = ({ award }) => {
+  const navigate = useNavigate();
+  const goToBadge = (id: string) => () => {
+    navigate(`/awards/${id}`);
+  };
   return (
     <Flex
       direction="column"
@@ -19,6 +24,7 @@ export const ProgressAwardContainer: FC<Props> = ({ award }) => {
       backgroundColor="rgba(87, 92, 112, 0.3)"
       borderRadius="16px"
       padding="24px"
+      cursor="pointer"
       _before={{
         content: "''",
         position: "absolute",
@@ -29,6 +35,7 @@ export const ProgressAwardContainer: FC<Props> = ({ award }) => {
         background: `radial-gradient(66.32% 66.32% at 50% 10%, ${award.award.colorCode.primary} 30.03%, ${award.award.colorCode.secondary} 100%)`,
         borderRadius: "50%",
       }}
+      onClick={goToBadge(award.award.awardId)}
     >
       <Text size="sub20/28" color="rgba(255, 255, 255, 0.8)" zIndex="1">
         {award?.infoText}

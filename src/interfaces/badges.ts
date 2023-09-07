@@ -134,6 +134,7 @@ export interface IProgressAwards {
       secondary: string;
       tertiary?: string;
     };
+    awardId: string;
   };
   crystalEarned: number;
   text: string;
