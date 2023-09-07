@@ -16,8 +16,8 @@ export const AppSidebar: FC<Props> = ({ ...otherProps }) => (
     }}
     justifyContent="space-evenly"
     display={{
-      base: 'grid',
-      lg: 'flex'
+      base: "grid",
+      lg: "flex",
     }}
     gridAutoFlow="column"
     gridAutoColumns="minmax(0, 1fr)"
@@ -55,7 +55,7 @@ export const AppSidebar: FC<Props> = ({ ...otherProps }) => (
             svg: {
               fill: "#FFBF3E",
             },
-          }
+          },
         }}
         _active={{
           base: {
@@ -65,7 +65,7 @@ export const AppSidebar: FC<Props> = ({ ...otherProps }) => (
             svg: {
               fill: "#FFBF3E",
             },
-          }
+          },
         }}
         _activeLink={{
           "&.active": {
@@ -109,6 +109,11 @@ const sidebarModules = [
     to: "/awards",
     icon: AwardsIcon,
     text: "Награды",
+  },
+  {
+    to: "/shop",
+    icon: AboutUsIcon,
+    text: "Магазиг",
   },
   {
     to: "/about",

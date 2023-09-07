@@ -2,6 +2,7 @@ import React from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 import {
   AboutPage,
+  ShopPage,
   AwardsIdPage,
   AwardsListPage,
   AwardsPage,
@@ -23,7 +24,7 @@ export const AppRoutes = () => {
   return (
     <Routes>
       <Route path="/" element={<AppTemplate />}>
-        <Route index element={<Navigate replace to="awards" />} />
+        <Route index element={<Navigate replace to="progress" />} />
         <Route path="profile/:profileNumber">
           <Route index element={<ProfilePage />} />
           <Route path="awards" element={<ProfileAllAwardsPage />} />
@@ -52,6 +53,7 @@ export const AppRoutes = () => {
           <Route path=":badgeId" element={<AwardsIdPage />} />
           <Route path=":badgeId/list" element={<AwardsListPage />} />
         </Route>
+        <Route path="shop" element={<ShopPage />} />
         <Route path="about" element={<AboutPage />} />
       </Route>
       <Route path="*" element={<Navigate replace to="/" />} />
