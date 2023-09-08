@@ -54,7 +54,7 @@ const tabs = [
     component: (
       <Grid gap="16px">
         {shopCards.map((card) => (
-          <ShopCard card={card} canBuy />
+          <ShopCard key={card.title} card={card} canBuy />
         ))}
       </Grid>
     ),
@@ -64,7 +64,7 @@ const tabs = [
     component: (
       <Grid gap="16px">
         {shopCards.slice(3, 4).map((card) => (
-          <ShopCard card={card} />
+          <ShopCard key={card.title} card={card} />
         ))}
       </Grid>
     ),

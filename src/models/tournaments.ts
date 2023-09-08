@@ -466,74 +466,30 @@ export const tournamentShortList = [
   {
     divisionLevelName: "Тербанк",
     tournamentIndicator: "Ставка",
-    contestants: "3 участника",
-    leaders: [
-      {
-        profileNumber: "24",
-        lastName: "Шаброва",
-        firstName: "Ирина",
-        photoData: фотоШаброваИрина,
-        colorCode: colorCodeExpert,
-        isMarked: false,
-        indicatorValue: "28",
-        reward: {
-          icon: Reward.gold,
-          tooltip: "Претендент на победу",
-        },
-        placeInRating: 1,
-        terDivisionName: "СРБ",
-      },
-      {
-        profileNumber: "22",
-        lastName: "Гайн",
-        firstName: "Роман",
-        photoData: фотоГайнРоман,
-        colorCode: colorCodeMaster,
-        isMarked: true,
-        indicatorValue: "27",
-        placeInRating: 2,
-        reward: {
-          icon: Reward.silver,
-        },
-        terDivisionName: "СРБ",
-      },
-      {
-        profileNumber: "23",
-        lastName: "Тихомирова",
-        firstName: "Мария",
-        photoData: фотоТихомироваМария,
-        colorCode: colorCodeSpecialist,
-        isMarked: false,
-        indicatorValue: "26",
-        reward: {
-          icon: Reward.silver,
-        },
-        placeInRating: 3,
-        terDivisionName: "СРБ",
-      },
-    ],
+    contestants: `${
+      leaders.filter(({ terDivisionName }) => terDivisionName === "СРБ").length
+    } участников`,
+    leaders: leaders
+      .filter(({ terDivisionName }) => terDivisionName === "СРБ")
+      .sort((item1, item2) =>
+        item1.placeInRating > item2.placeInRating ? 1 : -1
+      )
+      .slice(0, 5),
   },
   {
     divisionLevelName: "ГОСБ",
     tournamentIndicator: "Ставка",
-    contestants: "1 участник",
-    leaders: [
-      {
-        profileNumber: "22",
-        lastName: "Гайн",
-        firstName: "Роман",
-        photoData: фотоГайнРоман,
-        colorCode: colorCodeMaster,
-        isMarked: true,
-        indicatorValue: "27",
-        placeInRating: 1,
-        reward: {
-          icon: Reward.gold,
-          tooltip: "Претендент на победу",
-        },
-        terDivisionName: "СРБ",
-      },
-    ],
+    contestants: `${
+      leaders
+        .filter(({ terDivisionName }) => terDivisionName === "СРБ")
+        .slice(0, 11).length
+    } участников`,
+    leaders: leaders
+      .filter(({ terDivisionName }) => terDivisionName === "СРБ")
+      .sort((item1, item2) =>
+        item1.placeInRating > item2.placeInRating ? 1 : -1
+      )
+      .slice(0, 5),
   },
 ];
 
@@ -548,76 +504,30 @@ export const tournamentFullListCountry = {
 export const tournamentFullListTerb = {
   tournamentId: "T1",
   tournamentIndicator: "Ставка",
-  contestants: "3 участника",
-  leaders: [
-    {
-      profileNumber: "24",
-      lastName: "Шаброва",
-      firstName: "Ирина",
-      photoData: фотоШаброваИрина,
-      colorCode: colorCodeExpert,
-      isMarked: false,
-      indicatorValue: "28",
-      reward: {
-        icon: Reward.gold,
-        tooltip: "Претендент на победу",
-      },
-      placeInRating: 1,
-      terDivisionName: "СРБ",
-    },
-    {
-      profileNumber: "22",
-      lastName: "Гайн",
-      firstName: "Роман",
-      photoData: фотоГайнРоман,
-      colorCode: colorCodeMaster,
-      isMarked: true,
-      indicatorValue: "27",
-      placeInRating: 2,
-      reward: {
-        icon: Reward.silver,
-      },
-      terDivisionName: "СРБ",
-    },
-    {
-      profileNumber: "23",
-      lastName: "Тихомирова",
-      firstName: "Мария",
-      photoData: фотоТихомироваМария,
-      colorCode: colorCodeSpecialist,
-      isMarked: false,
-      indicatorValue: "26",
-      reward: {
-        icon: Reward.silver,
-        tooltip: "Претендент на победу",
-      },
-      placeInRating: 3,
-      terDivisionName: "СРБ",
-    },
-  ],
+  contestants: `${
+    leaders.filter(({ terDivisionName }) => terDivisionName === "СРБ").length
+  } участников`,
+  leaders: leaders
+    .filter(({ terDivisionName }) => terDivisionName === "СРБ")
+    .sort((item1, item2) =>
+      item1.placeInRating > item2.placeInRating ? 1 : -1
+    ),
 };
 
 export const tournamentFullListGOSB = {
   tournamentId: "T1",
   tournamentIndicator: "Ставка",
-  contestants: "1 участник",
-  leaders: [
-    {
-      profileNumber: "22",
-      lastName: "Гайн",
-      firstName: "Роман",
-      photoData: фотоГайнРоман,
-      colorCode: colorCodeMaster,
-      isMarked: true,
-      indicatorValue: "27",
-      placeInRating: 1,
-      reward: {
-        icon: Reward.gold,
-        tooltip: "Претендент на победу",
-      },
-      terDivisionName: "СРБ",
-    },
-  ],
+  contestants: `${
+    leaders
+      .filter(({ terDivisionName }) => terDivisionName === "СРБ")
+      .slice(0, 11).length
+  } участников`,
+  leaders: leaders
+    .filter(({ terDivisionName }) => terDivisionName === "СРБ")
+    .sort((item1, item2) =>
+      item1.placeInRating > item2.placeInRating ? 1 : -1
+    )
+    .slice(0, 11),
 };
 
 export const archiveTournaments = {
@@ -822,54 +732,11 @@ export const tournamentShortListT3 = [
     divisionLevelName: "Кластер",
     tournamentIndicator: "Ставка",
     contestants: "3 участника",
-    leaders: [
-      {
-        profileNumber: "24",
-        lastName: "Шаброва",
-        firstName: "Ирина",
-        photoData: фотоШаброваИрина,
-        colorCode: colorCodeExpert,
-        isMarked: false,
-        indicatorValue: "28",
-        reward: {
-          icon: Reward.gold,
-          tooltip: "Претендент на победу",
-        },
-        placeInRating: 1,
-        terDivisionName: "СРБ",
-        progress: undefined,
-      },
-      {
-        profileNumber: "22",
-        lastName: "Гайн",
-        firstName: "Роман",
-        photoData: фотоГайнРоман,
-        colorCode: colorCodeMaster,
-        isMarked: true,
-        indicatorValue: "27",
-        placeInRating: 2,
-        reward: {
-          icon: Reward.silver,
-        },
-        terDivisionName: "СРБ",
-        progress: undefined,
-      },
-      {
-        profileNumber: "23",
-        lastName: "Тихомирова",
-        firstName: "Мария",
-        photoData: фотоТихомироваМария,
-        colorCode: colorCodeSpecialist,
-        isMarked: false,
-        indicatorValue: "26",
-        reward: {
-          icon: Reward.silver,
-        },
-        placeInRating: 3,
-        terDivisionName: "СРБ",
-        progress: undefined,
-      },
-    ],
+    leaders: leaders
+      .sort((item1, item2) =>
+        item1.placeInRating > item2.placeInRating ? 1 : -1
+      )
+      .slice(0, 5),
   },
   {
     divisionLevelName: "Аппарат ТБ",

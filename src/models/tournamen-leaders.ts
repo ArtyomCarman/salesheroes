@@ -89,7 +89,7 @@ const КротковНиколай = {
   indicatorValue: "3",
   reward: undefined,
   placeInRating: 31,
-  terDivisionName: "УБ",
+  terDivisionName: "СРБ",
   progress: {
     userLevel: {
       currentLevelName: "Эксперт",
@@ -108,7 +108,7 @@ const ДмитриеваВероника = {
   indicatorValue: "3",
   reward: undefined,
   placeInRating: 30,
-  terDivisionName: "МБ",
+  terDivisionName: "СРБ",
   progress: {
     userLevel: {
       currentLevelName: "Эксперт",
@@ -127,7 +127,7 @@ const БрусницынаМария = {
   indicatorValue: "4",
   reward: undefined,
   placeInRating: 29,
-  terDivisionName: "УБ",
+  terDivisionName: "СРБ",
   progress: {
     userLevel: {
       currentLevelName: "Специалист",
@@ -145,7 +145,7 @@ const КодоловаЕлена = {
   isMarked: false,
   indicatorValue: "4",
   reward: undefined,
-  terDivisionName: "ВВБ",
+  terDivisionName: "СРБ",
   placeInRating: 28,
   progress: {
     userLevel: {
@@ -241,7 +241,7 @@ const СорокинИлья = {
   indicatorValue: "5",
   reward: undefined,
   placeInRating: 23,
-  terDivisionName: "ДВБ",
+  terDivisionName: "СРБ",
   progress: {
     userLevel: {
       currentLevelName: "Эксперт",
@@ -278,7 +278,7 @@ const ПроскуринаЕлена = {
   isMarked: false,
   indicatorValue: "7",
   reward: undefined,
-  terDivisionName: "ББ",
+  terDivisionName: "СРБ",
   placeInRating: 21,
   progress: {
     userLevel: {
@@ -334,7 +334,7 @@ const ДуроваНаталья = {
   isMarked: false,
   indicatorValue: "13",
   reward: undefined,
-  terDivisionName: "ЦЧБ",
+  terDivisionName: "СРБ",
   placeInRating: 18,
   progress: {
     userLevel: {
@@ -353,7 +353,7 @@ const МитренкоАндрей = {
   isMarked: false,
   indicatorValue: "14",
   reward: undefined,
-  terDivisionName: "ДВБ",
+  terDivisionName: "СРБ",
   placeInRating: 17,
   progress: {
     userLevel: {
@@ -373,7 +373,7 @@ const ХасаншинаВенера = {
   indicatorValue: "14",
   reward: undefined,
   placeInRating: 16,
-  terDivisionName: "ВВБ",
+  terDivisionName: "СРБ",
   progress: {
     userLevel: {
       currentLevelName: "Эксперт",
@@ -468,7 +468,7 @@ const ЧернякРуфина = {
   indicatorValue: "21",
   reward: undefined,
   placeInRating: 11,
-  terDivisionName: "ББ",
+  terDivisionName: "СРБ",
   progress: {
     userLevel: {
       currentLevelName: "Мастер",
@@ -544,7 +544,7 @@ const СенотрусоваЮлия = {
   indicatorValue: "24",
   reward: undefined,
   placeInRating: 7,
-  terDivisionName: "ДВБ",
+  terDivisionName: "СРБ",
   progress: {
     userLevel: {
       currentLevelName: "Эксперт",
@@ -563,7 +563,7 @@ const МакаровПавел = {
   indicatorValue: "24",
   reward: undefined,
   placeInRating: 6,
-  terDivisionName: "ББ",
+  terDivisionName: "СРБ",
   progress: {
     userLevel: {
       currentLevelName: "Эксперт",
@@ -637,7 +637,7 @@ const КатаеваВероника = {
     icon: Reward.silver,
   },
   placeInRating: 2,
-  terDivisionName: "ВВБ",
+  terDivisionName: "СРБ",
   progress: {
     userLevel: {
       currentLevelName: "Эксперт",
@@ -659,7 +659,7 @@ const СеркбаеваАлтын = {
     tooltip: "Претендент на победу",
   },
   placeInRating: 1,
-  terDivisionName: "УБ",
+  terDivisionName: "СРБ",
   progress: {
     userLevel: {
       currentLevelName: "Мастер",
