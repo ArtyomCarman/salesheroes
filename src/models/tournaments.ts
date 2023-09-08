@@ -83,11 +83,11 @@ export const tournaments = {
           reward: undefined,
           rating: [
             {
-              divisionLevelResult: "из 33 в стране",
+              divisionLevelResult: "из 900 в стране",
               placeInRating: 4,
             },
             {
-              divisionLevelResult: "из 3 в ТБ",
+              divisionLevelResult: "из 80 в ТБ",
               placeInRating: 2,
               reward: {
                 icon: Reward.silver,
@@ -95,7 +95,7 @@ export const tournaments = {
               },
             },
             {
-              divisionLevelResult: "из 2 в ГОСБ",
+              divisionLevelResult: "из 7 в ГОСБ",
               placeInRating: 2,
               reward: {
                 icon: Reward.silver,
@@ -227,12 +227,12 @@ export const tournamentID = [
     rating: [
       {
         divisionLevelName: "Страна",
-        contestants: 33,
+        contestants: 800,
         placeInRating: 4,
       },
       {
         divisionLevelName: "ТБ",
-        contestants: 3,
+        contestants: 70,
         placeInRating: 2,
         reward: {
           icon: Reward.silver,
@@ -241,7 +241,7 @@ export const tournamentID = [
       },
       {
         divisionLevelName: "ГОСБ",
-        contestants: 2,
+        contestants: 6,
         placeInRating: 2,
         reward: {
           icon: Reward.silver,
@@ -249,7 +249,7 @@ export const tournamentID = [
         },
       },
     ],
-    totalParticipants: "33 участников",
+    totalParticipants: "800 участников",
     specification: {
       description:
         "Том Лонгбоут по праву считается величайшим марафонцем всех времен!\n" +
@@ -372,13 +372,13 @@ export const archiveTournamentId = {
   rating: [
     {
       divisionLevelName: "Страна",
-      contestants: 33,
+      contestants: 700,
       placeInRating: 4,
       reward: undefined,
     },
     {
       divisionLevelName: "Тербанк",
-      contestants: 3,
+      contestants: 60,
       placeInRating: 2,
       reward: {
         icon: "SILVER_LIGHTNING",
@@ -387,7 +387,7 @@ export const archiveTournamentId = {
     },
     {
       divisionLevelName: "ГОСБ",
-      contestants: 1,
+      contestants: 5,
       placeInRating: 1,
       reward: {
         icon: "GOLD_LIGHTNING",
@@ -395,7 +395,7 @@ export const archiveTournamentId = {
       },
     },
   ],
-  totalParticipants: "33 участников",
+  totalParticipants: "700 участников",
   specification: {
     description:
       "Том Лонгбоут по праву считается величайшим марафонцем всех времен!\n" +
@@ -539,18 +539,18 @@ export const archiveTournaments = {
       reward: Reward.gold,
       rating: [
         {
-          divisionLevelResult: "из 33 в стране",
+          divisionLevelResult: "из 700 в стране",
           placeInRating: 5,
         },
         {
-          divisionLevelResult: "из 3 в тербанке",
+          divisionLevelResult: "из 60 в тербанке",
           placeInRating: 2,
           reward: {
             icon: Reward.silver,
           },
         },
         {
-          divisionLevelResult: "из 1 в ГОСБ",
+          divisionLevelResult: "из 5 в ГОСБ",
           placeInRating: 1,
           reward: {
             icon: Reward.gold,
