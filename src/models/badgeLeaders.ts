@@ -105,7 +105,7 @@ export const badgeShortList = [
   },
   {
     divisionLevelName: "Тербанк",
-    contestants: "3 участника",
+    contestants: "5 участника",
     leaders: [
       {
         profileNumber: "22",
@@ -149,11 +149,39 @@ export const badgeShortList = [
           secondary: "light-green-20",
         },
       },
+      {
+        profileNumber: "28",
+        isMarked: false,
+        firstName: "Наталья",
+        lastName: "Дурова",
+        photoData: ДуроваНаталья,
+        terDivisionName: "ЦЧБ",
+        placeInRating: 4,
+        indicatorValue: "",
+        colorCode: {
+          primary: "blue-60",
+          secondary: "blue-30",
+        },
+      },
+      {
+        profileNumber: "14",
+        isMarked: false,
+        firstName: "Юлия",
+        lastName: "Орлова",
+        photoData: ОрловаЮлия,
+        terDivisionName: "ПБ",
+        placeInRating: 5,
+        indicatorValue: "",
+        colorCode: {
+          primary: "blue-60",
+          secondary: "blue-30",
+        },
+      },
     ],
   },
   {
     divisionLevelName: "ГОСБ",
-    contestants: "1 участник",
+    contestants: "3 участник",
     leaders: [
       {
         profileNumber: "22",
@@ -163,6 +191,34 @@ export const badgeShortList = [
         photoData: ГайнРоман,
         terDivisionName: "СРБ",
         placeInRating: 1,
+        indicatorValue: "",
+        colorCode: {
+          primary: "blue-60",
+          secondary: "blue-30",
+        },
+      },
+      {
+        profileNumber: "28",
+        isMarked: false,
+        firstName: "Наталья",
+        lastName: "Дурова",
+        photoData: ДуроваНаталья,
+        terDivisionName: "ЦЧБ",
+        placeInRating: 2,
+        indicatorValue: "",
+        colorCode: {
+          primary: "blue-60",
+          secondary: "blue-30",
+        },
+      },
+      {
+        profileNumber: "14",
+        isMarked: false,
+        firstName: "Юлия",
+        lastName: "Орлова",
+        photoData: ОрловаЮлия,
+        terDivisionName: "ПБ",
+        placeInRating: 3,
         indicatorValue: "",
         colorCode: {
           primary: "blue-60",
@@ -614,7 +670,7 @@ export const badgeFullList = {
 export const badgeFullLeadersTerb = {
   badge: {
     badgeId: "",
-    contestants: "3 участника",
+    contestants: "5 участника",
     leaders: [
       {
         profileNumber: "22",
@@ -658,6 +714,34 @@ export const badgeFullLeadersTerb = {
         },
         progress: undefined,
       },
+      {
+        profileNumber: "28",
+        isMarked: false,
+        firstName: "Наталья",
+        lastName: "Дурова",
+        photoData: ДуроваНаталья,
+        terDivisionName: "ЦЧБ",
+        placeInRating: null,
+        indicatorValue: "",
+        colorCode: {
+          primary: "blue-60",
+          secondary: "blue-30",
+        },
+      },
+      {
+        profileNumber: "14",
+        isMarked: false,
+        firstName: "Юлия",
+        lastName: "Орлова",
+        photoData: ОрловаЮлия,
+        terDivisionName: "ПБ",
+        placeInRating: null,
+        indicatorValue: "",
+        colorCode: {
+          primary: "blue-60",
+          secondary: "blue-30",
+        },
+      },
     ],
   },
 };
@@ -665,7 +749,7 @@ export const badgeFullLeadersTerb = {
 export const badgeFullLeadersGOSB = {
   badge: {
     badgeId: "",
-    contestants: "1 участника",
+    contestants: "3 участника",
     leaders: [
       {
         profileNumber: "22",
@@ -680,6 +764,34 @@ export const badgeFullLeadersGOSB = {
           secondary: "blue-30",
         },
         progress: undefined,
+      },
+      {
+        profileNumber: "28",
+        isMarked: false,
+        firstName: "Наталья",
+        lastName: "Дурова",
+        photoData: ДуроваНаталья,
+        terDivisionName: "ЦЧБ",
+        placeInRating: null,
+        indicatorValue: "",
+        colorCode: {
+          primary: "blue-60",
+          secondary: "blue-30",
+        },
+      },
+      {
+        profileNumber: "14",
+        isMarked: false,
+        firstName: "Юлия",
+        lastName: "Орлова",
+        photoData: ОрловаЮлия,
+        terDivisionName: "ПБ",
+        placeInRating: null,
+        indicatorValue: "",
+        colorCode: {
+          primary: "blue-60",
+          secondary: "blue-30",
+        },
       },
     ],
   },
