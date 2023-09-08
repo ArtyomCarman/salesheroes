@@ -616,7 +616,7 @@ const ШаброваИрина = {
     icon: Reward.silver,
   },
   placeInRating: 3,
-  terDivisionName: "СРБ",
+  terDivisionName: "МБ",
   progress: {
     userLevel: {
       currentLevelName: "Эксперт",
@@ -637,7 +637,7 @@ const КатаеваВероника = {
     icon: Reward.silver,
   },
   placeInRating: 2,
-  terDivisionName: "СРБ",
+  terDivisionName: "ЮЗБ",
   progress: {
     userLevel: {
       currentLevelName: "Эксперт",
@@ -659,7 +659,7 @@ const СеркбаеваАлтын = {
     tooltip: "Претендент на победу",
   },
   placeInRating: 1,
-  terDivisionName: "СРБ",
+  terDivisionName: "ДВБ",
   progress: {
     userLevel: {
       currentLevelName: "Мастер",

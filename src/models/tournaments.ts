@@ -456,7 +456,7 @@ export const tournamentShortList = [
   {
     divisionLevelName: "Страна",
     tournamentIndicator: "Ставка",
-    contestants: "33 участника",
+    contestants: "1 243 участника",
     leaders: leaders
       .sort((item1, item2) =>
         item1.placeInRating > item2.placeInRating ? 1 : -1
@@ -496,7 +496,7 @@ export const tournamentShortList = [
 export const tournamentFullListCountry = {
   tournamentId: "T1",
   tournamentIndicator: "Ставка",
-  contestants: "33 участника",
+  contestants: "1243 участника",
   leaders: leaders.sort((item1, item2) =>
     item1.placeInRating > item2.placeInRating ? 1 : -1
   ),
