@@ -55,19 +55,19 @@ export const tournaments = {
           reward: Reward.gold,
           rating: [
             {
-              divisionLevelResult: "из 33 в стране",
+              divisionLevelResult: "из 1 243 в стране",
               placeInRating: 4,
             },
             {
-              divisionLevelResult: "из 3 в ТБ",
-              placeInRating: 2,
+              divisionLevelResult: "из 152 в ТБ",
+              placeInRating: 1,
               reward: {
-                icon: Reward.silver,
+                icon: Reward.gold,
                 tooltip: "Претендент на победу",
               },
             },
             {
-              divisionLevelResult: "из 1 в ГОСБ",
+              divisionLevelResult: "из 11 в ГОСБ",
               placeInRating: 1,
               reward: {
                 icon: Reward.gold,
@@ -150,21 +150,21 @@ export const tournamentID = [
     rating: [
       {
         divisionLevelName: "Страна",
-        contestants: 33,
+        contestants: "1 243",
         placeInRating: 4,
       },
       {
         divisionLevelName: "Тербанк",
-        contestants: 3,
-        placeInRating: 2,
+        contestants: 152,
+        placeInRating: 1,
         reward: {
-          icon: "SILVER_LIGHTNING",
+          icon: "GOLD_LIGHTNING",
           tooltip: "Претендент на победу",
         },
       },
       {
         divisionLevelName: "ГОСБ",
-        contestants: 1,
+        contestants: 11,
         placeInRating: 1,
         reward: {
           icon: "GOLD_LIGHTNING",
@@ -466,9 +466,7 @@ export const tournamentShortList = [
   {
     divisionLevelName: "Тербанк",
     tournamentIndicator: "Ставка",
-    contestants: `${
-      leaders.filter(({ terDivisionName }) => terDivisionName === "СРБ").length
-    } участников`,
+    contestants: "152 участников",
     leaders: leaders
       .filter(({ terDivisionName }) => terDivisionName === "СРБ")
       .sort((item1, item2) =>
@@ -504,9 +502,7 @@ export const tournamentFullListCountry = {
 export const tournamentFullListTerb = {
   tournamentId: "T1",
   tournamentIndicator: "Ставка",
-  contestants: `${
-    leaders.filter(({ terDivisionName }) => terDivisionName === "СРБ").length
-  } участников`,
+  contestants: "152 участников",
   leaders: leaders
     .filter(({ terDivisionName }) => terDivisionName === "СРБ")
     .sort((item1, item2) =>
