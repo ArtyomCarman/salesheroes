@@ -2,10 +2,12 @@ import { EmployeeStatus } from "../interfaces";
 import Меламед from "../assets/images/Сергей Меламед.jpeg";
 import ЧернышоваЕлена from "../assets/images/Елена Чернышова.jpeg";
 import Юлианна from "../assets/images/Юлианна Егорова.jpeg";
+import ПоповАнатолий from "../assets/images/Попов Анатолий.png";
+import СитновВладимир from "../assets/images/Ситнов Владимир.png";
 
-const ПоповАнатолий = {
+const ПоповАнатолийПрофиль = {
   profileNumber: "40",
-  photoData: "",
+  photoData: ПоповАнатолий,
   terDivisionName: "ЦА",
   firstName: "Анатолий",
   lastName: "Попов",
@@ -22,9 +24,9 @@ const ПоповАнатолий = {
   progress: undefined,
 };
 
-const СитновВладимир = {
+const СитновВладимирПрофиль = {
   profileNumber: "41",
-  photoData: "",
+  photoData: СитновВладимир,
   terDivisionName: "ЦА",
   firstName: "Владимир",
   lastName: "Ситнов",
@@ -98,9 +100,9 @@ const ЕгороваЮлианна = {
 };
 
 export const topManagers = [
-  СитновВладимир,
+  СитновВладимирПрофиль,
   МеламедСергей,
   ЕгороваЮлианна,
   ЕленаЧернышова,
-  ПоповАнатолий,
+  ПоповАнатолийПрофиль,
 ];

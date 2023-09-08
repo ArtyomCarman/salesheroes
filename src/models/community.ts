@@ -9,6 +9,8 @@ import ЧернышоваЕлена from "../assets/images/Елена Черны
 import Юлианна from "../assets/images/Юлианна Егорова.jpeg";
 import ШебановаОльга from "../assets/images/Шебанова Ольга Евгеньевна.jpeg";
 import СеркбаеваАлтын from "../assets/images/Серкбаева Алтын Суннатовна.jpeg";
+import ПоповАнатолий from "../assets/images/Попов Анатолий.png";
+import СитновВладимир from "../assets/images/Ситнов Владимир.png";
 
 import { profileTopManager } from "./profile";
 import { EmployeeStatus, INewsLeader, INewsList } from "../interfaces";
@@ -60,7 +62,7 @@ export const news: INewsList = {
                 list: [
                   {
                     profileNumber: "40",
-                    photoData: "",
+                    photoData: ПоповАнатолий,
                     terDivisionName: "ЦА",
                     firstName: "Анатолий",
                     lastName: "Попов",
@@ -72,7 +74,7 @@ export const news: INewsList = {
                   },
                   {
                     profileNumber: "41",
-                    photoData: "",
+                    photoData: СитновВладимир,
                     terDivisionName: "ЦА",
                     firstName: "Владимир",
                     lastName: "Ситнов",
@@ -190,7 +192,7 @@ export const news: INewsList = {
                 list: [
                   {
                     profileNumber: "40",
-                    photoData: "",
+                    photoData: ПоповАнатолий,
                     terDivisionName: "ЦА",
                     firstName: "Анатолий",
                     lastName: "Попов",
@@ -202,7 +204,7 @@ export const news: INewsList = {
                   },
                   {
                     profileNumber: "41",
-                    photoData: "",
+                    photoData: СитновВладимир,
                     terDivisionName: "ЦА",
                     firstName: "Владимир",
                     lastName: "Ситнов",
@@ -290,7 +292,7 @@ export const news: INewsList = {
                 list: [
                   {
                     profileNumber: "40",
-                    photoData: "",
+                    photoData: ПоповАнатолий,
                     terDivisionName: "ЦА",
                     firstName: "Анатолий",
                     lastName: "Попов",
@@ -302,7 +304,7 @@ export const news: INewsList = {
                   },
                   {
                     profileNumber: "41",
-                    photoData: "",
+                    photoData: СитновВладимир,
                     terDivisionName: "ЦА",
                     firstName: "Владимир",
                     lastName: "Ситнов",
@@ -395,7 +397,7 @@ export const news: INewsList = {
                 list: [
                   {
                     profileNumber: "40",
-                    photoData: "",
+                    photoData: ПоповАнатолий,
                     terDivisionName: "ЦА",
                     firstName: "Анатолий",
                     lastName: "Попов",
@@ -407,7 +409,7 @@ export const news: INewsList = {
                   },
                   {
                     profileNumber: "41",
-                    photoData: "",
+                    photoData: СитновВладимир,
                     terDivisionName: "ЦА",
                     firstName: "Владимир",
                     lastName: "Ситнов",
@@ -511,7 +513,7 @@ export const news: INewsList = {
                 list: [
                   {
                     profileNumber: "40",
-                    photoData: "",
+                    photoData: ПоповАнатолий,
                     terDivisionName: "ЦА",
                     firstName: "Анатолий",
                     lastName: "Попов",
@@ -523,7 +525,7 @@ export const news: INewsList = {
                   },
                   {
                     profileNumber: "41",
-                    photoData: "",
+                    photoData: СитновВладимир,
                     terDivisionName: "ЦА",
                     firstName: "Владимир",
                     lastName: "Ситнов",
@@ -632,7 +634,7 @@ export const news: INewsList = {
                 list: [
                   {
                     profileNumber: "40",
-                    photoData: "",
+                    photoData: ПоповАнатолий,
                     terDivisionName: "ЦА",
                     firstName: "Анатолий",
                     lastName: "Попов",
@@ -644,7 +646,7 @@ export const news: INewsList = {
                   },
                   {
                     profileNumber: "41",
-                    photoData: "",
+                    photoData: СитновВладимир,
                     terDivisionName: "ЦА",
                     firstName: "Владимир",
                     lastName: "Ситнов",
