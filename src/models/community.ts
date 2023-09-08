@@ -487,10 +487,14 @@ export const news: INewsList = {
         {
           newsId: "news5",
           date: getPreviousDay(10),
-          tournamentId: "T3",
+          tournamentId: "",
           newsText:
-            "<h3>Ростислав сделал в прошедшем месяце тройную сумму комиссии по сделкам с индийскими компаниями, чем месяцем ранее. Взята высокая планка!</h3>",
-          leaders,
+            "<h3>Екатерина сделал в прошедшем месяце тройную сумму комиссии по сделкам с индийскими компаниями, чем месяцем ранее. Взята высокая планка!</h3>",
+          leaders: [
+            leaders.find(
+              ({ profileNumber }) => profileNumber === "21"
+            ) as INewsLeader,
+          ],
           likes: {
             isLiked: true,
             likesAmount: 7,
