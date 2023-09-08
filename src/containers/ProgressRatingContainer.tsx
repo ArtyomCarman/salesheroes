@@ -7,7 +7,7 @@ export const ProgressRatingContainer = () => {
   const navigate = useNavigate();
   const goToRating = (divisionLevel: DivisionLevel) => () => {
     navigate(
-      `/rating?divisionLevel=${divisionLevel}&timePeriod=${TimePeriod["За всё время"]}`,
+      `/rating?divisionLevel=${divisionLevel}&timePeriod=${TimePeriod["Текущий квартал"]}`,
     );
   };
   return (
@@ -33,7 +33,7 @@ export const ProgressRatingContainer = () => {
       }}
     >
       <Text size="sub20/28" zIndex="1">
-        Новое место в рейтинге
+        У вас новое место в рейтинге
       </Text>
       <SimpleGrid
         gap="8px"

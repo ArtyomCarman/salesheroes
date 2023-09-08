@@ -25,7 +25,7 @@ export const ProgressNewLevelContainer = () => {
       }}
     >
       <Text size="sub20/28" color="rgba(255, 255, 255, 0.8)" zIndex="1">
-        Новый уровень
+        Получен новый уровень
       </Text>
       <Flex direction="row" gap="12px" zIndex="1">
         <LevelProgressIcon

@@ -3,8 +3,21 @@ import { useNavigate } from "react-router-dom";
 import { Box, Fade, Flex, Grid, Text } from "@chakra-ui/react";
 
 import { AppPopover, LikeButton, ProfileAvatar } from "../components";
-import { INewsLikes } from "../interfaces";
+import { EmployeeStatus, INewsLikes } from "../interfaces";
+import ГайнРоман from "../assets/images/romanGayn.png";
 
+const romanGayn = {
+  profileNumber: "22",
+  firstName: "Роман",
+  lastName: "Гайн",
+  photoData: ГайнРоман,
+  terDivisionName: "СРБ",
+  colorCode: {
+    primary: "blue-60",
+    secondary: "blue-30",
+  },
+  employeeStatus: EmployeeStatus.Contestant,
+};
 export const CommunityLikesButtonAndAmountContainer: FC<Props> = ({
   result,
   newsId,
@@ -40,7 +53,9 @@ export const CommunityLikesButtonAndAmountContainer: FC<Props> = ({
       <Flex gap="24px" alignItems="center">
         <LikeButton isLiked={like} onClick={handleLike} />
         <AppPopover
-          header={`Всего ${result.likesAmount} ${likeText}`}
+          header={`Всего ${
+            like ? result.likesAmount + 1 : result.likesAmount
+          } ${likeText}`}
           content={people.map((item, itemIndex) => (
             <Grid
               p="12px 16px"
@@ -80,7 +95,8 @@ export const CommunityLikesButtonAndAmountContainer: FC<Props> = ({
             size="body14/24"
             variant="medium"
           >
-            Всего {result.likesAmount} {likeText}
+            Всего {like ? result.likesAmount + 1 : result.likesAmount}{" "}
+            {likeText}
           </Text>
         </AppPopover>
       </Flex>

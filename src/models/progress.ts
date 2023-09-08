@@ -60,7 +60,7 @@ export const progressRating = [
     updateNumber: "+2",
     placeInRating: 1,
     divisionLevelResult: "из 152",
-    reward: Reward.silver,
+    reward: Reward.gold,
   },
   {
     divisionLevel: "ГОСБ",
@@ -68,7 +68,7 @@ export const progressRating = [
     updateNumber: null,
     placeInRating: 1,
     divisionLevelResult: "из 15",
-    reward: Reward.silver,
+    reward: Reward.gold,
   },
 ];
 
@@ -84,29 +84,10 @@ export const progressTournamentAwards = [
       awardId: "00026",
     },
     crystalEarned: 50,
-    text: "<span style='font-weight: 600'>Вы победили</span> в турнире среди 15 участников в вашем подразделении",
+    text: "<span style='font-weight: 600'>Вы победили</span> в турнире среди 15 участников в вашем ГОСБ",
     tournament: {
       tournamentName: "Марафон по условным сделкам",
       tournamentDate: "Турнир завершён • 01.08 – 30.08.23",
-      tournamentId: "archive/T4",
-    },
-  },
-  {
-    award: {
-      awardName: Badge.ConditionalsChampionFirst,
-      hasNft: true,
-      colorCode: {
-        primary: "rgba(255, 181, 59, 0.48)",
-        secondary: "rgba(255, 108, 12, 0.48)",
-        tertiary: "rgba(135, 90, 192, 0.70)",
-      },
-      awardId: "00024",
-    },
-    crystalEarned: 80,
-    text: "<span style='font-weight: 600'>Вы победили</span> турнире среди 1 250 участников по стране и выиграли <span style='color: rgba(182, 117, 175, 1); font-weight: 600'>NFT-награду</span>",
-    tournament: {
-      tournamentName: "Марафон по условным сделкам",
-      tournamentDate: "Турнир завершён  •  01.08 – 30.08.23",
       tournamentId: "archive/T4",
     },
   },
@@ -114,7 +95,7 @@ export const progressTournamentAwards = [
 
 export const progressAwards = [
   {
-    infoText: "Получен новый бейдж",
+    infoText: "Вы получили новый бейдж",
     award: {
       awardName: Badge.Commission50k,
       hasNft: false,

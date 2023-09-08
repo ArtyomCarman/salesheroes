@@ -39,7 +39,7 @@ export const ProgressTournamentContainer = () => {
     >
       <LightningInHexagon color="rgba(135, 90, 192)" />
       <Text size="sub20/28" color="rgba(255, 255, 255, 0.8)">
-        Вы в числе лидеров в турнире
+        Вы попали в число лидеров турнира
       </Text>
       <Flex
         direction="row"

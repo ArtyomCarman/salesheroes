@@ -1,4 +1,4 @@
-import { Box, Text, Grid, Flex } from "@chakra-ui/react";
+import { Box, Text, Grid, Flex, Spinner, Button } from "@chakra-ui/react";
 import { FC, ReactNode } from "react";
 import { ButtonComponent } from "./ButtonComponent";
 import ShopTreePng from "../assets/images/shop-tree.png";
@@ -24,7 +24,9 @@ export const ShopCard: FC<Props> = ({ card, canBuy }) => {
             : undefined
         }
       >
-        <Text mb="16px">{card.title}</Text>
+        <Text mb="16px" size="sub20/28" variant="semibold">
+          {card.title}
+        </Text>
         <Grid templateColumns="1fr auto" gap="8px" alignItems="start">
           <Grid gap="24px">
             <Flex gap="8px">
@@ -32,11 +34,25 @@ export const ShopCard: FC<Props> = ({ card, canBuy }) => {
               <DiamondIcon width="24px" height="24px" />
             </Flex>
             {canBuy && (
-              <ButtonComponent
-                text="Приобрести"
-                onClick={() => {}}
-                w="min-content"
-              />
+              <Button
+                border-radius="8px"
+                padding="12px 20px"
+                bgColor="rgba(255, 255, 255, 0.1)"
+                height="auto"
+                width="min-content"
+                cursor="auto"
+                _hover={{
+                  background: "rgba(255, 255, 255, 0.1)",
+                }}
+              >
+                <Text
+                  color="rgba(255, 255, 255, 0.8)"
+                  size="body14/24"
+                  variant="medium"
+                >
+                  Приобрести
+                </Text>
+              </Button>
             )}
           </Grid>
           <Box mb="-12px">{card.icon}</Box>
