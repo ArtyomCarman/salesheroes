@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { Box, Text, Tooltip } from "@chakra-ui/react";
 
-import { IRewardProfiles, Reward } from "../interfaces";
+import { IRewardProfiles } from "../interfaces";
 import { ReactComponent as LightningIcon } from "../assets/icons/lightning.svg";
 
 interface Props {

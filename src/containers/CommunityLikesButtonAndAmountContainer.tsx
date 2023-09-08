@@ -3,21 +3,8 @@ import { useNavigate } from "react-router-dom";
 import { Box, Fade, Flex, Grid, Text } from "@chakra-ui/react";
 
 import { AppPopover, LikeButton, ProfileAvatar } from "../components";
-import { EmployeeStatus, INewsLikes } from "../interfaces";
-import ГайнРоман from "../assets/images/romanGayn.png";
+import { INewsLikes } from "../interfaces";
 
-const romanGayn = {
-  profileNumber: "22",
-  firstName: "Роман",
-  lastName: "Гайн",
-  photoData: ГайнРоман,
-  terDivisionName: "СРБ",
-  colorCode: {
-    primary: "blue-60",
-    secondary: "blue-30",
-  },
-  employeeStatus: EmployeeStatus.Contestant,
-};
 export const CommunityLikesButtonAndAmountContainer: FC<Props> = ({
   result,
   newsId,

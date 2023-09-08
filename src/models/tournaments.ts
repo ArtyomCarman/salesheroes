@@ -1,14 +1,6 @@
 import { Badge, Reward } from "../interfaces";
 import ГайнРоман from "../assets/images/romanGayn.png";
-import {
-  colorCodeExpert,
-  colorCodeMaster,
-  colorCodeSpecialist,
-  leaders,
-} from "./tournamen-leaders";
-import фотоГайнРоман from "../assets/images/romanGayn.png";
-import фотоТихомироваМария from "../assets/images/Тихомирова Мария Алексеевна.jpeg";
-import фотоШаброваИрина from "../assets/images/Шаброва Ирина Сергеевна.jpeg";
+import { leaders } from "./tournamen-leaders";
 
 const formatter = new Intl.DateTimeFormat("ru", {
   month: "long",
@@ -459,7 +451,7 @@ export const tournamentShortList = [
     contestants: "1 243 участника",
     leaders: leaders
       .sort((item1, item2) =>
-        item1.placeInRating > item2.placeInRating ? 1 : -1,
+        item1.placeInRating > item2.placeInRating ? 1 : -1
       )
       .map((item, index) => (index < 5 ? { ...item, hasReward: true } : item))
       .slice(0, 5),
@@ -471,7 +463,7 @@ export const tournamentShortList = [
     leaders: leaders
       .filter(({ terDivisionName }) => terDivisionName === "СРБ")
       .sort((item1, item2) =>
-        item1.placeInRating > item2.placeInRating ? 1 : -1,
+        item1.placeInRating > item2.placeInRating ? 1 : -1
       )
       .map((item, index) => (index < 3 ? { ...item, hasReward: true } : item))
       .slice(0, 5),
@@ -487,7 +479,7 @@ export const tournamentShortList = [
     leaders: leaders
       .filter(({ terDivisionName }) => terDivisionName === "СРБ")
       .sort((item1, item2) =>
-        item1.placeInRating > item2.placeInRating ? 1 : -1,
+        item1.placeInRating > item2.placeInRating ? 1 : -1
       )
       .map((item, index) => (index < 1 ? { ...item, hasReward: true } : item))
       .slice(0, 5),
@@ -498,15 +490,9 @@ export const tournamentFullListCountry = {
   tournamentId: "T1",
   tournamentIndicator: "Ставка",
   contestants: "1243 участника",
-<<<<<<< Updated upstream
-  leaders: leaders.sort((item1, item2) =>
-    item1.placeInRating > item2.placeInRating ? 1 : -1,
-  ),
-=======
   leaders: leaders
-    .toSorted((item1, item2) => +item2.indicatorValue - +item1.indicatorValue)
+    .sort((item1, item2) => +item2.indicatorValue - +item1.indicatorValue)
     .map((item, index) => (index < 5 ? { ...item, hasReward: true } : item)),
->>>>>>> Stashed changes
 };
 export const tournamentFullListTerb = {
   tournamentId: "T1",
@@ -514,14 +500,8 @@ export const tournamentFullListTerb = {
   contestants: "152 участников",
   leaders: leaders
     .filter(({ terDivisionName }) => terDivisionName === "СРБ")
-<<<<<<< Updated upstream
-    .sort((item1, item2) =>
-      item1.placeInRating > item2.placeInRating ? 1 : -1,
-    ),
-=======
-    .toSorted((item1, item2) => +item2.indicatorValue - +item1.indicatorValue)
+    .sort((item1, item2) => +item2.indicatorValue - +item1.indicatorValue)
     .map((item, index) => (index < 3 ? { ...item, hasReward: true } : item)),
->>>>>>> Stashed changes
 };
 
 export const tournamentFullListGOSB = {
@@ -534,16 +514,9 @@ export const tournamentFullListGOSB = {
   } участников`,
   leaders: leaders
     .filter(({ terDivisionName }) => terDivisionName === "СРБ")
-<<<<<<< Updated upstream
-    .sort((item1, item2) =>
-      item1.placeInRating > item2.placeInRating ? 1 : -1,
-    )
-    .slice(0, 11),
-=======
-    .toSorted((item1, item2) => +item2.indicatorValue - +item1.indicatorValue)
+    .sort((item1, item2) => +item2.indicatorValue - +item1.indicatorValue)
     .slice(0, 11)
     .map((item, index) => (index < 1 ? { ...item, hasReward: true } : item)),
->>>>>>> Stashed changes
 };
 
 export const archiveTournaments = {
@@ -588,196 +561,3 @@ export const archiveTournaments = {
     },
   ],
 };
-<<<<<<< Updated upstream
-
-export const tournamentFullListGOSBT2 = {
-  tournamentId: "T2",
-  tournamentIndicator: "Ставка",
-  contestants: "0 участников",
-  leaders: [],
-};
-
-export const tournamentFullListTerbT2 = {
-  tournamentId: "T2",
-  tournamentIndicator: "Ставка",
-  contestants: "2 участника",
-  leaders: [
-    {
-      profileNumber: "24",
-      lastName: "Шаброва",
-      firstName: "Ирина",
-      photoData: фотоШаброваИрина,
-      colorCode: colorCodeExpert,
-      isMarked: false,
-      indicatorValue: "28",
-      reward: {
-        icon: Reward.gold,
-        tooltip: "Претендент на победу",
-      },
-      placeInRating: 1,
-      terDivisionName: "СРБ",
-    },
-
-    {
-      profileNumber: "23",
-      lastName: "Тихомирова",
-      firstName: "Мария",
-      photoData: фотоТихомироваМария,
-      colorCode: colorCodeSpecialist,
-      isMarked: false,
-      indicatorValue: "26",
-      reward: {
-        icon: Reward.silver,
-      },
-      placeInRating: 2,
-      terDivisionName: "СРБ",
-    },
-  ],
-};
-
-export const tournamentFullListCountryT2 = {
-  tournamentId: "T1",
-  tournamentIndicator: "Ставка",
-  contestants: "32 участника",
-  leaders: leaders
-    .sort((item1, item2) =>
-      item1.placeInRating > item2.placeInRating ? 1 : -1,
-    )
-    .filter((item) => !item.isMarked),
-};
-
-export const tournamentShortListT2 = [
-  {
-    divisionLevelName: "Страна",
-    tournamentIndicator: "Ставка",
-    contestants: "32 участника",
-    leaders: leaders
-      .filter((item) => !item.isMarked)
-      .sort((item1, item2) =>
-        item1.placeInRating > item2.placeInRating ? 1 : -1,
-      )
-      .slice(0, 5),
-  },
-  {
-    divisionLevelName: "Тербанк",
-    tournamentIndicator: "Ставка",
-    contestants: "2 участника",
-    leaders: [
-      {
-        profileNumber: "24",
-        lastName: "Шаброва",
-        firstName: "Ирина",
-        photoData: фотоШаброваИрина,
-        colorCode: colorCodeExpert,
-        isMarked: false,
-        indicatorValue: "28",
-        reward: {
-          icon: Reward.gold,
-          tooltip: "Претендент на победу",
-        },
-        placeInRating: 1,
-        terDivisionName: "СРБ",
-      },
-      {
-        profileNumber: "23",
-        lastName: "Тихомирова",
-        firstName: "Мария",
-        photoData: фотоТихомироваМария,
-        colorCode: colorCodeSpecialist,
-        isMarked: false,
-        indicatorValue: "26",
-        reward: {
-          icon: Reward.silver,
-        },
-        placeInRating: 3,
-        terDivisionName: "СРБ",
-      },
-    ],
-  },
-  {
-    divisionLevelName: "ГОСБ",
-    tournamentIndicator: "Ставка",
-    contestants: "2 участника",
-    leaders: [
-      {
-        profileNumber: "24",
-        lastName: "Шаброва",
-        firstName: "Ирина",
-        photoData: фотоШаброваИрина,
-        colorCode: colorCodeExpert,
-        isMarked: false,
-        indicatorValue: "28",
-        reward: {
-          icon: Reward.gold,
-          tooltip: "Претендент на победу",
-        },
-        placeInRating: 1,
-        terDivisionName: "СРБ",
-      },
-      {
-        profileNumber: "22",
-        lastName: "Гайн",
-        firstName: "Роман",
-        photoData: фотоГайнРоман,
-        colorCode: colorCodeMaster,
-        isMarked: true,
-        indicatorValue: "27",
-        placeInRating: 1,
-        reward: {
-          icon: Reward.gold,
-          tooltip: "Претендент на победу",
-        },
-        terDivisionName: "СРБ",
-        progress: undefined,
-      },
-    ],
-  },
-];
-
-export const tournamentShortListT3 = [
-  {
-    divisionLevelName: "Страна",
-    tournamentIndicator: "Ставка",
-    contestants: "33 участника",
-    leaders: leaders
-      .sort((item1, item2) =>
-        item1.placeInRating > item2.placeInRating ? 1 : -1,
-      )
-      .slice(0, 5),
-  },
-  {
-    divisionLevelName: "Кластер",
-    tournamentIndicator: "Ставка",
-    contestants: "3 участника",
-    leaders: leaders
-      .sort((item1, item2) =>
-        item1.placeInRating > item2.placeInRating ? 1 : -1,
-      )
-      .slice(0, 5),
-  },
-  {
-    divisionLevelName: "Аппарат ТБ",
-    tournamentIndicator: "Ставка",
-    contestants: "1 участник",
-    leaders: [
-      {
-        profileNumber: "22",
-        lastName: "Гайн",
-        firstName: "Роман",
-        photoData: фотоГайнРоман,
-        colorCode: colorCodeMaster,
-        isMarked: true,
-        indicatorValue: "27",
-        placeInRating: 1,
-        reward: {
-          icon: Reward.gold,
-          tooltip: "Претендент на победу",
-        },
-        terDivisionName: "СРБ",
-        progress: undefined,
-      },
-    ],
-  },
-];
-=======
->>>>>>> Stashed changes

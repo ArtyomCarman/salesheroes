@@ -1,6 +1,5 @@
-import { Box, Text, Grid, Flex, Spinner, Button } from "@chakra-ui/react";
+import { Box, Text, Grid, Flex, Button } from "@chakra-ui/react";
 import { FC, ReactNode } from "react";
-import { ButtonComponent } from "./ButtonComponent";
 import ShopTreePng from "../assets/images/shop-tree.png";
 import { ReactComponent as DiamondIcon } from "../assets/icons/diamond.svg";
 
