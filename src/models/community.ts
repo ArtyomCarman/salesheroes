@@ -492,7 +492,7 @@ export const news: INewsList = {
             "<h3>Екатерина сделал в прошедшем месяце тройную сумму комиссии по сделкам с индийскими компаниями, чем месяцем ранее. Взята высокая планка!</h3>",
           leaders: [
             leaders.find(
-              ({ profileNumber }) => profileNumber === "21"
+              ({ profileNumber }) => profileNumber === "21",
             ) as INewsLeader,
           ],
           likes: {
@@ -613,7 +613,7 @@ export const news: INewsList = {
             "<h3>Ирина смогла удвоить заработанную комиссию по сделкам с индийскими контрагентами по сравнению с предыдущим месяцем. Так держать!</h3>",
           leaders: [
             leaders.find(
-              ({ profileNumber }) => profileNumber === "24"
+              ({ profileNumber }) => profileNumber === "24",
             ) as INewsLeader,
           ],
           likes: {
@@ -741,7 +741,7 @@ export const news: INewsList = {
 
 export const newsRatingCountry = {
   heading: "Роман Гайн из СРБ на 1 месте!",
-  usersPosition: "Вы на 1 из 33 месте",
+  usersPosition: "Вы на 1 из 1243 месте",
   leaders: [
     {
       profileNumber: "22",
@@ -817,7 +817,7 @@ export const newsRatingCountry = {
 };
 export const newsRatingTERB = {
   heading: "Роман Гайн из СРБ на 1 месте!",
-  usersPosition: "Вы на 1 из 3 месте",
+  usersPosition: "Вы на 1 из 152 месте",
   leaders: [
     {
       profileNumber: "22",
@@ -862,7 +862,7 @@ export const newsRatingTERB = {
 
 export const newsRatingGOSB = {
   heading: "Роман Гайн из СРБ на 1 месте!",
-  usersPosition: "Вы на 1 из 1 месте",
+  usersPosition: "Вы на 1 из 15 месте",
   leaders: [
     {
       profileNumber: "22",

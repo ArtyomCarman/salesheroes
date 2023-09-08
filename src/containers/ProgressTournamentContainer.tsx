@@ -6,6 +6,15 @@ import { useNavigate } from "react-router-dom";
 export const ProgressTournamentContainer = () => {
   const navigate = useNavigate();
   const goToTournament = () => navigate(`/tournaments/T1`);
+
+  const date1 = new Date("09/30/2023"); // 30 сентября
+  const date2 = new Date();
+
+  const difference = date1.getTime() - date2.getTime();
+
+  const days = Math.ceil(difference / (1000 * 3600 * 24));
+
+  const daysLeft = days + 1;
   return (
     <Flex
       direction="column"
@@ -48,7 +57,9 @@ export const ProgressTournamentContainer = () => {
       >
         <Box>
           <Text variant="semibold">Марафон по условным сделкам</Text>
-          <Text color="rgba(255, 255, 255, 0.6)">До окончания 24 дня</Text>
+          <Text color="rgba(255, 255, 255, 0.6)">
+            До окончания {daysLeft} дня
+          </Text>
         </Box>
         <ArrowRight width="24px" height="24px" />
       </Flex>

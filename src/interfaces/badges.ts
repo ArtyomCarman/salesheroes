@@ -1,6 +1,9 @@
 import { DivisionLevel, DivisionLevelName, ILeader, IPage } from "./common";
 
 export enum Badge {
+  "AnchorBronze" = "ANCHOR_BRONZE",
+  "AnchorSilver" = "ANCHOR_SILVER",
+  "AnchorGold" = "ANCHOR_GOLD",
   "ConditionalsChampionFirst" = "CONDITIONALS_CHAMPION_FIRST",
   "ConditionalsChampionSecond" = "CONDITIONALS_CHAMPION_SECOND",
   "ConditionalsChampionThird" = "CONDITIONALS_CHAMPION_THIRD",

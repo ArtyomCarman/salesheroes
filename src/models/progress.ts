@@ -59,8 +59,8 @@ export const progressRating = [
     divisionLevelCode: DivisionLevel.Тербанк,
     updateNumber: "+2",
     placeInRating: 1,
-    divisionLevelResult: "из 33",
-    reward: Reward.gold,
+    divisionLevelResult: "из 152",
+    reward: Reward.silver,
   },
   {
     divisionLevel: "ГОСБ",
@@ -68,7 +68,7 @@ export const progressRating = [
     updateNumber: null,
     placeInRating: 1,
     divisionLevelResult: "из 15",
-    reward: Reward.gold,
+    reward: Reward.silver,
   },
 ];
 

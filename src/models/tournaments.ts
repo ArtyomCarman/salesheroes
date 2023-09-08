@@ -375,7 +375,7 @@ export const archiveTournamentId = {
   status: "ACTIVE",
   ratingCategoryName: "Вы в лидерах",
   tournamentDurationName: "Турнир 4 недели",
-  lasting: "03 июня — 30 июня 2023",
+  lasting: "01 августа — 30 августа 2023",
   updateTooltip: `Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — ${date}`,
   rating: [
     {
@@ -459,7 +459,7 @@ export const tournamentShortList = [
     contestants: "1 243 участника",
     leaders: leaders
       .sort((item1, item2) =>
-        item1.placeInRating > item2.placeInRating ? 1 : -1
+        item1.placeInRating > item2.placeInRating ? 1 : -1,
       )
       .slice(0, 5),
   },
@@ -470,7 +470,7 @@ export const tournamentShortList = [
     leaders: leaders
       .filter(({ terDivisionName }) => terDivisionName === "СРБ")
       .sort((item1, item2) =>
-        item1.placeInRating > item2.placeInRating ? 1 : -1
+        item1.placeInRating > item2.placeInRating ? 1 : -1,
       )
       .slice(0, 5),
   },
@@ -485,7 +485,7 @@ export const tournamentShortList = [
     leaders: leaders
       .filter(({ terDivisionName }) => terDivisionName === "СРБ")
       .sort((item1, item2) =>
-        item1.placeInRating > item2.placeInRating ? 1 : -1
+        item1.placeInRating > item2.placeInRating ? 1 : -1,
       )
       .slice(0, 5),
   },
@@ -496,7 +496,7 @@ export const tournamentFullListCountry = {
   tournamentIndicator: "Ставка",
   contestants: "1243 участника",
   leaders: leaders.sort((item1, item2) =>
-    item1.placeInRating > item2.placeInRating ? 1 : -1
+    item1.placeInRating > item2.placeInRating ? 1 : -1,
   ),
 };
 export const tournamentFullListTerb = {
@@ -506,7 +506,7 @@ export const tournamentFullListTerb = {
   leaders: leaders
     .filter(({ terDivisionName }) => terDivisionName === "СРБ")
     .sort((item1, item2) =>
-      item1.placeInRating > item2.placeInRating ? 1 : -1
+      item1.placeInRating > item2.placeInRating ? 1 : -1,
     ),
 };
 
@@ -521,7 +521,7 @@ export const tournamentFullListGOSB = {
   leaders: leaders
     .filter(({ terDivisionName }) => terDivisionName === "СРБ")
     .sort((item1, item2) =>
-      item1.placeInRating > item2.placeInRating ? 1 : -1
+      item1.placeInRating > item2.placeInRating ? 1 : -1,
     )
     .slice(0, 11),
 };
@@ -541,7 +541,7 @@ export const archiveTournaments = {
       },
       tournamentId: "T4",
       tournamentName: "Марафон по условным сделкам",
-      tournamentInfo: "Турнир 4 недели завершён • 03.06–30.06.23",
+      tournamentInfo: "Турнир 4 недели завершён • 01.08–30.08.23",
       tournamentDurationName: "",
       reward: Reward.gold,
       rating: [
@@ -620,7 +620,7 @@ export const tournamentFullListCountryT2 = {
   contestants: "32 участника",
   leaders: leaders
     .sort((item1, item2) =>
-      item1.placeInRating > item2.placeInRating ? 1 : -1
+      item1.placeInRating > item2.placeInRating ? 1 : -1,
     )
     .filter((item) => !item.isMarked),
 };
@@ -633,7 +633,7 @@ export const tournamentShortListT2 = [
     leaders: leaders
       .filter((item) => !item.isMarked)
       .sort((item1, item2) =>
-        item1.placeInRating > item2.placeInRating ? 1 : -1
+        item1.placeInRating > item2.placeInRating ? 1 : -1,
       )
       .slice(0, 5),
   },
@@ -720,7 +720,7 @@ export const tournamentShortListT3 = [
     contestants: "33 участника",
     leaders: leaders
       .sort((item1, item2) =>
-        item1.placeInRating > item2.placeInRating ? 1 : -1
+        item1.placeInRating > item2.placeInRating ? 1 : -1,
       )
       .slice(0, 5),
   },
@@ -730,7 +730,7 @@ export const tournamentShortListT3 = [
     contestants: "3 участника",
     leaders: leaders
       .sort((item1, item2) =>
-        item1.placeInRating > item2.placeInRating ? 1 : -1
+        item1.placeInRating > item2.placeInRating ? 1 : -1,
       )
       .slice(0, 5),
   },

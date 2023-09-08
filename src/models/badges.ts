@@ -43,6 +43,11 @@ const Commission200k = {
   updateTooltip: `Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — ${date}`,
   hasNftMark: false,
   rewardCrystalCount: 15,
+  progressBarValue: 75,
+  progress: {
+    current: "170 из 200 тыс. руб.",
+    condition: "Осталось 30 тыс. руб.",
+  },
   specification: {
     description:
       "Продолжай в том же духе!\n" +
@@ -506,13 +511,115 @@ const ConditionalsChampionThird = {
   ],
   specification: {
     description:
-      'Победи в турнире "Марафон по условным сделкам" в рамках своего ГОСБ \\ Управления',
+      'Победи в турнире "Марафон по условным сделкам" в рамках своего \nГОСБ \\ Управления',
     features: [
       {
         number: 1,
         feature: "",
       },
     ],
+  },
+};
+
+const AnchorBronze = {
+  imageId: Badge.AnchorBronze,
+  imageIsActive: false,
+  badgeId: "00027",
+  receivingDate: "09.06.23",
+  badgeName: "Чемпион подразделения по условным сделкам",
+  badgeAmount: 1,
+  updateTooltip: `Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — ${date}`,
+  hasNftMark: false,
+  badgeType: "forTheTournament",
+  rewardCrystalCount: 5,
+  progress: {
+    current: "",
+    condition: "",
+  },
+  tournamentName: "Максимальное сальдо выдач по кредитам",
+  tournaments: [
+    {
+      tournamentId: "T3",
+      status: {
+        name: "Активный",
+        color: "green-30",
+      },
+      ratingStatusName: "Вы на 1 месте",
+      periodName: "01.07.23 - 30.09.23",
+    },
+  ],
+  specification: {
+    description:
+      'Победи в турнире "Максимальное сальдо выдач по кредитам" в рамках своего \nГОСБ \\ Управления',
+    features: null,
+  },
+};
+
+const AnchorSilver = {
+  imageId: Badge.AnchorSilver,
+  imageIsActive: false,
+  badgeId: "00028",
+  receivingDate: "09.06.23",
+  badgeName: "Чемпион подразделения по условным сделкам",
+  badgeAmount: 1,
+  updateTooltip: `Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — ${date}`,
+  hasNftMark: false,
+  badgeType: "forTheTournament",
+  rewardCrystalCount: 30,
+  progress: {
+    current: "",
+    condition: "",
+  },
+  tournamentName: "Максимальное сальдо выдач по кредитам",
+  tournaments: [
+    {
+      tournamentId: "T3",
+      status: {
+        name: "Активный",
+        color: "green-30",
+      },
+      ratingStatusName: "Вы на 1 месте",
+      periodName: "01.07.23 - 30.09.23",
+    },
+  ],
+  specification: {
+    description:
+      'Победи в турнире "Максимальное сальдо выдач по кредитам" на уровне своего тербанка',
+    features: null,
+  },
+};
+
+const AnchorGold = {
+  imageId: Badge.AnchorGold,
+  imageIsActive: false,
+  badgeId: "00029",
+  receivingDate: "09.06.23",
+  badgeName: "Чемпион подразделения по условным сделкам",
+  badgeAmount: 1,
+  updateTooltip: `Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — ${date}`,
+  hasNftMark: true,
+  badgeType: "forTheTournament",
+  rewardCrystalCount: 30,
+  progress: {
+    current: "",
+    condition: "",
+  },
+  tournamentName: "Максимальное сальдо выдач по кредитам",
+  tournaments: [
+    {
+      tournamentId: "T3",
+      status: {
+        name: "Активный",
+        color: "green-30",
+      },
+      ratingStatusName: "Вы на 1 месте",
+      periodName: "01.07.23 - 30.09.23",
+    },
+  ],
+  specification: {
+    description:
+      'Победи в турнире "Максимальное сальдо выдач по кредитам" на уровне всей страны',
+    features: null,
   },
 };
 
@@ -534,6 +641,9 @@ export const allBadges = [
   ConditionalsChampionFirst,
   ConditionalsChampionSecond,
   ConditionalsChampionThird,
+  AnchorBronze,
+  AnchorSilver,
+  AnchorGold,
 ];
 
 export const badges = {
@@ -547,7 +657,7 @@ export const badges = {
     {
       badgeTypeName: "Бейджи за победы в турнирах",
       badges: allBadges.filter(
-        ({ badgeType }) => badgeType === "forTheTournament"
+        ({ badgeType }) => badgeType === "forTheTournament",
       ),
     },
   ],

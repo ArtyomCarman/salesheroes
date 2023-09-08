@@ -27,7 +27,7 @@ import ШебановаОльга from "../assets/images/Шебанова Оль
 import МакаровПавел from "../assets/images/Макаров Павел Сергеевич.jpeg";
 
 export const ratingList = {
-  contestants: "33 участника",
+  contestants: "1243 участника",
   leaders: [
     {
       profileNumber: "22",
@@ -528,7 +528,7 @@ export const ratingList = {
 };
 
 export const ratingListQuarter = {
-  contestants: "33 участника",
+  contestants: "1243 участника",
   leaders: [
     {
       profileNumber: "22",
@@ -1029,7 +1029,7 @@ export const ratingListQuarter = {
 };
 
 export const ratingListTB = {
-  contestants: "3 участника",
+  contestants: "152 участника",
   leaders: [
     {
       profileNumber: "22",
@@ -1080,7 +1080,7 @@ export const ratingListTB = {
 };
 
 export const ratingListTBQuarter = {
-  contestants: "3 участника",
+  contestants: "152 участника",
   leaders: [
     {
       profileNumber: "22",
@@ -1131,7 +1131,7 @@ export const ratingListTBQuarter = {
 };
 
 export const ratingListGOSB = {
-  contestants: "1 участник",
+  contestants: "15 участник",
   leaders: [
     {
       profileNumber: "22",
@@ -1152,7 +1152,7 @@ export const ratingListGOSB = {
 };
 
 export const ratingListGOSBQuarter = {
-  contestants: "1 участник",
+  contestants: "15 участник",
   leaders: [
     {
       profileNumber: "22",
