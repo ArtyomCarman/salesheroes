@@ -2,6 +2,7 @@ import { FC } from "react";
 import { NavLink } from "react-router-dom";
 import { Flex, Link, Text, FlexProps } from "@chakra-ui/react";
 import { ReactComponent as AboutUsIcon } from "../assets/icons/about-us.svg";
+import { ReactComponent as ShopIcon } from "../assets/icons/shop.svg";
 import { ReactComponent as AwardsIcon } from "../assets/icons/awards.svg";
 import { ReactComponent as CommunityIcon } from "../assets/icons/community.svg";
 import { ReactComponent as TournamentsIcon } from "../assets/icons/tournaments-24.svg";
@@ -31,7 +32,7 @@ export const AppSidebar: FC<Props> = ({ ...otherProps }) => (
         display="flex"
         borderRadius="8px"
         padding={{
-          base: "8px",
+          base: "4px",
           lg: "12px 16px",
         }}
         flexDirection={{
@@ -112,7 +113,7 @@ const sidebarModules = [
   },
   {
     to: "/shop",
-    icon: AboutUsIcon,
+    icon: ShopIcon,
     text: "Магазин",
   },
   {
