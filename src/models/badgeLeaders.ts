@@ -181,7 +181,7 @@ export const badgeShortList = [
   },
   {
     divisionLevelName: "ГОСБ",
-    contestants: "3 участник",
+    contestants: "3 участника",
     leaders: [
       {
         profileNumber: "22",
