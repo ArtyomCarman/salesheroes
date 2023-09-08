@@ -99,7 +99,7 @@ export const TournamentShortListProfilesContainer: FC<Props> = ({
             Сумма УС
           </Text>
         </SimpleGrid>
-        {divisionLevel.leaders.map((item) => (
+        {divisionLevel.leaders.map((item, index) => (
           <Flex
             key={item.profileNumber}
             gap="8px"
@@ -149,10 +149,7 @@ export const TournamentShortListProfilesContainer: FC<Props> = ({
             }}
             onClick={goToProfileId(item.profileNumber)}
           >
-            <PlaceInRating
-              reward={item.reward}
-              placeInRating={item.placeInRating}
-            />
+            <PlaceInRating reward={item.reward} placeInRating={index + 1} />
             <ProfileAvatar profile={item} size="md" />
             <Flex flexGrow={1} alignItems="center">
               <Box flexGrow={1}>

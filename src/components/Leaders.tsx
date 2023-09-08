@@ -10,9 +10,10 @@ import { ProfileAvatar } from "./ProfileAvatar";
 
 interface Props {
   leader: ILeader;
+  index?: number;
 }
 
-export const Leaders: FC<Props> = ({ leader }) => {
+export const Leaders: FC<Props> = ({ leader, index }) => {
   const navigate = useNavigate();
 
   const goToProfileId = (id: string) => () => {
@@ -81,7 +82,9 @@ export const Leaders: FC<Props> = ({ leader }) => {
       <Flex gap="8px">
         <PlaceInRating
           reward={leader.reward}
-          placeInRating={leader.placeInRating}
+          placeInRating={
+            index || index === 0 ? index + 1 : leader.placeInRating
+          }
           crystallEarned={leader.crystalsEarned}
         />
         <ProfileAvatar profile={leader} size="md" />

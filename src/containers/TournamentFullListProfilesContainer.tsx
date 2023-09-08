@@ -86,8 +86,8 @@ export const TournamentFullListProfilesContainer: FC<Props> = ({
             Сумма УС
           </Text>
         </SimpleGrid>
-        {leaders.leaders.map((item) => (
-          <Leaders key={item.profileNumber} leader={item} />
+        {leaders.leaders.map((item, index) => (
+          <Leaders key={item.profileNumber} leader={item} index={index} />
         ))}
       </Box>
     </Fade>
