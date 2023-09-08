@@ -345,14 +345,6 @@ const ConditionalsChampionFirst = {
       periodName: "осталось 2 дня",
     },
     {
-      tournamentId: "T2",
-      status: {
-        name: "Идет сейчас",
-        color: "green-30",
-      },
-      periodName: "Осталось 4 дня",
-    },
-    {
       tournamentId: "T3",
       status: {
         name: "Закончился",
@@ -396,14 +388,6 @@ const ConditionalsChampionSecond = {
       periodName: "осталось 2 дня",
     },
     {
-      tournamentId: "T2",
-      status: {
-        name: "Идет сейчас",
-        color: "green-30",
-      },
-      periodName: "Осталось 4 дня",
-    },
-    {
       tournamentId: "T3",
       status: {
         name: "Закончился",
@@ -445,14 +429,6 @@ const ConditionalsChampionThird = {
       },
       ratingStatusName: "Вы на 1 месте",
       periodName: "осталось 2 дня",
-    },
-    {
-      tournamentId: "T2",
-      status: {
-        name: "Идет сейчас",
-        color: "green-30",
-      },
-      periodName: "Осталось 4 дня",
     },
     {
       tournamentId: "T3",
@@ -604,7 +580,7 @@ export const badges = {
     {
       badgeTypeName: "Бейджи за победы в турнирах",
       badges: allBadges.filter(
-        ({ badgeType }) => badgeType === "forTheTournament",
+        ({ badgeType }) => badgeType === "forTheTournament"
       ),
     },
   ],
