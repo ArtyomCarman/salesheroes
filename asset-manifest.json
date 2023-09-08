@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.dc50f982.css",
-    "main.js": "/static/js/main.8c31b60c.js",
+    "main.js": "/static/js/main.017ecaf9.js",
     "static/js/787.35c0ec71.chunk.js": "/static/js/787.35c0ec71.chunk.js",
     "static/media/fake-avatars.svg": "/static/media/fake-avatars.35f89ae572727a59c4be0489afedf9ef.svg",
     "static/media/newsEmptyRating.png": "/static/media/newsEmptyRating.acad06254ada1045c3e2.png",
@@ -9,7 +9,10 @@
     "static/media/newsEmptyLeaders.png": "/static/media/newsEmptyLeaders.abccbba4c61f32eee2f1.png",
     "static/media/shop-tree.png": "/static/media/shop-tree.fd5ed8ada6e43b1838ce.png",
     "static/media/Елена Чернышова.jpeg": "/static/media/Елена Чернышова.53bec97da084c2bdbf96.jpeg",
+    "static/media/anchor-gold.svg": "/static/media/anchor-gold.aa76de82991feae090f9b99559f546cb.svg",
     "service-worker.js": "/service-worker.js",
+    "static/media/anchor-bronze.svg": "/static/media/anchor-bronze.509f031fe4143deb592b7f64418106ec.svg",
+    "static/media/anchor-silver.svg": "/static/media/anchor-silver.bc74197a8163b18e850df7070ac2d68b.svg",
     "static/media/badgeCommission200k.svg": "/static/media/badgeCommission200k.93cb2c5a12f8f5f5c05d44962213dcee.svg",
     "static/media/badgeCommission50k.svg": "/static/media/badgeCommission50k.2a336630515b23b2010764f24cdfd7a2.svg",
     "static/media/Проскурина Елена Михайловна.jpeg": "/static/media/Проскурина Елена Михайловна.5e3ea5f4f946e9defb66.jpeg",
@@ -67,11 +70,11 @@
     "static/media/lightning.svg": "/static/media/lightning.112b47d324cc6202e46730689d8c7976.svg",
     "static/media/shop-tree.svg": "/static/media/shop-tree.e1e2d07c88eba78d8974d89f4da041cf.svg",
     "main.dc50f982.css.map": "/static/css/main.dc50f982.css.map",
-    "main.8c31b60c.js.map": "/static/js/main.8c31b60c.js.map",
+    "main.017ecaf9.js.map": "/static/js/main.017ecaf9.js.map",
     "787.35c0ec71.chunk.js.map": "/static/js/787.35c0ec71.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dc50f982.css",
-    "static/js/main.8c31b60c.js"
+    "static/js/main.017ecaf9.js"
   ]
 }
