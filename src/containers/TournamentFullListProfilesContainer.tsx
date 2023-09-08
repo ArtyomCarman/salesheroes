@@ -7,6 +7,9 @@ import {
   tournamentFullListCountry,
   tournamentFullListTerb,
   tournamentFullListGOSB,
+  tournamentFullListCountry2,
+  tournamentFullListTerb2,
+  tournamentFullListGOSB2,
 } from "../models";
 import { useParams } from "react-router-dom";
 
@@ -21,50 +24,17 @@ export const TournamentFullListProfilesContainer: FC<Props> = ({
   const leaders = useMemo(() => {
     if (divisionLevel === DivisionLevel.Тербанк) {
       return tournamentId === "T2"
-        ? {
-            ...tournamentFullListTerb,
-            leaders: tournamentFullListTerb.leaders
-              .map((item) =>
-                item.profileNumber === "22"
-                  ? { ...item, indicatorValue: "22" }
-                  : item
-              )
-              .sort(
-                (item1, item2) => +item2.indicatorValue - +item1.indicatorValue
-              ),
-          }
+        ? tournamentFullListTerb2
         : tournamentFullListTerb;
     }
     if (divisionLevel === DivisionLevel.Подразделение) {
       return tournamentId === "T2"
-        ? {
-            ...tournamentFullListGOSB,
-            leaders: tournamentFullListGOSB.leaders
-              .map((item) =>
-                item.profileNumber === "22"
-                  ? { ...item, indicatorValue: "22" }
-                  : item
-              )
-              .sort(
-                (item1, item2) => +item2.indicatorValue - +item1.indicatorValue
-              ),
-          }
+        ? tournamentFullListGOSB2
         : tournamentFullListGOSB;
     }
     // if countru
     return tournamentId === "T2"
-      ? {
-          ...tournamentFullListCountry,
-          leaders: tournamentFullListCountry.leaders
-            .map((item) =>
-              item.profileNumber === "22"
-                ? { ...item, indicatorValue: "22" }
-                : item
-            )
-            .sort(
-              (item1, item2) => +item2.indicatorValue - +item1.indicatorValue
-            ),
-        }
+      ? tournamentFullListCountry2
       : tournamentFullListCountry;
   }, [divisionLevel, tournamentId]);
 

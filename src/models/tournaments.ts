@@ -494,12 +494,38 @@ export const tournamentFullListCountry = {
     .sort((item1, item2) => +item2.indicatorValue - +item1.indicatorValue)
     .map((item, index) => (index < 5 ? { ...item, hasReward: true } : item)),
 };
+
+export const tournamentFullListCountry2 = {
+  tournamentId: "T2",
+  tournamentIndicator: "Ставка",
+  contestants: "1243 участника",
+  leaders: leaders
+    .map((item) =>
+      item.profileNumber === "22" ? { ...item, indicatorValue: "22" } : item
+    )
+    .sort((item1, item2) => +item2.indicatorValue - +item1.indicatorValue)
+    .map((item, index) => (index < 5 ? { ...item, hasReward: true } : item)),
+};
+
 export const tournamentFullListTerb = {
   tournamentId: "T1",
   tournamentIndicator: "Ставка",
   contestants: "152 участников",
   leaders: leaders
     .filter(({ terDivisionName }) => terDivisionName === "СРБ")
+    .sort((item1, item2) => +item2.indicatorValue - +item1.indicatorValue)
+    .map((item, index) => (index < 3 ? { ...item, hasReward: true } : item)),
+};
+
+export const tournamentFullListTerb2 = {
+  tournamentId: "T2",
+  tournamentIndicator: "Ставка",
+  contestants: "152 участников",
+  leaders: leaders
+    .filter(({ terDivisionName }) => terDivisionName === "СРБ")
+    .map((item) =>
+      item.profileNumber === "22" ? { ...item, indicatorValue: "22" } : item
+    )
     .sort((item1, item2) => +item2.indicatorValue - +item1.indicatorValue)
     .map((item, index) => (index < 3 ? { ...item, hasReward: true } : item)),
 };
@@ -514,6 +540,24 @@ export const tournamentFullListGOSB = {
   } участников`,
   leaders: leaders
     .filter(({ terDivisionName }) => terDivisionName === "СРБ")
+    .sort((item1, item2) => +item2.indicatorValue - +item1.indicatorValue)
+    .slice(0, 11)
+    .map((item, index) => (index < 1 ? { ...item, hasReward: true } : item)),
+};
+
+export const tournamentFullListGOSB2 = {
+  tournamentId: "T1",
+  tournamentIndicator: "Ставка",
+  contestants: `${
+    leaders
+      .filter(({ terDivisionName }) => terDivisionName === "СРБ")
+      .slice(0, 11).length
+  } участников`,
+  leaders: leaders
+    .filter(({ terDivisionName }) => terDivisionName === "СРБ")
+    .map((item) =>
+      item.profileNumber === "22" ? { ...item, indicatorValue: "22" } : item
+    )
     .sort((item1, item2) => +item2.indicatorValue - +item1.indicatorValue)
     .slice(0, 11)
     .map((item, index) => (index < 1 ? { ...item, hasReward: true } : item)),
