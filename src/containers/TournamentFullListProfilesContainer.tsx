@@ -5,11 +5,8 @@ import { FC, useMemo } from "react";
 import { DivisionLevel } from "../interfaces";
 import {
   tournamentFullListCountry,
-  tournamentFullListCountryT2,
-  tournamentFullListGOSBT2,
   tournamentFullListTerb,
   tournamentFullListGOSB,
-  tournamentFullListTerbT2,
 } from "../models";
 import { useParams } from "react-router-dom";
 
@@ -24,22 +21,50 @@ export const TournamentFullListProfilesContainer: FC<Props> = ({
   const leaders = useMemo(() => {
     if (divisionLevel === DivisionLevel.Тербанк) {
       return tournamentId === "T2"
-        ? tournamentFullListTerbT2
-        : tournamentFullListTerb;
-    }
-    if (divisionLevel === DivisionLevel.Кластер) {
-      return tournamentId === "T2"
-        ? tournamentFullListTerbT2
+        ? {
+            ...tournamentFullListTerb,
+            leaders: tournamentFullListTerb.leaders
+              .map((item) =>
+                item.profileNumber === "22"
+                  ? { ...item, indicatorValue: "22" }
+                  : item
+              )
+              .sort(
+                (item1, item2) => +item2.indicatorValue - +item1.indicatorValue
+              ),
+          }
         : tournamentFullListTerb;
     }
     if (divisionLevel === DivisionLevel.Подразделение) {
       return tournamentId === "T2"
-        ? tournamentFullListGOSBT2
+        ? {
+            ...tournamentFullListGOSB,
+            leaders: tournamentFullListGOSB.leaders
+              .map((item) =>
+                item.profileNumber === "22"
+                  ? { ...item, indicatorValue: "22" }
+                  : item
+              )
+              .sort(
+                (item1, item2) => +item2.indicatorValue - +item1.indicatorValue
+              ),
+          }
         : tournamentFullListGOSB;
     }
     // if countru
     return tournamentId === "T2"
-      ? tournamentFullListCountryT2
+      ? {
+          ...tournamentFullListCountry,
+          leaders: tournamentFullListCountry.leaders
+            .map((item) =>
+              item.profileNumber === "22"
+                ? { ...item, indicatorValue: "22" }
+                : item
+            )
+            .sort(
+              (item1, item2) => +item2.indicatorValue - +item1.indicatorValue
+            ),
+        }
       : tournamentFullListCountry;
   }, [divisionLevel, tournamentId]);
 

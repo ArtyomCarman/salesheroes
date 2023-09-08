@@ -103,7 +103,7 @@ const tournaments = {
               placeInRating: 5,
             },
             {
-              divisionLevelResult: "из 3 в Кластере",
+              divisionLevelResult: "из 3 в Тербанке",
               placeInRating: 2,
               reward: {
                 icon: Reward.silver,
@@ -111,7 +111,7 @@ const tournaments = {
               },
             },
             {
-              divisionLevelResult: "из 1 в Аппарате ТБ",
+              divisionLevelResult: "из 1 в ГОСБ",
               placeInRating: 1,
               reward: {
                 icon: Reward.gold,

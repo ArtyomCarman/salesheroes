@@ -82,7 +82,7 @@ export const tournaments = {
       ratingCategoryName: "Нужно поднажать",
       tournaments: [
         {
-          tournamentId: "T3",
+          tournamentId: "T2",
           tournamentName: "Максимальное сальдо выдач по кредитам",
           tournamentInfo: "Осталось 39 дней",
           tournamentDurationName: "ТУРНИР квартала",
@@ -385,7 +385,7 @@ export const archiveTournamentId = {
       reward: undefined,
     },
     {
-      divisionLevelName: "Кластер",
+      divisionLevelName: "Тербанк",
       contestants: 3,
       placeInRating: 2,
       reward: {
@@ -394,7 +394,7 @@ export const archiveTournamentId = {
       },
     },
     {
-      divisionLevelName: "Аппарат ТБ",
+      divisionLevelName: "ГОСБ",
       contestants: 1,
       placeInRating: 1,
       reward: {
@@ -429,7 +429,7 @@ export const archiveTournamentId = {
       hasNftMark: true,
     },
     {
-      divisionLevelName: "Кластер",
+      divisionLevelName: "Тербанк",
       rewardRule: "Бейдж получат 7% от числа участников турнира в вашем ТБ",
       badgeId: "00025",
       badgeName: "Чемпион ТБ по условным сделкам",
@@ -439,7 +439,7 @@ export const archiveTournamentId = {
       hasNftMark: false,
     },
     {
-      divisionLevelName: "Аппарат ТБ",
+      divisionLevelName: "ГОСБ",
       rewardRule:
         "Бейдж получат 10% от числа участников турнира в вашем подразделении",
       badgeId: "00026",
@@ -461,6 +461,7 @@ export const tournamentShortList = [
       .sort((item1, item2) =>
         item1.placeInRating > item2.placeInRating ? 1 : -1,
       )
+      .map((item, index) => (index < 5 ? { ...item, hasReward: true } : item))
       .slice(0, 5),
   },
   {
@@ -472,6 +473,7 @@ export const tournamentShortList = [
       .sort((item1, item2) =>
         item1.placeInRating > item2.placeInRating ? 1 : -1,
       )
+      .map((item, index) => (index < 3 ? { ...item, hasReward: true } : item))
       .slice(0, 5),
   },
   {
@@ -487,6 +489,7 @@ export const tournamentShortList = [
       .sort((item1, item2) =>
         item1.placeInRating > item2.placeInRating ? 1 : -1,
       )
+      .map((item, index) => (index < 1 ? { ...item, hasReward: true } : item))
       .slice(0, 5),
   },
 ];
@@ -495,9 +498,15 @@ export const tournamentFullListCountry = {
   tournamentId: "T1",
   tournamentIndicator: "Ставка",
   contestants: "1243 участника",
+<<<<<<< Updated upstream
   leaders: leaders.sort((item1, item2) =>
     item1.placeInRating > item2.placeInRating ? 1 : -1,
   ),
+=======
+  leaders: leaders
+    .toSorted((item1, item2) => +item2.indicatorValue - +item1.indicatorValue)
+    .map((item, index) => (index < 5 ? { ...item, hasReward: true } : item)),
+>>>>>>> Stashed changes
 };
 export const tournamentFullListTerb = {
   tournamentId: "T1",
@@ -505,9 +514,14 @@ export const tournamentFullListTerb = {
   contestants: "152 участников",
   leaders: leaders
     .filter(({ terDivisionName }) => terDivisionName === "СРБ")
+<<<<<<< Updated upstream
     .sort((item1, item2) =>
       item1.placeInRating > item2.placeInRating ? 1 : -1,
     ),
+=======
+    .toSorted((item1, item2) => +item2.indicatorValue - +item1.indicatorValue)
+    .map((item, index) => (index < 3 ? { ...item, hasReward: true } : item)),
+>>>>>>> Stashed changes
 };
 
 export const tournamentFullListGOSB = {
@@ -520,10 +534,16 @@ export const tournamentFullListGOSB = {
   } участников`,
   leaders: leaders
     .filter(({ terDivisionName }) => terDivisionName === "СРБ")
+<<<<<<< Updated upstream
     .sort((item1, item2) =>
       item1.placeInRating > item2.placeInRating ? 1 : -1,
     )
     .slice(0, 11),
+=======
+    .toSorted((item1, item2) => +item2.indicatorValue - +item1.indicatorValue)
+    .slice(0, 11)
+    .map((item, index) => (index < 1 ? { ...item, hasReward: true } : item)),
+>>>>>>> Stashed changes
 };
 
 export const archiveTournaments = {
@@ -550,14 +570,14 @@ export const archiveTournaments = {
           placeInRating: 5,
         },
         {
-          divisionLevelResult: "из 3 в кластере",
+          divisionLevelResult: "из 3 в тербанке",
           placeInRating: 2,
           reward: {
             icon: Reward.silver,
           },
         },
         {
-          divisionLevelResult: "из 1 в аппарате ТБ",
+          divisionLevelResult: "из 1 в ГОСБ",
           placeInRating: 1,
           reward: {
             icon: Reward.gold,
@@ -568,6 +588,7 @@ export const archiveTournaments = {
     },
   ],
 };
+<<<<<<< Updated upstream
 
 export const tournamentFullListGOSBT2 = {
   tournamentId: "T2",
@@ -758,3 +779,5 @@ export const tournamentShortListT3 = [
     ],
   },
 ];
+=======
+>>>>>>> Stashed changes

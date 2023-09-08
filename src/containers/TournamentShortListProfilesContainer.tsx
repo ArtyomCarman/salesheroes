@@ -149,7 +149,11 @@ export const TournamentShortListProfilesContainer: FC<Props> = ({
             }}
             onClick={goToProfileId(item.profileNumber)}
           >
-            <PlaceInRating reward={item.reward} placeInRating={index + 1} />
+            <PlaceInRating
+              reward={item.reward}
+              placeInRating={index + 1}
+              hasReward={item?.hasReward}
+            />
             <ProfileAvatar profile={item} size="md" />
             <Flex flexGrow={1} alignItems="center">
               <Box flexGrow={1}>

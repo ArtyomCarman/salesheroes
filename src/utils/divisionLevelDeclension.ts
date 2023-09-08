@@ -8,9 +8,6 @@ export const divisionLevelDeclension = (divisionLevel: DivisionLevel) => {
     case "TERB": {
       return "тербанке";
     }
-    case "CLUSTER": {
-      return "кластере";
-    }
     default: {
       return "подразделении";
     }

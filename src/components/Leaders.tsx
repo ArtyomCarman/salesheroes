@@ -86,6 +86,7 @@ export const Leaders: FC<Props> = ({ leader, index }) => {
             index || index === 0 ? index + 1 : leader.placeInRating
           }
           crystallEarned={leader.crystalsEarned}
+          hasReward={leader.hasReward}
         />
         <ProfileAvatar profile={leader} size="md" />
       </Flex>

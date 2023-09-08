@@ -54,6 +54,7 @@ export interface ILeader {
   colorCode: IColorCode;
   employeeStatus?: EmployeeStatus;
   progress?: unknown;
+  hasReward?: boolean;
 }
 
 export interface IColorCode {
@@ -66,8 +67,6 @@ export enum DivisionLevel {
   "Страна" = "COUNTRY",
   "ГОСБ" = "GOSB",
   "Подразделение" = "GOSB",
-  "Кластер" = "CLUSTER",
-  "Аппарат ТБ" = "GOSB",
 }
 
 export enum TimePeriod {
