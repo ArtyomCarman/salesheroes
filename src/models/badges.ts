@@ -609,7 +609,7 @@ const AnchorGold = {
         name: "Активный",
         color: "green-30",
       },
-      ratingStatusName: "Вы на 1 месте",
+      ratingStatusName: "Вы на 4 месте",
       periodName: "01.07.23 - 30.09.23",
     },
   ],
