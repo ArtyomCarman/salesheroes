@@ -172,7 +172,7 @@ export const tournamentID = [
         },
       },
     ],
-    totalParticipants: "33 участника",
+    totalParticipants: "1 243 участника",
     specification: {
       description:
         "Том Лонгбоут по праву считается величайшим марафонцем всех времен!\n" +
