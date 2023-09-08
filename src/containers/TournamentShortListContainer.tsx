@@ -3,18 +3,18 @@ import { Fade, Flex, Text } from "@chakra-ui/react";
 
 import { AppTabs } from "../components";
 import { TournamentShortListProfilesContainer } from "./TournamentShortListProfilesContainer";
-import { tournamentShortList, tournamentShortListT2 } from "../models";
-import { useParams } from "react-router-dom";
+import { tournamentShortList } from "../models";
+// import { useParams } from "react-router-dom";
 
 export const TournamentShortListContainer = () => {
-  const { tournamentId } = useParams();
+  // const { tournamentId } = useParams();
   const leaders = useMemo(() => {
     // if (tournamentId === 'T2') {
     //     return tournamentShortListT2
     // }
 
     return tournamentShortList;
-  }, [tournamentId]);
+  }, []);
 
   const tabs = useMemo(
     () =>
