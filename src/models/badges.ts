@@ -45,8 +45,8 @@ const Commission200k = {
   rewardCrystalCount: 15,
   progressBarValue: 75,
   progress: {
-    current: "170 из 200 тыс. руб.",
-    condition: "Осталось 30 тыс. руб.",
+    current: "146 из 200 тыс. руб.",
+    condition: "Осталось 54 тыс. руб.",
   },
   specification: {
     description:
@@ -511,7 +511,7 @@ const ConditionalsChampionThird = {
   ],
   specification: {
     description:
-      'Победи в турнире "Марафон по условным сделкам" в рамках своего \nГОСБ \\ Управления',
+      'Победи в турнире "Марафон по условным сделкам" в рамках своего ГОСБ \\ Управления',
     features: [
       {
         number: 1,
@@ -525,8 +525,7 @@ const AnchorBronze = {
   imageId: Badge.AnchorBronze,
   imageIsActive: false,
   badgeId: "00027",
-  receivingDate: "09.06.23",
-  badgeName: "Чемпион подразделения по условным сделкам",
+  badgeName: "Чемпион подразделения по кредитным выдачам",
   badgeAmount: 1,
   updateTooltip: `Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — ${date}`,
   hasNftMark: false,
@@ -550,7 +549,7 @@ const AnchorBronze = {
   ],
   specification: {
     description:
-      'Победи в турнире "Максимальное сальдо выдач по кредитам" в рамках своего \nГОСБ \\ Управления',
+      'Победи в турнире "Максимальное сальдо выдач по кредитам" в рамках своего ГОСБ \\ Управления',
     features: null,
   },
 };
@@ -559,8 +558,7 @@ const AnchorSilver = {
   imageId: Badge.AnchorSilver,
   imageIsActive: false,
   badgeId: "00028",
-  receivingDate: "09.06.23",
-  badgeName: "Чемпион подразделения по условным сделкам",
+  badgeName: "Чемпион тербанка по кредитным выдачам",
   badgeAmount: 1,
   updateTooltip: `Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — ${date}`,
   hasNftMark: false,
@@ -593,8 +591,7 @@ const AnchorGold = {
   imageId: Badge.AnchorGold,
   imageIsActive: false,
   badgeId: "00029",
-  receivingDate: "09.06.23",
-  badgeName: "Чемпион подразделения по условным сделкам",
+  badgeName: "Чемпион страны по кредитным выдачам",
   badgeAmount: 1,
   updateTooltip: `Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — ${date}`,
   hasNftMark: true,

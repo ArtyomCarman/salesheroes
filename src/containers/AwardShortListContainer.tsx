@@ -13,7 +13,7 @@ export const AwardShortListContainer = () => {
         label: item.divisionLevelName,
         component: <AwardShortListProfilesContainer divisionLevel={item} />,
       })),
-    []
+    [],
   );
 
   return (
@@ -37,7 +37,7 @@ export const AwardShortListContainer = () => {
             </Text>
             <AppTooltip
               header="Отсортировано по дате получения бейджа"
-              text=""
+              text="Отсортировано по дате получения бейджа"
               _before={{
                 content: "''",
                 width: "32px",
