@@ -345,7 +345,7 @@ const ConditionalsChampionFirst = {
       periodName: "осталось 2 дня",
     },
     {
-      tournamentId: "T3",
+      tournamentId: "T1",
       status: {
         name: "Закончился",
         color: "red-30",
@@ -388,7 +388,7 @@ const ConditionalsChampionSecond = {
       periodName: "осталось 2 дня",
     },
     {
-      tournamentId: "T3",
+      tournamentId: "T1",
       status: {
         name: "Закончился",
         color: "red-30",
@@ -431,7 +431,7 @@ const ConditionalsChampionThird = {
       periodName: "осталось 2 дня",
     },
     {
-      tournamentId: "T3",
+      tournamentId: "T1",
       status: {
         name: "Закончился",
         color: "red-30",
@@ -464,7 +464,7 @@ const AnchorBronze = {
   tournamentName: "Максимальное сальдо выдач по кредитам",
   tournaments: [
     {
-      tournamentId: "T3",
+      tournamentId: "T2",
       status: {
         name: "Активный",
         color: "green-30",
@@ -497,7 +497,7 @@ const AnchorSilver = {
   tournamentName: "Максимальное сальдо выдач по кредитам",
   tournaments: [
     {
-      tournamentId: "T3",
+      tournamentId: "T2",
       status: {
         name: "Активный",
         color: "green-30",
@@ -530,7 +530,7 @@ const AnchorGold = {
   tournamentName: "Максимальное сальдо выдач по кредитам",
   tournaments: [
     {
-      tournamentId: "T3",
+      tournamentId: "T2",
       status: {
         name: "Активный",
         color: "green-30",
