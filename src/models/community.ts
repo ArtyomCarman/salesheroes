@@ -834,6 +834,79 @@ export const newsRatingTERB = {
       },
     },
     {
+      profileNumber: "14",
+      isMarked: false,
+      firstName: "Юлия",
+      lastName: "Орлова",
+      photoData: ОрловаЮлия,
+      terDivisionName: "ПБ",
+      placeInRating: 2,
+      colorCode: {
+        primary: "blue-60",
+        secondary: "blue-30",
+      },
+    },
+    {
+      profileNumber: "24",
+      isMarked: false,
+      firstName: "Ирина",
+      lastName: "Шаброва",
+      photoData: ШаброваИрина,
+      terDivisionName: "СИБ",
+      placeInRating: 3,
+      colorCode: {
+        primary: "orange-60",
+        secondary: "orange-30",
+      },
+    },
+    {
+      profileNumber: "28",
+      isMarked: false,
+      firstName: "Наталья",
+      lastName: "Дурова",
+      photoData: ДуроваНаталья,
+      terDivisionName: "ЦЧБ",
+      placeInRating: 4,
+      crystalsEarned: 114,
+      indicatorValue: "",
+      colorCode: {
+        primary: "blue-60",
+        secondary: "blue-30",
+      },
+    },
+    {
+      profileNumber: "23",
+      isMarked: false,
+      firstName: "Мария",
+      lastName: "Тихомирова",
+      photoData: ТихомироваМария,
+      terDivisionName: "СРБ",
+      placeInRating: 5,
+      colorCode: {
+        primary: "light-green-30",
+        secondary: "light-green-20",
+      },
+    },
+  ],
+};
+
+export const newsRatingGOSB = {
+  heading: "Роман Гайн из СРБ на 1 месте!",
+  usersPosition: "Вы на 1 из 15 месте",
+  leaders: [
+    {
+      profileNumber: "22",
+      firstName: "Роман",
+      lastName: "Гайн",
+      photoData: ГайнРоман,
+      terDivisionName: "СРБ",
+      placeInRating: 1,
+      colorCode: {
+        primary: "blue-60",
+        secondary: "blue-30",
+      },
+    },
+    {
       profileNumber: "24",
       isMarked: false,
       firstName: "Ирина",
@@ -859,20 +932,29 @@ export const newsRatingTERB = {
         secondary: "light-green-20",
       },
     },
-  ],
-};
-
-export const newsRatingGOSB = {
-  heading: "Роман Гайн из СРБ на 1 месте!",
-  usersPosition: "Вы на 1 из 15 месте",
-  leaders: [
     {
-      profileNumber: "22",
-      firstName: "Роман",
-      lastName: "Гайн",
-      photoData: ГайнРоман,
-      terDivisionName: "СРБ",
-      placeInRating: 1,
+      profileNumber: "28",
+      isMarked: false,
+      firstName: "Наталья",
+      lastName: "Дурова",
+      photoData: ДуроваНаталья,
+      terDivisionName: "ЦЧБ",
+      placeInRating: 4,
+      crystalsEarned: 114,
+      indicatorValue: "",
+      colorCode: {
+        primary: "blue-60",
+        secondary: "blue-30",
+      },
+    },
+    {
+      profileNumber: "14",
+      isMarked: false,
+      firstName: "Юлия",
+      lastName: "Орлова",
+      photoData: ОрловаЮлия,
+      terDivisionName: "ПБ",
+      placeInRating: 5,
       colorCode: {
         primary: "blue-60",
         secondary: "blue-30",
