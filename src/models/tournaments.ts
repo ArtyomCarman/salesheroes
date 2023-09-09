@@ -216,7 +216,7 @@ export const tournamentID = [
   {
     tournamentId: "T2",
     hasNftMark: true,
-    tournamentName: "Турнир по условным сделкам",
+    tournamentName: "Максимальное сальдо выдач по кредитам",
     status: "ACTIVE",
     ratingCategoryName: "Вы в лидерах",
     tournamentInfo: "Завершён  •  Подведение итогов",
