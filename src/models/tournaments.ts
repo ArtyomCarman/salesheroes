@@ -268,7 +268,7 @@ export const tournamentID = [
         divisionLevelName: "Страна",
         rewardRule:
           "Бейдж получит 1% от числа участников турнира по всей стране",
-        badgeId: "00024",
+        badgeId: "00029",
         badgeName: "Чемпион страны по кредитным выдачам",
         imageId: Badge.AnchorGold,
         badgeIcon: Badge.AnchorGold,
@@ -278,7 +278,7 @@ export const tournamentID = [
       {
         divisionLevelName: "Тербанк",
         rewardRule: "Бейдж получат 7% от числа участников турнира в вашем ТБ",
-        badgeId: "00025",
+        badgeId: "00028",
         badgeName: "Чемпион тербанка по кредитным выдачам",
         imageId: Badge.AnchorSilver,
         badgeIcon: Badge.AnchorSilver,
@@ -289,7 +289,7 @@ export const tournamentID = [
         divisionLevelName: "ГОСБ",
         rewardRule:
           "Бейдж получат 10% от числа участников турнира в вашем подразделении",
-        badgeId: "00026",
+        badgeId: "00027",
         badgeName: "Чемпион подразделения по кредитным выдачам",
         imageId: Badge.AnchorBronze,
         badgeIcon: Badge.AnchorBronze,
