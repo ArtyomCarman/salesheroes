@@ -15,7 +15,7 @@ export const CommunityIdPage = () => {
     navigate(`/profile/${profileNumber}`);
   };
 
-  const handleTournamentId = () => navigate(`/awards/00013`);
+  const handleTournamentId = () => navigate(`/tournaments/archive/T4`);
 
   const { id } = useParams();
 
@@ -64,7 +64,7 @@ export const CommunityIdPage = () => {
           {newsId.tournamentId && (
             <Flex gap="8px" cursor="pointer" onClick={handleTournamentId}>
               <TournamentsIcon width="24px" height="24px" />
-              <Text size="body16/24">{newsId.date}</Text>
+              <Text size="body16/24">Детали турнира</Text>
               <ArrowRightIcon width="24px" height="24px" />
             </Flex>
           )}

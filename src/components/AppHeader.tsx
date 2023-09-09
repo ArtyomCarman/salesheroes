@@ -1,6 +1,6 @@
 import type { FC } from "react";
 import { useMemo } from "react";
-import { NavLink, useLocation, useNavigate } from "react-router-dom";
+import { NavLink, useLocation, useNavigate, useParams } from "react-router-dom";
 import { Flex, Link, Show, SimpleGrid, Text } from "@chakra-ui/react";
 
 import { ProfileAvatar } from "./ProfileAvatar";
@@ -11,15 +11,19 @@ import { profileContestant } from "../models";
 
 export const AppHeader: FC = () => {
   const navigate = useNavigate();
+  const { profileNumber } = useParams();
 
   const { pathname, state } = useLocation();
+  const isOurProfile = "22" === profileNumber;
+  const allAwardsPage = pathname === `/profile/${profileNumber}/awards`;
 
   const showBackButton = useMemo(
     () =>
-      !/\/(awards|community|tournaments|about|shop|progress)$/gi.test(
-        pathname
-      ) && !state?.hideBackButton,
-    [pathname, state]
+      (!/\/(awards|community|tournaments|progress)$/gi.test(pathname) &&
+        !state?.hideBackButton) ||
+      isOurProfile ||
+      allAwardsPage,
+    [pathname, state],
   );
 
   const goBack = () => navigate(-1);

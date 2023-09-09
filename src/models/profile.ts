@@ -7,6 +7,7 @@ export const profileContestant = {
   lastName: "Гайн",
   firstName: "Роман",
   tbShortName: "СРБ",
+  terDivisionName: "СРБ",
   gosbName: undefined,
   funcDivisionName: undefined,
   positionName: "КМ",

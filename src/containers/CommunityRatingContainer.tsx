@@ -29,8 +29,8 @@ export const CommunityRatingContainer: FC<Props> = ({ divisionLevel }) => {
   const goToLeadersList = () => {
     if (rating.leaders.length !== 0) {
       navigate(
-        `/rating?divisionLevel=${divisionLevel}
-			`
+        `/rating?divisionLevel=${divisionLevel}&timePeriod=ALLTHETIME
+			`,
       );
     }
   };

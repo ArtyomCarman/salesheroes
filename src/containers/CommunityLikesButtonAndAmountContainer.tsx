@@ -19,7 +19,7 @@ export const CommunityLikesButtonAndAmountContainer: FC<Props> = ({
     navigate(`/profile/${id}`);
   };
 
-  const [like, setLike] = useState(true);
+  const [like, setLike] = useState(result.isLiked);
 
   const handleLike: MouseEventHandler<HTMLButtonElement> = (event) => {
     event.stopPropagation();

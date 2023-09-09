@@ -17,9 +17,12 @@ export const CommunityLikesContainer: FC<Props> = ({ newsId }) => {
             <Text as="span" size="body14/20" variant="regular">
               Нравится руководителям:
             </Text>{" "}
-            <Text as="span" size="body14/20" variant="semibold">
-              {likes.bossNames.join(", ")}
-            </Text>
+            <Text
+              as="span"
+              size="body14/20"
+              variant="semibold"
+              dangerouslySetInnerHTML={{ __html: likes.bossNames.join(", ") }}
+            />
           </Box>
         )}
 
