@@ -76,9 +76,9 @@ export const tournaments = {
         {
           tournamentId: "T2",
           tournamentName: "Максимальное сальдо выдач по кредитам",
-          tournamentInfo: "Осталось 39 дней",
+          tournamentInfo: "Осталось 19 дней",
           tournamentDurationName: "ТУРНИР квартала",
-          progressBarValue: 65,
+          progressBarValue: 20,
           updateTooltip: `Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — ${date}`,
           reward: undefined,
           rating: [
@@ -219,10 +219,10 @@ export const tournamentID = [
     tournamentName: "Максимальное сальдо выдач по кредитам",
     status: "ACTIVE",
     ratingCategoryName: "Вы в лидерах",
-    tournamentInfo: "Осталось 39 дней",
+    tournamentInfo: "Осталось 19 дней",
     tournamentDurationName: "турнир 3 недели",
-    lasting: "31 июля 2023 - 20 августа 2023",
-    percentageIndicator: 50,
+    lasting: "9 сентября 2023 - 29 сентября 2023",
+    percentageIndicator: 20,
     updateTooltip: `Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — ${date}`,
     rating: [
       {
