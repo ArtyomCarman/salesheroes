@@ -10,17 +10,22 @@ import {
   CommunityIdPage,
   CommunityPage,
   ProfileAllAwardsPage,
-  ProfilePage, ProgressPage,
+  ProfilePage,
+  ProgressPage,
   RatingListPage,
   TournamentIdArchivePage,
   TournamentsArchivePage,
   TournamentsIdPage,
   TournamentsLeadersPage,
   TournamentsPage,
+  MorePage,
 } from "./pages";
 import { AppTemplate } from "./components/AppTemplate";
+import { useBreakpointValue } from "@chakra-ui/react";
 
 export const AppRoutes = () => {
+  const isMobile = useBreakpointValue({ base: true, lg: false });
+
   return (
     <Routes>
       <Route path="/" element={<AppTemplate />}>
@@ -55,6 +60,7 @@ export const AppRoutes = () => {
         </Route>
         <Route path="shop" element={<ShopPage />} />
         <Route path="about" element={<AboutPage />} />
+        {isMobile && <Route path="more" element={<MorePage />} />}
       </Route>
       <Route path="*" element={<Navigate replace to="/" />} />
     </Routes>
