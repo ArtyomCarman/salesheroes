@@ -219,10 +219,10 @@ export const tournamentID = [
     tournamentName: "Максимальное сальдо выдач по кредитам",
     status: "ACTIVE",
     ratingCategoryName: "Вы в лидерах",
-    tournamentInfo: "Завершён  •  Подведение итогов",
+    tournamentInfo: "Осталось 39 дней",
     tournamentDurationName: "турнир 3 недели",
     lasting: "31 июля 2023 - 20 августа 2023",
-    percentageIndicator: 100,
+    percentageIndicator: 50,
     updateTooltip: `Обновление информации об участниках и их достижениях происходит каждый день. Последнее обновление — ${date}`,
     rating: [
       {
