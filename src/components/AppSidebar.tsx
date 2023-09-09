@@ -1,96 +1,126 @@
-import { FC } from "react";
+import { FC, useMemo } from "react";
 import { NavLink } from "react-router-dom";
-import { Flex, Link, Text, FlexProps } from "@chakra-ui/react";
+import {
+  Flex,
+  Link,
+  Text,
+  FlexProps,
+  useBreakpointValue,
+} from "@chakra-ui/react";
 import { ReactComponent as AboutUsIcon } from "../assets/icons/about-us.svg";
 import { ReactComponent as ShopIcon } from "../assets/icons/shop.svg";
 import { ReactComponent as AwardsIcon } from "../assets/icons/awards.svg";
 import { ReactComponent as CommunityIcon } from "../assets/icons/community.svg";
 import { ReactComponent as TournamentsIcon } from "../assets/icons/tournaments-24.svg";
 import { ReactComponent as ProgressIcon } from "../assets/icons/progress.svg";
+import { ReactComponent as MoreIcon } from "../assets/icons/more.svg";
 
-export const AppSidebar: FC<Props> = ({ ...otherProps }) => (
-  <Flex
-    as="nav"
-    direction={{
-      base: "row",
-      lg: "column",
-    }}
-    justifyContent="space-evenly"
-    display={{
-      base: "grid",
-      lg: "flex",
-    }}
-    gridAutoFlow="column"
-    gridAutoColumns="minmax(0, 1fr)"
-    {...otherProps}
-  >
-    {sidebarModules.map(({ to, text, icon: Icon }) => (
-      <Link
-        key={to}
-        as={NavLink}
-        alignItems="center"
-        display="flex"
-        borderRadius="8px"
-        padding={{
-          base: "4px",
-          lg: "12px 16px",
-        }}
-        flexDirection={{
-          base: "column",
-          lg: "row",
-        }}
-        gap={{
-          base: "4px",
-          lg: "12px",
-        }}
-        textDecoration="none"
-        color={{
-          base: "rgba(255, 255, 255, 0.6)",
-          lg: "#fff",
-        }}
-        _hover={{
-          lg: {
-            textDecoration: "none",
-            color: "#FFBF3E",
-            background: "rgba(87, 92, 112, 0.3)",
-            svg: {
-              fill: "#FFBF3E",
-            },
-          },
-        }}
-        _active={{
-          base: {
-            textDecoration: "none",
-            color: "#FFBF3E",
-            background: "rgba(87, 92, 112, 0.3)",
-            svg: {
-              fill: "#FFBF3E",
-            },
-          },
-        }}
-        _activeLink={{
-          "&.active": {
-            color: "#FFBF3E",
-            svg: {
-              fill: "#FFBF3E",
-            },
+export const AppSidebar: FC<Props> = ({ ...otherProps }) => {
+  const isMobile = useBreakpointValue({ base: true, lg: false });
 
-            "@media screen and (min-width: 62em)": {
+  const navbar = useMemo(() => {
+    if (isMobile) {
+      return [
+        ...navMenu.filter(
+          ({ text }) => !["Магазин", "О проекте"].includes(text)
+        ),
+        {
+          to: "/more",
+          icon: MoreIcon,
+          text: "Ещё",
+        },
+      ];
+    }
+
+    return navMenu;
+  }, [isMobile]);
+
+  return (
+    <Flex
+      as="nav"
+      direction={{
+        base: "row",
+        lg: "column",
+      }}
+      justifyContent="space-evenly"
+      display={{
+        base: "grid",
+        lg: "flex",
+      }}
+      gridAutoFlow="column"
+      gridAutoColumns="minmax(0, 1fr)"
+      {...otherProps}
+    >
+      {navbar.map(({ to, text, icon: Icon }) => (
+        <Link
+          key={to}
+          as={NavLink}
+          alignItems="center"
+          display="flex"
+          borderRadius="8px"
+          padding={{
+            base: "4px",
+            lg: "12px 16px",
+          }}
+          flexDirection={{
+            base: "column",
+            lg: "row",
+          }}
+          gap={{
+            base: "4px",
+            lg: "12px",
+          }}
+          textDecoration="none"
+          color={{
+            base: "rgba(255, 255, 255, 0.6)",
+            lg: "#fff",
+          }}
+          _hover={{
+            lg: {
+              textDecoration: "none",
+              color: "#FFBF3E",
               background: "rgba(87, 92, 112, 0.3)",
+              svg: {
+                fill: "#FFBF3E",
+              },
             },
-          },
-        }}
-        to={to}
-        transition="all 0.2s"
-      >
-        <Icon width="24px" />
-        <Text fontSize={{ base: "10px", lg: "16px" }}>{text}</Text>
-      </Link>
-    ))}
-  </Flex>
-);
+          }}
+          _active={{
+            base: {
+              textDecoration: "none",
+              color: "#FFBF3E",
+              background: "rgba(87, 92, 112, 0.3)",
+              svg: {
+                fill: "#FFBF3E",
+              },
+            },
+          }}
+          _activeLink={{
+            "&.active": {
+              color: "#FFBF3E",
+              svg: {
+                fill: "#FFBF3E",
+              },
 
-const sidebarModules = [
+              "@media screen and (min-width: 62em)": {
+                background: "rgba(87, 92, 112, 0.3)",
+              },
+            },
+          }}
+          to={to}
+          transition="all 0.2s"
+        >
+          <Icon width="24px" />
+          <Text fontSize={{ base: "10px", lg: "16px" }}>{text}</Text>
+        </Link>
+      ))}
+    </Flex>
+  );
+};
+
+interface Props extends FlexProps {}
+
+const navMenu = [
   {
     to: "/progress",
     icon: ProgressIcon,
@@ -122,5 +152,3 @@ const sidebarModules = [
     text: "О проекте",
   },
 ];
-
-interface Props extends FlexProps {}
