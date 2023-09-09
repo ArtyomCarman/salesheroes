@@ -127,7 +127,7 @@ export const badgeShortList = [
         firstName: "Ирина",
         lastName: "Шаброва",
         photoData: ШаброваИрина,
-        terDivisionName: "СИБ",
+        terDivisionName: "СРБ",
         placeInRating: 2,
         indicatorValue: "",
         colorCode: {
