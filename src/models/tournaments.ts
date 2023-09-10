@@ -252,10 +252,7 @@ export const tournamentID = [
     totalParticipants: "900 участников",
     specification: {
       description:
-        "Том Лонгбоут по праву считается величайшим марафонцем всех времен!\n" +
-        "Бери пример с лучших - закрывай каждую полную неделю турнира минимум 2 условные сделки. Если в какую-либо неделю условие не выполняется - участник выбывает из гонки.\n" +
-        "\n" +
-        "Покажешь результат по сумме УС лучше всех - станешь победителем турнира. Удачи!",
+        "Покажи максимальное среди коллег сальдо выдач-гашений по всем кредитным договорам своих клиентов ККСБ и стань победителем турнира.\nВ расчет учитывается только положительные сальдо. Удачи!",
       features: [
         {
           number: 1,
@@ -451,7 +448,7 @@ export const tournamentShortList = [
     contestants: "1 243 участника",
     leaders: leaders
       .sort((item1, item2) =>
-        item1.placeInRating > item2.placeInRating ? 1 : -1
+        item1.placeInRating > item2.placeInRating ? 1 : -1,
       )
       .map((item, index) => (index < 5 ? { ...item, hasReward: true } : item))
       .slice(0, 5),
@@ -463,7 +460,7 @@ export const tournamentShortList = [
     leaders: leaders
       .filter(({ terDivisionName }) => terDivisionName === "СРБ")
       .sort((item1, item2) =>
-        item1.placeInRating > item2.placeInRating ? 1 : -1
+        item1.placeInRating > item2.placeInRating ? 1 : -1,
       )
       .map((item, index) => (index < 3 ? { ...item, hasReward: true } : item))
       .slice(0, 5),
@@ -479,7 +476,7 @@ export const tournamentShortList = [
     leaders: leaders
       .filter(({ terDivisionName }) => terDivisionName === "СРБ")
       .sort((item1, item2) =>
-        item1.placeInRating > item2.placeInRating ? 1 : -1
+        item1.placeInRating > item2.placeInRating ? 1 : -1,
       )
       .map((item, index) => (index < 1 ? { ...item, hasReward: true } : item))
       .slice(0, 5),
@@ -494,7 +491,7 @@ export const tournamentShortList2 = [
     leaders: leaders
 
       .map((item) =>
-        item.profileNumber === "22" ? { ...item, indicatorValue: "22" } : item
+        item.profileNumber === "22" ? { ...item, indicatorValue: "22" } : item,
       )
       .sort((item1, item2) => +item2.indicatorValue - +item1.indicatorValue)
       .map((item, index) => (index < 5 ? { ...item, hasReward: true } : item))
@@ -507,7 +504,7 @@ export const tournamentShortList2 = [
     leaders: leaders
       .filter(({ terDivisionName }) => terDivisionName === "СРБ")
       .map((item) =>
-        item.profileNumber === "22" ? { ...item, indicatorValue: "22" } : item
+        item.profileNumber === "22" ? { ...item, indicatorValue: "22" } : item,
       )
       .sort((item1, item2) => +item2.indicatorValue - +item1.indicatorValue)
       .map((item, index) => (index < 3 ? { ...item, hasReward: true } : item))
@@ -524,7 +521,7 @@ export const tournamentShortList2 = [
     leaders: leaders
       .filter(({ terDivisionName }) => terDivisionName === "СРБ")
       .map((item) =>
-        item.profileNumber === "22" ? { ...item, indicatorValue: "22" } : item
+        item.profileNumber === "22" ? { ...item, indicatorValue: "22" } : item,
       )
       .sort((item1, item2) => +item2.indicatorValue - +item1.indicatorValue)
       .map((item, index) => (index < 1 ? { ...item, hasReward: true } : item))
@@ -547,7 +544,7 @@ export const tournamentFullListCountry2 = {
   contestants: "900 участника",
   leaders: leaders
     .map((item) =>
-      item.profileNumber === "22" ? { ...item, indicatorValue: "22" } : item
+      item.profileNumber === "22" ? { ...item, indicatorValue: "22" } : item,
     )
     .sort((item1, item2) => +item2.indicatorValue - +item1.indicatorValue)
     .map((item, index) => (index < 5 ? { ...item, hasReward: true } : item)),
@@ -570,7 +567,7 @@ export const tournamentFullListTerb2 = {
   leaders: leaders
     .filter(({ terDivisionName }) => terDivisionName === "СРБ")
     .map((item) =>
-      item.profileNumber === "22" ? { ...item, indicatorValue: "22" } : item
+      item.profileNumber === "22" ? { ...item, indicatorValue: "22" } : item,
     )
     .sort((item1, item2) => +item2.indicatorValue - +item1.indicatorValue)
     .map((item, index) => (index < 3 ? { ...item, hasReward: true } : item)),
@@ -598,7 +595,7 @@ export const tournamentFullListGOSB2 = {
   leaders: leaders
     .filter(({ terDivisionName }) => terDivisionName === "СРБ")
     .map((item) =>
-      item.profileNumber === "22" ? { ...item, indicatorValue: "22" } : item
+      item.profileNumber === "22" ? { ...item, indicatorValue: "22" } : item,
     )
     .sort((item1, item2) => +item2.indicatorValue - +item1.indicatorValue)
     .slice(0, 7)
