@@ -14,7 +14,7 @@ export const MorePage = () => {
           base: "16px",
           lg: "0",
         }}
-        mb="24px"
+        mb="16px"
       >
         Ещё
       </Text>
@@ -26,8 +26,8 @@ export const MorePage = () => {
             alignItems="center"
             display="flex"
             borderRadius="8px"
-            padding="12px 16px"
-            gap={"12px"}
+            padding="22px 16px"
+            gap="8px"
             textDecoration="none"
             color={{
               base: "rgba(255, 255, 255, 0.6)",
@@ -69,7 +69,9 @@ export const MorePage = () => {
             transition="all 0.2s"
           >
             <Icon width="24px" />
-            <Text>{text}</Text>
+            <Text variant="semibold" color="white">
+              {text}
+            </Text>
           </Link>
         ))}
       </Grid>

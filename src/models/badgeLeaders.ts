@@ -127,7 +127,7 @@ export const badgeShortList = [
         firstName: "Ирина",
         lastName: "Шаброва",
         photoData: ШаброваИрина,
-        terDivisionName: "СИБ",
+        terDivisionName: "СРБ",
         placeInRating: 2,
         indicatorValue: "",
         colorCode: {
@@ -155,7 +155,7 @@ export const badgeShortList = [
         firstName: "Наталья",
         lastName: "Дурова",
         photoData: ДуроваНаталья,
-        terDivisionName: "ЦЧБ",
+        terDivisionName: "СРБ",
         placeInRating: 4,
         indicatorValue: "",
         colorCode: {
@@ -169,7 +169,7 @@ export const badgeShortList = [
         firstName: "Юлия",
         lastName: "Орлова",
         photoData: ОрловаЮлия,
-        terDivisionName: "ПБ",
+        terDivisionName: "СРБ",
         placeInRating: 5,
         indicatorValue: "",
         colorCode: {
@@ -203,7 +203,7 @@ export const badgeShortList = [
         firstName: "Наталья",
         lastName: "Дурова",
         photoData: ДуроваНаталья,
-        terDivisionName: "ЦЧБ",
+        terDivisionName: "СРБ",
         placeInRating: 2,
         indicatorValue: "",
         colorCode: {
@@ -217,7 +217,7 @@ export const badgeShortList = [
         firstName: "Юлия",
         lastName: "Орлова",
         photoData: ОрловаЮлия,
-        terDivisionName: "ПБ",
+        terDivisionName: "СРБ",
         placeInRating: 3,
         indicatorValue: "",
         colorCode: {
