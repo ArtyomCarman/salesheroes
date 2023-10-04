@@ -46,4 +46,12 @@ body {
   overflow: unset;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  margin-top: 200px;
+}
+
 
